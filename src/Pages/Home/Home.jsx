@@ -2,7 +2,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <div>
-      <h2>Bangladesh</h2>
+      <h2>TitanArena</h2>
     </div>
   );
 };
