@@ -1,0 +1,211 @@
+/* AnimatedHeader.css */
+@keyframes header {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes bargrow {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 960px;
+  }
+}
+
+@keyframes bargrow2 {
+  0% {
+    width: 0px;
+    opacity: 100;
+  }
+  100% {
+    width: 960px;
+    left: 0px;
+    opacity: 100;
+  }
+}
+
+@keyframes bargrow3 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 270px;
+  }
+}
+
+@keyframes bargrow4 {
+  0% {
+    height: 0px;
+    top: 130px;
+  }
+  100% {
+    height: 190px;
+    top: -60px;
+  }
+}
+
+@keyframes bargrow5 {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 210px;
+    top: -20px;
+  }
+}
+
+@keyframes bargrow6 {
+  0% {
+    width: 0px;
+    left: 960px;
+  }
+  100% {
+    width: 760px;
+  }
+}
+
+#wrapper {
+  height: 400px;
+  width: 960px;
+  position: relative;
+  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bar {
+  background: #1c4ab2;
+  height: 5px;
+  width: 960px;
+  position: relative;
+  top: 5px;
+  animation: bargrow 5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+#bar2 {
+  background: #1c4ab2;
+  height: 5px;
+  width: 960px;
+  position: relative;
+  left: 960px;
+  top: 0px;
+  opacity: 0;
+  animation: bargrow2 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+#bar3 {
+  background: #1c4ab2;
+  width: 5px;
+  height: 270px;
+  position: relative;
+  left: 25px;
+  bottom: 110px;
+  z-index: -1;
+  animation: bargrow3 4s;
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+#bar4 {
+  background: #1c4ab2;
+  width: 5px;
+  height: 190px;
+  position: absolute;
+  left: 925px;
+  top: -60px;
+  animation: bargrow4 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+#bar5 {
+  background: #1c4ab2;
+  width: 5px;
+  height: 210px;
+  position: absolute;
+  left: 940px;
+  top: -20px;
+  animation: bargrow5 2s;
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
+}
+
+#bar6 {
+  background: #1c4ab2;
+  height: 5px;
+  width: 760px;
+  position: absolute;
+  top: -12.5px;
+  left: 200px;
+  animation: bargrow6 3s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+/* -------------------- */
+.main-heading-primary {
+  display: block;
+  padding: 1%;
+  font-size: 2rem;
+  font-weight: bold;
+
+  letter-spacing: 10px;
+  animation: moveInLeft 1s ease-out;
+}
+.main-heading-secondary {
+  font-family: sans-serif;
+  padding: 1%;
+
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+
+  text-align: center;
+  letter-spacing: 31px;
+  color: hotpink;
+  animation: moveInRight 1s ease-out;
+}
+.main-heading {
+  color: #4c41e6;
+  text-transform: uppercase;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
