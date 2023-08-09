@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import FlipCard from "./Components/Fetured/FlipCard";
 import "./Home.css";
 const Home = () => {
   return (
@@ -7,7 +8,8 @@ const Home = () => {
         <title>TitanArena | Home</title>
       </Helmet>
       <h2 className="pt-9">TitanArena</h2>
-      <p>Bangladesh</p>
+      <h2 className="">TitanArena</h2>
+      <FlipCard></FlipCard>
     </div>
   );
 };
