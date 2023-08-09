@@ -41,7 +41,7 @@ const FlipCard = () => {
                 </div>
               </div>
               <div className="back-page">
-                <p>Surprise!</p>
+                <p>Surprise! SAFOAN BROOOOOOOOOOO</p>
                 <button className="btn">{card.buttonText}</button>
               </div>
             </div>
