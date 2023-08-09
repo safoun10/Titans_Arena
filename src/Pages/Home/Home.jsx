@@ -1,8 +1,12 @@
+import { Helmet } from "react-helmet-async";
 import "./Home.css";
 const Home = () => {
   return (
     <div>
-      <h2 className="">TitanArena</h2>
+      <Helmet>
+        <title>TitanArena | Home</title>
+      </Helmet>
+      <h2 className="pt-9">TitanArena</h2>
       <p>Bangladesh</p>
     </div>
   );
