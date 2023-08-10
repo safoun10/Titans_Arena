@@ -2,13 +2,14 @@ import "./SiteStates.css";
 
 const SiteStates = () => {
   return (
-    <div className="max-w-5xl mx-auto">
-      <div className="flex  text-white items-center gap-7 my-10">
-        <div className="w-1/2">
+    <div className="max-w-6xl md:mx-auto mx-6">
+      
+      <div className="md:flex  text-white items-center gap-7 my-10">
+        <div className="md:w-1/2">
           <h2 className="text-4xl  font-bold">
             The Journey of the <br /> Titan Arena Site
           </h2>
-          <p className="text-gray-400 text-sm py-2">
+          <p className="text-gray-400 md:text-sm md:py-2 py-6">
             Gorem npsum dolor sit amet consectetur adipiscing elit. Duis
             elementum sollici tudin augue euismod. Nulla ullamcorper nunc. Morbi
             pharetra mi tellus mollis tincidunt massa venenatis. Etiam lacinia
@@ -34,7 +35,7 @@ const SiteStates = () => {
             </button>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="md:w-1/2">
           <img
             className="h-96 rounded-3xl"
             src="https://www.designyourway.net/blog/wp-content/uploads/2019/01/games-wallpaper-15.jpg"

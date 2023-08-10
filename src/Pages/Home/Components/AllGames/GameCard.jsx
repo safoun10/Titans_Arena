@@ -11,7 +11,7 @@ const GameCard = ({ game }) => {
       className="border-2 rounded-3xl text-white my-4 "
     >
       <figure className="">
-        <img className="h-72 w-full rounded-t-3xl" src={image} alt="car!" />
+        <img className="h-80 w-full rounded-t-3xl" src={image} alt="car!" />
       </figure>
       <div className="mx-5 my-4 ">
         <h2 className="text-xl font-bold">{title}</h2>
