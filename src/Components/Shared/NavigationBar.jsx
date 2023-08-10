@@ -13,7 +13,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/classes"
+          to="/gallery"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           GALLERY
@@ -21,7 +21,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/All game"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           All GAMES
