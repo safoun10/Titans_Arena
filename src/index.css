@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Barlow", sans-serif;
+}
 /* tailwind costome class */
 .active{
     @apply  font-bold px-2 tracking-wide text-slate-900 transition-colors duration-200}

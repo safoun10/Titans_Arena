@@ -21,7 +21,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/All game"
+          to="/allgame"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           All GAMES
@@ -29,7 +29,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/blogs"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           BLOGS
@@ -37,7 +37,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/support"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           SUPPORT
@@ -45,7 +45,7 @@ const NavigationBar = () => {
       </li>
       <li>
         <NavLink
-          to="/instructors"
+          to="/eSports"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           ESPORTS

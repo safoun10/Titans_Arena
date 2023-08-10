@@ -19,7 +19,7 @@ const Footer = () => {
           </div>
           <div>
             <h1 className="text-slate-300 text-xl font-semibold pb-3">
-              Company
+              Company svds
             </h1>
             <p className="text-slate-300 font-normal text-base">About</p>
             <p className="text-slate-300 font-normal text-base">Us Work</p>
