@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import FlipCard from "./Components/Fetured/FlipCard";
 import "./Home.css";
 import SiteStates from "./Components/SiteStates/SiteStates";
+import Banner from "./Components/Banner";
 import LatestGallery from "./Components/LatestGallery/LatestGallery";
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Helmet>
         <title>TitanArena | Home</title>
       </Helmet>
+      <Banner/>
       <FlipCard />
       
       <AllGames />
