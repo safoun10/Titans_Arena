@@ -8,7 +8,9 @@ import router from "./Routes/Routes";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <HelmetProvider>
-      <RouterProvider router={router} />
+     <div className="overflow-hidden max-w-full">
+     <RouterProvider router={router} />
+     </div>
     </HelmetProvider>
   </React.StrictMode>
 );
