@@ -6,6 +6,7 @@ import "./Home.css";
 import SiteStates from "./Components/SiteStates/SiteStates";
 import Banner from "./Components/Banner";
 import LatestGallery from "./Components/LatestGallery/LatestGallery";
+import BlogAndNews from "./Components/BlogAndNews";
 const Home = () => {
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
@@ -19,6 +20,7 @@ const Home = () => {
       <FeatureGames />
       <SiteStates />
       <LatestGallery/>
+      <BlogAndNews />
     </div>
   );
 };
