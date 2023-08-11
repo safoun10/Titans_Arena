@@ -11,7 +11,11 @@ import BlogAndNews from "./Components/BlogAndNews";
 import Category from "./Components/Category/Category";
 const Home = () => {
   return (
-    <div>
+
+
+   
+
+
       <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <Helmet>
           <title>TitanArena | Home</title>
@@ -19,7 +23,6 @@ const Home = () => {
         <Banner />
         <FlipCard />
         <Category />
-
         <AllGames />
         <FeatureGames />
         <SiteStates />
@@ -28,6 +31,7 @@ const Home = () => {
         <ReviewSection></ReviewSection>
       </div>
     </div>
+    
   );
 };
 
