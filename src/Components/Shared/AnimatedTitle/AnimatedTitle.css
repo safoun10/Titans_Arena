@@ -70,7 +70,7 @@
 }
 
 #wrapper {
-  height: 400px;
+  height: 250px;
   width: 960px;
   position: relative;
   top: 60px;
@@ -79,7 +79,7 @@
 }
 
 #bar {
-  background: #1c4ab2;
+  background: white;
   height: 5px;
   width: 960px;
   position: relative;
@@ -90,7 +90,7 @@
 }
 
 #bar2 {
-  background: #1c4ab2;
+  background: white;
   height: 5px;
   width: 960px;
   position: relative;
@@ -103,7 +103,7 @@
 }
 
 #bar3 {
-  background: #1c4ab2;
+  background: white;
   width: 5px;
   height: 270px;
   position: relative;
@@ -116,7 +116,7 @@
 }
 
 #bar4 {
-  background: #1c4ab2;
+  background: white;
   width: 5px;
   height: 190px;
   position: absolute;
@@ -128,7 +128,7 @@
 }
 
 #bar5 {
-  background: #1c4ab2;
+  background: white;
   width: 5px;
   height: 210px;
   position: absolute;
@@ -140,7 +140,7 @@
 }
 
 #bar6 {
-  background: #1c4ab2;
+  background: white;
   height: 5px;
   width: 760px;
   position: absolute;
@@ -156,8 +156,9 @@
   padding: 1%;
   font-size: 2rem;
   font-weight: bold;
+  font-weight: 900;
+  text-align: center;
 
-  letter-spacing: 10px;
   animation: moveInLeft 1s ease-out;
 }
 .main-heading-secondary {
@@ -166,15 +167,15 @@
 
   display: block;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 900;
 
   text-align: center;
-  letter-spacing: 31px;
-  color: hotpink;
+  letter-spacing: 5px;
+  color: white;
   animation: moveInRight 1s ease-out;
 }
 .main-heading {
-  color: #4c41e6;
+  color: #ffffff;
   text-transform: uppercase;
 }
 

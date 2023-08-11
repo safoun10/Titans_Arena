@@ -30,13 +30,13 @@ const FlipCard = () => {
         secondaryText="it's awesome!"
       />
 
-      <div className="wrapper">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-4 gap-1 ">
           {cardData.map((card, index) => (
             <div key={index} className="book">
               <div className="page">
                 <div
-                  className="front-page bg-cover bg-center relative border border-blue-500"
+                  className="front-page  bg-cover bg-center relative border border-blue-500"
                   style={{ backgroundImage: `url(${card.image})` }}
                 >
                   <div className="after-content bg-center absolute inset-0 opacity-0 hover:opacity-100 transition duration-300">
