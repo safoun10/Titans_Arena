@@ -9,7 +9,7 @@ const Title = ({ primaryText, secondaryText }) => {
         <h1>
           <div className="main">
             <h1 className="main-heading">
-              <span className="main-heading-primary">{primaryText}</span>
+              <span className="main-heading-primary text-center">{primaryText}</span>
               <span className="main-heading-secondary">{secondaryText}</span>
             </h1>
           </div>
