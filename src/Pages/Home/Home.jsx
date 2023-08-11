@@ -11,27 +11,22 @@ import BlogAndNews from "./Components/BlogAndNews";
 import Category from "./Components/Category/Category";
 const Home = () => {
   return (
-
     <div>
-      <h2 className="">TitanArena</h2>
-      <FlipCard></FlipCard>
-   
+      <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+        <Helmet>
+          <title>TitanArena | Home</title>
+        </Helmet>
+        <Banner />
+        <FlipCard />
+        <Category />
 
-    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <Helmet>
-        <title>TitanArena | Home</title>
-      </Helmet>
-      <Banner/>
-      <FlipCard />
-      <Category/>
-      
-      <AllGames />
-      <FeatureGames />
-      <SiteStates />
-      <LatestGallery/>
-      <BlogAndNews />
-      <ReviewSection></ReviewSection>
-
+        <AllGames />
+        <FeatureGames />
+        <SiteStates />
+        <LatestGallery />
+        <BlogAndNews />
+        <ReviewSection></ReviewSection>
+      </div>
     </div>
   );
 };
