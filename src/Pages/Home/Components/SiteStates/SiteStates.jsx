@@ -3,7 +3,6 @@ import "./SiteStates.css";
 const SiteStates = () => {
   return (
     <div className="max-w-6xl md:mx-auto mx-6">
-      
       <div className="md:flex  text-white items-center gap-7 my-10">
         <div className="md:w-1/2">
           <h2 className="text-4xl  font-bold">

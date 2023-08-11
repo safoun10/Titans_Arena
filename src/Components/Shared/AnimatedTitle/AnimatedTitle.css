@@ -77,7 +77,28 @@
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 767px) {
+  #wrapper {
+    height: auto;
+    width: 100%;
+    position: static;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
+/* For Tablet Devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  #wrapper {
+    height: auto;
+    width: 100%;
+    position: static;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 #bar {
   background: white;
   height: 5px;
@@ -90,7 +111,7 @@
 }
 
 #bar2 {
-  background: white;
+  background: greenyellow;
   height: 5px;
   width: 960px;
   position: relative;
