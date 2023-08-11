@@ -12,23 +12,24 @@ import Category from "./Components/Category/Category";
 const Home = () => {
   return (
 
+
    
 
-    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <Helmet>
-        <title>TitanArena | Home</title>
-      </Helmet>
-      <Banner/>
-      <FlipCard />
-      <Category/>
-      
-      <AllGames />
-      <FeatureGames />
-      <SiteStates />
-      <LatestGallery/>
-      <BlogAndNews />
-      <ReviewSection></ReviewSection>
 
+      <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+        <Helmet>
+          <title>TitanArena | Home</title>
+        </Helmet>
+        <Banner />
+        <FlipCard />
+        <Category />
+        <AllGames />
+        <FeatureGames />
+        <SiteStates />
+        <LatestGallery />
+        <BlogAndNews />
+        <ReviewSection></ReviewSection>
+      </div>
     </div>
     
   );
