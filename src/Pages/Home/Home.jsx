@@ -12,9 +12,6 @@ import Category from "./Components/Category/Category";
 const Home = () => {
   return (
 
-    <div>
-      <h2 className="">TitanArena</h2>
-      <FlipCard></FlipCard>
    
 
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
@@ -33,6 +30,7 @@ const Home = () => {
       <ReviewSection></ReviewSection>
 
     </div>
+    
   );
 };
 
