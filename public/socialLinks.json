@@ -1,0 +1,27 @@
+[
+  {
+    "image": "/public/icons/facebook.png",
+    "title": "Facebook"
+  },
+  {
+    "image": "/public/icons/twitter.png",
+    "title": "Twitter"
+  },
+  {
+    "image": "/public/icons/youtube.png",
+    "title": "Youtube"
+  },
+
+  {
+    "image": "/public/icons/whatsapp.png",
+    "title": "Instagram"
+  },
+  {
+    "image": "/public/icons/instagram.png",
+    "title": "Discord"
+  },
+  {
+    "image": "/public/icons/instagram.png",
+    "title": "Discord"
+  }
+]
