@@ -1,0 +1,317 @@
+[
+  {
+    "id": 1,
+    "game_name": "Call of Duty 2",
+    "game_details": "WWII-themed first-person shooter",
+    "game_version": "2.0",
+    "game_price": 29.99,
+    "category": "Call of Duty",
+    "rating": 4.7
+  },
+  {
+    "id": 2,
+    "game_name": "Battlefield 4",
+    "game_details": "Modern military warfare FPS",
+    "game_version": "1.5",
+    "game_price": 19.99,
+    "category": "Battlefield",
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "game_name": "Rainbow Six Siege",
+    "game_details": "Tactical shooter with team-based strategy",
+    "game_version": "3.2",
+    "game_price": 39.99,
+    "category": "Rainbow Six",
+    "rating": 4.8
+  },
+  {
+    "id": 4,
+    "game_name": "Counter-Strike: Global Offensive",
+    "game_details": "Team-based competitive FPS",
+    "game_version": "5.7",
+    "game_price": 14.99,
+    "category": "Counter-Strike",
+    "rating": 4.6
+  },
+  {
+    "id": 5,
+    "game_name": "Titanfall 2",
+    "game_details": "Sci-fi FPS with mechs and parkour",
+    "game_version": "2.1",
+    "game_price": 24.99,
+    "category": "Titanfall",
+    "rating": 4.4
+  },
+  {
+    "id": 6,
+    "game_name": "Overwatch",
+    "game_details": "Hero-based team shooter",
+    "game_version": "4.3",
+    "game_price": 29.99,
+    "category": "Overwatch",
+    "rating": 4.9
+  },
+  {
+    "id": 7,
+    "game_name": "Destiny 2",
+    "game_details": "Online multiplayer FPS with RPG elements",
+    "game_version": "3.9",
+    "game_price": 0,
+    "category": "Destiny",
+    "rating": 4.3
+  },
+  {
+    "id": 8,
+    "game_name": "Apex Legends",
+    "game_details": "Battle Royale with unique characters",
+    "game_version": "2.5",
+    "game_price": 0,
+    "category": "Apex Legends",
+    "rating": 4.7
+  },
+  {
+    "id": 9,
+    "game_name": "Halo 5: Guardians",
+    "game_details": "Sci-fi FPS with epic battles",
+    "game_version": "1.8",
+    "game_price": 34.99,
+    "category": "Halo",
+    "rating": 4.5
+  },
+  {
+    "id": 10,
+    "game_name": "Gears of War 4",
+    "game_details": "Third-person shooter with a strong story",
+    "game_version": "2.2",
+    "game_price": 19.99,
+    "category": "Gears of War",
+    "rating": 4.6
+  },
+  {
+    "id": 11,
+    "game_name": "Team Fortress 2",
+    "game_details": "Class-based team shooter",
+    "game_version": "6.4",
+    "game_price": 0,
+    "category": "Team Fortress",
+    "rating": 4.2
+  },
+  {
+    "id": 12,
+    "game_name": "Battlefront II",
+    "game_details": "Star Wars-themed shooter",
+    "game_version": "2.3",
+    "game_price": 22.99,
+    "category": "Star Wars Battlefront",
+    "rating": 4.0
+  },
+  {
+    "id": 13,
+    "game_name": "Warframe",
+    "game_details": "Free-to-play space ninja shooter",
+    "game_version": "4.9",
+    "game_price": 0,
+    "category": "Warframe",
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "game_name": "Paladins",
+    "game_details": "Hero-based fantasy shooter",
+    "game_version": "3.7",
+    "game_price": 0,
+    "category": "Paladins",
+    "rating": 4.3
+  },
+  {
+    "id": 15,
+    "game_name": "Borderlands 3",
+    "game_details": "Co-op loot shooter with humor",
+    "game_version": "2.6",
+    "game_price": 49.99,
+    "category": "Borderlands",
+    "rating": 4.5
+  },
+  {
+    "id": 16,
+    "game_name": "Black Ops 4",
+    "game_details": "Futuristic Call of Duty shooter",
+    "game_version": "2.4",
+    "game_price": 39.99,
+    "category": "Call of Duty",
+    "rating": 4.1
+  },
+  {
+    "id": 17,
+    "game_name": "Valorant",
+    "game_details": "Tactical shooter with hero abilities",
+    "game_version": "1.3",
+    "game_price": 0,
+    "category": "Valorant",
+    "rating": 4.9
+  },
+  {
+    "id": 18,
+    "game_name": "Battleborn",
+    "game_details": "Hero shooter with a colorful style",
+    "game_version": "1.1",
+    "game_price": 9.99,
+    "category": "Battleborn",
+    "rating": 3.8
+  },
+  {
+    "id": 19,
+    "game_name": "LawBreakers",
+    "game_details": "Gravity-defying arena shooter",
+    "game_version": "1.0",
+    "game_price": 14.99,
+    "category": "LawBreakers",
+    "rating": 3.7
+  },
+  {
+    "id": 20,
+    "game_name": "Dirty Bomb",
+    "game_details": "Objective-based multiplayer mayhem",
+    "game_version": "2.0",
+    "game_price": 0,
+    "category": "Dirty Bomb",
+    "rating": 3.9
+  },
+  {
+    "id": 21,
+    "game_name": "PlayerUnknown's Battlegrounds",
+    "game_details": "Massive battle royale with realistic gameplay",
+    "game_version": "1.0",
+    "game_price": 29.99,
+    "category": "Battle Royale",
+    "rating": 4.2
+  },
+  {
+    "id": 22,
+    "game_name": "Fortnite",
+    "game_details": "Cartoony battle royale with building mechanics",
+    "game_version": "Chapter 3",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.8
+  },
+  {
+    "id": 23,
+    "game_name": "Apex Legends",
+    "game_details": "Hero-based battle royale with fast-paced combat",
+    "game_version": "Season 12",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.7
+  },
+  {
+    "id": 24,
+    "game_name": "Call of Duty: Warzone",
+    "game_details": "Call of Duty's battle royale mode",
+    "game_version": "Season 5",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.6
+  },
+  {
+    "id": 25,
+    "game_name": "H1Z1: King of the Kill",
+    "game_details": "Fast-paced battle royale with vehicles",
+    "game_version": "2.0",
+    "game_price": 9.99,
+    "category": "Battle Royale",
+    "rating": 3.9
+  },
+  {
+    "id": 26,
+    "game_name": "Realm Royale",
+    "game_details": "Fantasy-themed battle royale with unique classes",
+    "game_version": "3.5",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 3.7
+  },
+  {
+    "id": 27,
+    "game_name": "Rogue Company",
+    "game_details": "Tactical shooter with battle royale mode",
+    "game_version": "1.2",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.0
+  },
+  {
+    "id": 28,
+    "game_name": "Spellbreak",
+    "game_details": "Battle royale with magical abilities and spells",
+    "game_version": "2.1",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.3
+  },
+  {
+    "id": 29,
+    "game_name": "Islands of Nyne",
+    "game_details": "Sci-fi battle royale with vertical gameplay",
+    "game_version": "1.4",
+    "game_price": 14.99,
+    "category": "Battle Royale",
+    "rating": 3.5
+  },
+  {
+    "id": 30,
+    "game_name": "Darwin Project",
+    "game_details": "Survival-focused battle royale with director roles",
+    "game_version": "2.3",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 3.8
+  },
+  {
+    "id": 31,
+    "game_name": "Fear the Wolves",
+    "game_details": "Post-apocalyptic battle royale with dynamic weather",
+    "game_version": "1.1",
+    "game_price": 19.99,
+    "category": "Battle Royale",
+    "rating": 3.6
+  },
+  {
+    "id": 32,
+    "game_name": "Hyper Scape",
+    "game_details": "Urban battle royale with fast-paced gameplay",
+    "game_version": "Season 3",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.1
+  },
+  {
+    "id": 33,
+    "game_name": "Firestorm",
+    "game_details": "Battlefield's fire-focused battle royale mode",
+    "game_version": "2.5",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 4.0
+  },
+  {
+    "id": 34,
+    "game_name": "Ring of Elysium",
+    "game_details": "Snow-themed battle royale with dynamic weather",
+    "game_version": "2.0",
+    "game_price": 0,
+    "category": "Battle Royale",
+    "rating": 3.9
+  },
+  {
+    "id": 35,
+    "game_name": "The Culling",
+    "game_details": "Brutal battle royale with crafting mechanics",
+    "game_version": "1.7",
+    "game_price": 9.99,
+    "category": "Battle Royale",
+    "rating": 3.3
+  }
+]
