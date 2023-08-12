@@ -13,9 +13,10 @@ const AllGames = () => {
   console.log(games);
   return (
     <div>
-        <div className="text-center my-10">
-        <h3 className="text-[#68fb9a] font-semibold ">GET UPDATE OF</h3>
-        <h1 className="text-white text-4xl font-bold my-2">ALL GAMES</h1>
+        <div className="text-center my-5">
+        {/* <h3 className="text-[#68fb9a] font-semibold ">GET UPDATE OF</h3>
+        <h1 className="text-white text-4xl font-bold my-2">ALL GAMES</h1> */}
+        <h1 className="text-[#68fb9a]  text-3xl font-bold">ALL GAMES</h1>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-24 mx-auto"
