@@ -31,7 +31,7 @@ const OurTeamMembers = () => {
         {members.map((member) => (
           <div className="border-2 rounded-2xl h-96  bg-[#121a23] 
           hover:bg-gradient-to-b from-transparent to-[#68fb9a]
-            border-[#68fb9a] flex-col  flex items-center justify-center ">
+            border-[#68fb9a] flex-col   flex items-center justify-center ">
             {/* <div className="h-16 left-20 team-member-card w-96  -z-1 rotate-45 pt-20"></div> */}
             <img
               className="w-44 z-10 border-2 rounded-full "

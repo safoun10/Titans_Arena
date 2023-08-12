@@ -13,7 +13,7 @@ const AllGames = () => {
   console.log(games);
   return (
     <div>
-      <div className="grid md:grid-cols-3  gap-4 max-w-6xl mx-6 md:mx-auto">
+      <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
         {games.map((game, i) => (
           <GameCard key={i} game={game} />
         ))}
