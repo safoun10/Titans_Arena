@@ -8,10 +8,10 @@ const GameCard = ({ game }) => {
         backgroundImage:
           "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
       }}
-      className="border-2 rounded-3xl text-white my-4 "
+      className="border-2 rounded-md border-[#68fb9a]  text-white my-4 "
     >
       <figure className="">
-        <img className="h-80 w-full rounded-t-3xl" src={image} alt="car!" />
+        <img className="h-80 w-full rounded-md" src={image} alt="car!" />
       </figure>
       <div className="mx-5 my-4 ">
         <h2 className="text-xl font-bold">{title}</h2>
