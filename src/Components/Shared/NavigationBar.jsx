@@ -89,7 +89,7 @@ const NavigationBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="flex gap-4 font-semibold text-lg">{navOptions}</ul>
+          <ul className="flex gap-4 font-bold text-base">{navOptions}</ul>
         </div>
         <div className="navbar-end">
           <Link to="/login" className="bt-primary font-bold">
