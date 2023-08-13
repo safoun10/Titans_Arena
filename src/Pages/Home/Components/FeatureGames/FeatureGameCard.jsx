@@ -8,7 +8,7 @@ const FeatureGameCard = () => {
         backgroundImage:
           "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
       }}
-      className="text-white md:flex gap-7 border-2 rounded-3xl "
+      className="text-white  md:flex gap-7 border-2 rounded-3xl "
     >
       <div className="md:w-1/3">
         <img

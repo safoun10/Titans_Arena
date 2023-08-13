@@ -28,10 +28,14 @@ const StayConnect = () => {
             ></path>
           </svg>
         </div>
-        <div className="max-w-6xl grid md:grid-cols-6  grid-cols-2 mx-auto   ">
+        <div className="grid md:grid-cols-6  grid-cols-2   ">
           {social.map((link) => (
-            <div className="text-white bg-[#070709] ">
-              <div className="border-2 w-44 h-44 flex flex-col justify-center items-center border-[#68fb9a]">
+            <div className="text-white 
+            ">
+          
+              <div className="border-2 w-44 h-44 flex flex-col 
+              bg-[#121a23]
+              justify-center items-center border-[#68fb9a]">
                 <img className="h-20 w-20" src={link.image} alt="" />
                 <h2 className="text-2xl text-[#68fb9a] text-bold">
                   {link.title}

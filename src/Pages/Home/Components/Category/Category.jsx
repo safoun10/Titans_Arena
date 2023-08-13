@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import './Category.css';
 import "react-tabs/style/react-tabs.css";
+import AllGames from "../AllGames/AllGames";
 const Category = () => {
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
@@ -139,6 +140,7 @@ const Category = () => {
                 </div>
               </div>
             </div>
+        <AllGames/>
           </TabPanel>
           <TabPanel>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
