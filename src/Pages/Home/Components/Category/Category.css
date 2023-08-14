@@ -7,12 +7,24 @@
     -o-border-radius: 5px 5px !important;
 }
 
-/* .react-tabs__tab--selected{
-    background-color: #22c55e !important;
-    border-radius: 5px 5px !important;
-    -webkit-border-radius: 5px 5px !important;
-    -moz-border-radius: 5px 5px !important;
-    -ms-border-radius: 5px 5px !important;
-    -o-border-radius: 5px 5px !important;
-} */
-
+/* content: "";
+position: absolute;
+left: 0;
+right: 0;
+width: 42px;
+height: 1px;
+top: 50%;
+-webkit-transform: translateY(-50%) rotate(0deg);
+-moz-transform: translateY(-50%) rotate(0deg);
+-ms-transform: translateY(-50%) rotate(0deg);
+-o-transform: translateY(-50%) rotate(0deg);
+transform: translateY(-50%) rotate(0deg);
+/* background: var(--tg-theme-primary); */
+/*
+margin: 0 auto;
+opacity: 0;
+-webkit-transition: all 0.3s ease-out 0s;
+-moz-transition: all 0.3s ease-out 0s;
+-ms-transition: all 0.3s ease-out 0s;
+-o-transition: all 0.3s ease-out 0s;
+transition: all 0.3s ease-out 0s; */

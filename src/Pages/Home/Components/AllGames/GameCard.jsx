@@ -16,7 +16,7 @@ const GameCard = ({ game }) => {
       <div className="mx-5 my-3 ">
         <h2 className="font-bold text-xl text-center md:text-[17px]">{title}</h2>
         <p className="md:text-[14px] text-center text-gray-300 font-semibold">{level} Level 2</p>
-        <div className="flex  md:text-xs gap-2 text-gray-300">
+        <div className="flex justify-center md:text-xs gap-2 text-gray-300">
           <p>Horror</p> |<p> Adventure</p> |<p> Pc</p> 
           {genre}
         </div>

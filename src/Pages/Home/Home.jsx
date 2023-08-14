@@ -19,7 +19,7 @@ const Home = () => {
       </Helmet>
       <Banner />
       <div className="max-w-[1280px] mx-auto">
-        <FlipCard />
+      <FlipCard />
         <Category />
         {/* <AllGames /> */}
         <FeatureGames />
