@@ -59,16 +59,16 @@ const ReviewSection = () => {
                       <h2 className="card-title text-white uppercase ">
                         {data.title}
                       </h2>
-                      <p className="flex bg-golden my-4">
+                      <p className="md:text-sm pt-4 text-white">
+                        {data.description}
+                        Laboriosam assumenda, possimus sint ducimus autem et.
+                      </p>
+                      <p className="flex bg-golden text-2xl my-4">
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />
                         <AiFillStar />{" "}
-                      </p>
-                      <p className="md:text-sm text-white">
-                        {data.description}
-                        Laboriosam assumenda, possimus sint ducimus autem et.
                       </p>
                     </div>
                   </div>
