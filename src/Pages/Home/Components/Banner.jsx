@@ -21,8 +21,9 @@ const Banner = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3500,
           disableOnInteraction: false,
+          
         }}
         pagination={{
           clickable: true,
@@ -33,7 +34,7 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div className="max-w-full">
-            <img
+            <img className="h-cover w-full"
               src={Banner1}
               alt=""
             />
@@ -41,7 +42,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <div className="max-w-full">
-            <img
+            <img className="h-cover w-full"
               src={Banner2}
               alt=""
             />
@@ -49,7 +50,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <div className="max-w-full">
-            <img
+            <img className="h-cover w-full"
               src={Banner3}
               alt=""
             />
