@@ -2,13 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
 body {
-  font-family: "Barlow", sans-serif;
+    font-family: 'Rajdhani', sans-serif;
 }
 /* tailwind costome class */
 .active{
-    @apply  font-bold text-base px-2 tracking-wide text-slate-900 transition-colors duration-200}
+
+    @apply  font-bold px-2 text-[18px] tracking-wide text-slate-900 transition-colors duration-200}
 .default{
-    @apply  font-bold text-base px-2 tracking-wide text-slate-400 transition-colors duration-200 hover:text-slate-900}
+    @apply  font-bold px-2 text-[18px] tracking-wide text-white transition-colors duration-200 hover:text-slate-900}
+
 .bt-primary{
     @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-2 m-2 text-lg rounded-full border-transparent border-2 hover:bg-slate-950 bg-slate-800 text-white}
