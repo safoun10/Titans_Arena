@@ -18,16 +18,18 @@ const Home = () => {
         <title>TitanArena | Home</title>
       </Helmet>
       <Banner />
+      <div className="max-w-[1280px] mx-auto">
       <FlipCard />
-      <Category />
-      <AllGames />
-      <FeatureGames />
-      <SiteStates />
-      <LatestGallery />
-      <BlogAndNews />
-      <ReviewSection></ReviewSection>
-      <OurTeamMembers />
-      <StayConnect />
+        <Category />
+        {/* <AllGames /> */}
+        <FeatureGames />
+        <SiteStates />
+        <LatestGallery />
+        <BlogAndNews />
+        <ReviewSection></ReviewSection>
+        <OurTeamMembers />
+        <StayConnect />
+      </div>
     </div>
   );
 };
