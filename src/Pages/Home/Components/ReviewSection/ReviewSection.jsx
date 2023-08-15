@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import { Swiper, SwiperSlide } from "swiper/react";
-import './ReviewSection.css'
+import "./ReviewSection.css";
 
 import "swiper/css";
 import "swiper/css/pagination";
