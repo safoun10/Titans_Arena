@@ -21,7 +21,6 @@ const Home = () => {
       <div className="max-w-[1280px] mx-auto">
       <FlipCard />
         <Category />
-        {/* <AllGames /> */}
         <FeatureGames />
         <SiteStates />
         <LatestGallery />
