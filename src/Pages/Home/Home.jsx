@@ -8,24 +8,27 @@ import SiteStates from "./Components/SiteStates/SiteStates";
 import Banner from "./Components/Banner";
 import LatestGallery from "./Components/LatestGallery/LatestGallery";
 import BlogAndNews from "./Components/BlogAndNews";
+import StayConnect from "./Components/StayConnect/StayConnect";
+import OurTeamMembers from "./Components/OurTeamMembers/OurTeamMembers";
 import Category from "./Components/Category/Category";
 const Home = () => {
   return (
-    <div>
-      <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-        <Helmet>
-          <title>TitanArena | Home</title>
-        </Helmet>
-        <Banner />
-        <FlipCard />
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+      <Helmet>
+        <title>TitanArena | Home</title>
+      </Helmet>
+      <Banner />
+      <div className="max-w-[1280px] mx-auto">
+      <FlipCard />
         <Category />
-
-        <AllGames />
+        {/* <AllGames /> */}
         <FeatureGames />
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />
         <ReviewSection></ReviewSection>
+        <OurTeamMembers />
+        <StayConnect />
       </div>
     </div>
   );

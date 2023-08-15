@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import './Category.css';
 import "react-tabs/style/react-tabs.css";
+import AllGames from "../AllGames/AllGames";
 const Category = () => {
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
@@ -9,6 +11,7 @@ const Category = () => {
     setIsTabListVisible(!isTabListVisible);
   };
   console.log(category);
+
   return (
     <>
       <div>
@@ -21,7 +24,6 @@ const Category = () => {
               Menu
             </button>
           </div>
-
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
             <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8">
               <Tab
@@ -34,7 +36,6 @@ const Category = () => {
               >
                 All Games
               </Tab>
-
               <Tab
                 className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
                   category === "Call Of Duty"
@@ -80,7 +81,7 @@ const Category = () => {
 
           <TabPanel>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full lg:w-96 bg-transparent text-white shadow-xl">
+              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full md:w-96 bg-transparent text-white shadow-xl">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -139,6 +140,7 @@ const Category = () => {
                 </div>
               </div>
             </div>
+        <AllGames/>
           </TabPanel>
           <TabPanel>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
@@ -367,7 +369,7 @@ const Category = () => {
                   </div>
                 </div>
               </div>
-              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full lg:w-96 bg-transparent text-white shadow-xl">
+              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full md:w-96 bg-transparent text-white shadow-xl">
                 <figure>
                   <img
                     src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
