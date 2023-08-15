@@ -1,11 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from '././../../../public/logoTest4.png'
-import logoTest2 from '../../../public/logoTest8.png'
+import logo from '././../../../public/logoTest4.png';
+import "./NavigationBar.css";
 
 const NavigationBar = () => {
+
   const navOptions = (
     <>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -13,7 +14,7 @@ const NavigationBar = () => {
           HOME
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/gallery"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -21,7 +22,7 @@ const NavigationBar = () => {
           GALLERY
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/allgame"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -29,7 +30,7 @@ const NavigationBar = () => {
           All GAMES
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/blogs"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -37,7 +38,7 @@ const NavigationBar = () => {
           BLOGS
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/support"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -45,7 +46,7 @@ const NavigationBar = () => {
           SUPPORT
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/eSports"
           className={({ isActive }) => (isActive ? "active" : "default")}
