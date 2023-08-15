@@ -41,8 +41,8 @@ const Login = () => {
   };
 
   return (
-    <div>
-      <div className="hero min-h-screen bg-base-200">
+    <div >
+      <div className="hero min-h-screen bg-base-200 ">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <h1 className="text-5xl mt-5 text-center font-bold text-indigo-600">
@@ -114,7 +114,7 @@ const Login = () => {
 
               <p className="mt-4 text-center mb-3">
                 Allready Have an Account
-                <Link className="text-indigo-600 " to="/signup">
+                <Link className="text-indigo-600 " to="/register">
                   Register{" "}
                 </Link>{" "}
               </p>
