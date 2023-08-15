@@ -1,4 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
+import logo from '././../../../public/logoTest4.png'
+import logoTest2 from '../../../public/logoTest8.png'
 
 const NavigationBar = () => {
   const navOptions = (
@@ -56,7 +58,7 @@ const NavigationBar = () => {
 
   return (
     <nav>
-      <div className="navbar px-4 lg:px-12  fixed z-10 bg-black bg-opacity-25 ">
+      <div className="navbar px-4 lg:px-12  fixed z-50 bg-black bg-opacity-25 ">
         <div className="navbar-start ">
           <div className="dropdown">
             <label tabIndex={0} className="lg:hidden">
@@ -83,9 +85,14 @@ const NavigationBar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            <span className="text-md pl-2 md:text-3xl uppercase font-bold">
+            {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
               logo
-            </span>
+            </span> */}
+            
+            
+            <img className="absolute h-[18rem] -top-[7rem] " src={logo}  alt="" />
+            {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
+            
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
