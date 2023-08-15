@@ -27,7 +27,7 @@ const OurTeamMembers = () => {
           ></path>
         </svg>
       </div>
-      <div className="grid md:grid-cols-3 justify-center  gap-4 grid-cols max-w-7xl  mx-auto  text-white ">
+      <div className="grid md:grid-cols-4  justify-center  gap-4 grid-cols max-w-7xl  mx-auto  text-white ">
         {members.map((member) => (
           <div className="border-2 rounded-2xl h-96  bg-[#121a23] 
           hover:bg-gradient-to-b from-transparent to-[#68fb9a]
