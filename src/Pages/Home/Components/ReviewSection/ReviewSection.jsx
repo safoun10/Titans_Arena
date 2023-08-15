@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./ReviewSection.css";
+
 import { AiFillStar } from "react-icons/ai";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
