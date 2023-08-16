@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import About from "../Pages/About/About";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
+import SupportSection from "../Pages/SupportSection/SupportSection";
 
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
+      },
+      {
+        path: "/support",
+        element: <SupportSection />,
       },
     ],
   },
