@@ -1,11 +1,19 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from '././../../../public/logoTest4.png'
-import logoTest2 from '../../../public/logoTest8.png'
+import { AuthContext } from "../../Contexts/Provider/AuthProvider";
+import logo from "././../../../public/logoTest4.png";
+import "./NavigationBar.css";
 
 const NavigationBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
+
   const navOptions = (
     <>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -13,7 +21,7 @@ const NavigationBar = () => {
           HOME
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/gallery"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -21,7 +29,7 @@ const NavigationBar = () => {
           GALLERY
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/allgame"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -29,7 +37,7 @@ const NavigationBar = () => {
           All GAMES
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/blogs"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -37,7 +45,7 @@ const NavigationBar = () => {
           BLOGS
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/support"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -45,7 +53,7 @@ const NavigationBar = () => {
           SUPPORT
         </NavLink>
       </li>
-      <li>
+      <li className="nav-link">
         <NavLink
           to="/eSports"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -88,20 +96,45 @@ const NavigationBar = () => {
             {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
               logo
             </span> */}
-            
-            
-            <img className="absolute h-[18rem] -top-[7rem] " src={logo}  alt="" />
+
+            <img
+              className="absolute h-[18rem] -top-[7rem] "
+              src={logo}
+              alt=""
+            />
             {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
-            
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-4">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="bt-primary font-bold">
-            Log In
-          </Link>
+          <div>
+            <div className="navbar-end">
+              {user ? (
+                <>
+                  <div className="flex gap-4 ">
+                    <div className="avatar online">
+                      <div className="w-10 rounded-full">
+                        <img src={user?.photoURL} alt="User Avatar" />
+                      </div>
+                    </div>
+                    <button
+                      className="btn btn-sm bg-blue-600"
+                      onClick={handleLogOut}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <Link className="btn btn-sm bg-blue-600" to="/login">
+                  Login
+                </Link>
+              )}
+            </div>
+          </div>
+
           {/* <Link to="/login" className="bt-primary font-bold">
             Sign Up
           </Link> */}

@@ -44,6 +44,7 @@ const SiteStates = () => {
                 <h2 className="text-3xl font-bold">3.6K</h2>
                 <p className="font-">Reviews</p>
               </div>
+
             </div>
             <div>
               <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
