@@ -41,23 +41,23 @@ const Login = () => {
   };
 
   return (
-    <div >
+    <div>
       <div className="hero min-h-screen bg-base-200 ">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <h1 className="text-5xl mt-5 text-center font-bold text-indigo-600">
-              Register now!
+          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
+            <h1 className="text-5xl mb-5 mt-5 text-center font-mono font-bold text-green-500">
+              Login now!
             </h1>
 
             <div>
-              <div className="flex justify-center items-center ">
+              <div className="flex justify-center items-center border p-3 border-green-500">
                 <form
                   onSubmit={handleSubmit(onSubmit)}
-                  className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-full"
+                  className="bg-white   shadow-md rounded px-8 pt-6 pb-8 w-full"
                 >
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
+                      className="block  text-green-400 text-xl font-bold mb-2"
                       htmlFor="email"
                     >
                       Email
@@ -66,7 +66,7 @@ const Login = () => {
                       type="email"
                       id="email"
                       {...register("email", { required: true })}
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs italic">
@@ -77,7 +77,7 @@ const Login = () => {
 
                   <div className="mb-4">
                     <label
-                      className="block text-gray-700 text-sm font-bold mb-2"
+                      className="block text-green-400 text-xl  font-bold mb-2"
                       htmlFor="password"
                     >
                       Password
@@ -86,7 +86,7 @@ const Login = () => {
                       type="password"
                       id="password"
                       {...register("password", { required: true })}
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
                     />
                     {errors.password && (
                       <p className="text-red-500 text-xs italic">
@@ -98,7 +98,7 @@ const Login = () => {
                   <div className="flex items-center justify-between">
                     <button
                       type="submit"
-                      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                      className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                     >
                       Login
                     </button>
