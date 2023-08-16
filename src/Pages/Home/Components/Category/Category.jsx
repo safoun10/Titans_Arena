@@ -54,9 +54,9 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("CallOfDuty")}
+                onClick={() => setCategory("Action")}
               >
-                Call Of Duty
+                Action
               </Tab>
               <Tab
                 className={`border p-3  transition-all transform duration-700   rounded text-white ${
@@ -64,9 +64,9 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("Assassin's Creed")}
+                onClick={() => setCategory("Battle Royale")}
               >
-                Assassin's Creed
+                Battle Royale
               </Tab>
               <Tab
                 className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
@@ -84,9 +84,9 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("Uncharted")}
+                onClick={() => setCategory("Adventure")}
               >
-                Uncharted
+                Adventure
               </Tab>
 
               <Tab
@@ -95,9 +95,9 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("RedDeadRedemption")}
+                onClick={() => setCategory("Racing")}
               >
-                RedDeadRedemption
+                Racing
               </Tab>
 
               <Tab
@@ -106,9 +106,9 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("Battlefield")}
+                onClick={() => setCategory("Simulation")}
               >
-                Battlefield
+                Simulation
               </Tab>
               <Tab
                 className={`border p-3 text-white transition-all transform duration-700   rounded  ${
@@ -116,13 +116,47 @@ const Category = () => {
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("FarCry")}
+                onClick={() => setCategory("Sports")}
               >
-                FarCry
+                Sports
+              </Tab>
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "FarCry1"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Strategy")}
+              >
+                Strategy
+              </Tab>
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "FarCry2"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Puzzle")}
+              >
+                Puzzle
               </Tab>
             </TabList>
           </div>
 
+          <TabPanel>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
+              {games.slice(0, 6).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
+              {games.slice(0, 6).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
           <TabPanel>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
               {games.slice(0, 6).map((game, i) => (

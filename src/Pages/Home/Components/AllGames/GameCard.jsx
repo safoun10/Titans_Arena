@@ -20,6 +20,7 @@ const GameCard = ({ game }) => {
     recommendedRequirements,
     features,
     systemSupport,
+    category
   } = game;
   return (
     <div
@@ -48,7 +49,7 @@ const GameCard = ({ game }) => {
           Developer :{developer}
         </p>
         <div className="md:text-[14px] text-center text-gray-300 font-semibold">
-          Type :{genre}
+          Type :{category}
         </div>
         <div className="md:text-[14px] text-center text-gray-300 font-semibold">
           Age Rating :{ageRating}
