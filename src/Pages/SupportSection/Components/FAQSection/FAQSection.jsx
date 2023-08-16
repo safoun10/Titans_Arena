@@ -1,13 +1,15 @@
 import React from "react";
-// import { Player } from "@lottiefiles/react-lottie-player";
-// import {Player} from "react-lottie-player"
-// import {lottie } from '../../../../../public/lottie/lottie.json'
 import lottie from "./lottie.json";
 import Lottie from "react-lottie-player";
+import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 
 const FAQSection = () => {
   return (
     <div>
+      <Title
+        primaryText="FAQ Zone"
+        secondaryText="Gaming Queries Unveiled"
+      ></Title>
       <div className="grid grid-cols-2 gap-6">
         <div className="p-6">
           <div className="collapse collapse-arrow bg-base-200 mb-6">
