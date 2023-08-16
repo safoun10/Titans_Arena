@@ -74,7 +74,12 @@
   },
 
   {
+
+    "category": "CallOfDuty",
+    "genre": "Action",
+
     "category": "racing",
+
     "title": "Call of Duty: Black Ops III",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2015-11-06",
