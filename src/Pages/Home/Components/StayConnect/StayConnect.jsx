@@ -10,7 +10,7 @@ const StayConnect = () => {
 
   return (
     <div>
-      <div className="">
+      <div className="pb-20">
         
         <div className="text-center my-10">
           <h3 className="text-[#68fb9a] font-semibold ">CONNECT WITH US</h3>
