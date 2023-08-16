@@ -1,0 +1,11 @@
+.group:hover .rotate-arrow {
+    transform: rotate(0deg) !important;
+  }
+  
+  .rotate-arrow {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rotate-arrow.-rotate-45 {
+    transform: rotate(-45deg);
+  }

@@ -21,7 +21,11 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< Updated upstream
 *.sw?
 
 MenuDropDown.jsx
 Navbar.jsx
+=======
+*.sw?
+>>>>>>> Stashed changes
