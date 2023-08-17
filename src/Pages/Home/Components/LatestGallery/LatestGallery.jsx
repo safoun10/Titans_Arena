@@ -21,7 +21,7 @@ const LatestGallery = () => {
       </div>
       <div className="md:flex text-center justify-center items-center py-10">
         <div className="md:w-1/3 text-white ">
-          <h2 className="text-4xl font-bold">Letest Gallery</h2>
+          <h2 className="text-3xl font-bold">Letest Gallery</h2>
           <p className="font-semibold text-sm text-[#45f882]">Letest Gallery</p>
         </div>
         <div className="text-white flex items-center relative mx-3">

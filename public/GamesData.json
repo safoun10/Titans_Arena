@@ -1,7 +1,6 @@
 [
   {
-    "category": "Assassin's Creed",
-    "genre": "Action",
+    "category": "Action",
     "title": "Assassin's Creed Origins",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2017-10-27",
@@ -75,8 +74,12 @@
   },
 
   {
-    "category": "Call of Duty",
+
+    "category": "CallOfDuty",
     "genre": "Action",
+
+    "category": "racing",
+
     "title": "Call of Duty: Black Ops III",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2015-11-06",
@@ -150,7 +153,6 @@
   },
   {
     "category": "Assassin's Creed",
-    "genre": "Action",
     "title": "Assassin's Creed Valhalla",
     "platforms": ["PlayStation 5", "Xbox Series X", "PC"],
     "releaseDate": "2020-11-10",
@@ -236,7 +238,6 @@
   },
   {
     "category": "RPG",
-    "genre": "RPG",
     "title": "The Elder Scrolls V: Skyrim",
     "platforms": ["PlayStation 4", "Xbox One", "Nintendo Switch", "PC"],
     "releaseDate": "2011-11-11",
@@ -322,7 +323,6 @@
   },
   {
     "category": "Uncharted",
-    "genre": "Action",
     "title": "Uncharted 4: A Thief's End",
     "platforms": ["PlayStation 4"],
     "releaseDate": "2016-05-10",
@@ -391,7 +391,6 @@
   },
   {
     "category": "Witcher",
-    "genre": "RPG",
     "title": "The Witcher 3: Wild Hunt",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2015-05-19",
@@ -476,7 +475,6 @@
   },
   {
     "category": "CallOfDuty",
-    "genre": "Action",
     "title": "Call of Duty: Modern Warfare",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2019-10-25",
@@ -554,7 +552,6 @@
   },
   {
     "category": "RedDeadRedemption",
-    "genre": "Action",
     "title": "Red Dead Redemption 2",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2018-10-26",
@@ -632,7 +629,6 @@
   },
   {
     "category": "Halo",
-    "genre": "Action",
     "title": "Halo: Infinite",
     "platforms": ["Xbox Series X", "PC"],
     "releaseDate": "2021-12-08",
@@ -710,7 +706,6 @@
   },
   {
     "category": "Battlefield",
-    "genre": "Action",
     "title": "Battlefield 2042",
     "platforms": ["PlayStation 5", "Xbox Series X", "PC"],
     "releaseDate": "2021-11-19",
@@ -788,7 +783,6 @@
   },
   {
     "category": "FarCry",
-    "genre": "Action",
     "title": "Far Cry 6",
     "platforms": ["PlayStation 5", "Xbox Series X", "PC"],
     "releaseDate": "2021-10-07",
@@ -866,7 +860,6 @@
   },
   {
     "category": "BioShock",
-    "genre": "Action",
     "title": "BioShock Infinite",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2013-03-26",
@@ -944,7 +937,6 @@
   },
   {
     "category": "Destiny",
-    "genre": "Action",
     "title": "Destiny 2",
     "platforms": ["PlayStation 4", "Xbox One", "PC"],
     "releaseDate": "2017-09-06",

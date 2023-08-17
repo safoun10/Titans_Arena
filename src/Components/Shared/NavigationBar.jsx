@@ -1,8 +1,15 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from '././../../../public/logoTest4.png';
+import { AuthContext } from "../../Contexts/Provider/AuthProvider";
+import logo from "././../../../public/logoTest4.png";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
 
   const navOptions = (
     <>
@@ -86,23 +93,44 @@ const NavigationBar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
-              logo
-            </span> */}
-            
-            
-            <img className="absolute h-[18rem] -top-[7rem] " src={logo}  alt="" />
+            <img
+              className="absolute h-[18rem] -top-[7rem] "
+              src={logo}
+              alt=""
+            />
             {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
-            
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-4">{navOptions}</ul>
         </div>
         <div className="navbar-end">
-          <Link to="/login" className="bt-primary font-bold">
-            Log In
-          </Link>
+          <div>
+            <div className="navbar-end">
+              {user ? (
+                <>
+                  <div className="flex gap-4 ">
+                    <div className="avatar online">
+                      <div className="w-10 rounded-full">
+                        <img src={user?.photoURL} alt="User Avatar" />
+                      </div>
+                    </div>
+                    <button
+                      className="btn btn-sm bg-blue-600"
+                      onClick={handleLogOut}
+                    >
+                      Logout
+                    </button>
+                  </div>
+                </>
+              ) : (
+                <Link className="btn btn-sm bg-blue-600" to="/login">
+                  Login
+                </Link>
+              )}
+            </div>
+          </div>
+
           {/* <Link to="/login" className="bt-primary font-bold">
             Sign Up
           </Link> */}
