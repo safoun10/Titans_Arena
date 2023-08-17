@@ -42,7 +42,7 @@ const Login = () => {
 
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200 ">
+      <div className="hero min-h-screen bg-base-200 bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">
             <h1 className="text-5xl mb-5 mt-5 text-center font-mono font-bold text-green-500">
