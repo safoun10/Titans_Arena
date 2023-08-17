@@ -10,10 +10,10 @@ const FAQSection = () => {
         primaryText="FAQ Zone"
         secondaryText="Gaming Queries Unveiled"
       ></Title>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-6">
         <div className="p-6">
           <div className="collapse collapse-arrow bg-base-200 mb-6">
-            <input type="radio" name="my-accordion-2" checked="checked" />
+            <input type="radio" name="my-accordion-2" defaultChecked />
             <div className="collapse-title text-xl font-medium">
               How has the rise of eSports impacted the gaming industry?
             </div>
@@ -28,7 +28,7 @@ const FAQSection = () => {
             </div>
           </div>
           <div className="collapse collapse-arrow bg-base-200 mb-6">
-            <input type="radio" name="my-accordion-2" checked="checked" />
+            <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               How have open-world games changed the way players engage with
               virtual environments?
@@ -43,7 +43,7 @@ const FAQSection = () => {
             </div>
           </div>
           <div className="collapse collapse-arrow bg-base-200 mb-6">
-            <input type="radio" name="my-accordion-2" checked="checked" />
+            <input type="radio" name="my-accordion-2" />
             <div className="collapse-title text-xl font-medium">
               How can the gaming industry address issues of crunch, labor
               rights, and mental health for game developers? ?
@@ -62,12 +62,12 @@ const FAQSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center md:justify-center">
           <Lottie
             loop
             animationData={lottie}
             play
-            style={{ width: 450, height: 450 }}
+            style={{ width: "100%", maxWidth: "450px", height: "auto" }}
           />
         </div>
       </div>
