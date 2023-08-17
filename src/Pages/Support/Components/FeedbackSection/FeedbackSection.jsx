@@ -4,7 +4,7 @@ import ratingLottie from "./rating-lottie.json";
 import emailjs from "@emailjs/browser";
 import Lottie from "react-lottie-player";
 import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 const FeedbackSection = () => {
   const form = useRef();
@@ -21,7 +21,7 @@ const FeedbackSection = () => {
       .then(
         (result) => {
           console.log(result.text);
-
+          
           toast("Message sent");
           const form = e.target;
           form.user_email.value = "";
@@ -40,15 +40,16 @@ const FeedbackSection = () => {
         primaryText="Feedback Central"
         secondaryText="Your Feedback Shapes Our Future"
       ></Title>
-      <div className="grid md:grid-cols-2 gap-6">
-        <div className="flex justify-center md:justify-center my-auto">
+      <div className="grid grid-cols-2 gap-6">
+        <div className="flex justify-center my-auto">
           <Lottie
             loop
             animationData={ratingLottie}
             play
-            style={{ width: "100%", maxWidth: "450px", height: "auto" }}
+            style={{ width: 450, height: 450 }}
           />
         </div>
+        {/* feedback form */}
         <div className="min-h-screen text-white flex items-center justify-center">
           <div className="max-w-md w-full p-6 shadow-md rounded-lg">
             <h2 className="text-2xl font-semibold mb-4">Feedback Form</h2>
@@ -86,7 +87,7 @@ const FeedbackSection = () => {
                 type="submit"
                 value="Submit"
                 className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500"
-              />
+              ></input>
             </form>
           </div>
         </div>
