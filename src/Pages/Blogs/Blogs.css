@@ -1,0 +1,41 @@
+.group:hover .rotate-arrow {
+  transform: rotate(0deg) !important;
+}
+
+.rotate-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate-arrow.-rotate-45 {
+  transform: rotate(-45deg);
+}
+
+.styled-link {
+  display: inline-block;
+  padding: 9px 24px;
+  background-color: #182029;
+  color: #8a8a8a;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-clip-path: polygon(
+    100% 0,
+    100% calc(100% - 13px),
+    calc(100% - 13px) 100%,
+    0 100%,
+    0 0
+  );
+  clip-path: polygon(
+    100% 0,
+    100% calc(100% - 13px),
+    calc(100% - 13px) 100%,
+    0 100%,
+    0 0
+  );
+}
+
+.styled-link:hover {
+  background-color: #45f882;
+  color: black;
+}
