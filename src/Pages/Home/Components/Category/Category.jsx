@@ -9,7 +9,7 @@ const Category = () => {
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
 
-  const url = `http://localhost:5000/Games?category=${category}`;
+  const url = `http://localhost:5000/games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
