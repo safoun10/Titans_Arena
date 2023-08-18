@@ -1,31 +1,72 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "../Home/Components/Category/Category.css";
 import "react-tabs/style/react-tabs.css";
 
 import GameCard from "../Home/Components/AllGames/GameCard";
+import { FaSearch } from "react-icons/fa";
 const AllGameCategory = () => {
   const [games, setGames] = useState([]);
+  console.log(games);
+
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
+  const searchRef = useRef(null);
+  const [search, setSearch] = useState("");
 
   const url = `http://localhost:5000/Games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setGames(data);
       });
   }, [category]);
 
+  useEffect(() => {
+    fetch(`http://localhost:5000/searchGames?search=${search}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setGames(data);
+        console.log(data);
+      });
+  }, [search]);
+
+  const handleSearch = () => {
+    console.log(searchRef.current.value);
+    setSearch(searchRef.current.value);
+  };
+
   const toggleTabList = () => {
     setIsTabListVisible(!isTabListVisible);
   };
-  console.log(category);
+  // console.log(searchGames);
 
   return (
     <>
+      <div className="py-5 px-10 flex justify-center items-center">
+        <input
+          type="text"
+          className="py-2 rounded px-10 lg:w-[50%] w-full relative"
+          name="search"
+          id="search"
+          ref={searchRef}
+          placeholder="Search Games"
+        />
+        <div className="absolute lg:left-[345px] left-12">
+          <FaSearch></FaSearch>
+        </div>
+        <input
+          type="submit"
+          onClick={() => handleSearch()}
+          className="border lg:px-10 px-3 py-[7px] bg-image text-black border-[#f36b3b]  rounded absolute lg:right-[335px] right-10 lg:w-[200px] w-[35%]"
+          name=""
+          value="Search Games"
+          id=""
+        />
+      </div>
+
       <div>
         <Tabs>
           <div className="lg:hidden">
