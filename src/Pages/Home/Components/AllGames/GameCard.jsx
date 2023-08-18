@@ -1,6 +1,8 @@
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const GameCard = ({ game }) => {
   const {
+    _id,
     image,
     review,
     title,
@@ -65,7 +67,8 @@ const GameCard = ({ game }) => {
         </p>
         {/* <p className="text-green-400  font-semibold text-center border-2 border-green-500 ">Learn More</p> */}
         <button className="border-2 md:text-[13px] rounded-tl-box rounded-br-box p-2 w-full font-bold hover:bg-green-500  border-green-500">
-          LEARN MORE
+        <Link to={`/games/${_id}`}>View Details</Link>
+          
         </button>
       </div>
     </div>
