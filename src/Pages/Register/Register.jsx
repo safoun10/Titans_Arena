@@ -37,14 +37,12 @@ const Register = () => {
             .then(() => {
               setErr("");
 
-              // Construct the user data to be sent in the POST request
               const saveUser = {
                 name: data.name,
                 email: data.email,
                 photoURL: data.photoUrl,
               };
 
-              // Send the user data as a POST request
               fetch("http://localhost:5000/users", {
                 method: "POST",
                 headers: {
