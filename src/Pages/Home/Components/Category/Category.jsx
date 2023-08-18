@@ -9,7 +9,7 @@ const Category = () => {
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
 
-  const url = `http://localhost:5000/games?category=${category}`;
+  const url = `https://titan-arena-server-test.vercel.app/games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
