@@ -14,7 +14,7 @@ const AllGameCategory = () => {
   const searchRef = useRef(null);
   const [search, setSearch] = useState("");
 
-  const url = `http://localhost:5000/Games?category=${category}`;
+  const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -25,7 +25,9 @@ const AllGameCategory = () => {
   }, [category]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/searchGames?search=${search}`)
+    fetch(
+      `https://titans-arena-server.vercel.app/searchGames?search=${search}`
+    )
       .then((res) => res.json())
       .then((data) => {
         setGames(data);
