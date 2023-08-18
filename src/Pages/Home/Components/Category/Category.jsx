@@ -9,7 +9,7 @@ const Category = () => {
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
 
-  const url = `https://titan-arena-server-test.vercel.app/games?category=${category}`;
+  const url = `https://titans-arena-server.vercel.app/games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -213,7 +213,6 @@ const Category = () => {
               ))}
             </div>
           </TabPanel>
-         
         </Tabs>
       </div>
     </>

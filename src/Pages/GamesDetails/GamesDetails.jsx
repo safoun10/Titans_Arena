@@ -32,7 +32,7 @@ const GamesDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://titan-arena-server-test.vercel.app/games/${id}`)
+    fetch(`https://titans-arena-server.vercel.app/games/${id}`)
       .then((res) => res.json())
       .then((data) => setGameDetails(data));
   }, []);
@@ -62,7 +62,7 @@ const GamesDetails = () => {
 
       <li className="nav-link">
         <NavLink
-        to={`/games/${_id}`}
+          to={`/games/${_id}`}
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           {title}

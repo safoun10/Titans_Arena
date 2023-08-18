@@ -14,7 +14,7 @@ const AllGameCategory = () => {
   const searchRef = useRef(null);
   const [search, setSearch] = useState("");
 
-  const url = `https://titan-arena-server-test-alaminhasanpro.vercel.app/Games?category=${category}`;
+  const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -26,7 +26,7 @@ const AllGameCategory = () => {
 
   useEffect(() => {
     fetch(
-      `https://titan-arena-server-test-alaminhasanpro.vercel.app/searchGames?search=${search}`
+      `https://titans-arena-server.vercel.app/searchGames?search=${search}`
     )
       .then((res) => res.json())
       .then((data) => {
