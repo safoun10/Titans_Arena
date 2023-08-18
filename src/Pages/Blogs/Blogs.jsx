@@ -145,7 +145,7 @@ const Blogs = () => {
           <input
             type="text"
             placeholder="SEARCH HERE..."
-            className="input bg-transparent placeholder:text-lg placeholder:font-semibold input-bordered input-success w-full max-w-lg "
+            className="input bg-transparent text-white placeholder:text-lg placeholder:font-semibold input-bordered input-success w-full max-w-lg "
           />
           <button type="submit" className="absolute right-4 text-gray-500 hover:text-[#45f882] duration-200"><FaSearch/></button>
           </form>
