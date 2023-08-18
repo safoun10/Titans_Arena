@@ -1,0 +1,33 @@
+[
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team01.png",
+    "title": "MD Al Amin Hasan",
+    "designation": "MERN STACK DEVELOPER"
+  },
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team02.png",
+    "title": "MD Sultan Mahmud Safoun",
+    "designation": "Software Engineer"
+  },
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team03.png",
+    "title": "Zakaria chowdhury Nabil",
+    "designation": "Software Engineer"
+  },
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team04.png",
+    "title": "Abdullah Al Numan Rahi",
+    "designation": "Software Engineer"
+  },
+
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team04.png",
+    "title": "Abdullah Al Numan Rahi",
+    "designation": "Software Engineer"
+  },
+  {
+    "image": "https://themedox.com/demo/mykd/assets/img/team/team04.png",
+    "title": "Saiflul Islam",
+    "designation": "Software Engineer"
+  }
+]
