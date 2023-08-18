@@ -48,7 +48,7 @@ const AllGameCategory = () => {
       <div className="py-5 px-10 flex justify-center items-center">
         <input
           type="text"
-          className="py-2 rounded px-10 lg:w-[50%] w-full relative"
+          className="py-2 rounded px-10 lg:w-[50%] w-full font-bold border-green-500 relative"
           name="search"
           id="search"
           ref={searchRef}
@@ -60,7 +60,7 @@ const AllGameCategory = () => {
         <input
           type="submit"
           onClick={() => handleSearch()}
-          className="border lg:px-10 px-3 py-[7px] bg-image text-black border-[#f36b3b]  rounded absolute lg:right-[335px] right-10 lg:w-[200px] w-[35%]"
+          className="border lg:px-10 px-3 py-[7px] bg-image font-bold  border-green-500  rounded absolute lg:right-[335px] bg-green-500 text-white right-10 lg:w-[200px] w-[35%]"
           name=""
           value="Search Games"
           id=""
