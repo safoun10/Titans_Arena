@@ -8,7 +8,16 @@ const Pagination = ({ totalGames, paginate, currentPage, gamesPerPage }) => {
     }
   
     return (
-      <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4">
+        <button
+          onClick={() => paginate(currentPage - 1)}
+          className={`mx-2 px-4 py-2 rounded-lg ${
+            currentPage === 1 ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'bg-green-500 text-white'
+          }`}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </button>
         {pageNumbers.map(number => (
           <button
             key={number}
@@ -20,6 +29,15 @@ const Pagination = ({ totalGames, paginate, currentPage, gamesPerPage }) => {
             {number}
           </button>
         ))}
+        <button
+          onClick={() => paginate(currentPage + 1)}
+          className={`mx-2 px-4 py-2 rounded-lg ${
+            currentPage === Math.ceil(totalGames / gamesPerPage) ? 'bg-gray-300 text-gray-600 cursor-not-allowed' : 'bg-green-500 text-white'
+          }`}
+          disabled={currentPage === Math.ceil(totalGames / gamesPerPage)}
+        >
+          Next
+        </button>
       </div>
     );
   };
