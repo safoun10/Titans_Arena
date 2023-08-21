@@ -29,8 +29,8 @@ const StayConnect = () => {
           </svg>
         </div>
         <div className="grid md:grid-cols-6  grid-cols-2   ">
-          {social.map((link) => (
-            <div className="text-white 
+          {social.map((link, i) => (
+            <div key={i} className="text-white 
             ">
           
               <div className="border-2 w-44 h-44 flex flex-col 

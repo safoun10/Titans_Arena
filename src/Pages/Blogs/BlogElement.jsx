@@ -11,11 +11,13 @@ import img from "../../../public/Images/Banner1.png";
 import { Link } from "react-router-dom";
 
 const BlogElement = ({blog}) => {
-    const {title,author,date, comments, content, featured_image} = blog;
+    const {_id,title,author,date, comments, content, featured_image} = blog;
 
+    console.log(blog);
+    
     return (
     <div className="bg-[#182029] mb-10">
-      <img className="" src={featured_image} alt="blog-image" />
+      <img className="w-full" src={featured_image} alt="blog-image" />
       <div className="py-6 px-11">
         <div className="text-white flex gap-6">
           <p className="flex gap-3 items-center font-semibold text-lg">
@@ -41,7 +43,7 @@ const BlogElement = ({blog}) => {
 
         <div className="text-slate-400 py-4 text-lg flex justify-between font-semibold items-center">
           <div className="flex items-center">
-            <Link className="hover:text-[#45f882] group flex items-center">
+            <Link className="hover:text-[#45f882] group flex items-center" to={`/blog/${_id}`}>
               READ MORE
               <span className="inline-block pl-2 text-[#45f882] rotate-arrow group-hover:rotate-0">
                 <FaArrowRight className="rotate-arrow -rotate-45" />

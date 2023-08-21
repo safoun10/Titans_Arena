@@ -1,103 +1,37 @@
 import React, { useEffect, useState } from "react";
 import {
-  FaCalendarDays,
-  FaFacebookF,
-  FaComments,
-  FaLinkedinIn,
-  FaTwitter,
   FaArrowRight,
 } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
-import img from "../../../public/Images/Banner1.png";
 import { Link } from "react-router-dom";
 import "./Blogs.css";
 import BlogElement from "./BlogElement";
+import BlogBanner from "./BlogBanner";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    fetch("../../../public/blogs.json")
+    fetch("http://localhost:5000/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
 
+console.log("single data", blogs);
+
   return (
     <div>
       {/* blog page banner start */}
-      <div
-        className="bg-cover bg-center h-96"
-        style={{
-          backgroundImage: "url('../../../public/breadcrumb_bg02.jpg')",
-        }}
-      >
-        <div className="py-24 text-center text-white font-bold">
-          <h1 className="pt-16 text-5xl">BLOG STANDARD</h1>
-          <h2 className="text-xl">BLOG LIST</h2>
-        </div>
-      </div>
+      <BlogBanner title="Blogs List"/>
       {/* blog page banner end */}
 
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}
         <div className="col-span-4">
           {/* single blog start*/}
-          {blogs.slice(0, 2).map((blog, i) => 
-          <BlogElement key={i} blog={blog}/>
-          )}
-          
-          {/* single blog end*/}
-          {/* single blog start*/}
-          {/* <div className="bg-[#182029] mb-10">
-            <img className="" src={img} alt="blog-image" />
-            <div className="py-6 px-11">
-              <div className="text-white flex gap-6">
-                <p className="flex gap-3 items-center font-semibold text-lg">
-                  By{" "}
-                  <span className="duration-200 hover:text-[#45f882]">
-                    ADMIN
-                  </span>
-                </p>
-                <p className="flex gap-3 items-center font-semibold text-lg">
-                  <FaCalendarDays className="text-[#45f882]" />{" "}
-                  <span>AUG 19, 2023</span>
-                </p>
-                <p className="flex gap-3 items-center font-semibold text-lg">
-                  <FaComments className="text-[#45f882] text-lg" />{" "}
-                  <span>comments</span>{" "}
-                </p>
-              </div>
-              <div className="text-white">
-                <h1 className="text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
-                  ZOMBIE LAND TOURNAMENT MAX
-                </h1>
-                <p className="text-slate-400 text-xl font-semibold pb-3">
-                  Lorem ipsum dolor sit amet, consteur adipiscing Duis elementum
-                  solliciin is yaugue euismods Nulla ullaorper. Lorem Ipsum is
-                  simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the industry's standard.
-                </p>
-              </div>
-
-              <div className="text-slate-400 py-4 text-lg flex justify-between font-semibold items-center">
-                <div className="flex items-center">
-                  <Link className="hover:text-[#45f882] group flex items-center">
-                    READ MORE
-                    <span className="inline-block pl-2 text-[#45f882] rotate-arrow group-hover:rotate-0">
-                      <FaArrowRight className="rotate-arrow -rotate-45" />
-                    </span>
-                  </Link>
-                </div>
-
-                <div className="flex items-center gap-3">
-                  <p className="mr-2">SHARE :</p>
-                  <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
-                </div>
-              </div>
-            </div>
-          </div> */}
+          {blogs.slice(0, 2).map((blog, i) => (
+            <BlogElement key={i} blog={blog} />
+          ))}
           {/* single blog end*/}
         </div>
         {/* Blogs page left side end*/}
@@ -117,24 +51,28 @@ const Blogs = () => {
             </button>
           </form>
           {/* RECENT POSTS part Start*/}
-          
+
           <div className="text-white py-6">
             <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
-            {blogs.slice(5, 9).map((blog, i) => 
-            <Link key={i} >
-            <div className="flex gap-4 pb-4">
-              <img className="w-[128px] rounded-md" src={blog.featured_image} alt="" />
-              <div className="">
-                <h2 className="lg:pr-7 text-xl font-semibold hover:text-[#45f882] transition-colors">
-                  {blog.title}
-                </h2>
-                <p className="text-lg font-semibold text-slate-500">
-                  {blog.date}
-                </p>
-              </div>
-            </div>
-          </Link>
-          )}
+            {blogs.slice(5, 9).map((blog, i) => (
+              <Link key={i}>
+                <div className="flex gap-4 pb-4">
+                  <img
+                    className="w-[128px] rounded-md"
+                    src={blog.featured_image}
+                    alt=""
+                  />
+                  <div className="">
+                    <h2 className="lg:pr-7 text-xl font-semibold hover:text-[#45f882] transition-colors">
+                      {blog.title}
+                    </h2>
+                    <p className="text-lg font-semibold text-slate-500">
+                      {blog.date}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
           {/* RECENT POSTS part end*/}
           {/* NEWS LETTER part start*/}

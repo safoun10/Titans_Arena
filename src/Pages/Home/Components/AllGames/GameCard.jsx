@@ -24,6 +24,7 @@ const GameCard = ({ game }) => {
     systemSupport,
     category
   } = game;
+  
   return (
     <div
       style={{
