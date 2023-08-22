@@ -18,7 +18,8 @@ const ReviewSection = () => {
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);
-  console.log(review);
+  console.log("review",review);
+
 
   return (
     <div>
@@ -46,8 +47,8 @@ const ReviewSection = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {review.map((data) => (
-            <SwiperSlide>
+          {review.map((data, i) => (
+            <SwiperSlide key={i}>
               <div>
                 <div className="card md:w-72 md:h-80 w-72 h-72 shadow-xl mt-20 bg-[#121a23] border-4 border-green-400 flex-col flex items-center ">
 

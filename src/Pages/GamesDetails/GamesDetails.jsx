@@ -39,6 +39,7 @@ const GamesDetails = () => {
       .then((res) => res.json())
       .then((data) => setGameDetails(data));
   }, []);
+  
   const navOptions = (
     <>
       <li className="nav-link">

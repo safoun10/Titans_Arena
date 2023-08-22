@@ -28,8 +28,8 @@ const OurTeamMembers = () => {
         </svg>
       </div>
       <div className="grid md:grid-cols-6 justify-center  gap-4 grid-cols-1  md:mx-auto mx-6  text-white ">
-        {members.map((member) => (
-          <div className="border-2 rounded-2xl h-64  bg-[#121a23] 
+        {members.map((member, i) => (
+          <div key={i} className="border-2 rounded-2xl h-64  bg-[#121a23] 
           hover:bg-gradient-to-b from-transparent to-[#68fb9a]
             border-[#68fb9a] flex-col   flex items-center justify-center  ">
             <img

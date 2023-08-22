@@ -24,6 +24,7 @@ const GameCard = ({ game }) => {
     systemSupport,
     category
   } = game;
+  
   return (
     <div
       style={{
@@ -68,7 +69,6 @@ const GameCard = ({ game }) => {
         {/* <p className="text-green-400  font-semibold text-center border-2 border-green-500 ">Learn More</p> */}
         <button className="border-2 md:text-[13px] rounded-tl-box rounded-br-box p-2 w-full font-bold hover:bg-green-500  border-green-500">
         <Link to={`/games/${_id}`}>View Details</Link>
-          
         </button>
       </div>
     </div>
