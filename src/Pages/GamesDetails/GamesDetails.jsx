@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { NavLink, useParams } from "react-router-dom";
+import GameHeading from "./Components/GameHeading";
+import GameInfo from "./Components/GameInfo/GameInfo";
+import RealLinks from "./Components/RealLinks/RealLinks";
 import "./GamesDetails.css";
 
 const GamesDetails = () => {
@@ -82,9 +85,6 @@ const GamesDetails = () => {
           className=" h-[350px] flex items-center"
         >
           <div>
-            <h2 className="text-4xl font-bold">{title}</h2>
-            <h3 className="text-2xl font-bold">Genre: {category}</h3>
-            <h3 className="text-2xl font-bold">Pulisher: {publisher}</h3>
             <div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="flex gap-4 text-xs">{navOptions}</ul>
@@ -92,6 +92,13 @@ const GamesDetails = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <GameHeading gameDetails={gameDetails} />
+      </div>
+      <div>
+        <GameInfo />
+        <RealLinks/>
       </div>
     </div>
   );
