@@ -5,8 +5,13 @@ import "react-tabs/style/react-tabs.css";
 
 import GameCard from "../Home/Components/AllGames/GameCard";
 import { FaSearch } from "react-icons/fa";
+import Pagination from "./Pagination";
+
 const AllGameCategory = () => {
   const [games, setGames] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const gamesPerPage = 8; // Number of games to display per page
+
   console.log(games);
 
   const [category, setCategory] = useState("All Games");
@@ -25,9 +30,7 @@ const AllGameCategory = () => {
   }, [category]);
 
   useEffect(() => {
-    fetch(
-      `https://titans-arena-server.vercel.app/searchGames?search=${search}`
-    )
+    fetch(`https://titans-arena-server.vercel.app/searchGames?search=${search}`)
       .then((res) => res.json())
       .then((data) => {
         setGames(data);
@@ -187,71 +190,78 @@ const AllGameCategory = () => {
           </div>
 
           <TabPanel>
+            <div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
+            </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
+          </TabPanel>
+
+          <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
-            </div>
-          </TabPanel>
-          <TabPanel>
-            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.map((game, i) => (
+              {games.slice(0, 7).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
