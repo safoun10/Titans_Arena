@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
+import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
+
 import logo from "././../../../public/logoTest4.png";
 import "./NavigationBar.css";
 
@@ -106,6 +108,7 @@ const NavigationBar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-4">{navOptions}</ul>
+          <PrimaryButton/>
         </div>
         <div className="navbar-end">
           <div>
@@ -132,6 +135,7 @@ const NavigationBar = () => {
                 </Link>
               )}
             </div>
+           
           </div>
 
           {/* <Link to="/login" className="bt-primary font-bold">
