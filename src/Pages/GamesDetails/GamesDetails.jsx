@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { NavLink, useParams } from "react-router-dom";
+import Comments from "./Components/Comment/Comment";
 import GameHeading from "./Components/GameHeading";
 import GameInfo from "./Components/GameInfo/GameInfo";
 import RealLinks from "./Components/RealLinks/RealLinks";
@@ -126,6 +127,7 @@ const GamesDetails = () => {
         </div>
       </div>
       <TestCompo />
+      <Comments/>
     </div>
   );
 };
