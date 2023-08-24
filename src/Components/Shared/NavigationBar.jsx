@@ -108,7 +108,6 @@ const NavigationBar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="flex gap-4">{navOptions}</ul>
-          <PrimaryButton/>
         </div>
         <div className="navbar-end">
           <div>
@@ -122,7 +121,7 @@ const NavigationBar = () => {
                       </div>
                     </div>
                     <button
-                      className="btn btn-sm bg-blue-600"
+                      className="custom-button hover:bg-green-500 py-2 px-4"
                       onClick={handleLogOut}
                     >
                       Logout
@@ -130,12 +129,13 @@ const NavigationBar = () => {
                   </div>
                 </>
               ) : (
-                <Link className="btn btn-sm bg-blue-600" to="/login">
-                  Login
+                <Link to="/login">
+                  <button className="custom-button hover:bg-green-500 py-2 px-5">
+                    Login
+                  </button>
                 </Link>
               )}
             </div>
-           
           </div>
 
           {/* <Link to="/login" className="bt-primary font-bold">
