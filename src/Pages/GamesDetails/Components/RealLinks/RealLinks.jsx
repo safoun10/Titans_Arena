@@ -3,12 +3,12 @@ import { FaSquareFacebook, FaSquareInstagram, FaSquareTwitter, FaSquareWhatsapp 
 
 const RealLinks = () => {
   return (
-    <div className="bg-slate-900 py-4">
+    <div className="py-4">
       <h1 className="text-5xl text-center">Get It From</h1>
       <div className=" pb-6 pt-4 flex gap-4 text-2xl justify-center  ">
-        <p className="   bg-black rounded-md  p-4">Windows Store</p>
-        <p className="   bg-black rounded-md  p-4">Google Play Store</p>
-        <p className="   bg-black rounded-md  p-4">App Store</p>
+        <p className="   border rounded-md  p-4">Windows Store</p>
+        <p className="   border rounded-md  p-4">Google Play Store</p>
+        <p className="   border rounded-md  p-4">App Store</p>
       </div>
       <h1 className="text-3xl text-center">Share This On</h1>
       <div className=" pb-6 pt-4 flex gap-4 text-2xl justify-center  ">

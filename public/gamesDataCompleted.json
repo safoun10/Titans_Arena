@@ -2,19 +2,28 @@
   {
     "category": "Action",
     "title": "Grand Theft Auto V",
-    "image": "example.com",
+    "image": "https://m.media-amazon.com/images/I/91O2cwfTxDL._AC_UF1000,1000_QL80_.jpg",
+    "coverImage": {
+      "coverImage1": "https://wallpaperaccess.com/full/707055.jpg",
+      "coverImage2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ173xbCWUTmVgGnCCIU3cfMPFMTEMh740mdnKRKvxji4887VALlND_0nKItVnN71SE-Io&usqp=CAU",
+      "coverImage3": "https://qph.cf2.quoracdn.net/main-qimg-87c15f19a882f06490c5ac00ecf2fec2.webp",
+      "coverImage4": "https://i.pinimg.com/736x/f6/a2/6e/f6a26e74b4427fa3dcc01b0204f88822.jpg",
+      "coverImage5": "https://www.creocommunity.pl/wp-content/uploads/2022/04/1650079814_Lista-kodow-do-GTA-5-na-PS5-PS4-PC-Xbox.jpg"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-04-14",
     "description": {
-      "description1": "lorem15",
-      "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle1": "Exploring the Dynamic World of Grand Theft Auto V: A Five-Part Adventure",
+      "description1": "Dive into the bustling metropolis of Los Santos, the heart of Grand Theft Auto V's open-world landscape. From the sun-soaked beaches to the towering skyscrapers, this section takes you on a virtual tour of the city's diverse neighborhoods, iconic landmarks, and the intricate details that bring this virtual world to life.Experience the adrenaline rush of planning and executing elaborate heists that blur the lines between chaos and precision. From infiltrating high-security locations to skydiving onto moving vehicles, Grand Theft Auto V's missions offer an unparalleled variety of action-packed challenges that keep players engaged and eager for the next thrilling escapade.",
+      "descriptionTitle2": " Characters and Connections",
+      "description2": "Meet the unforgettable trio at the center of the game's narrative: Michael, a retired bank robber; Franklin, a hustler looking for bigger opportunities; and Trevor, a volatile and unpredictable criminal. Delve into their individual stories, intertwined fates, and the unique gameplay perspectives they offer, shaping your experience of the game's immersive storyline. Venture beyond the main story and uncover a multitude of recreational activities and distractions. Engage in a game of golf, participate in street races, or simply enjoy a leisurely bike ride along the scenic routes. This section explores the extensive list of side activities, proving that there's much more to Los Santos than just a life of crime.",
+      "descriptionTitle3": "Online Mayhem in Grand Theft Auto Online",
+      "description3": "Shift your focus to the vast online multiplayer component of Grand Theft Auto V: Grand Theft Auto Online. Discover the ever-evolving world where you can create your own criminal empire, team up with friends for heists, engage in competitive modes, or simply indulge in sandbox-style chaos. Explore the constant updates and expansions that ensure this online experience remains fresh and captivating.In this five-part blog series, we'll embark on a comprehensive journey through the multifaceted realm of Grand Theft Auto V. From the bustling streets to the sun-soaked beaches, from heart-pounding heists to relaxing recreational activities, and from the engaging main story to the dynamic online realm, there's no shortage of excitement and exploration in this iconic game."
     },
     "extraText": {
-      "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraTitle": "Grand Theft Auto Online",
+      "extraText1": "Delve into Grand Theft Auto Online, ",
+      "extraText2": "an ever-expanding multiplayer universe offering endless opportunities for criminal enterprises, competitive gameplay, and social interaction, ensuring that the adventure never truly ends."
     },
     "developer": "Rockstar North",
     "publisher": "Rockstar Games",
@@ -26,17 +35,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/gta-v-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EKnPJPKlTMMhLAvIqgMsbMQYMvDMFW6TZw&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxi0G1FBOIrhLrrWQKkrGSZop6ae5zrjdlA&usqp=CAU",
+      "image3": "https://libertycity.net/uploads/gallery/main/69/gta_v_pc_screenshot_069__10_-pcgh_2.jpg",
+      "image4": "https://www.igrandtheftauto.com/bigimage/4302/"
     },
     "screenshots": [
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/2.jpg",
-      "https://example.com/screenshots/gta-v/3.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRvRLuJqxs837j2TzI96_d6wwsCIFGyFhV1Q",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdjZYomew_D6e7rz_dajgTXsMi0Mjupj5d0PDfCjJ5rIkqVGVX_N3GyGmVBHKXCnI8YSw&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVOX1dfaM8shbwrrT9wozz2onqAG6kz7t54Mxa5QlBleFrtJtddfsDRcNVzg2nQoHu7I&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoIdGLv6SdJXaV5P4bumww5CfuF3P7AiT5nrnvVqgXRp28L6ptwKf3lu-Fx3zIO7z4LM&usqp=CAU",
+      "https://img.gurugamer.com/resize/740x-/2023/04/20/902728436-preview-20170410222704-1-1fc5.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
@@ -93,19 +102,28 @@
   {
     "category": "Action",
     "title": "DOOM Eternal",
-    "image": "example.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnk_ok4gpDN3keHmqNScIlETTDjxM7uJl0Q&usqp=CAU",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
     "description": {
-      "description1": "lorem15",
-      "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle1": "Mastering DOOM Eternal: Essential Tips for Becoming a Slayer",
+      "description1": "DOOM Eternal demands split-second decision-making and impeccable reflexes. To truly become a Slayer, you'll need to embrace the chaos and master the dance of death that defines the game's combat. From perfecting your weapon-switching to utilizing the environment strategically, this guide breaks down the key tactics that separate the average player from the ultimate demon annihilator.",
+      "descriptionTitle2": "Exploring the Lore of DOOM Eternal: Unraveling Hell's Impact on Earth",
+      "description2": "Step into the apocalyptic world of DOOM Eternal, where the battle between Heaven, Hell, and humanity rages on. Uncover the tragic history of Earth's invasion, the motivations of the enigmatic Doom Slayer, and the deeper philosophical themes that underlie the chaos. Discover the intricate storytelling that weaves through the mayhem.",
+      "descriptionTitle3": "The Artistry of DOOM Eternal: Concept Art and Visual Development",
+      "description3": "Behind every demon's snarl and every hellish vista lies a meticulous process of artistic creation. Explore the concept art that served as the foundation for DOOM Eternal's nightmarish creatures and breathtaking environments. Uncover the creative minds and artistic vision that brought this violent yet captivating world to life. The roar of the chainsaw, the pounding of heavy riffs — DOOM Eternal's soundtrack is a force to be reckoned with. Delve into the sonic landscape that accompanies your demon-slaying spree. Learn how composer Mick Gordon's fusion of metal and electronic elements elevates the intensity of the gameplay and immerses you deeper into the demon-infested world."
     },
     "extraText": {
-      "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraTitle": "Design Evolution in DOOM Eternal",
+      "extraText1": "A Sonic Assault on the Senses",
+      "extraText2": "DOOM Eternal pays homage to its classic roots while embracing modern design philosophies. Dive into the evolution of level design, examining the intricate architecture and interconnectedness of the game's environments. Explore how the combination of old-school sensibilities and modern technology creates a heart-pounding gameplay experience like no other."
     },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
@@ -123,11 +141,11 @@
       "image4": "example.com"
     },
     "screenshots": [
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/2.jpg",
-      "https://example.com/screenshots/doom-eternal/3.jpg"
+      "https://fpschampion.com/wp-content/uploads/2022/03/Doom-Eternals-Face-Off.jpg",
+      "https://miro.medium.com/v2/resize:fit:1400/1*KaB4CseapljxEs07lYyVew.jpeg",
+      "https://cdn.mos.cms.futurecdn.net/hxhjWu67RvF5aStMtq4voY-480-80.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vlnw3RiT4VFME2aCqD9ZAH3Bn2-Vs7NY1LCAjvQMvmf3vCCoYAjTF5IvZuzyF_AfUIM&usqp=CAU",
+      "https://www.newgamenetwork.com/images/uploads/gallery/DoomEternal/doometernal_09.jpg"
     ],
     "minimumRequirements": {
       "OS": "64-bit Windows 7 / 64-Bit Windows 10",
@@ -184,19 +202,28 @@
   {
     "category": "Action",
     "title": "Assassin's Creed Valhalla",
-    "image": "example.com",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2208920/capsule_616x353.jpg?t=1690324537",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
     "description": {
-      "description1": "lorem15",
-      "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle1": "Viking Raids and Settlement",
+      "description1": "Players can lead Viking raids on English kingdoms to gather resources, wealth, and forge alliances. Additionally, you'll manage a growing settlement in England, customizing and upgrading various buildings to improve its functions.",
+      "descriptionTitle2": "Combat and Dual-Wielding",
+      "description2": "Combat in Valhalla emphasizes brutality and intensity. Players can dual-wield weapons, including shields, swords, axes, and more, to create their own combat style. Abilities and special moves enhance the gameplay experience.",
+      "descriptionTitle3": "Hidden Ones vs. Order of the Ancients",
+      "description3": "The game's overarching conflict revolves around the Assassin Brotherhood (Hidden Ones) and the Templar Order (Order of the Ancients). Eivor's journey involves both personal growth and participation in the age-old conflict between these two factions. Generally positive reviews from both players and critics. Its engaging storyline, expansive open world, and incorporation of Viking culture were praised. The game's attention to historical detail, as well as its choice-driven gameplay, were also highlighted as positive aspects."
     },
     "extraText": {
-      "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraTitle": "Assassin's Creed Valhalla",
+      "extraText1": "Hidden Ones vs. Order of the Ancients",
+      "extraText2": "Assassin's Creed Valhalla  is set in the 9th century during the Viking Age and follows the story of Eivor, a Viking raider who becomes embroiled in the ongoing conflict between the Assassin Brotherhood and the Templar Order. Players can choose to play as either a male or female Eivor. The game features a combination of open-world exploration, stealth-based gameplay, and epic battles."
     },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
@@ -208,17 +235,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/assassins-creed-valhalla-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/01lCIVJSjkjeeg5BYDawQi/ca2096a8eea91a495ebda8136e963487/ACV_KeyArt11__960x540.png",
+      "image2": "https://www.rappler.com/tachyon/2021/12/ac-dawn-ragnarok-1.jpg",
+      "image3": "https://www.rappler.com/tachyon/2021/12/ac-dawn-ragnarok-1.jpg",
+      "image4": "https://stevivor.com/wp-content/uploads/2020/07/Assassins-Creed-Valhalla-4.jpg"
     },
     "screenshots": [
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/2.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/3.jpg"
+      "https://s2.dmcdn.net/v/SZxfj1X-38SGq77UR/x1080",
+      "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2020/07/acvleak.jpg?resize=750%2C400&ssl=1",
+      "https://assets.hardwarezone.com/img/2020/11/ac-valhalla-combat_0.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhp4E0Yhdoihde7dwIrkxP_A61-F_YljD0190XcJ4lVUW1aRj9S50H4e_K8cqdbzP0NEU&usqp=CAU",
+      "https://staticg.sportskeeda.com/editor/2021/12/e19a5-16393083836625-1920.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 10 (64-bit only)",
@@ -275,19 +302,28 @@
   {
     "category": "Action",
     "title": "Call of Duty: Modern Warfare",
-    "image": "example.com",
+    "image": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-RELEASE-TOUT.jpg",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-10-25",
     "description": {
-      "description1": "lorem15",
-      "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle1": "Multiplayer",
+      "description1": "The game's multiplayer mode offers a variety of maps, game modes, and customization options. It includes classic game modes like Team Deathmatch, Domination, and Search and Destroy, as well as new modes like Ground War, which features large-scale battles.",
+      "descriptionTitle2": "Cross-Platform Play",
+      "description2": "The game supports cross-platform multiplayer, allowing players on different platforms (such as PlayStation, Xbox, and PC) to play together.The game features cooperative multiplayer missions known as Special Operations, offering a separate storyline from the campaign. These missions can be played solo or with a team of up to four players.",
+      "descriptionTitle3": "Warzone",
+      "description3": "Call of Duty: Warzone is a free-to-play battle royale mode set in the same universe as Modern Warfare. It features a large map, intense battles, and a unique Gulag mechanic that allows players a chance to respawn after being eliminated. generally positive reviews for its engaging single-player campaign, impressive visuals, and solid multiplayer offerings. The game's emphasis on realism and the darker themes it explores were both praised and criticized by different parts of the gaming community "
     },
     "extraText": {
-      "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraTitle": "Single-Player Campaign:",
+      "extraText1": " Modern Warfare trilogy first-person shooter video game",
+      "extraText2": "The campaign features a morally complex narrative that explores themes of modern warfare, terrorism, and the blurred lines between right and wrong. It introduces players to new characters while also featuring familiar faces from the original Modern Warfare trilogy."
     },
     "developer": "Infinity Ward",
     "publisher": "Activision",
@@ -299,17 +335,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/cod-modern-warfare-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://images.pushsquare.com/screenshots/80258/large.jpg",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCyWNtYpBe2OA5dIO-zpJsOMHYd01x_bn_0QwsbHw21SC7-fCRxY_KZ0aKUHTnvwGr1lk&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmzwGJGqcxQfdW3WZ1VKGsU-vRQsuRf2JcwniIk1ux1RqgwL1WbkJwQ0YXZJ9Qc_NEnE&usqp=CAU",
+      "image4": "https://ip.trueachievements.com/remote/dlassets-ssl.xboxlive.com/public/content/f8d4e242-2ac0-42ae-ae3b-02b010216693/3a8ce90a-eb27-4569-aa91-242305255cf3/56e3b47f-c022-488e-b988-c97523a128b4.png?width=900"
     },
     "screenshots": [
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/2.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/3.jpg"
+      "https://cdn.wccftech.com/wp-content/uploads/2016/08/Call-of-Duty-Modern-Warfare-Remastered-2.png",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/call-of-duty-modern-warfare-remastered-screenshots-ak-gas-mask.jpg?q=50&fit=contain&w=767&h=&dpr=1.5",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/056930.jpg?width=900",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/056927.jpg?width=900",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/062150.jpg?width=900"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 64-bit / Windows 10 64-bit",
@@ -366,19 +402,28 @@
   {
     "category": "Action",
     "title": "Red Dead Redemption 2",
-    "image": "example.com",
+    "image": "https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
     "description": {
-      "description1": "lorem15",
-      "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle1": "Story and Characters:",
+      "description1": " The heart of Red Dead Redemption 2 lies in its richly detailed characters and their intertwined stories. Arthur Morgan, a rugged outlaw, becomes the focal point of the game's narrative, as players explore his loyalty to the gang, his internal conflicts, and his personal journey of redemption.",
+      "descriptionTitle2": "Realism and Detail",
+      "description2": " Red Dead Redemption 2 is renowned for its attention to detail, from the meticulously animated wildlife to the weather systems that impact gameplay. Each weapon, piece of clothing, and horse behaves realistically, adding to the immersive experience.Beyond the main storyline, players can engage in a plethora of side activities such as gambling, hunting, fishing, and bounty hunting.",
+      "descriptionTitle3": "Side Activities",
+      "description3": "The game received widespread critical acclaim for its breathtaking visuals, captivating storytelling, and the depth of its open world. Its attention to historical accuracy and the sheer scope of its content were also praised. Critics hailed it as a monumental achievement in video game design, showcasing Rockstar's dedication to creating immersive and intricate game worlds."
     },
     "extraText": {
-      "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraTitle": "Red Dead Redemption 2",
+      "extraText1": "Story and Characters The heart",
+      "extraText2": "The game is set in a vast and meticulously crafted open world that captures the essence of the untamed American frontier. Players step into the worn boots of Arthur Morgan, a member of the Van der Linde gang, as they navigate the challenges of a changing world. The game's world is teeming with life, from bustling cities to remote wilderness, each area offering a unique atmosphere and challenges."
     },
     "developer": "Rockstar San Diego",
     "publisher": "Rockstar Games",
@@ -390,17 +435,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/red-dead-redemption-2-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbbFsoYIPH99oCCQXDHg0SwFxGDpS0Yxcm2Vqf7lu7q9eotbDcO13v0Xd3ywlx-gXmySs&usqp=CAU",
+      "image2": "https://sm.ign.com/t/ign_in/screenshot/r/red-dead-r/red-dead-redemption-2-pc-screenshots_stdk.1080.jpg",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkPGn0I9LrR965Wi4f2Xwx-7P0GoKo06fKTYguzmaaTBvigXv1k5tI487J7dUWYe-Z5Io&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_qn_cc40jLYhOeo1NwlZL_6yGkfvup7NXaZkN_Sxq6HiEyGJ8Z_9GXmXvGr1WmElOcDk&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/2.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/3.jpg"
+      "https://www.techspot.com/images2/news/bigimage/2020/11/2020-11-26-image-11.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXEQq2WQg-FbRDAvblWhCLQmqoeJvR-YXn1b3huMUKIs6IPdkYOkgVgA_YzAwrM4CWKA&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkOse45muZA6lNGmZpx-i25Y_XBUmOZga44VYhrC5FnBbp5Im7ELsCo1C5QmG2UqmXZ8&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTcOwZ8Kil7Df9t92ktJ19qTxLijfVyw6C_Jx5pn0yJQmWVJ5T-LLwpBM58HqRoW1WJ-Q&usqp=CAU",
+      "https://gamespot.com/a/uploads/original/1179/11799911/3383938-duck.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 - Service Pack 1 (6.1.7601)",
@@ -458,18 +503,27 @@
     "category": "Action",
     "title": "Dark Souls III",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
@@ -549,18 +603,27 @@
     "category": "Action",
     "title": "Horizon Zero Dawn",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Guerrilla",
     "publisher": "Sony Interactive Entertainment",
@@ -645,18 +708,27 @@
     "category": "Action",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
@@ -736,18 +808,27 @@
     "category": "Action",
     "title": "Uncharted 4: A Thief's End",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-05-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
@@ -832,18 +913,27 @@
     "category": "Action",
     "title": "Metal Gear Solid V: The Phantom Pain",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-09-01",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Kojima Productions",
     "publisher": "Konami",
@@ -923,18 +1013,27 @@
     "category": "Action",
     "title": "Batman: Arkham Knight",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-06-23",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Rocksteady Studios",
     "publisher": "Warner Bros. Interactive Entertainment",
@@ -1014,18 +1113,27 @@
     "category": "Action",
     "title": "DOOM Eternal",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
@@ -1105,18 +1213,27 @@
     "category": "Action",
     "title": "Red Dead Redemption 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Rockstar Studios",
     "publisher": "Rockstar Games",
@@ -1196,18 +1313,27 @@
     "category": "Action",
     "title": "Assassin's Creed Valhalla",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
@@ -1287,18 +1413,27 @@
     "category": "Action",
     "title": "Horizon Zero Dawn",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
@@ -1378,18 +1513,27 @@
     "category": "Action",
     "title": "Far Cry 6",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2021-10-07",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Ubisoft Toronto",
     "publisher": "Ubisoft",
@@ -1469,18 +1613,27 @@
     "category": "Battle Royale",
     "title": "Apex Legends",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-04",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Respawn Entertainment",
     "publisher": "Electronic Arts",
@@ -1560,18 +1713,27 @@
     "category": "Battle Royale",
     "title": "PlayerUnknown's Battlegrounds (PUBG)",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2017-12-20",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "PUBG Corporation",
     "publisher": "PUBG Corporation",
@@ -1651,18 +1813,27 @@
     "category": "Battle Royale",
     "title": "Fortnite",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2017-07-25",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Epic Games",
     "publisher": "Epic Games",
@@ -1742,18 +1913,27 @@
     "category": "Battle Royale",
     "title": "Call of Duty: Warzone",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-03-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Infinity Ward",
     "publisher": "Activision",
@@ -1833,18 +2013,27 @@
     "category": "Battle Royale",
     "title": "Realm Royale",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-06-05",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Heroic Leap Games",
     "publisher": "Hi-Rez Studios",
@@ -1924,18 +2113,27 @@
     "category": "Battle Royale",
     "title": "Hyper Scape",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
@@ -2015,18 +2213,27 @@
     "category": "Battle Royale",
     "title": "Rogue Company",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-07-20",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "First Watch Games",
     "publisher": "Hi-Rez Studios",
@@ -2106,18 +2313,27 @@
     "category": "Battle Royale",
     "title": "Darwin Project",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-01-14",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Scavengers Studio",
     "publisher": "Scavengers Studio",
@@ -2197,18 +2413,27 @@
     "category": "Battle Royale",
     "title": "Scavengers",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
     "releaseDate": "2022-04-22",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Midwinter Entertainment",
     "publisher": "Improbable",
@@ -2288,18 +2513,27 @@
     "category": "Battle Royale",
     "title": "Outworlder",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2022-09-15",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Hiveform",
     "publisher": "Hiveform",
@@ -2379,18 +2613,27 @@
     "category": "Adventure",
     "title": "The Legend of Zelda: Breath of the Wild",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["Nintendo Switch"],
     "releaseDate": "2017-03-03",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Nintendo EPD",
     "publisher": "Nintendo",
@@ -2470,18 +2713,27 @@
     "category": "Adventure",
     "title": "Uncharted 4: A Thief's End",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PlayStation 4"],
     "releaseDate": "2016-05-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
@@ -2561,18 +2813,27 @@
     "category": "Adventure",
     "title": "Journey",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PlayStation 4", "PC"],
     "releaseDate": "2012-03-13",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Thatgamecompany",
     "publisher": "Annapurna Interactive",
@@ -2652,18 +2913,27 @@
     "category": "Adventure",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
@@ -2743,18 +3013,27 @@
     "category": "Adventure",
     "title": "A Plague Tale: Innocence",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-14",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Asobo Studio",
     "publisher": "Focus Home Interactive",
@@ -2834,18 +3113,27 @@
     "category": "Adventure",
     "title": "Red Dead Redemption 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Rockstar Games",
     "publisher": "Rockstar Games",
@@ -2925,18 +3213,27 @@
     "category": "Adventure",
     "title": "Tomb Raider",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2013-03-05",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Crystal Dynamics",
     "publisher": "Square Enix",
@@ -3017,18 +3314,27 @@
     "category": "Adventure",
     "title": "Horizon Zero Dawn",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4"],
     "releaseDate": "2020-08-07",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
@@ -3113,18 +3419,27 @@
     "category": "Adventure",
     "title": "Oxenfree",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-01-15",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Night School Studio",
     "publisher": "Night School Studio",
@@ -3204,18 +3519,27 @@
     "category": "Racing",
     "title": "Need for Speed: Most Wanted",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 3", "Xbox 360"],
     "releaseDate": "2012-10-30",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
@@ -3295,18 +3619,27 @@
     "category": "Racing",
     "title": "Forza Horizon 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Xbox One"],
     "releaseDate": "2018-10-02",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Playground Games",
     "publisher": "Microsoft Studios",
@@ -3386,18 +3719,27 @@
     "category": "Racing",
     "title": "F1 2021",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
     "releaseDate": "2021-07-16",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
@@ -3477,18 +3819,27 @@
     "category": "Racing",
     "title": "Dirt Rally 2.0",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-26",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Codemasters",
     "publisher": "Codemasters",
@@ -3568,18 +3919,27 @@
     "category": "Racing",
     "title": "Project CARS 3",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-28",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Slightly Mad Studios",
     "publisher": "Bandai Namco Entertainment",
@@ -3659,18 +4019,27 @@
     "category": "Racing",
     "title": "Burnout Paradise Remastered",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-03-16",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
@@ -3750,18 +4119,27 @@
     "category": "Racing",
     "title": "Assetto Corsa Competizione",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-05-29",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "KUNOS Simulazioni",
     "publisher": "505 Games",
@@ -3841,18 +4219,27 @@
     "category": "Racing",
     "title": "Wreckfest",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-06-14",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Bugbear Entertainment",
     "publisher": "THQ Nordic",
@@ -3932,18 +4319,27 @@
     "category": "Racing",
     "title": "NASCAR Heat 5",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-07-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Monster Games",
     "publisher": "704Games",
@@ -4023,18 +4419,27 @@
     "category": "Racing",
     "title": "Dirt 5",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-11-06",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Codemasters",
     "publisher": "Codemasters",
@@ -4114,18 +4519,27 @@
     "category": "Racing",
     "title": "Need for Speed Heat",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-11-08",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Ghost Games",
     "publisher": "Electronic Arts",
@@ -4205,18 +4619,27 @@
     "category": "Racing",
     "title": "GRID",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-10-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Codemasters",
     "publisher": "Codemasters",
@@ -4296,18 +4719,27 @@
     "category": "Racing",
     "title": "F1 2021",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2021-07-16",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
@@ -4387,18 +4819,27 @@
     "category": "Racing",
     "title": "TrackMania Turbo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2016-03-24",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Nadeo",
     "publisher": "Ubisoft",
@@ -4478,18 +4919,27 @@
     "category": "Simulation",
     "title": "Microsoft Flight Simulator",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Xbox Series X|S"],
     "releaseDate": "2020-08-18",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Asobo Studio",
     "publisher": "Xbox Game Studios",
@@ -4569,18 +5019,27 @@
     "category": "Simulation",
     "title": "The Sims 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2014-09-02",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Maxis",
     "publisher": "Electronic Arts",
@@ -4660,18 +5119,27 @@
     "category": "Simulation",
     "title": "Euro Truck Simulator 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2012-10-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "SCS Software",
     "publisher": "SCS Software",
@@ -4751,18 +5219,27 @@
     "category": "Simulation",
     "title": "Cities: Skylines",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-03-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Colossal Order",
     "publisher": "Paradox Interactive",
@@ -4842,18 +5319,27 @@
     "category": "Simulation",
     "title": "Farming Simulator 19",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-11-20",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Giants Software",
     "publisher": "Focus Home Interactive",
@@ -4933,18 +5419,27 @@
     "category": "Simulation",
     "title": "Kerbal Space Program",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-04-27",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Squad",
     "publisher": "Private Division",
@@ -5024,18 +5519,27 @@
     "category": "Simulation",
     "title": "Planet Coaster",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-11-17",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Frontier Developments",
     "publisher": "Frontier Developments",
@@ -5115,18 +5619,27 @@
     "category": "Simulation",
     "title": "Stardew Valley",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-02-26",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "ConcernedApe",
     "publisher": "ConcernedApe",
@@ -5206,18 +5719,27 @@
     "category": "Simulation",
     "title": "Two Point Hospital",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-08-30",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Two Point Studios",
     "publisher": "SEGA",
@@ -5297,18 +5819,27 @@
     "category": "Simulation",
     "title": "House Flipper",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-05-17",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Empyrean",
     "publisher": "PlayWay S.A.",
@@ -5388,18 +5919,27 @@
     "category": "Simulation",
     "title": "Prison Architect",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Mobile"],
     "releaseDate": "2015-10-06",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Introversion Software",
     "publisher": "Paradox Interactive",
@@ -5479,6 +6019,13 @@
     "category": "Sports",
     "title": "FIFA 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5488,15 +6035,17 @@
     ],
     "releaseDate": "2021-10-01",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
@@ -5576,6 +6125,13 @@
     "category": "Sports",
     "title": "NBA 2K22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5585,15 +6141,17 @@
     ],
     "releaseDate": "2021-09-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
@@ -5673,6 +6231,13 @@
     "category": "Sports",
     "title": "Madden NFL 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5682,15 +6247,17 @@
     ],
     "releaseDate": "2021-08-20",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "EA Tiburon",
     "publisher": "Electronic Arts",
@@ -5770,6 +6337,13 @@
     "category": "Sports",
     "title": "WWE 2K22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5779,15 +6353,17 @@
     ],
     "releaseDate": "2022-03-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
@@ -5867,18 +6443,27 @@
     "category": "Sports",
     "title": "PGA Tour 2K21",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-08-21",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "HB Studios",
     "publisher": "2K Sports",
@@ -5958,6 +6543,13 @@
     "category": "Sports",
     "title": "Pro Evolution Soccer 2023",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5967,15 +6559,17 @@
     ],
     "releaseDate": "2022-09-16",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Konami Digital Entertainment",
     "publisher": "Konami Digital Entertainment",
@@ -6055,6 +6649,13 @@
     "category": "Sports",
     "title": "NHL 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -6064,15 +6665,17 @@
     ],
     "releaseDate": "2021-10-15",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
@@ -6152,6 +6755,13 @@
     "category": "Sports",
     "title": "RIDE 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -6161,15 +6771,17 @@
     ],
     "releaseDate": "2020-10-08",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
@@ -6254,6 +6866,13 @@
     "category": "Sports",
     "title": "MotoGP 21",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -6263,15 +6882,17 @@
     ],
     "releaseDate": "2021-04-22",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
@@ -6356,6 +6977,13 @@
     "category": "Sports",
     "title": "NBA 2K23",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -6365,15 +6993,17 @@
     ],
     "releaseDate": "2022-09-09",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
@@ -6453,6 +7083,13 @@
     "category": "Sports",
     "title": "FIFA 23",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -6462,15 +7099,17 @@
     ],
     "releaseDate": "2022-09-27",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
@@ -6550,18 +7189,27 @@
     "category": "Strategy",
     "title": "Sid Meier's Civilization VI",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Firaxis Games",
     "publisher": "2K Games",
@@ -6641,18 +7289,27 @@
     "category": "Strategy",
     "title": "Total War: Three Kingdoms",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
@@ -6732,18 +7389,27 @@
     "category": "Strategy",
     "title": "Stellaris",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-05-09",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Paradox Interactive",
     "publisher": "Paradox Interactive",
@@ -6823,18 +7489,27 @@
     "category": "Strategy",
     "title": "Europa Universalis IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-08-13",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
@@ -6914,18 +7589,27 @@
     "category": "Strategy",
     "title": "Hearts of Iron IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-06-06",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
@@ -7005,18 +7689,27 @@
     "category": "Strategy",
     "title": "Anno 1800",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-04-16",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Blue Byte",
     "publisher": "Ubisoft",
@@ -7096,18 +7789,27 @@
     "category": "Strategy",
     "title": "Company of Heroes 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-06-25",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Relic Entertainment",
     "publisher": "SEGA",
@@ -7187,18 +7889,27 @@
     "category": "Strategy",
     "title": "Warcraft III: Reforged",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-01-28",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Blizzard Entertainment",
     "publisher": "Blizzard Entertainment",
@@ -7278,18 +7989,27 @@
     "category": "Strategy",
     "title": "Age of Empires IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2021-10-28",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Relic Entertainment",
     "publisher": "Xbox Game Studios",
@@ -7369,18 +8089,27 @@
     "category": "Strategy",
     "title": "RimWorld",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2018-10-17",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Ludeon Studios",
     "publisher": "Ludeon Studios",
@@ -7460,18 +8189,27 @@
     "category": "Strategy",
     "title": "Civilization VI",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Firaxis Games",
     "publisher": "2K",
@@ -7551,18 +8289,27 @@
     "category": "Strategy",
     "title": "Total War: Three Kingdoms",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
@@ -7642,18 +8389,27 @@
     "category": "Puzzle",
     "title": "Portal 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-04-18",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Valve",
     "publisher": "Valve",
@@ -7733,18 +8489,27 @@
     "category": "Puzzle",
     "title": "The Witness",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
@@ -7824,18 +8589,27 @@
     "category": "Puzzle",
     "title": "Baba Is You",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-03-13",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Hempuli",
     "publisher": "Hempuli",
@@ -7915,18 +8689,27 @@
     "category": "Puzzle",
     "title": "The Talos Principle",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-12-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Croteam",
     "publisher": "Devolver Digital",
@@ -8006,18 +8789,27 @@
     "category": "Puzzle",
     "title": "Fez",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-05-01",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Polytron Corporation",
     "publisher": "Trapdoor",
@@ -8097,18 +8889,27 @@
     "category": "Puzzle",
     "title": "Limbo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-07-21",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Playdead",
     "publisher": "Playdead",
@@ -8188,18 +8989,27 @@
     "category": "Puzzle",
     "title": "Monument Valley",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-04-03",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "ustwo games",
     "publisher": "ustwo games",
@@ -8279,18 +9089,27 @@
     "category": "Puzzle",
     "title": "The Room",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-07-28",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Fireproof Games",
     "publisher": "Fireproof Games",
@@ -8370,18 +9189,27 @@
     "category": "Puzzle",
     "title": "LIMBO",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-08-02",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Playdead",
     "publisher": "Playdead",
@@ -8461,18 +9289,27 @@
     "category": "Puzzle",
     "title": "World of Goo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2008-10-13",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "2D BOY",
     "publisher": "2D BOY",
@@ -8552,18 +9389,27 @@
     "category": "Puzzle",
     "title": "The Witness",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
@@ -8643,18 +9489,27 @@
     "category": "Puzzle",
     "title": "Braid",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2008-04-10",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Number None, Inc.",
     "publisher": "Number None, Inc.",
@@ -8734,18 +9589,27 @@
     "category": "RPG",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
@@ -8825,18 +9689,27 @@
     "category": "RPG",
     "title": "Dark Souls III",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
@@ -8916,18 +9789,27 @@
     "category": "RPG",
     "title": "Elder Scrolls V: Skyrim",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
@@ -9007,18 +9889,27 @@
     "category": "RPG",
     "title": "Divinity: Original Sin 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
@@ -9098,18 +9989,27 @@
     "category": "RPG",
     "title": "Mass Effect 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-01-26",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
@@ -9189,18 +10089,27 @@
     "category": "RPG",
     "title": "Dragon Age: Inquisition",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
@@ -9280,18 +10189,27 @@
     "category": "RPG",
     "title": "Fallout: New Vegas",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-10-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Obsidian Entertainment",
     "publisher": "Bethesda Softworks",
@@ -9371,18 +10289,27 @@
     "category": "RPG",
     "title": "Kingdom Come: Deliverance",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2018-02-13",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Warhorse Studios",
     "publisher": "Deep Silver",
@@ -9462,18 +10389,27 @@
     "category": "RPG",
     "title": "Final Fantasy VII",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "1998-07-02",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Square Enix",
     "publisher": "Square Enix",
@@ -9553,18 +10489,27 @@
     "category": "RPG",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
@@ -9644,18 +10589,27 @@
     "category": "RPG",
     "title": "Dark Souls III",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-12",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
@@ -9735,18 +10689,27 @@
     "category": "RPG",
     "title": "Divinity: Original Sin 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
@@ -9826,18 +10789,27 @@
     "category": "RPG",
     "title": "Elder Scrolls V: Skyrim",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
@@ -9917,18 +10889,27 @@
     "category": "RPG",
     "title": "Dragon Age: Inquisition",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
     "description": {
+      "descriptionTitle1": "lorem",
       "description1": "lorem15",
+      "descriptionTitle2": "lorem",
       "description2": "lorem15",
-      "description3": "lorem15",
-      "description4": "lorem15"
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
     },
     "extraText": {
+      "extraTitle": "extraTitle",
       "extraText1": "extraText1",
-      "extraText2": "extraText1",
-      "extraText3": "extraText1"
+      "extraText2": "extraText1"
     },
     "developer": "BioWare",
     "publisher": "Electronic Arts",

@@ -28,7 +28,8 @@ const GameHeading = ({ gameDetails }) => {
   } = gameDetails;
   
   return (
-    <div className="bg-[url('https://themepixer.com/demo/html/geco/Geco/img/bg/breadcrumb_bg.jpg')]">
+    // <div className="bg-[url('https://themepixer.com/demo/html/geco/Geco/img/bg/breadcrumb_bg.jpg')]">
+    <div className="">
       <div className="flex max-w-7xl items-center mx-auto gap-5 py-20">
         <div className="w-3/6">
           <img className=" h-[24rem] bg" src={image} alt="" />
