@@ -2,10 +2,29 @@
   {
     "category": "Action",
     "title": "Grand Theft Auto V",
-    "image": "example.com",
+    "image": "https://m.media-amazon.com/images/I/91O2cwfTxDL._AC_UF1000,1000_QL80_.jpg",
+    "coverImage": {
+      "coverImage1": "https://wallpaperaccess.com/full/707055.jpg",
+      "coverImage2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ173xbCWUTmVgGnCCIU3cfMPFMTEMh740mdnKRKvxji4887VALlND_0nKItVnN71SE-Io&usqp=CAU",
+      "coverImage3": "https://qph.cf2.quoracdn.net/main-qimg-87c15f19a882f06490c5ac00ecf2fec2.webp",
+      "coverImage4": "https://i.pinimg.com/736x/f6/a2/6e/f6a26e74b4427fa3dcc01b0204f88822.jpg",
+      "coverImage5": "https://www.creocommunity.pl/wp-content/uploads/2022/04/1650079814_Lista-kodow-do-GTA-5-na-PS5-PS4-PC-Xbox.jpg"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-04-14",
-    "description": "Enter the criminal underworld of Los Santos and Blaine County in this action-packed open-world adventure...",
+    "description": {
+      "descriptionTitle1": "Exploring the Dynamic World of Grand Theft Auto V: A Five-Part Adventure",
+      "description1": "Dive into the bustling metropolis of Los Santos, the heart of Grand Theft Auto V's open-world landscape. From the sun-soaked beaches to the towering skyscrapers, this section takes you on a virtual tour of the city's diverse neighborhoods, iconic landmarks, and the intricate details that bring this virtual world to life.Experience the adrenaline rush of planning and executing elaborate heists that blur the lines between chaos and precision. From infiltrating high-security locations to skydiving onto moving vehicles, Grand Theft Auto V's missions offer an unparalleled variety of action-packed challenges that keep players engaged and eager for the next thrilling escapade.",
+      "descriptionTitle2": " Characters and Connections",
+      "description2": "Meet the unforgettable trio at the center of the game's narrative: Michael, a retired bank robber; Franklin, a hustler looking for bigger opportunities; and Trevor, a volatile and unpredictable criminal. Delve into their individual stories, intertwined fates, and the unique gameplay perspectives they offer, shaping your experience of the game's immersive storyline. Venture beyond the main story and uncover a multitude of recreational activities and distractions. Engage in a game of golf, participate in street races, or simply enjoy a leisurely bike ride along the scenic routes. This section explores the extensive list of side activities, proving that there's much more to Los Santos than just a life of crime.",
+      "descriptionTitle3": "Online Mayhem in Grand Theft Auto Online",
+      "description3": "Shift your focus to the vast online multiplayer component of Grand Theft Auto V: Grand Theft Auto Online. Discover the ever-evolving world where you can create your own criminal empire, team up with friends for heists, engage in competitive modes, or simply indulge in sandbox-style chaos. Explore the constant updates and expansions that ensure this online experience remains fresh and captivating.In this five-part blog series, we'll embark on a comprehensive journey through the multifaceted realm of Grand Theft Auto V. From the bustling streets to the sun-soaked beaches, from heart-pounding heists to relaxing recreational activities, and from the engaging main story to the dynamic online realm, there's no shortage of excitement and exploration in this iconic game."
+    },
+    "extraText": {
+      "extraTitle": "Grand Theft Auto Online",
+      "extraText1": "Delve into Grand Theft Auto Online, ",
+      "extraText2": "an ever-expanding multiplayer universe offering endless opportunities for criminal enterprises, competitive gameplay, and social interaction, ensuring that the adventure never truly ends."
+    },
     "developer": "Rockstar North",
     "publisher": "Rockstar Games",
     "rating": 4.9,
@@ -16,17 +35,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/gta-v-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_EKnPJPKlTMMhLAvIqgMsbMQYMvDMFW6TZw&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWxi0G1FBOIrhLrrWQKkrGSZop6ae5zrjdlA&usqp=CAU",
+      "image3": "https://libertycity.net/uploads/gallery/main/69/gta_v_pc_screenshot_069__10_-pcgh_2.jpg",
+      "image4": "https://www.igrandtheftauto.com/bigimage/4302/"
     },
     "screenshots": [
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/1.jpg",
-      "https://example.com/screenshots/gta-v/2.jpg",
-      "https://example.com/screenshots/gta-v/3.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRvRLuJqxs837j2TzI96_d6wwsCIFGyFhV1Q",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdjZYomew_D6e7rz_dajgTXsMi0Mjupj5d0PDfCjJ5rIkqVGVX_N3GyGmVBHKXCnI8YSw&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVOX1dfaM8shbwrrT9wozz2onqAG6kz7t54Mxa5QlBleFrtJtddfsDRcNVzg2nQoHu7I&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoIdGLv6SdJXaV5P4bumww5CfuF3P7AiT5nrnvVqgXRp28L6ptwKf3lu-Fx3zIO7z4LM&usqp=CAU",
+      "https://img.gurugamer.com/resize/740x-/2023/04/20/902728436-preview-20170410222704-1-1fc5.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 8.1 64 Bit, Windows 8 64 Bit, Windows 7 64 Bit Service Pack 1",
@@ -83,10 +102,29 @@
   {
     "category": "Action",
     "title": "DOOM Eternal",
-    "image": "example.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXnk_ok4gpDN3keHmqNScIlETTDjxM7uJl0Q&usqp=CAU",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
-    "description": "Rip and tear through hordes of demons as the Doom Slayer in this high-octane first-person shooter...",
+    "description": {
+      "descriptionTitle1": "Mastering DOOM Eternal: Essential Tips for Becoming a Slayer",
+      "description1": "DOOM Eternal demands split-second decision-making and impeccable reflexes. To truly become a Slayer, you'll need to embrace the chaos and master the dance of death that defines the game's combat. From perfecting your weapon-switching to utilizing the environment strategically, this guide breaks down the key tactics that separate the average player from the ultimate demon annihilator.",
+      "descriptionTitle2": "Exploring the Lore of DOOM Eternal: Unraveling Hell's Impact on Earth",
+      "description2": "Step into the apocalyptic world of DOOM Eternal, where the battle between Heaven, Hell, and humanity rages on. Uncover the tragic history of Earth's invasion, the motivations of the enigmatic Doom Slayer, and the deeper philosophical themes that underlie the chaos. Discover the intricate storytelling that weaves through the mayhem.",
+      "descriptionTitle3": "The Artistry of DOOM Eternal: Concept Art and Visual Development",
+      "description3": "Behind every demon's snarl and every hellish vista lies a meticulous process of artistic creation. Explore the concept art that served as the foundation for DOOM Eternal's nightmarish creatures and breathtaking environments. Uncover the creative minds and artistic vision that brought this violent yet captivating world to life. The roar of the chainsaw, the pounding of heavy riffs — DOOM Eternal's soundtrack is a force to be reckoned with. Delve into the sonic landscape that accompanies your demon-slaying spree. Learn how composer Mick Gordon's fusion of metal and electronic elements elevates the intensity of the gameplay and immerses you deeper into the demon-infested world."
+    },
+    "extraText": {
+      "extraTitle": "Design Evolution in DOOM Eternal",
+      "extraText1": "A Sonic Assault on the Senses",
+      "extraText2": "DOOM Eternal pays homage to its classic roots while embracing modern design philosophies. Dive into the evolution of level design, examining the intricate architecture and interconnectedness of the game's environments. Explore how the combination of old-school sensibilities and modern technology creates a heart-pounding gameplay experience like no other."
+    },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -103,11 +141,11 @@
       "image4": "example.com"
     },
     "screenshots": [
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/1.jpg",
-      "https://example.com/screenshots/doom-eternal/2.jpg",
-      "https://example.com/screenshots/doom-eternal/3.jpg"
+      "https://fpschampion.com/wp-content/uploads/2022/03/Doom-Eternals-Face-Off.jpg",
+      "https://miro.medium.com/v2/resize:fit:1400/1*KaB4CseapljxEs07lYyVew.jpeg",
+      "https://cdn.mos.cms.futurecdn.net/hxhjWu67RvF5aStMtq4voY-480-80.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vlnw3RiT4VFME2aCqD9ZAH3Bn2-Vs7NY1LCAjvQMvmf3vCCoYAjTF5IvZuzyF_AfUIM&usqp=CAU",
+      "https://www.newgamenetwork.com/images/uploads/gallery/DoomEternal/doometernal_09.jpg"
     ],
     "minimumRequirements": {
       "OS": "64-bit Windows 7 / 64-Bit Windows 10",
@@ -164,10 +202,29 @@
   {
     "category": "Action",
     "title": "Assassin's Creed Valhalla",
-    "image": "example.com",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/2208920/capsule_616x353.jpg?t=1690324537",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
-    "description": "Write your Viking saga as Eivor and lead your clan to glory in the open world of 9th century England...",
+    "description": {
+      "descriptionTitle1": "Viking Raids and Settlement",
+      "description1": "Players can lead Viking raids on English kingdoms to gather resources, wealth, and forge alliances. Additionally, you'll manage a growing settlement in England, customizing and upgrading various buildings to improve its functions.",
+      "descriptionTitle2": "Combat and Dual-Wielding",
+      "description2": "Combat in Valhalla emphasizes brutality and intensity. Players can dual-wield weapons, including shields, swords, axes, and more, to create their own combat style. Abilities and special moves enhance the gameplay experience.",
+      "descriptionTitle3": "Hidden Ones vs. Order of the Ancients",
+      "description3": "The game's overarching conflict revolves around the Assassin Brotherhood (Hidden Ones) and the Templar Order (Order of the Ancients). Eivor's journey involves both personal growth and participation in the age-old conflict between these two factions. Generally positive reviews from both players and critics. Its engaging storyline, expansive open world, and incorporation of Viking culture were praised. The game's attention to historical detail, as well as its choice-driven gameplay, were also highlighted as positive aspects."
+    },
+    "extraText": {
+      "extraTitle": "Assassin's Creed Valhalla",
+      "extraText1": "Hidden Ones vs. Order of the Ancients",
+      "extraText2": "Assassin's Creed Valhalla  is set in the 9th century during the Viking Age and follows the story of Eivor, a Viking raider who becomes embroiled in the ongoing conflict between the Assassin Brotherhood and the Templar Order. Players can choose to play as either a male or female Eivor. The game features a combination of open-world exploration, stealth-based gameplay, and epic battles."
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -178,17 +235,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/assassins-creed-valhalla-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://staticctf.ubisoft.com/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/01lCIVJSjkjeeg5BYDawQi/ca2096a8eea91a495ebda8136e963487/ACV_KeyArt11__960x540.png",
+      "image2": "https://www.rappler.com/tachyon/2021/12/ac-dawn-ragnarok-1.jpg",
+      "image3": "https://www.rappler.com/tachyon/2021/12/ac-dawn-ragnarok-1.jpg",
+      "image4": "https://stevivor.com/wp-content/uploads/2020/07/Assassins-Creed-Valhalla-4.jpg"
     },
     "screenshots": [
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/1.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/2.jpg",
-      "https://example.com/screenshots/assassins-creed-valhalla/3.jpg"
+      "https://s2.dmcdn.net/v/SZxfj1X-38SGq77UR/x1080",
+      "https://i0.wp.com/www.pcmrace.com/wp-content/uploads/2020/07/acvleak.jpg?resize=750%2C400&ssl=1",
+      "https://assets.hardwarezone.com/img/2020/11/ac-valhalla-combat_0.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhp4E0Yhdoihde7dwIrkxP_A61-F_YljD0190XcJ4lVUW1aRj9S50H4e_K8cqdbzP0NEU&usqp=CAU",
+      "https://staticg.sportskeeda.com/editor/2021/12/e19a5-16393083836625-1920.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 10 (64-bit only)",
@@ -245,10 +302,29 @@
   {
     "category": "Action",
     "title": "Call of Duty: Modern Warfare",
-    "image": "example.com",
+    "image": "https://www.callofduty.com/content/dam/atvi/callofduty/cod-touchui/blog/hero/mwii/MWII-RELEASE-TOUT.jpg",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-10-25",
-    "description": "Engage in modern warfare scenarios as part of an elite team, tackling global threats across a gripping campaign...",
+    "description": {
+      "descriptionTitle1": "Multiplayer",
+      "description1": "The game's multiplayer mode offers a variety of maps, game modes, and customization options. It includes classic game modes like Team Deathmatch, Domination, and Search and Destroy, as well as new modes like Ground War, which features large-scale battles.",
+      "descriptionTitle2": "Cross-Platform Play",
+      "description2": "The game supports cross-platform multiplayer, allowing players on different platforms (such as PlayStation, Xbox, and PC) to play together.The game features cooperative multiplayer missions known as Special Operations, offering a separate storyline from the campaign. These missions can be played solo or with a team of up to four players.",
+      "descriptionTitle3": "Warzone",
+      "description3": "Call of Duty: Warzone is a free-to-play battle royale mode set in the same universe as Modern Warfare. It features a large map, intense battles, and a unique Gulag mechanic that allows players a chance to respawn after being eliminated. generally positive reviews for its engaging single-player campaign, impressive visuals, and solid multiplayer offerings. The game's emphasis on realism and the darker themes it explores were both praised and criticized by different parts of the gaming community "
+    },
+    "extraText": {
+      "extraTitle": "Single-Player Campaign:",
+      "extraText1": " Modern Warfare trilogy first-person shooter video game",
+      "extraText2": "The campaign features a morally complex narrative that explores themes of modern warfare, terrorism, and the blurred lines between right and wrong. It introduces players to new characters while also featuring familiar faces from the original Modern Warfare trilogy."
+    },
     "developer": "Infinity Ward",
     "publisher": "Activision",
     "rating": 4.8,
@@ -259,17 +335,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/cod-modern-warfare-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://images.pushsquare.com/screenshots/80258/large.jpg",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCyWNtYpBe2OA5dIO-zpJsOMHYd01x_bn_0QwsbHw21SC7-fCRxY_KZ0aKUHTnvwGr1lk&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQmzwGJGqcxQfdW3WZ1VKGsU-vRQsuRf2JcwniIk1ux1RqgwL1WbkJwQ0YXZJ9Qc_NEnE&usqp=CAU",
+      "image4": "https://ip.trueachievements.com/remote/dlassets-ssl.xboxlive.com/public/content/f8d4e242-2ac0-42ae-ae3b-02b010216693/3a8ce90a-eb27-4569-aa91-242305255cf3/56e3b47f-c022-488e-b988-c97523a128b4.png?width=900"
     },
     "screenshots": [
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/1.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/2.jpg",
-      "https://example.com/screenshots/cod-modern-warfare/3.jpg"
+      "https://cdn.wccftech.com/wp-content/uploads/2016/08/Call-of-Duty-Modern-Warfare-Remastered-2.png",
+      "https://static0.gamerantimages.com/wordpress/wp-content/uploads/call-of-duty-modern-warfare-remastered-screenshots-ak-gas-mask.jpg?q=50&fit=contain&w=767&h=&dpr=1.5",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/056930.jpg?width=900",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/056927.jpg?width=900",
+      "https://ip.trueachievements.com/remote/www.trueachievements.com/customimages/062150.jpg?width=900"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 64-bit / Windows 10 64-bit",
@@ -326,10 +402,29 @@
   {
     "category": "Action",
     "title": "Red Dead Redemption 2",
-    "image": "example.com",
+    "image": "https://cdn1.epicgames.com/epic/offer/RDR2PC1227_Epic%20Games_860x1148-860x1148-b4c2210ee0c3c3b843a8de399bfe7f5c.jpg",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Embark on a journey through the American Wild West as Arthur Morgan, an outlaw and member of the Van der Linde gang...",
+    "description": {
+      "descriptionTitle1": "Story and Characters:",
+      "description1": " The heart of Red Dead Redemption 2 lies in its richly detailed characters and their intertwined stories. Arthur Morgan, a rugged outlaw, becomes the focal point of the game's narrative, as players explore his loyalty to the gang, his internal conflicts, and his personal journey of redemption.",
+      "descriptionTitle2": "Realism and Detail",
+      "description2": " Red Dead Redemption 2 is renowned for its attention to detail, from the meticulously animated wildlife to the weather systems that impact gameplay. Each weapon, piece of clothing, and horse behaves realistically, adding to the immersive experience.Beyond the main storyline, players can engage in a plethora of side activities such as gambling, hunting, fishing, and bounty hunting.",
+      "descriptionTitle3": "Side Activities",
+      "description3": "The game received widespread critical acclaim for its breathtaking visuals, captivating storytelling, and the depth of its open world. Its attention to historical accuracy and the sheer scope of its content were also praised. Critics hailed it as a monumental achievement in video game design, showcasing Rockstar's dedication to creating immersive and intricate game worlds."
+    },
+    "extraText": {
+      "extraTitle": "Red Dead Redemption 2",
+      "extraText1": "Story and Characters The heart",
+      "extraText2": "The game is set in a vast and meticulously crafted open world that captures the essence of the untamed American frontier. Players step into the worn boots of Arthur Morgan, a member of the Van der Linde gang, as they navigate the challenges of a changing world. The game's world is teeming with life, from bustling cities to remote wilderness, each area offering a unique atmosphere and challenges."
+    },
     "developer": "Rockstar San Diego",
     "publisher": "Rockstar Games",
     "rating": 4.9,
@@ -340,17 +435,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/red-dead-redemption-2-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbbFsoYIPH99oCCQXDHg0SwFxGDpS0Yxcm2Vqf7lu7q9eotbDcO13v0Xd3ywlx-gXmySs&usqp=CAU",
+      "image2": "https://sm.ign.com/t/ign_in/screenshot/r/red-dead-r/red-dead-redemption-2-pc-screenshots_stdk.1080.jpg",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkPGn0I9LrR965Wi4f2Xwx-7P0GoKo06fKTYguzmaaTBvigXv1k5tI487J7dUWYe-Z5Io&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_qn_cc40jLYhOeo1NwlZL_6yGkfvup7NXaZkN_Sxq6HiEyGJ8Z_9GXmXvGr1WmElOcDk&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/1.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/2.jpg",
-      "https://example.com/screenshots/red-dead-redemption-2/3.jpg"
+      "https://www.techspot.com/images2/news/bigimage/2020/11/2020-11-26-image-11.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXXEQq2WQg-FbRDAvblWhCLQmqoeJvR-YXn1b3huMUKIs6IPdkYOkgVgA_YzAwrM4CWKA&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIkOse45muZA6lNGmZpx-i25Y_XBUmOZga44VYhrC5FnBbp5Im7ELsCo1C5QmG2UqmXZ8&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTcOwZ8Kil7Df9t92ktJ19qTxLijfVyw6C_Jx5pn0yJQmWVJ5T-LLwpBM58HqRoW1WJ-Q&usqp=CAU",
+      "https://gamespot.com/a/uploads/original/1179/11799911/3383938-duck.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 - Service Pack 1 (6.1.7601)",
@@ -407,10 +502,29 @@
   {
     "category": "Action",
     "title": "Dark Souls III",
-    "image": "example.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8GdNGWVt7xO6xk8XrJG2e4im6lHqDOFmWb_vTDgVpBWA7QggWQt0ppzw44F3VG10YgE&usqp=CAU",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
-    "description": "Enter a dark fantasy world filled with challenging enemies and intricate level design, where death is just a part of the journey...",
+    "description": {
+      "descriptionTitle1": "Challenging Combat",
+      "description1": "The game is renowned for its punishing difficulty and deep combat mechanics. Players must carefully time their attacks, dodges, and blocks to overcome enemies and bosses. Death is a frequent occurrence, but learning from mistakes is integral to progress.",
+      "descriptionTitle2": "Character Customization",
+      "description2": "Players can customize their character's appearance and choose from a variety of classes and playstyles. The game offers a range of weapons, armor sets, and spells to suit different strategies.",
+      "descriptionTitle3": "Multiplayer Interaction",
+      "description3": " Players can summon others for cooperative play to tackle challenging areas and bosses together. Alternatively, the game also features a unique PvP system where players can invade others' worlds to engage in combat Intricate Lore: Dark Souls III is known for its rich and cryptic lore, presented through item descriptions, environmental storytelling, and interactions with NPCs. Players must piece together the narrative as they progress."
+    },
+    "extraText": {
+      "extraTitle": "Dark Souls III features a variety ",
+      "extraText1": "Interconnected and intricate environments",
+      "extraText2": "The game is known for its challenging and atmospheric gameplay, steeped in dark fantasy elements. Set in the fictional kingdom of Lothric, players take on the role of the Ashen One, an undead character tasked with linking the First Flame and preventing the world from falling into darkness."
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.8,
@@ -421,17 +535,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/dark-souls-3-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/ss_12c4d9a3c04d6d340ffea9335441eb2ad84e0028.1920x1080.jpg?t=1682651227",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8zLvvWHYRVWQx1J6__wL3bKUDw9pwtqex_-m0by-TNbqHh5rgTGbIudF5iwF2nsyJE4&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQh1nidOoExBmvy8_Lv536EEHuhr4M9Wy4Os4glkvjRwHhGuTII5JVrWLLewLEz-xuXfw&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkw24pRULyTtWRFHMYAzwmSERbCXrPy0YB--lWdNqxA4shi2gAhKtGIG5g7x3vydrx8eI&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/2.jpg",
-      "https://example.com/screenshots/dark-souls-3/3.jpg"
+      "https://cdn.vox-cdn.com/thumbor/yx5syTUG6h-g4E-odlGPTC8qsYY=/148x0:1768x1080/1200x800/filters:focal(148x0:1768x1080)/cdn.vox-cdn.com/uploads/chorus_image/image/46485808/dark_souls_3.0.0.jpg",
+      "https://assetsio.reedpopcdn.com/dark_souls_3_ringed_city_screen_swamp_knight_1.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+      "https://www.commonsensemedia.org/sites/default/files/styles/social_share_image/public/screenshots/csm-game/dsiii-1-min.jpg",
+      "https://news-cdn.softpedia.com/images/news2/dark-souls-3-review-pc-502543-21.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfINhrjKBSg4z5oMhSknezruKnXrDFMAdpFD1HjTZoQZtarH3gxGHQYhppjvJ3NMO0NcU&usqp=CAU"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 SP1 64-bit, Windows 8.1 64-bit, Windows 10 64-bit",
@@ -488,10 +602,29 @@
   {
     "category": "Action",
     "title": "Horizon Zero Dawn",
-    "image": "example.com",
+    "image": "https://assets-prd.ignimgs.com/2021/12/08/horizonzerodawn-1638924347525.jpg",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
-    "description": "Embark on a quest as Aloy in a post-apocalyptic world where nature and machines collide, and uncover the truth of the past...",
+    "description": {
+      "descriptionTitle1": "Combat and Exploration",
+      "description1": "Aloy's skills include archery, crafting, and stealth. Players must use their wits and strategy to take down Machines and navigate the challenges of the open world. Different Machines have unique weaknesses and behaviors, encouraging players to adapt their approach.",
+      "descriptionTitle2": "Story and Lore",
+      "description2": "The game's narrative unfolds through Aloy's interactions with various tribes, characters, and holographic recordings left behind by the past civilization. Players gradually uncover the truth about the world's history and the events that led to its current state.",
+      "descriptionTitle3": "Technology vs. Nature",
+      "description3": " The central theme of Horizon Zero Dawn revolves around the juxtaposition of nature and technology. The robotic creatures and remnants of advanced technology contrast with the natural beauty of the environment, leading to philosophical questions about humanity's impact on the world."
+    },
+    "extraText": {
+      "extraTitle": "In a post-apocalyptic world",
+      "extraText1": "Key features include an expansive open world",
+      "extraText2": "illed with diverse environments and robotic creatures, strategic combat and exploration, a narrative that unfolds through Aloy's interactions with tribes and holographic recordings, a central theme of nature versus technology, character development influenced by player choices, and the expansion "
+    },
     "developer": "Guerrilla",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.7,
@@ -507,17 +640,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/horizon-zero-dawn-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnR5oLwuiQCOy4zxSJnHczWB0JhDQtJIxIJ6epp1ZVSz3ljCrY9-M4H3tHr9VLTEy0sF4&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpk7jk0MVSEBHeEwb6b3uFPytXu4hiOIffvE5qvYrpwVRakpde0hlCF0L71-bKTTWUsNQ&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWGK1_5MgETm1XgDKXwK2W1AwXAhGXIp1EBtffMtgVln_BMf_kKdSz6OXf9_VZn2Cc3k&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-wFGkWbnrdllHEf_f38OFu5gv5MGSEZJxZ61unxNSHZIO3acKF-DWF_eP9AU1XtOS54&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/2.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/3.jpg"
+      "https://bloximages.chicago2.vip.townnews.com/joplinglobe.com/content/tncms/assets/v3/editorial/3/d3/3d388b1c-0171-11e7-8000-7300315f6b1a/58bbb8c84e2a4.preview.jpg?crop=864%2C454%2C0%2C16&resize=864%2C454&order=crop%2Cresize",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79Zs1mThcf9_XlwbZ7VZOqjFf9jiuQ6J67290S0Mq4u-owriuQbc8fUHHpj5ohnZVCYo&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8F3rj3sKAcwo_SZai3V_jZbWIgjqUiTIa5pozNaSTRMM3umRKuBxuTtd_QFGwGWOYssg&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtuWDw7ldAbcgQZNWcC77UaDuF1kY5mTGdpzlLMUxKQTmhN9d9qoSwCOSvurzIQKKsk0&usqp=CAU",
+      "https://bloximages.chicago2.vip.townnews.com/joplinglobe.com/content/tncms/assets/v3/editorial/b/30/b30c7674-0170-11e7-ae3e-0bad49ae7d19/58bbb65900de5.image.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 10 64-bits",
@@ -574,10 +707,29 @@
   {
     "category": "Action",
     "title": "The Witcher 3: Wild Hunt",
-    "image": "example.com",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on an epic journey as Geralt of Rivia, a monster hunter, in a beautifully crafted fantasy world...",
+    "description": {
+      "descriptionTitle1": "Vast Open World",
+      "description1": "This game presents an expansive and meticulously crafted open world called the Continent. This world is teeming with cities, villages, forests, mountains, and other unique regions, each with its own stories and quests.",
+      "descriptionTitle2": "Engaging Narrative:",
+      "description2": "The game features a complex narrative with multiple storylines, branching paths, and intricate characters. Players' choices throughout the game have significant consequences, leading to multiple endings.",
+      "descriptionTitle3": "Monsters and Combat:",
+      "description3": "As a Witcher, Geralt possesses unique abilities and skills that make him a formidable monster hunter. Players engage in real-time combat, utilizing a combination of swordplay, magic signs, and alchemical concoctions to defeat a variety of creatures. The game is filled with a multitude of side quests, contracts, and activities. Players can choose how to approach these quests, impacting the game's world and story."
+    },
+    "extraText": {
+      "extraTitle": "players step into the boots",
+      "extraText1": " hunter known as a Witcher",
+      "extraText2": "it is the third main installment in The Witcher video game series, based on the book series of the same name by Andrzej Sapkowski. The game is celebrated for its expansive world, intricate storytelling, and immersive gameplay."
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -588,17 +740,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/witcher-3-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokx_Xmahjfu_vUO6sm0el3HGURGiQWQJrQHMMWaOMG7nHc5D_VlgnINSbvPcHvGlXMK4&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8rCC2WFijCVFSmgqqiwAoq5D8dqaM-4yfn5O5DFR2YiS1sWud0QERetNJFE7g8EGd-c&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBQ7SsjatBHsx-mnoOgxX7AHk0-ETM280hRvlkcVy1-EUEsPjLWBgnPuaHxLnsmFEVsA&usqp=CAU",
+      "image4": "https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/UP4BHTZKJVJJFDUXANEU5E5OAY.jpg"
     },
     "screenshots": [
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/2.jpg",
-      "https://example.com/screenshots/witcher-3/3.jpg"
+      "https://i.ytimg.com/vi/xx8kQ4s5hCY/maxresdefault.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTDRHQ3mzj4PWrZLRyLCPcOqe00cdpo_QeG4abx2M-ua6BCmFMovBFsKGCfFmuZ4RxU8&usqp=CAU",
+      "https://www.trustedreviews.com/wp-content/uploads/sites/54/2015/05/ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa-1024x576.jpg",
+      "https://m.media-amazon.com/images/I/719KQa5XqPL._AC_UF1000,1000_QL80_.jpg",
+      "https://gocdkeys.com/images/captures/the-witcher-3-wild-hunt-pc-cd-key-4.jpg"
     ],
     "minimumRequirements": {
       "OS": "64-bit Windows 7, 64-bit Windows 8 (8.1), or 64-bit Windows 10",
@@ -656,9 +808,28 @@
     "category": "Action",
     "title": "Uncharted 4: A Thief's End",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-05-10",
-    "description": "Join Nathan Drake on his final adventure as he delves into his past and confronts dangerous enemies in search of treasure...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.8,
@@ -742,9 +913,28 @@
     "category": "Action",
     "title": "Metal Gear Solid V: The Phantom Pain",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-09-01",
-    "description": "Experience the gripping tale of Big Boss in an open-world espionage adventure set during the Cold War...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Kojima Productions",
     "publisher": "Konami",
     "rating": 4.7,
@@ -823,9 +1013,28 @@
     "category": "Action",
     "title": "Batman: Arkham Knight",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-06-23",
-    "description": "Don the mantle of the Dark Knight in an explosive conclusion to the Arkham series, facing off against iconic villains...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Rocksteady Studios",
     "publisher": "Warner Bros. Interactive Entertainment",
     "rating": 4.8,
@@ -904,9 +1113,28 @@
     "category": "Action",
     "title": "DOOM Eternal",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
-    "description": "Rip and tear through hordes of demons as the iconic DOOM Slayer in a high-octane, fast-paced action experience...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
     "rating": 4.9,
@@ -985,9 +1213,28 @@
     "category": "Action",
     "title": "Red Dead Redemption 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Step into the shoes of Arthur Morgan, an outlaw, and experience the harsh realities of the Wild West...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Rockstar Studios",
     "publisher": "Rockstar Games",
     "rating": 4.8,
@@ -1066,9 +1313,28 @@
     "category": "Action",
     "title": "Assassin's Creed Valhalla",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
-    "description": "Forge your Viking legend as Eivor in a journey across the Dark Ages of England, battling for glory and conquest...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -1147,9 +1413,28 @@
     "category": "Action",
     "title": "Horizon Zero Dawn",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
-    "description": "Embark on a post-apocalyptic journey as Aloy, a skilled hunter, in a world overrun by robotic creatures...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.9,
@@ -1228,9 +1513,28 @@
     "category": "Action",
     "title": "Far Cry 6",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2021-10-07",
-    "description": "Step into the shoes of Dani Rojas, a guerrilla fighter, and join the resistance against a ruthless dictator in a tropical paradise...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Ubisoft Toronto",
     "publisher": "Ubisoft",
     "rating": 4.6,
@@ -1309,9 +1613,28 @@
     "category": "Battle Royale",
     "title": "Apex Legends",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-04",
-    "description": "Join a squad of legendary characters and fight in the Titanfall universe's battle royale with unique abilities and strategic gameplay...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Respawn Entertainment",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -1390,9 +1713,28 @@
     "category": "Battle Royale",
     "title": "PlayerUnknown's Battlegrounds (PUBG)",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2017-12-20",
-    "description": "Drop onto an island, scavenge for weapons, and outlast other players in intense battles to become the last one standing...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "PUBG Corporation",
     "publisher": "PUBG Corporation",
     "rating": 4.7,
@@ -1471,9 +1813,28 @@
     "category": "Battle Royale",
     "title": "Fortnite",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2017-07-25",
-    "description": "Build and battle in a vibrant world as you fight to be the last one standing in the ever-evolving Fortnite experience...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Epic Games",
     "publisher": "Epic Games",
     "rating": 4.9,
@@ -1552,9 +1913,28 @@
     "category": "Battle Royale",
     "title": "Call of Duty: Warzone",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-03-10",
-    "description": "Experience the fast-paced Call of Duty action in a massive battle royale map, with intense firefights and unique contracts...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Infinity Ward",
     "publisher": "Activision",
     "rating": 4.8,
@@ -1633,9 +2013,28 @@
     "category": "Battle Royale",
     "title": "Realm Royale",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-06-05",
-    "description": "Choose a class and dive into the fantasy world of Realm Royale, where you forge your path to victory with unique abilities and magical weapons...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Heroic Leap Games",
     "publisher": "Hi-Rez Studios",
     "rating": 4.5,
@@ -1714,9 +2113,28 @@
     "category": "Battle Royale",
     "title": "Hyper Scape",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-11",
-    "description": "Engage in fast-paced, vertical battles in the virtual city of Hyper Scape, where unique weapons and abilities define your strategy...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.6,
@@ -1795,9 +2213,28 @@
     "category": "Battle Royale",
     "title": "Rogue Company",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-07-20",
-    "description": "Join an elite group of mercenaries in Rogue Company and engage in tactical battles with an emphasis on team coordination and strategic gameplay...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "First Watch Games",
     "publisher": "Hi-Rez Studios",
     "rating": 4.7,
@@ -1876,9 +2313,28 @@
     "category": "Battle Royale",
     "title": "Darwin Project",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-01-14",
-    "description": "Step into a frozen post-apocalyptic arena in Darwin Project, where you must survive against the elements, other players, and a powerful Show Director...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Scavengers Studio",
     "publisher": "Scavengers Studio",
     "rating": 4.5,
@@ -1957,9 +2413,28 @@
     "category": "Battle Royale",
     "title": "Scavengers",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
     "releaseDate": "2022-04-22",
-    "description": "Form a team of explorers and navigate a post-apocalyptic world in Scavengers, combining battle royale gameplay with PvE elements...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Midwinter Entertainment",
     "publisher": "Improbable",
     "rating": 4.6,
@@ -2038,9 +2513,28 @@
     "category": "Battle Royale",
     "title": "Outworlder",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2022-09-15",
-    "description": "Set on a distant alien planet, Outworlder pits players against each other in a fight for survival, utilizing sci-fi technology and tactics...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Hiveform",
     "publisher": "Hiveform",
     "rating": 4.4,
@@ -2119,9 +2613,28 @@
     "category": "Adventure",
     "title": "The Legend of Zelda: Breath of the Wild",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["Nintendo Switch"],
     "releaseDate": "2017-03-03",
-    "description": "Embark on an epic journey as Link to save the kingdom of Hyrule in a vast open world filled with adventure and exploration...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Nintendo EPD",
     "publisher": "Nintendo",
     "rating": 4.9,
@@ -2200,9 +2713,28 @@
     "category": "Adventure",
     "title": "Uncharted 4: A Thief's End",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PlayStation 4"],
     "releaseDate": "2016-05-10",
-    "description": "Join Nathan Drake on his final adventure as he searches for pirate treasure and faces danger and intrigue...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.8,
@@ -2281,9 +2813,28 @@
     "category": "Adventure",
     "title": "Journey",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PlayStation 4", "PC"],
     "releaseDate": "2012-03-13",
-    "description": "Embark on a mysterious and emotional journey through a vast desert, accompanied by other players in a unique online experience...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Thatgamecompany",
     "publisher": "Annapurna Interactive",
     "rating": 4.7,
@@ -2362,9 +2913,28 @@
     "category": "Adventure",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Step into the shoes of Geralt of Rivia, a monster hunter, and embark on a dark and epic journey in a world filled with magic and danger...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -2443,9 +3013,28 @@
     "category": "Adventure",
     "title": "A Plague Tale: Innocence",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-14",
-    "description": "Follow the harrowing journey of Amicia and her brother Hugo as they navigate a world plagued by disease, survival, and supernatural horrors...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Asobo Studio",
     "publisher": "Focus Home Interactive",
     "rating": 4.7,
@@ -2524,9 +3113,28 @@
     "category": "Adventure",
     "title": "Red Dead Redemption 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Immerse yourself in the late 1800s as Arthur Morgan, an outlaw, and experience a story of survival, honor, and the changing American frontier...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Rockstar Games",
     "publisher": "Rockstar Games",
     "rating": 4.8,
@@ -2605,9 +3213,28 @@
     "category": "Adventure",
     "title": "Tomb Raider",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2013-03-05",
-    "description": "Join Lara Croft on her first expedition as she becomes the fierce and resourceful explorer we know today...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Crystal Dynamics",
     "publisher": "Square Enix",
     "rating": 4.6,
@@ -2687,9 +3314,28 @@
     "category": "Adventure",
     "title": "Horizon Zero Dawn",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4"],
     "releaseDate": "2020-08-07",
-    "description": "Play as Aloy, a skilled hunter, and unravel the mysteries of a post-apocalyptic world dominated by robotic creatures...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.9,
@@ -2773,9 +3419,28 @@
     "category": "Adventure",
     "title": "Oxenfree",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-01-15",
-    "description": "Join a group of friends as they unintentionally open a ghostly rift and uncover the mysteries of Edwards Island...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Night School Studio",
     "publisher": "Night School Studio",
     "rating": 4.5,
@@ -2854,9 +3519,28 @@
     "category": "Racing",
     "title": "Need for Speed: Most Wanted",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 3", "Xbox 360"],
     "releaseDate": "2012-10-30",
-    "description": "Race, chase, and explore an open-world city in this thrilling racing game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -2935,9 +3619,28 @@
     "category": "Racing",
     "title": "Forza Horizon 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Xbox One"],
     "releaseDate": "2018-10-02",
-    "description": "Explore an open-world rendition of the United Kingdom with a diverse collection of cars...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Playground Games",
     "publisher": "Microsoft Studios",
     "rating": 4.9,
@@ -3016,9 +3719,28 @@
     "category": "Racing",
     "title": "F1 2021",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
     "releaseDate": "2021-07-16",
-    "description": "Experience the excitement of Formula One racing with the latest teams and tracks...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -3097,9 +3819,28 @@
     "category": "Racing",
     "title": "Dirt Rally 2.0",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-26",
-    "description": "Master the art of rally racing on challenging tracks across various locations...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.8,
@@ -3178,9 +3919,28 @@
     "category": "Racing",
     "title": "Project CARS 3",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-28",
-    "description": "Experience an accessible yet authentic racing experience with a wide range of cars and tracks...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Slightly Mad Studios",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.5,
@@ -3259,9 +4019,28 @@
     "category": "Racing",
     "title": "Burnout Paradise Remastered",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-03-16",
-    "description": "Experience high-speed mayhem and crashes in this remastered edition of the classic Burnout Paradise...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -3340,9 +4119,28 @@
     "category": "Racing",
     "title": "Assetto Corsa Competizione",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-05-29",
-    "description": "Immerse yourself in the world of GT3 racing with highly accurate physics and meticulously recreated tracks...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "KUNOS Simulazioni",
     "publisher": "505 Games",
     "rating": 4.6,
@@ -3421,9 +4219,28 @@
     "category": "Racing",
     "title": "Wreckfest",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-06-14",
-    "description": "Engage in brutal and chaotic demolition derbies and races in this unique racing game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Bugbear Entertainment",
     "publisher": "THQ Nordic",
     "rating": 4.7,
@@ -3502,9 +4319,28 @@
     "category": "Racing",
     "title": "NASCAR Heat 5",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-07-10",
-    "description": "Experience the intensity of NASCAR racing with the latest drivers and tracks...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Monster Games",
     "publisher": "704Games",
     "rating": 4.6,
@@ -3583,9 +4419,28 @@
     "category": "Racing",
     "title": "Dirt 5",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-11-06",
-    "description": "Embark on a global racing journey across a variety of terrains and vehicles...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.5,
@@ -3664,9 +4519,28 @@
     "category": "Racing",
     "title": "Need for Speed Heat",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-11-08",
-    "description": "Experience the thrill of street racing in a vibrant open-world setting...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Ghost Games",
     "publisher": "Electronic Arts",
     "rating": 4.4,
@@ -3745,9 +4619,28 @@
     "category": "Racing",
     "title": "GRID",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-10-11",
-    "description": "Experience a diverse range of racing disciplines in this high-octane racer...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.3,
@@ -3826,9 +4719,28 @@
     "category": "Racing",
     "title": "F1 2021",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2021-07-16",
-    "description": "Experience the excitement of Formula One racing with the latest teams, drivers, and tracks...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -3907,9 +4819,28 @@
     "category": "Racing",
     "title": "TrackMania Turbo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2016-03-24",
-    "description": "Defy gravity and master insane tracks in this fast-paced arcade racer...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Nadeo",
     "publisher": "Ubisoft",
     "rating": 4.5,
@@ -3988,9 +4919,28 @@
     "category": "Simulation",
     "title": "Microsoft Flight Simulator",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Xbox Series X|S"],
     "releaseDate": "2020-08-18",
-    "description": "Experience the most realistic and breathtaking flight simulation...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Asobo Studio",
     "publisher": "Xbox Game Studios",
     "rating": 4.9,
@@ -4069,9 +5019,28 @@
     "category": "Simulation",
     "title": "The Sims 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2014-09-02",
-    "description": "Create and control virtual lives in this popular life simulation game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Maxis",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -4150,9 +5119,28 @@
     "category": "Simulation",
     "title": "Euro Truck Simulator 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2012-10-19",
-    "description": "Embark on a journey as a truck driver, hauling cargo across Europe...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "SCS Software",
     "publisher": "SCS Software",
     "rating": 4.8,
@@ -4231,9 +5219,28 @@
     "category": "Simulation",
     "title": "Cities: Skylines",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-03-10",
-    "description": "Build and manage your own city in this critically acclaimed city simulation game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Colossal Order",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -4312,9 +5319,28 @@
     "category": "Simulation",
     "title": "Farming Simulator 19",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-11-20",
-    "description": "Experience life as a modern farmer, cultivating fields and managing livestock...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Giants Software",
     "publisher": "Focus Home Interactive",
     "rating": 4.6,
@@ -4393,9 +5419,28 @@
     "category": "Simulation",
     "title": "Kerbal Space Program",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-04-27",
-    "description": "Design, build, and launch your own spacecraft in this physics-based space simulation...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Squad",
     "publisher": "Private Division",
     "rating": 4.7,
@@ -4474,9 +5519,28 @@
     "category": "Simulation",
     "title": "Planet Coaster",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-11-17",
-    "description": "Build and manage your own theme park in this creative and detailed simulation game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Frontier Developments",
     "publisher": "Frontier Developments",
     "rating": 4.8,
@@ -4555,9 +5619,28 @@
     "category": "Simulation",
     "title": "Stardew Valley",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-02-26",
-    "description": "Escape to the countryside and build a thriving farm in this charming farming simulation...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "ConcernedApe",
     "publisher": "ConcernedApe",
     "rating": 4.9,
@@ -4636,9 +5719,28 @@
     "category": "Simulation",
     "title": "Two Point Hospital",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-08-30",
-    "description": "Design and manage your own humorous and quirky hospital in this simulation game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Two Point Studios",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -4717,9 +5819,28 @@
     "category": "Simulation",
     "title": "House Flipper",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-05-17",
-    "description": "Renovate and sell homes in this simulation game that combines house flipping with interior design...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Empyrean",
     "publisher": "PlayWay S.A.",
     "rating": 4.6,
@@ -4798,9 +5919,28 @@
     "category": "Simulation",
     "title": "Prison Architect",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Mobile"],
     "releaseDate": "2015-10-06",
-    "description": "Design and manage your own prison, dealing with inmates, facilities, and security...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Introversion Software",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -4879,6 +6019,13 @@
     "category": "Sports",
     "title": "FIFA 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -4887,7 +6034,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-10-01",
-    "description": "Experience the excitement of soccer with updated gameplay and realistic graphics...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -4966,6 +6125,13 @@
     "category": "Sports",
     "title": "NBA 2K22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -4974,7 +6140,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-09-10",
-    "description": "Experience the thrill of basketball with improved graphics and engaging gameplay...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5053,6 +6231,13 @@
     "category": "Sports",
     "title": "Madden NFL 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5061,7 +6246,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-08-20",
-    "description": "Experience American football with improved visuals and dynamic gameplay...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "EA Tiburon",
     "publisher": "Electronic Arts",
     "rating": 4.5,
@@ -5140,6 +6337,13 @@
     "category": "Sports",
     "title": "WWE 2K22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5148,7 +6352,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-03-11",
-    "description": "Step into the world of professional wrestling with enhanced visuals and dynamic action...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.4,
@@ -5227,9 +6443,28 @@
     "category": "Sports",
     "title": "PGA Tour 2K21",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-08-21",
-    "description": "Experience the challenge and precision of professional golf with realistic courses and mechanics...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "HB Studios",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5308,6 +6543,13 @@
     "category": "Sports",
     "title": "Pro Evolution Soccer 2023",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5316,7 +6558,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-16",
-    "description": "Experience the evolution of soccer with improved gameplay mechanics and updated teams...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Konami Digital Entertainment",
     "publisher": "Konami Digital Entertainment",
     "rating": 4.5,
@@ -5395,6 +6649,13 @@
     "category": "Sports",
     "title": "NHL 22",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5403,7 +6664,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-10-15",
-    "description": "Experience the intensity of ice hockey with realistic gameplay and updated teams...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -5482,6 +6755,13 @@
     "category": "Sports",
     "title": "RIDE 4",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5490,7 +6770,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2020-10-08",
-    "description": "Experience the thrill of motorcycle racing with realistic physics and a variety of bikes...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
     "rating": 4.4,
@@ -5574,6 +6866,13 @@
     "category": "Sports",
     "title": "MotoGP 21",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5582,7 +6881,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-04-22",
-    "description": "Experience the adrenaline of professional motorcycle racing with realistic physics and official teams...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
     "rating": 4.5,
@@ -5666,6 +6977,13 @@
     "category": "Sports",
     "title": "NBA 2K23",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5674,7 +6992,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-09",
-    "description": "Experience the excitement of basketball with improved gameplay mechanics and updated teams...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5753,6 +7083,13 @@
     "category": "Sports",
     "title": "FIFA 23",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": [
       "PC",
       "PlayStation 4",
@@ -5761,7 +7098,19 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-27",
-    "description": "Experience the world of soccer with realistic gameplay and official teams...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -5840,9 +7189,28 @@
     "category": "Strategy",
     "title": "Sid Meier's Civilization VI",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
-    "description": "Build and lead your civilization from the Stone Age to the Information Age...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Firaxis Games",
     "publisher": "2K Games",
     "rating": 4.8,
@@ -5921,9 +7289,28 @@
     "category": "Strategy",
     "title": "Total War: Three Kingdoms",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
-    "description": "Unite ancient China under your banner in a saga of warfare and diplomacy...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -6002,9 +7389,28 @@
     "category": "Strategy",
     "title": "Stellaris",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-05-09",
-    "description": "Explore the galaxy, expand your empire, and discover the mysteries of the universe...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Paradox Interactive",
     "publisher": "Paradox Interactive",
     "rating": 4.9,
@@ -6083,9 +7489,28 @@
     "category": "Strategy",
     "title": "Europa Universalis IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-08-13",
-    "description": "Shape the course of history through diplomacy, trade, warfare, and exploration...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
     "rating": 4.8,
@@ -6164,9 +7589,28 @@
     "category": "Strategy",
     "title": "Hearts of Iron IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-06-06",
-    "description": "Lead your nation through World War II and shape history's outcome...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -6245,9 +7689,28 @@
     "category": "Strategy",
     "title": "Anno 1800",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-04-16",
-    "description": "Build and manage your own industrial city during the dawn of the 19th century...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Blue Byte",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -6326,9 +7789,28 @@
     "category": "Strategy",
     "title": "Company of Heroes 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-06-25",
-    "description": "Experience intense tactical warfare on the Eastern Front during World War II...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Relic Entertainment",
     "publisher": "SEGA",
     "rating": 4.6,
@@ -6407,9 +7889,28 @@
     "category": "Strategy",
     "title": "Warcraft III: Reforged",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2020-01-28",
-    "description": "Relive the epic saga of Warcraft III with reimagined graphics and updated gameplay...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Blizzard Entertainment",
     "publisher": "Blizzard Entertainment",
     "rating": 3.9,
@@ -6488,9 +7989,28 @@
     "category": "Strategy",
     "title": "Age of Empires IV",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2021-10-28",
-    "description": "Lead civilizations through different eras in this highly anticipated installment of the series...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Relic Entertainment",
     "publisher": "Xbox Game Studios",
     "rating": 4.5,
@@ -6569,9 +8089,28 @@
     "category": "Strategy",
     "title": "RimWorld",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2018-10-17",
-    "description": "Build and manage a colony on an alien world, facing challenges and making tough decisions...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Ludeon Studios",
     "publisher": "Ludeon Studios",
     "rating": 4.9,
@@ -6650,9 +8189,28 @@
     "category": "Strategy",
     "title": "Civilization VI",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
-    "description": "Build a civilization from the Stone Age to the Information Age and achieve victory through various paths...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Firaxis Games",
     "publisher": "2K",
     "rating": 4.8,
@@ -6731,9 +8289,28 @@
     "category": "Strategy",
     "title": "Total War: Three Kingdoms",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
-    "description": "Experience the epic conflict of ancient China's Three Kingdoms era in this grand strategy game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -6812,9 +8389,28 @@
     "category": "Puzzle",
     "title": "Portal 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-04-18",
-    "description": "Navigate through mind-bending puzzles using the Portal gun in this captivating first-person game...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Valve",
     "publisher": "Valve",
     "rating": 4.9,
@@ -6893,9 +8489,28 @@
     "category": "Puzzle",
     "title": "The Witness",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
-    "description": "Explore a mysterious island and solve intricate puzzles to uncover its secrets...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
     "rating": 4.7,
@@ -6974,9 +8589,28 @@
     "category": "Puzzle",
     "title": "Baba Is You",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2019-03-13",
-    "description": "Manipulate the rules of the game to solve puzzles and progress through a whimsical world...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Hempuli",
     "publisher": "Hempuli",
     "rating": 4.8,
@@ -7055,9 +8689,28 @@
     "category": "Puzzle",
     "title": "The Talos Principle",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-12-11",
-    "description": "Embark on a philosophical journey filled with challenging puzzles and existential themes...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Croteam",
     "publisher": "Devolver Digital",
     "rating": 4.7,
@@ -7136,9 +8789,28 @@
     "category": "Puzzle",
     "title": "Fez",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2013-05-01",
-    "description": "Explore a 2D world with a twist: rotate the 3D perspective to solve puzzles and uncover secrets...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Polytron Corporation",
     "publisher": "Trapdoor",
     "rating": 4.6,
@@ -7217,9 +8889,28 @@
     "category": "Puzzle",
     "title": "Limbo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-07-21",
-    "description": "Embark on a dark and atmospheric journey as a boy searching for his sister, solving puzzles along the way...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Playdead",
     "publisher": "Playdead",
     "rating": 4.8,
@@ -7298,9 +8989,28 @@
     "category": "Puzzle",
     "title": "Monument Valley",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-04-03",
-    "description": "Guide a silent princess through mesmerizing architectural puzzles inspired by optical illusions...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "ustwo games",
     "publisher": "ustwo games",
     "rating": 4.7,
@@ -7379,9 +9089,28 @@
     "category": "Puzzle",
     "title": "The Room",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-07-28",
-    "description": "Solve intricate mechanical puzzles in a mysterious room filled with secrets...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Fireproof Games",
     "publisher": "Fireproof Games",
     "rating": 4.9,
@@ -7460,9 +9189,28 @@
     "category": "Puzzle",
     "title": "LIMBO",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-08-02",
-    "description": "Embark on a monochromatic journey filled with platforming challenges and atmospheric puzzles...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Playdead",
     "publisher": "Playdead",
     "rating": 4.8,
@@ -7541,9 +9289,28 @@
     "category": "Puzzle",
     "title": "World of Goo",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2008-10-13",
-    "description": "Construct wobbly structures using goo balls to navigate through challenging puzzles...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "2D BOY",
     "publisher": "2D BOY",
     "rating": 4.7,
@@ -7622,9 +9389,28 @@
     "category": "Puzzle",
     "title": "The Witness",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
-    "description": "Explore a vibrant island filled with intricate puzzles that test your observation and logic skills...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
     "rating": 4.6,
@@ -7703,9 +9489,28 @@
     "category": "Puzzle",
     "title": "Braid",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2008-04-10",
-    "description": "Manipulate time to solve complex puzzles and uncover the mystery of a rescue mission...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Number None, Inc.",
     "publisher": "Number None, Inc.",
     "rating": 4.9,
@@ -7784,9 +9589,28 @@
     "category": "RPG",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on an epic open-world journey as Geralt of Rivia, a monster hunter, in a war-ravaged fantasy world...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -7865,9 +9689,28 @@
     "category": "RPG",
     "title": "Dark Souls III",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
-    "description": "Journey through a dark and challenging world as you face relentless enemies and uncover the mysteries of the past...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.8,
@@ -7946,9 +9789,28 @@
     "category": "RPG",
     "title": "Elder Scrolls V: Skyrim",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
-    "description": "Step into the vast province of Skyrim and become the Dragonborn as you explore a world of epic quests and dragons...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8027,9 +9889,28 @@
     "category": "RPG",
     "title": "Divinity: Original Sin 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
-    "description": "Embark on a multiplayer fantasy adventure with deep storytelling, tactical combat, and an expansive world to explore...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
     "rating": 4.9,
@@ -8108,9 +9989,28 @@
     "category": "RPG",
     "title": "Mass Effect 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-01-26",
-    "description": "Commander Shepard returns in this epic space RPG where your choices shape the galaxy's fate...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -8189,9 +10089,28 @@
     "category": "RPG",
     "title": "Dragon Age: Inquisition",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
-    "description": "Lead the Inquisition and restore order to a world torn by chaos, in this fantasy RPG filled with epic quests and tough choices...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -8270,9 +10189,28 @@
     "category": "RPG",
     "title": "Fallout: New Vegas",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2010-10-19",
-    "description": "Step into the post-apocalyptic wasteland of the Mojave Desert and shape your destiny in this RPG filled with choices...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Obsidian Entertainment",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8351,9 +10289,28 @@
     "category": "RPG",
     "title": "Kingdom Come: Deliverance",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2018-02-13",
-    "description": "Experience a realistic medieval RPG where your actions have consequences in a rich historical setting...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Warhorse Studios",
     "publisher": "Deep Silver",
     "rating": 4.7,
@@ -8432,9 +10389,28 @@
     "category": "RPG",
     "title": "Final Fantasy VII",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "1998-07-02",
-    "description": "Enter the iconic world of Final Fantasy VII and join Cloud Strife on a journey to save the planet from the malevolent Sephiroth...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Square Enix",
     "publisher": "Square Enix",
     "rating": 4.9,
@@ -8513,9 +10489,28 @@
     "category": "RPG",
     "title": "The Witcher 3: Wild Hunt",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on a dark fantasy RPG adventure as Geralt of Rivia in search of his missing loved ones...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -8594,9 +10589,28 @@
     "category": "RPG",
     "title": "Dark Souls III",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2016-04-12",
-    "description": "Test your skills in this challenging action RPG set in a dark and atmospheric world filled with deadly foes...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.7,
@@ -8675,9 +10689,28 @@
     "category": "RPG",
     "title": "Divinity: Original Sin 2",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
-    "description": "Gather your party and embark on an epic RPG adventure filled with choices, tactical combat, and a deep and immersive world...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
     "rating": 4.8,
@@ -8756,9 +10789,28 @@
     "category": "RPG",
     "title": "Elder Scrolls V: Skyrim",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
-    "description": "Step into the vast open world of Skyrim and embark on an epic fantasy RPG adventure filled with dragons, quests, and exploration...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8837,9 +10889,28 @@
     "category": "RPG",
     "title": "Dragon Age: Inquisition",
     "image": "example.com",
+    "coverImage": {
+      "coverImage1": "http://",
+      "coverImage2": "http://",
+      "coverImage3": "http://",
+      "coverImage4": "http://",
+      "coverImage5": "http://"
+    },
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
-    "description": "Lead the Inquisition in a fantasy RPG epic where your choices shape the world and your alliances determine the fate of nations...",
+    "description": {
+      "descriptionTitle1": "lorem",
+      "description1": "lorem15",
+      "descriptionTitle2": "lorem",
+      "description2": "lorem15",
+      "descriptionTitle3": "lorem",
+      "description3": "lorem15"
+    },
+    "extraText": {
+      "extraTitle": "extraTitle",
+      "extraText1": "extraText1",
+      "extraText2": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.7,

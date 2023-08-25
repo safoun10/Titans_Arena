@@ -1,7 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { NavLink, useParams } from "react-router-dom";
+import Comments from "./Components/Comment/Comment";
+import Description from "./Components/Description/Description";
+import GameHeading from "./Components/GameHeading/GameHeading";
+
+import GameInfo from "./Components/GameInfo/GameInfo";
+import RealLinks from "./Components/RealLinks/RealLinks";
 import "./GamesDetails.css";
+import GameReviews from "./Components/GameReviews/GameReviews";
 
 const GamesDetails = () => {
   const [gameDetails, setGameDetails] = useState({});
@@ -32,10 +39,11 @@ const GamesDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://titans-arena-server.vercel.app/games/${id}`)
+    fetch(`http://localhost:5000/games/${id}`)
       .then((res) => res.json())
       .then((data) => setGameDetails(data));
   }, []);
+
   const navOptions = (
     <>
       <li className="nav-link">
@@ -70,9 +78,11 @@ const GamesDetails = () => {
       </li>
     </>
   );
+
   return (
-    <div className="text-white">
-      <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/breadcrumb_bg01.jpg')] bg-cover ">
+ 
+      <div className="text-white bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+      <div className="bg-[url('https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/tw-bg-1920x450.jpg')] bg-cover ">
         <div
           style={{
             background:
@@ -82,17 +92,27 @@ const GamesDetails = () => {
           className=" h-[350px] flex items-center"
         >
           <div>
-            <h2 className="text-4xl font-bold">{title}</h2>
-            <h3 className="text-2xl font-bold">Genre: {category}</h3>
-            <h3 className="text-2xl font-bold">Pulisher: {publisher}</h3>
             <div>
-              <div className="navbar-center hidden lg:flex">
+              <div className="navbar-center  hidden lg:flex">
                 <ul className="flex gap-4 text-xs">{navOptions}</ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div>
+        <GameHeading gameDetails={gameDetails} />
+      </div>
+      <div>
+        <GameInfo gameDetails={gameDetails} />
+        <div>
+          <Description gameDetails={gameDetails} />
+        </div>
+      </div>
+
+      <GameReviews gameDetails={gameDetails} />
+      <Comments />
+      <RealLinks />
     </div>
   );
 };

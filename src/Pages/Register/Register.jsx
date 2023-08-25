@@ -24,8 +24,10 @@ const Register = () => {
     formState: { errors },
     watch,
   } = useForm();
+
   const onSubmit = (data) => {
     const { password, confirmPassword, ...rest } = data;
+
     if (password !== confirmPassword) {
       setErr("Passwords do not match");
     } else {
@@ -33,19 +35,39 @@ const Register = () => {
         .then(() => {
           updateUserProfile(data.name, data.photoUrl)
             .then(() => {
-              setErr(""); // Clear any previous error
-              Swal.fire({
-                title: "User Registered Successfully",
-                icon: "success",
-                timer: 2000, // Display success message for 2 seconds
-              }).then(() => {
-                navigate("/");
-              });
+              setErr("");
+
+              const saveUser = {
+                name: data.name,
+                email: data.email,
+                photoURL: data.photoUrl,
+              };
+
+              fetch("http://localhost:5000/users", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(saveUser),
+              })
+                .then((res) => res.json())
+                .then((data) => {
+                  if (data.insertedId) {
+                    Swal.fire({
+                      title: "User Registered Successfully",
+                      icon: "success",
+                      timer: 2000,
+                    }).then(() => {
+                      navigate("/");
+                    });
+                  }
+                })
+                .catch((error) => console.log(error));
             })
             .catch((error) => console.log(error));
         })
         .catch((error) => {
-          setErr(error.message); // Display Firebase error message
+          setErr(error.message);
           Swal.fire({
             title: "Error",
             text: error.message,
@@ -54,7 +76,6 @@ const Register = () => {
         });
     }
   };
-
   return (
     <div className="">
       <div>
@@ -82,7 +103,7 @@ const Register = () => {
                         type="text"
                         id="name"
                         {...register("name", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.name && (
                         <p className="text-red-500 text-xs italic">
@@ -102,7 +123,7 @@ const Register = () => {
                         type="email"
                         id="email"
                         {...register("email", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.email && (
                         <p className="text-red-500 text-xs italic">
@@ -122,7 +143,7 @@ const Register = () => {
                         type="password"
                         id="password"
                         {...register("password", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.password && (
                         <p className="text-red-500 text-xs italic">
@@ -142,7 +163,7 @@ const Register = () => {
                         type="password"
                         id="confirmPassword"
                         {...register("confirmPassword", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.confirmPassword && (
                         <p className="text-red-500 text-xs italic">
@@ -162,7 +183,7 @@ const Register = () => {
                         type="text"
                         id="photoUrl"
                         {...register("photoUrl")}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                     </div>
 

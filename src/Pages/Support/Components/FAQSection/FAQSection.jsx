@@ -10,9 +10,9 @@ const FAQSection = () => {
         primaryText="FAQ Zone"
         secondaryText="Gaming Queries Unveiled"
       ></Title>
-      <div className="grid grid-cols-2 gap-6">
-        <div className="p-6">
-          <div className="collapse collapse-arrow bg-base-200 mb-6">
+      <div className="grid md:grid-cols-2 gap-6 max-w-7xl mx-auto">
+        <div className="md:p-0 p-6">
+          <div className="collapse collapse-arrow bg-transparent text-white border-b rounded  mb-6">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div className="collapse-title text-xl font-medium">
               How has the rise of eSports impacted the gaming industry?
@@ -27,7 +27,7 @@ const FAQSection = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow bg-base-200 mb-6">
+          <div className="collapse collapse-arrow bg-transparent text-white border-b rounded  mb-6">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div className="collapse-title text-xl font-medium">
               How have open-world games changed the way players engage with
@@ -42,7 +42,7 @@ const FAQSection = () => {
               </p>
             </div>
           </div>
-          <div className="collapse collapse-arrow bg-base-200 mb-6">
+          <div className="collapse collapse-arrow bg-transparent text-white border-b rounded  mb-6">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div className="collapse-title text-xl font-medium">
               How can the gaming industry address issues of crunch, labor
@@ -67,7 +67,7 @@ const FAQSection = () => {
             loop
             animationData={lottie}
             play
-            style={{ width: 450, height: 450 }}
+            className="md:w-[450px] md:h-[450px]"
           />
         </div>
       </div>
