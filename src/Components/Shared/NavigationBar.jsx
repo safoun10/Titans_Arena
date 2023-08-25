@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
+import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
+
 import logo from "././../../../public/logoTest4.png";
 import "./NavigationBar.css";
 
@@ -119,7 +121,7 @@ const NavigationBar = () => {
                       </div>
                     </div>
                     <button
-                      className="btn btn-sm bg-blue-600"
+                      className="custom-button hover:bg-green-500 py-2 px-4"
                       onClick={handleLogOut}
                     >
                       Logout
@@ -127,8 +129,10 @@ const NavigationBar = () => {
                   </div>
                 </>
               ) : (
-                <Link className="btn btn-sm bg-blue-600" to="/login">
-                  Login
+                <Link to="/login">
+                  <button className="custom-button hover:bg-green-500 py-2 px-5">
+                    Login
+                  </button>
                 </Link>
               )}
             </div>

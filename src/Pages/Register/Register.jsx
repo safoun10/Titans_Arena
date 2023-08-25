@@ -24,8 +24,10 @@ const Register = () => {
     formState: { errors },
     watch,
   } = useForm();
+
   const onSubmit = (data) => {
     const { password, confirmPassword, ...rest } = data;
+
     if (password !== confirmPassword) {
       setErr("Passwords do not match");
     } else {
@@ -33,19 +35,39 @@ const Register = () => {
         .then(() => {
           updateUserProfile(data.name, data.photoUrl)
             .then(() => {
-              setErr(""); // Clear any previous error
-              Swal.fire({
-                title: "User Registered Successfully",
-                icon: "success",
-                timer: 2000, // Display success message for 2 seconds
-              }).then(() => {
-                navigate("/");
-              });
+              setErr("");
+
+              const saveUser = {
+                name: data.name,
+                email: data.email,
+                photoURL: data.photoUrl,
+              };
+
+              fetch("http://localhost:5000/users", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(saveUser),
+              })
+                .then((res) => res.json())
+                .then((data) => {
+                  if (data.insertedId) {
+                    Swal.fire({
+                      title: "User Registered Successfully",
+                      icon: "success",
+                      timer: 2000,
+                    }).then(() => {
+                      navigate("/");
+                    });
+                  }
+                })
+                .catch((error) => console.log(error));
             })
             .catch((error) => console.log(error));
         })
         .catch((error) => {
-          setErr(error.message); // Display Firebase error message
+          setErr(error.message);
           Swal.fire({
             title: "Error",
             text: error.message,
@@ -54,7 +76,6 @@ const Register = () => {
         });
     }
   };
-
   return (
     <div className="">
       <div>

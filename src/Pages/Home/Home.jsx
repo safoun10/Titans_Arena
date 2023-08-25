@@ -11,16 +11,23 @@ import BlogAndNews from "./Components/BlogAndNews";
 import StayConnect from "./Components/StayConnect/StayConnect";
 import OurTeamMembers from "./Components/OurTeamMembers/OurTeamMembers";
 import Category from "./Components/Category/Category";
+import { FaArrowAltCircleUp } from "react-icons/fa";
+import PrizePoolJoin from "./Components/PrizePoolJoin/PrizePoolJoin";
 const Home = () => {
+ 
+
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <Helmet>
         <title>TitanArena | Home</title>
       </Helmet>
-      <Banner />
+      <div id="#top">
+        <Banner />
+      </div>
       <div className="max-w-[1280px] mx-auto">
-      <FlipCard />
+        <FlipCard />
         <Category />
+        <PrizePoolJoin/> 
         <FeatureGames />
         <SiteStates />
         <LatestGallery />
@@ -28,6 +35,7 @@ const Home = () => {
         <ReviewSection></ReviewSection>
         <OurTeamMembers />
         <StayConnect />
+      
       </div>
     </div>
   );

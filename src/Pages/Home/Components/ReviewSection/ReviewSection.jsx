@@ -18,26 +18,17 @@ const ReviewSection = () => {
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);
-  console.log(review);
+  console.log("review",review);
+
 
   return (
-    <div>
-     <div className="text-center my-10">
-        <h3 className="text-[#68fb9a] font-semibold ">GET HONEST</h3>
-        <h1 className="text-white text-4xl font-bold my-2">REVIEW FROM MEMBER</h1>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-24 mx-auto"
-          fill="#68fb9a"
-          viewBox="0 0 65 5"
-          fillRule="evenodd"
-        >
-          <path
-            d="M968,5630h65l-4,5H972Z"
-            transform="translate(-968 -5630)"
-          ></path>
-        </svg>
-      </div>
+    <div className="my-20">
+       <Title
+        primaryText="GET HONEST"
+        secondaryText="REVIEW FROM MEMBER"
+        
+      />
+   
       <div className="md:mx-0 ml-12">
         <Swiper 
           slidesPerView={isMobileDevice ? 1 : 4}
@@ -46,8 +37,8 @@ const ReviewSection = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {review.map((data) => (
-            <SwiperSlide>
+          {review.map((data, i) => (
+            <SwiperSlide key={i}>
               <div>
                 <div className="card md:w-72 md:h-80 w-72 h-72 shadow-xl mt-20 bg-[#121a23] border-4 border-green-400 flex-col flex items-center ">
 
