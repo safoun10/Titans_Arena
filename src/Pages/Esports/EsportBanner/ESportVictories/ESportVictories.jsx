@@ -55,7 +55,7 @@ const ESportVictories = () => {
   ];
 
   return (
-    <div className="bg-[url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/08/17/16291886670895.jpg')]">
+    <div className="bg-[url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/08/17/16291886670895.jpg')] mt-20">
       <div className=" bg-black bg-opacity-20 ">
         <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-20 py-8 2xl:mx-auto 2xl:container">
           <div className="bg-black bg-opacity-50  lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center">
@@ -140,37 +140,37 @@ const ESportVictories = () => {
           {/* ------------------------------ */}
 
           <div
-            class="flex items-center  w-screen "
+            className="flex items-center  w-screen "
             // style="font-family: 'Muli', sans-serif;"
           >
-            <div class="container ml-auto mr-auto flex flex-wrap items-start">
-              <div class="w-full pl-5 lg:pl-2 mb-4 mt-4">
-                <h1 class="text-3xl lg:text-4xl text-green-500 font-extrabold">
+            <div className="container ml-auto mr-auto flex flex-wrap items-start">
+              <div className="w-full pl-5 lg:pl-2 mb-4 mt-4">
+                <h1 className="text-3xl lg:text-4xl text-green-500 font-extrabold">
                   GLORIA XTRA 2017 LEAGUE
                 </h1>
               </div>
               {victory.map((win) => (
                 <div
                   win={win}
-                  class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2"
+                  className="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2"
                 >
-                  <div class=" border  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
-                    <div class="rounded-lg  flex flex-col">
+                  <div className=" border  rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+                    <div className="rounded-lg  flex flex-col">
                       <div>
-                        <h5 class="text-white text-2xl font-bold leading-none">
+                        <h5 className="text-white text-2xl font-bold leading-none">
                           {win.name}
                         </h5>
-                        <span class="text-xs text-gray-400 leading-none">
+                        <span className="text-xs text-gray-400 leading-none">
                           {win.about}
                         </span>
                       </div>
-                      <div class="flex items-center">
-                        <div class="text-lg text-white font-light">
+                      <div className="flex items-center">
+                        <div className="text-lg text-white font-light">
                           Date : {win.date}
                         </div>
                         <button
                           href="javascript:;"
-                          class="rounded-full bg-green-500 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300"
+                          className="rounded-full bg-green-500 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-10 h-10 flex ml-auto transition duration-300"
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -182,7 +182,7 @@ const ESportVictories = () => {
                             stroke-width="2"
                             stroke-linecap="round"
                             stroke-linejoin="round"
-                            class="stroke-current m-auto"
+                            className="stroke-current m-auto"
                           >
                             <line x1="12" y1="5" x2="12" y2="19"></line>
                             <line x1="5" y1="12" x2="19" y2="12"></line>

@@ -42,7 +42,7 @@ const LatestGalleryCarousel = () => {
         className="mySwiper"
       > */}
         <Swiper
-    slidesPerView={isMobileDevice ? 1.9 : 3.5}
+    slidesPerView={isMobileDevice ? 1.9 : 4}
 
         spaceBetween={12}
         freeMode={true}

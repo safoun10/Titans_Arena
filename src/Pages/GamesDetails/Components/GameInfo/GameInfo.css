@@ -1,0 +1,115 @@
+.just-gamers-bg {
+  background-image: url("https://themepixer.com/demo/html/geco/Geco/img/bg/just_gamer_bg.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  z-index: 1;
+}
+.just-gamers-bg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-image: url("https://themepixer.com/demo/html/geco/Geco/img/images/gamers_bg_conve01.png");
+  width: 467px;
+  height: 70px;
+  margin: 0 auto;
+  top: -4px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.just-gamers-bg::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  background-image: url("https://themepixer.com/demo/html/geco/Geco/img/images/gamers_bg_conve02.png");
+  width: 420px;
+  height: 152px;
+  margin: 0 auto;
+  bottom: -40px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.btn2 {
+  -moz-user-select: none;
+  border: medium none;
+  border-radius: 5px;
+  color: #1c1121;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: 0;
+  padding: 20px 44px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+}
+.btn2.btn-style-two {
+  background: transparent;
+  padding: 8px 10px;
+  margin: 0 5px;
+}
+
+.btn2.btn-style-two::before {
+  content: "";
+  position: absolute;
+  right: -9px;
+  top: 0;
+  height: 100%;
+  width: 5px;
+  transform: skewX(-16deg);
+  z-index: 1;
+  opacity: 1;
+  background-image: none;
+  bottom: 0;
+  border-radius: 0;
+  left: auto;
+  background-color: #e4a101;
+}
+.btn2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-image: url(../img/images/btn_overlay.png);
+  width: 100%;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.btn2.btn-style-two::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transform: skewX(-16deg);
+  z-index: -1;
+  opacity: 1;
+  background-image: none;
+  bottom: 0;
+  border-radius: 0;
+  left: auto;
+  background-color: #e4a101;
+}

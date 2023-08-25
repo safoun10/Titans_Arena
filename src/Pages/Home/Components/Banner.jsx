@@ -10,9 +10,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-import Banner1 from '../../../../public/Images/Banner1.png';
-import Banner2 from '../../../../public/Images/Banner2.png';
-import Banner3 from '../../../../public/Images/Banner3.png';
+import Banner1 from "../../../../public/Images/Banner1.png";
+import Banner2 from "../../../../public/Images/Banner2.png";
+import Banner3 from "../../../../public/Images/Banner3.png";
 
 const Banner = () => {
   return (
@@ -23,7 +23,6 @@ const Banner = () => {
         autoplay={{
           delay: 3500,
           disableOnInteraction: false,
-          
         }}
         pagination={{
           clickable: true,
@@ -34,30 +33,19 @@ const Banner = () => {
       >
         <SwiperSlide>
           <div className="max-w-full">
-            <img className="h-cover w-full"
-              src={Banner1}
-              alt=""
-            />
+            <img className="h-cover w-full" src={Banner1} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="max-w-full">
-            <img className="h-cover w-full"
-              src={Banner2}
-              alt=""
-            />
+          <div className="max-w-full">
+            <img className="h-cover w-full" src={Banner2} alt="" />
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="max-w-full">
-            <img className="h-cover w-full"
-              src={Banner3}
-              alt=""
-            />
+          <div className="max-w-full">
+            <img className="h-cover w-full" src={Banner3} alt="" />
           </div>
         </SwiperSlide>
-      
-      
       </Swiper>
     </>
   );

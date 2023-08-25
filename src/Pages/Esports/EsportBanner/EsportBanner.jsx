@@ -69,8 +69,37 @@ const EsportBanner = () => {
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
               <h1 className="text-2xl font-bold">Join the Esports Community</h1>
               <p className="text-lg">Compete with players worldwide.</p>
-              <button className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white">
-                Get Started
+              <button className="active border border-green-400 rounded-md  dark:hover:bg-green-400 dark:hover:text-gray-100 dark:text-gray-800 sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2 focus:ring-gray-700 focus:outline-none hover:bg-gray-700 font-medium leading-none text-white py-4 px-8 bg-gray-800 flex items-center">
+                Explore
+                <div className="ml-2 mt-0.5">
+                  <svg
+                    className="fill-stroke"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3.33325 8H12.6666"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 10.6667L12.6667 8"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M10 5.33301L12.6667 7.99967"
+                      stroke="currentColor"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </div>
               </button>
               <div className="mt-4 relative">
                 <input
@@ -90,7 +119,7 @@ const EsportBanner = () => {
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
               <h1 className="text-2xl font-bold">Esports Championships</h1>
               <p className="text-lg">Watch the best teams compete.</p>
-              <button className="mt-4 px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white">
+              <button className="mt-4 px-4 py-2 active border border-green-400 rounded-md  dark:hover:bg-green-400  text-white">
                 View Schedule
               </button>
               <div className="mt-4 relative">
