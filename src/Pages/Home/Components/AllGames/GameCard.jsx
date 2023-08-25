@@ -25,6 +25,14 @@ const GameCard = ({ game }) => {
     category
   } = game;
   
+  const limitDescription = (description, limit) => {
+    const words = description.split(' ');
+    const limitedWords = words.slice(0, limit);
+    return limitedWords.join(' ');
+  };
+
+  const limitedDescription = limitDescription( description.description1, 20);
+
   return (
     <div
       style={{
@@ -59,7 +67,7 @@ const GameCard = ({ game }) => {
         </div>
 
         <p className="md:text-sm my-1 text-gray-400 text-center">
-          {description}
+        {limitedDescription}
         </p>
 
         <p className="text-warning justify-center mb-1 flex items-center gap-1">

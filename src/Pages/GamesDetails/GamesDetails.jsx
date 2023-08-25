@@ -39,7 +39,7 @@ const GamesDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/test2/${id}`)
+    fetch(`http://localhost:5000/games/${id}`)
       .then((res) => res.json())
       .then((data) => setGameDetails(data));
   }, []);

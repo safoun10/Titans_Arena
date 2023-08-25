@@ -35,8 +35,8 @@ const Description = ({ gameDetails }) => {
               <p>{description.description2}</p>
             </div>
             <div className="flex gap-2">
-              <img className="w-full h-full" src={extraImage.image1} alt="" />
-              <img className="w-full h-full" src={extraImage.image2} alt="" />
+              <img className="w-1/2 h-full" src={extraImage.image1} alt="" />
+              <img className="w-1/2 h-full" src={extraImage.image2} alt="" />
             </div>
           </div>
           <div>
@@ -118,7 +118,7 @@ const Description = ({ gameDetails }) => {
           </div>
           <div>
             <h2 className="text-2xl font-bold">Tags</h2>
-            <div className="flex">
+            <div className="flex items-center justify-center">
               {tags.map((items) => (
                 <div className="border w-full py-2">
                   <p className="text-xl font-bold">{items}</p>

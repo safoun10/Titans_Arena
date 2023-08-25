@@ -502,7 +502,7 @@
   {
     "category": "Action",
     "title": "Dark Souls III",
-    "image": "example.com",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz8GdNGWVt7xO6xk8XrJG2e4im6lHqDOFmWb_vTDgVpBWA7QggWQt0ppzw44F3VG10YgE&usqp=CAU",
     "coverImage": {
       "coverImage1": "http://",
       "coverImage2": "http://",
@@ -513,17 +513,17 @@
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
     "description": {
-      "descriptionTitle1": "lorem",
-      "description1": "lorem15",
-      "descriptionTitle2": "lorem",
-      "description2": "lorem15",
-      "descriptionTitle3": "lorem",
-      "description3": "lorem15"
+      "descriptionTitle1": "Challenging Combat",
+      "description1": "The game is renowned for its punishing difficulty and deep combat mechanics. Players must carefully time their attacks, dodges, and blocks to overcome enemies and bosses. Death is a frequent occurrence, but learning from mistakes is integral to progress.",
+      "descriptionTitle2": "Character Customization",
+      "description2": "Players can customize their character's appearance and choose from a variety of classes and playstyles. The game offers a range of weapons, armor sets, and spells to suit different strategies.",
+      "descriptionTitle3": "Multiplayer Interaction",
+      "description3": " Players can summon others for cooperative play to tackle challenging areas and bosses together. Alternatively, the game also features a unique PvP system where players can invade others' worlds to engage in combat Intricate Lore: Dark Souls III is known for its rich and cryptic lore, presented through item descriptions, environmental storytelling, and interactions with NPCs. Players must piece together the narrative as they progress."
     },
     "extraText": {
-      "extraTitle": "extraTitle",
-      "extraText1": "extraText1",
-      "extraText2": "extraText1"
+      "extraTitle": "Dark Souls III features a variety ",
+      "extraText1": "Interconnected and intricate environments",
+      "extraText2": "The game is known for its challenging and atmospheric gameplay, steeped in dark fantasy elements. Set in the fictional kingdom of Lothric, players take on the role of the Ashen One, an undead character tasked with linking the First Flame and preventing the world from falling into darkness."
     },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
@@ -535,17 +535,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/dark-souls-3-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://cdn.cloudflare.steamstatic.com/steam/apps/374320/ss_12c4d9a3c04d6d340ffea9335441eb2ad84e0028.1920x1080.jpg?t=1682651227",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8zLvvWHYRVWQx1J6__wL3bKUDw9pwtqex_-m0by-TNbqHh5rgTGbIudF5iwF2nsyJE4&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQh1nidOoExBmvy8_Lv536EEHuhr4M9Wy4Os4glkvjRwHhGuTII5JVrWLLewLEz-xuXfw&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkw24pRULyTtWRFHMYAzwmSERbCXrPy0YB--lWdNqxA4shi2gAhKtGIG5g7x3vydrx8eI&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/1.jpg",
-      "https://example.com/screenshots/dark-souls-3/2.jpg",
-      "https://example.com/screenshots/dark-souls-3/3.jpg"
+      "https://cdn.vox-cdn.com/thumbor/yx5syTUG6h-g4E-odlGPTC8qsYY=/148x0:1768x1080/1200x800/filters:focal(148x0:1768x1080)/cdn.vox-cdn.com/uploads/chorus_image/image/46485808/dark_souls_3.0.0.jpg",
+      "https://assetsio.reedpopcdn.com/dark_souls_3_ringed_city_screen_swamp_knight_1.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp",
+      "https://www.commonsensemedia.org/sites/default/files/styles/social_share_image/public/screenshots/csm-game/dsiii-1-min.jpg",
+      "https://news-cdn.softpedia.com/images/news2/dark-souls-3-review-pc-502543-21.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfINhrjKBSg4z5oMhSknezruKnXrDFMAdpFD1HjTZoQZtarH3gxGHQYhppjvJ3NMO0NcU&usqp=CAU"
     ],
     "minimumRequirements": {
       "OS": "Windows 7 SP1 64-bit, Windows 8.1 64-bit, Windows 10 64-bit",
@@ -602,7 +602,7 @@
   {
     "category": "Action",
     "title": "Horizon Zero Dawn",
-    "image": "example.com",
+    "image": "https://assets-prd.ignimgs.com/2021/12/08/horizonzerodawn-1638924347525.jpg",
     "coverImage": {
       "coverImage1": "http://",
       "coverImage2": "http://",
@@ -613,17 +613,17 @@
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
     "description": {
-      "descriptionTitle1": "lorem",
-      "description1": "lorem15",
-      "descriptionTitle2": "lorem",
-      "description2": "lorem15",
-      "descriptionTitle3": "lorem",
-      "description3": "lorem15"
+      "descriptionTitle1": "Combat and Exploration",
+      "description1": "Aloy's skills include archery, crafting, and stealth. Players must use their wits and strategy to take down Machines and navigate the challenges of the open world. Different Machines have unique weaknesses and behaviors, encouraging players to adapt their approach.",
+      "descriptionTitle2": "Story and Lore",
+      "description2": "The game's narrative unfolds through Aloy's interactions with various tribes, characters, and holographic recordings left behind by the past civilization. Players gradually uncover the truth about the world's history and the events that led to its current state.",
+      "descriptionTitle3": "Technology vs. Nature",
+      "description3": " The central theme of Horizon Zero Dawn revolves around the juxtaposition of nature and technology. The robotic creatures and remnants of advanced technology contrast with the natural beauty of the environment, leading to philosophical questions about humanity's impact on the world."
     },
     "extraText": {
-      "extraTitle": "extraTitle",
-      "extraText1": "extraText1",
-      "extraText2": "extraText1"
+      "extraTitle": "In a post-apocalyptic world",
+      "extraText1": "Key features include an expansive open world",
+      "extraText2": "illed with diverse environments and robotic creatures, strategic combat and exploration, a narrative that unfolds through Aloy's interactions with tribes and holographic recordings, a central theme of nature versus technology, character development influenced by player choices, and the expansion "
     },
     "developer": "Guerrilla",
     "publisher": "Sony Interactive Entertainment",
@@ -640,17 +640,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/horizon-zero-dawn-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnR5oLwuiQCOy4zxSJnHczWB0JhDQtJIxIJ6epp1ZVSz3ljCrY9-M4H3tHr9VLTEy0sF4&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpk7jk0MVSEBHeEwb6b3uFPytXu4hiOIffvE5qvYrpwVRakpde0hlCF0L71-bKTTWUsNQ&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWGK1_5MgETm1XgDKXwK2W1AwXAhGXIp1EBtffMtgVln_BMf_kKdSz6OXf9_VZn2Cc3k&usqp=CAU",
+      "image4": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-wFGkWbnrdllHEf_f38OFu5gv5MGSEZJxZ61unxNSHZIO3acKF-DWF_eP9AU1XtOS54&usqp=CAU"
     },
     "screenshots": [
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/1.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/2.jpg",
-      "https://example.com/screenshots/horizon-zero-dawn/3.jpg"
+      "https://bloximages.chicago2.vip.townnews.com/joplinglobe.com/content/tncms/assets/v3/editorial/3/d3/3d388b1c-0171-11e7-8000-7300315f6b1a/58bbb8c84e2a4.preview.jpg?crop=864%2C454%2C0%2C16&resize=864%2C454&order=crop%2Cresize",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ79Zs1mThcf9_XlwbZ7VZOqjFf9jiuQ6J67290S0Mq4u-owriuQbc8fUHHpj5ohnZVCYo&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8F3rj3sKAcwo_SZai3V_jZbWIgjqUiTIa5pozNaSTRMM3umRKuBxuTtd_QFGwGWOYssg&usqp=CAU",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNtuWDw7ldAbcgQZNWcC77UaDuF1kY5mTGdpzlLMUxKQTmhN9d9qoSwCOSvurzIQKKsk0&usqp=CAU",
+      "https://bloximages.chicago2.vip.townnews.com/joplinglobe.com/content/tncms/assets/v3/editorial/b/30/b30c7674-0170-11e7-ae3e-0bad49ae7d19/58bbb65900de5.image.jpg"
     ],
     "minimumRequirements": {
       "OS": "Windows 10 64-bits",
@@ -707,7 +707,7 @@
   {
     "category": "Action",
     "title": "The Witcher 3: Wild Hunt",
-    "image": "example.com",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202211/0711/kh4MUIuMmHlktOHar3lVl6rY.png",
     "coverImage": {
       "coverImage1": "http://",
       "coverImage2": "http://",
@@ -718,17 +718,17 @@
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
     "description": {
-      "descriptionTitle1": "lorem",
-      "description1": "lorem15",
-      "descriptionTitle2": "lorem",
-      "description2": "lorem15",
-      "descriptionTitle3": "lorem",
-      "description3": "lorem15"
+      "descriptionTitle1": "Vast Open World",
+      "description1": "This game presents an expansive and meticulously crafted open world called the Continent. This world is teeming with cities, villages, forests, mountains, and other unique regions, each with its own stories and quests.",
+      "descriptionTitle2": "Engaging Narrative:",
+      "description2": "The game features a complex narrative with multiple storylines, branching paths, and intricate characters. Players' choices throughout the game have significant consequences, leading to multiple endings.",
+      "descriptionTitle3": "Monsters and Combat:",
+      "description3": "As a Witcher, Geralt possesses unique abilities and skills that make him a formidable monster hunter. Players engage in real-time combat, utilizing a combination of swordplay, magic signs, and alchemical concoctions to defeat a variety of creatures. The game is filled with a multitude of side quests, contracts, and activities. Players can choose how to approach these quests, impacting the game's world and story."
     },
     "extraText": {
-      "extraTitle": "extraTitle",
-      "extraText1": "extraText1",
-      "extraText2": "extraText1"
+      "extraTitle": "players step into the boots",
+      "extraText1": " hunter known as a Witcher",
+      "extraText2": "it is the third main installment in The Witcher video game series, based on the book series of the same name by Andrzej Sapkowski. The game is celebrated for its expansive world, intricate storytelling, and immersive gameplay."
     },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
@@ -740,17 +740,17 @@
     "languageSupport": ["English", "French", "German", "Spanish", "Italian"],
     "trailerURL": "https://example.com/witcher-3-trailer",
     "extraImage": {
-      "image1": "example.com",
-      "image2": "example.com",
-      "image3": "example.com",
-      "image4": "example.com"
+      "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRokx_Xmahjfu_vUO6sm0el3HGURGiQWQJrQHMMWaOMG7nHc5D_VlgnINSbvPcHvGlXMK4&usqp=CAU",
+      "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8rCC2WFijCVFSmgqqiwAoq5D8dqaM-4yfn5O5DFR2YiS1sWud0QERetNJFE7g8EGd-c&usqp=CAU",
+      "image3": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNBQ7SsjatBHsx-mnoOgxX7AHk0-ETM280hRvlkcVy1-EUEsPjLWBgnPuaHxLnsmFEVsA&usqp=CAU",
+      "image4": "https://cloudfront-eu-central-1.images.arcpublishing.com/diarioas/UP4BHTZKJVJJFDUXANEU5E5OAY.jpg"
     },
     "screenshots": [
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/1.jpg",
-      "https://example.com/screenshots/witcher-3/2.jpg",
-      "https://example.com/screenshots/witcher-3/3.jpg"
+      "https://i.ytimg.com/vi/xx8kQ4s5hCY/maxresdefault.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXTDRHQ3mzj4PWrZLRyLCPcOqe00cdpo_QeG4abx2M-ua6BCmFMovBFsKGCfFmuZ4RxU8&usqp=CAU",
+      "https://www.trustedreviews.com/wp-content/uploads/sites/54/2015/05/ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa-1024x576.jpg",
+      "https://m.media-amazon.com/images/I/719KQa5XqPL._AC_UF1000,1000_QL80_.jpg",
+      "https://gocdkeys.com/images/captures/the-witcher-3-wild-hunt-pc-cd-key-4.jpg"
     ],
     "minimumRequirements": {
       "OS": "64-bit Windows 7, 64-bit Windows 8 (8.1), or 64-bit Windows 10",
