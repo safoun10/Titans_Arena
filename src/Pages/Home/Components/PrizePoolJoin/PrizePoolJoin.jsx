@@ -1,7 +1,11 @@
+import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./PrizePoolJoin.css";
 const PrizePoolJoin = () => {
   return (
-    <div className="max-w-6xl mx-auto text-white">
+    
+    <div className="max-w-6xl mx-auto text-white my-20">
+      
+
       <div className="flex items-center">
         <div className="w-2/6  ">
           <h3 className="text-lg font-bold">CHECK OUT OUR NEXT</h3>
@@ -64,6 +68,7 @@ const PrizePoolJoin = () => {
         </div>
       </div>
     </div>
+  
   );
 };
 

@@ -1,59 +1,87 @@
-import React, { useEffect, useState } from "react";
-import {
-  FaArrowRight,
-} from "react-icons/fa6";
-import { FaSearch } from "react-icons/fa";
+import React, { useEffect, useRef, useState } from "react";
+import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./Blogs.css";
 import BlogElement from "./BlogElement";
 import BlogBanner from "./BlogBanner";
+import Pagination from "../AllGames/Pagination";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
+  const searchRef = useRef(null);
+  const [search, setSearch] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const gamesPerPage = 3; // Number of games to display per page
 
+  const url = `http://localhost:5000/searchblogs?search=${search}`;
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch(url)
       .then((res) => res.json())
       .then((data) => setBlogs(data));
-  }, []);
+  }, [search]);
 
-console.log("single data", blogs);
+  const handleSearch = () => {
+    setSearch(searchRef.current.value);
+  };
 
   return (
     <div>
       {/* blog page banner start */}
-      <BlogBanner title="Blogs List"/>
+      <BlogBanner title="Blogs List" />
       {/* blog page banner end */}
 
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}
         <div className="col-span-4">
           {/* single blog start*/}
-          {blogs.slice(0, 2).map((blog, i) => (
-            <BlogElement key={i} blog={blog} />
-          ))}
+          {blogs
+            .slice((currentPage - 1) * gamesPerPage, currentPage * gamesPerPage)
+            .map((blog, i) => (
+              <BlogElement key={i} blog={blog} />
+            ))}
           {/* single blog end*/}
+          <Pagination
+              totalGames={blogs.length}
+              gamesPerPage={gamesPerPage}
+              currentPage={currentPage}
+              paginate={setCurrentPage}
+            />
         </div>
         {/* Blogs page left side end*/}
         {/* Blogs page right side start */}
         <div className="col-span-2">
-          <form action="" className="relative flex items-center">
-            <input
-              type="text"
-              placeholder="SEARCH HERE..."
-              className="input bg-transparent text-white placeholder:text-lg placeholder:font-semibold input-bordered input-success w-full max-w-lg "
-            />
-            <button
-              type="submit"
-              className="absolute right-4 text-gray-500 hover:text-[#45f882] duration-200"
-            >
-              <FaSearch />
-            </button>
-          </form>
-          {/* RECENT POSTS part Start*/}
-
+          <div className="form-control w-full max-w-lg">
+            <div className="input-group">
+              <input
+                type="text"
+                ref={searchRef}
+                placeholder="Search…"
+                className="input input-bordered border-[#45f882] bg-transparent w-full max-w-lg"
+              />
+              <button
+                onClick={handleSearch}
+                className="border px-2 border-[#45f882] bg-transparent text-gray-500 hover:text-[#45f882] duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          {/* Relative part Start*/}
           <div className="text-white py-6">
-            <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
+            <h1 className="font-bold text-2xl pb-6 uppercase">Relative POSTS</h1>
             {blogs.slice(5, 9).map((blog, i) => (
               <Link key={i}>
                 <div className="flex gap-4 pb-4">
@@ -63,7 +91,7 @@ console.log("single data", blogs);
                     alt=""
                   />
                   <div className="">
-                    <h2 className="lg:pr-7 text-xl font-semibold hover:text-[#45f882] transition-colors">
+                    <h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
                       {blog.title}
                     </h2>
                     <p className="text-lg font-semibold text-slate-500">

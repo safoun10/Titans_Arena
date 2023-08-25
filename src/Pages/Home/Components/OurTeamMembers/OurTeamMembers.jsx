@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./OurTeamMembers.css";
 
 const OurTeamMembers = () => {
@@ -10,24 +11,14 @@ const OurTeamMembers = () => {
   }, []);
 
   return (
-    <div>
-      <div className="text-center my-10">
-        <h3 className="text-[#68fb9a] font-semibold ">KNOW OUR </h3>
-        <h1 className="text-white text-4xl font-bold my-2">TEAM MEMBER</h1>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="w-24 mx-auto"
-          fill="#68fb9a"
-          viewBox="0 0 65 5"
-          fillRule="evenodd"
-        >
-          <path
-            d="M968,5630h65l-4,5H972Z"
-            transform="translate(-968 -5630)"
-          ></path>
-        </svg>
-      </div>
-      <div className="grid md:grid-cols-6 justify-center  gap-4 grid-cols-1  md:mx-auto mx-6  text-white ">
+    <div className="my-16">
+    
+      <Title
+        primaryText="Know Our"
+        secondaryText="Team Member"
+        
+      />
+      <div className="grid md:grid-cols-6 justify-center  gap-4 grid-cols-1 mt-14 md:mx-auto mx-6  text-white ">
         {members.map((member, i) => (
           <div key={i} className="border-2 rounded-2xl h-64  bg-[#121a23] 
           hover:bg-gradient-to-b from-transparent to-[#68fb9a]

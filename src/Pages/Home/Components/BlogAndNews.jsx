@@ -10,7 +10,7 @@ const BlogAndNews = () => {
         primaryText="BLOG AND NEWS"
         secondaryText="GET UPDATE ABOUT GAMES"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
         <div className="border border-none p-5 w-full">
           <div>
             <img src={blog1} alt="" />

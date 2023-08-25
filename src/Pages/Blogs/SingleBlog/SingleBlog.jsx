@@ -158,6 +158,7 @@ const SingleBlog = () => {
             </form>
           </div>
           {/* NEWS LETTER part end*/}
+          
           {/* TAG CLOUD */}
           <div className="py-6">
             <h1 className="text-2xl font-bold uppercase pb-6 text-white">

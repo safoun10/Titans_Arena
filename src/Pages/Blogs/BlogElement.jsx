@@ -12,8 +12,6 @@ import { Link } from "react-router-dom";
 
 const BlogElement = ({blog}) => {
     const {_id,title,author,date, comments, content, featured_image} = blog;
-
-    console.log(blog);
     
     return (
     <div className="bg-[#182029] mb-10">

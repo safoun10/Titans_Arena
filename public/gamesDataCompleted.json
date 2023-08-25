@@ -5,7 +5,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-04-14",
-    "description": "Enter the criminal underworld of Los Santos and Blaine County in this action-packed open-world adventure...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Rockstar North",
     "publisher": "Rockstar Games",
     "rating": 4.9,
@@ -86,7 +96,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
-    "description": "Rip and tear through hordes of demons as the Doom Slayer in this high-octane first-person shooter...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -167,7 +187,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
-    "description": "Write your Viking saga as Eivor and lead your clan to glory in the open world of 9th century England...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -248,7 +278,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-10-25",
-    "description": "Engage in modern warfare scenarios as part of an elite team, tackling global threats across a gripping campaign...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Infinity Ward",
     "publisher": "Activision",
     "rating": 4.8,
@@ -329,7 +369,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Embark on a journey through the American Wild West as Arthur Morgan, an outlaw and member of the Van der Linde gang...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Rockstar San Diego",
     "publisher": "Rockstar Games",
     "rating": 4.9,
@@ -410,7 +460,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
-    "description": "Enter a dark fantasy world filled with challenging enemies and intricate level design, where death is just a part of the journey...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.8,
@@ -491,7 +551,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
-    "description": "Embark on a quest as Aloy in a post-apocalyptic world where nature and machines collide, and uncover the truth of the past...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Guerrilla",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.7,
@@ -577,7 +647,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on an epic journey as Geralt of Rivia, a monster hunter, in a beautifully crafted fantasy world...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -658,7 +738,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-05-10",
-    "description": "Join Nathan Drake on his final adventure as he delves into his past and confronts dangerous enemies in search of treasure...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.8,
@@ -744,7 +834,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-09-01",
-    "description": "Experience the gripping tale of Big Boss in an open-world espionage adventure set during the Cold War...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Kojima Productions",
     "publisher": "Konami",
     "rating": 4.7,
@@ -825,7 +925,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-06-23",
-    "description": "Don the mantle of the Dark Knight in an explosive conclusion to the Arkham series, facing off against iconic villains...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Rocksteady Studios",
     "publisher": "Warner Bros. Interactive Entertainment",
     "rating": 4.8,
@@ -906,7 +1016,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-03-20",
-    "description": "Rip and tear through hordes of demons as the iconic DOOM Slayer in a high-octane, fast-paced action experience...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "id Software",
     "publisher": "Bethesda Softworks",
     "rating": 4.9,
@@ -987,7 +1107,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Step into the shoes of Arthur Morgan, an outlaw, and experience the harsh realities of the Wild West...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Rockstar Studios",
     "publisher": "Rockstar Games",
     "rating": 4.8,
@@ -1068,7 +1198,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-11-10",
-    "description": "Forge your Viking legend as Eivor in a journey across the Dark Ages of England, battling for glory and conquest...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -1149,7 +1289,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-08-07",
-    "description": "Embark on a post-apocalyptic journey as Aloy, a skilled hunter, in a world overrun by robotic creatures...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.9,
@@ -1230,7 +1380,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2021-10-07",
-    "description": "Step into the shoes of Dani Rojas, a guerrilla fighter, and join the resistance against a ruthless dictator in a tropical paradise...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ubisoft Toronto",
     "publisher": "Ubisoft",
     "rating": 4.6,
@@ -1311,7 +1471,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-04",
-    "description": "Join a squad of legendary characters and fight in the Titanfall universe's battle royale with unique abilities and strategic gameplay...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Respawn Entertainment",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -1392,7 +1562,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2017-12-20",
-    "description": "Drop onto an island, scavenge for weapons, and outlast other players in intense battles to become the last one standing...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "PUBG Corporation",
     "publisher": "PUBG Corporation",
     "rating": 4.7,
@@ -1473,7 +1653,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2017-07-25",
-    "description": "Build and battle in a vibrant world as you fight to be the last one standing in the ever-evolving Fortnite experience...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Epic Games",
     "publisher": "Epic Games",
     "rating": 4.9,
@@ -1554,7 +1744,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-03-10",
-    "description": "Experience the fast-paced Call of Duty action in a massive battle royale map, with intense firefights and unique contracts...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Infinity Ward",
     "publisher": "Activision",
     "rating": 4.8,
@@ -1635,7 +1835,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-06-05",
-    "description": "Choose a class and dive into the fantasy world of Realm Royale, where you forge your path to victory with unique abilities and magical weapons...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Heroic Leap Games",
     "publisher": "Hi-Rez Studios",
     "rating": 4.5,
@@ -1716,7 +1926,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-11",
-    "description": "Engage in fast-paced, vertical battles in the virtual city of Hyper Scape, where unique weapons and abilities define your strategy...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ubisoft Montreal",
     "publisher": "Ubisoft",
     "rating": 4.6,
@@ -1797,7 +2017,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-07-20",
-    "description": "Join an elite group of mercenaries in Rogue Company and engage in tactical battles with an emphasis on team coordination and strategic gameplay...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "First Watch Games",
     "publisher": "Hi-Rez Studios",
     "rating": 4.7,
@@ -1878,7 +2108,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-01-14",
-    "description": "Step into a frozen post-apocalyptic arena in Darwin Project, where you must survive against the elements, other players, and a powerful Show Director...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Scavengers Studio",
     "publisher": "Scavengers Studio",
     "rating": 4.5,
@@ -1959,7 +2199,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 5", "Xbox Series X/S"],
     "releaseDate": "2022-04-22",
-    "description": "Form a team of explorers and navigate a post-apocalyptic world in Scavengers, combining battle royale gameplay with PvE elements...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Midwinter Entertainment",
     "publisher": "Improbable",
     "rating": 4.6,
@@ -2040,7 +2290,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2022-09-15",
-    "description": "Set on a distant alien planet, Outworlder pits players against each other in a fight for survival, utilizing sci-fi technology and tactics...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Hiveform",
     "publisher": "Hiveform",
     "rating": 4.4,
@@ -2121,7 +2381,17 @@
     "image": "example.com",
     "platforms": ["Nintendo Switch"],
     "releaseDate": "2017-03-03",
-    "description": "Embark on an epic journey as Link to save the kingdom of Hyrule in a vast open world filled with adventure and exploration...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Nintendo EPD",
     "publisher": "Nintendo",
     "rating": 4.9,
@@ -2202,7 +2472,17 @@
     "image": "example.com",
     "platforms": ["PlayStation 4"],
     "releaseDate": "2016-05-10",
-    "description": "Join Nathan Drake on his final adventure as he searches for pirate treasure and faces danger and intrigue...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Naughty Dog",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.8,
@@ -2283,7 +2563,17 @@
     "image": "example.com",
     "platforms": ["PlayStation 4", "PC"],
     "releaseDate": "2012-03-13",
-    "description": "Embark on a mysterious and emotional journey through a vast desert, accompanied by other players in a unique online experience...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Thatgamecompany",
     "publisher": "Annapurna Interactive",
     "rating": 4.7,
@@ -2364,7 +2654,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Step into the shoes of Geralt of Rivia, a monster hunter, and embark on a dark and epic journey in a world filled with magic and danger...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -2445,7 +2745,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-05-14",
-    "description": "Follow the harrowing journey of Amicia and her brother Hugo as they navigate a world plagued by disease, survival, and supernatural horrors...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Asobo Studio",
     "publisher": "Focus Home Interactive",
     "rating": 4.7,
@@ -2526,7 +2836,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-11-05",
-    "description": "Immerse yourself in the late 1800s as Arthur Morgan, an outlaw, and experience a story of survival, honor, and the changing American frontier...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Rockstar Games",
     "publisher": "Rockstar Games",
     "rating": 4.8,
@@ -2607,7 +2927,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2013-03-05",
-    "description": "Join Lara Croft on her first expedition as she becomes the fierce and resourceful explorer we know today...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Crystal Dynamics",
     "publisher": "Square Enix",
     "rating": 4.6,
@@ -2689,7 +3019,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4"],
     "releaseDate": "2020-08-07",
-    "description": "Play as Aloy, a skilled hunter, and unravel the mysteries of a post-apocalyptic world dominated by robotic creatures...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Guerrilla Games",
     "publisher": "Sony Interactive Entertainment",
     "rating": 4.9,
@@ -2775,7 +3115,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-01-15",
-    "description": "Join a group of friends as they unintentionally open a ghostly rift and uncover the mysteries of Edwards Island...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Night School Studio",
     "publisher": "Night School Studio",
     "rating": 4.5,
@@ -2856,7 +3206,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 3", "Xbox 360"],
     "releaseDate": "2012-10-30",
-    "description": "Race, chase, and explore an open-world city in this thrilling racing game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -2937,7 +3297,17 @@
     "image": "example.com",
     "platforms": ["PC", "Xbox One"],
     "releaseDate": "2018-10-02",
-    "description": "Explore an open-world rendition of the United Kingdom with a diverse collection of cars...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Playground Games",
     "publisher": "Microsoft Studios",
     "rating": 4.9,
@@ -3018,7 +3388,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 5", "Xbox Series X"],
     "releaseDate": "2021-07-16",
-    "description": "Experience the excitement of Formula One racing with the latest teams and tracks...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -3099,7 +3479,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-02-26",
-    "description": "Master the art of rally racing on challenging tracks across various locations...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.8,
@@ -3180,7 +3570,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-08-28",
-    "description": "Experience an accessible yet authentic racing experience with a wide range of cars and tracks...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Slightly Mad Studios",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.5,
@@ -3261,7 +3661,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-03-16",
-    "description": "Experience high-speed mayhem and crashes in this remastered edition of the classic Burnout Paradise...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Criterion Games",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -3342,7 +3752,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-05-29",
-    "description": "Immerse yourself in the world of GT3 racing with highly accurate physics and meticulously recreated tracks...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "KUNOS Simulazioni",
     "publisher": "505 Games",
     "rating": 4.6,
@@ -3423,7 +3843,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-06-14",
-    "description": "Engage in brutal and chaotic demolition derbies and races in this unique racing game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Bugbear Entertainment",
     "publisher": "THQ Nordic",
     "rating": 4.7,
@@ -3504,7 +3934,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-07-10",
-    "description": "Experience the intensity of NASCAR racing with the latest drivers and tracks...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Monster Games",
     "publisher": "704Games",
     "rating": 4.6,
@@ -3585,7 +4025,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2020-11-06",
-    "description": "Embark on a global racing journey across a variety of terrains and vehicles...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.5,
@@ -3666,7 +4116,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-11-08",
-    "description": "Experience the thrill of street racing in a vibrant open-world setting...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ghost Games",
     "publisher": "Electronic Arts",
     "rating": 4.4,
@@ -3747,7 +4207,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2019-10-11",
-    "description": "Experience a diverse range of racing disciplines in this high-octane racer...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Codemasters",
     "rating": 4.3,
@@ -3828,7 +4298,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2021-07-16",
-    "description": "Experience the excitement of Formula One racing with the latest teams, drivers, and tracks...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Codemasters",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -3909,7 +4389,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One"],
     "releaseDate": "2016-03-24",
-    "description": "Defy gravity and master insane tracks in this fast-paced arcade racer...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Nadeo",
     "publisher": "Ubisoft",
     "rating": 4.5,
@@ -3990,7 +4480,17 @@
     "image": "example.com",
     "platforms": ["PC", "Xbox Series X|S"],
     "releaseDate": "2020-08-18",
-    "description": "Experience the most realistic and breathtaking flight simulation...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Asobo Studio",
     "publisher": "Xbox Game Studios",
     "rating": 4.9,
@@ -4071,7 +4571,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2014-09-02",
-    "description": "Create and control virtual lives in this popular life simulation game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Maxis",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -4152,7 +4662,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2012-10-19",
-    "description": "Embark on a journey as a truck driver, hauling cargo across Europe...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "SCS Software",
     "publisher": "SCS Software",
     "rating": 4.8,
@@ -4233,7 +4753,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-03-10",
-    "description": "Build and manage your own city in this critically acclaimed city simulation game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Colossal Order",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -4314,7 +4844,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2018-11-20",
-    "description": "Experience life as a modern farmer, cultivating fields and managing livestock...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Giants Software",
     "publisher": "Focus Home Interactive",
     "rating": 4.6,
@@ -4395,7 +4935,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One"],
     "releaseDate": "2015-04-27",
-    "description": "Design, build, and launch your own spacecraft in this physics-based space simulation...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Squad",
     "publisher": "Private Division",
     "rating": 4.7,
@@ -4476,7 +5026,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-11-17",
-    "description": "Build and manage your own theme park in this creative and detailed simulation game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Frontier Developments",
     "publisher": "Frontier Developments",
     "rating": 4.8,
@@ -4557,7 +5117,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2016-02-26",
-    "description": "Escape to the countryside and build a thriving farm in this charming farming simulation...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "ConcernedApe",
     "publisher": "ConcernedApe",
     "rating": 4.9,
@@ -4638,7 +5208,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-08-30",
-    "description": "Design and manage your own humorous and quirky hospital in this simulation game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Two Point Studios",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -4719,7 +5299,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2018-05-17",
-    "description": "Renovate and sell homes in this simulation game that combines house flipping with interior design...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Empyrean",
     "publisher": "PlayWay S.A.",
     "rating": 4.6,
@@ -4800,7 +5390,17 @@
     "image": "example.com",
     "platforms": ["PC", "Mac", "PlayStation 4", "Xbox One", "Mobile"],
     "releaseDate": "2015-10-06",
-    "description": "Design and manage your own prison, dealing with inmates, facilities, and security...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Introversion Software",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -4887,7 +5487,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-10-01",
-    "description": "Experience the excitement of soccer with updated gameplay and realistic graphics...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -4974,7 +5584,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-09-10",
-    "description": "Experience the thrill of basketball with improved graphics and engaging gameplay...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5061,7 +5681,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-08-20",
-    "description": "Experience American football with improved visuals and dynamic gameplay...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "EA Tiburon",
     "publisher": "Electronic Arts",
     "rating": 4.5,
@@ -5148,7 +5778,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-03-11",
-    "description": "Step into the world of professional wrestling with enhanced visuals and dynamic action...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.4,
@@ -5229,7 +5869,17 @@
     "image": "example.com",
     "platforms": ["PC", "PlayStation 4", "Xbox One", "Nintendo Switch"],
     "releaseDate": "2020-08-21",
-    "description": "Experience the challenge and precision of professional golf with realistic courses and mechanics...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "HB Studios",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5316,7 +5966,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-16",
-    "description": "Experience the evolution of soccer with improved gameplay mechanics and updated teams...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Konami Digital Entertainment",
     "publisher": "Konami Digital Entertainment",
     "rating": 4.5,
@@ -5403,7 +6063,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-10-15",
-    "description": "Experience the intensity of ice hockey with realistic gameplay and updated teams...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.6,
@@ -5490,7 +6160,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2020-10-08",
-    "description": "Experience the thrill of motorcycle racing with realistic physics and a variety of bikes...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
     "rating": 4.4,
@@ -5582,7 +6262,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2021-04-22",
-    "description": "Experience the adrenaline of professional motorcycle racing with realistic physics and official teams...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Milestone S.r.l.",
     "publisher": "Milestone S.r.l.",
     "rating": 4.5,
@@ -5674,7 +6364,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-09",
-    "description": "Experience the excitement of basketball with improved gameplay mechanics and updated teams...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Visual Concepts",
     "publisher": "2K Sports",
     "rating": 4.7,
@@ -5761,7 +6461,17 @@
       "Xbox Series X/S"
     ],
     "releaseDate": "2022-09-27",
-    "description": "Experience the world of soccer with realistic gameplay and official teams...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "EA Vancouver",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -5842,7 +6552,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
-    "description": "Build and lead your civilization from the Stone Age to the Information Age...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Firaxis Games",
     "publisher": "2K Games",
     "rating": 4.8,
@@ -5923,7 +6643,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
-    "description": "Unite ancient China under your banner in a saga of warfare and diplomacy...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -6004,7 +6734,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-05-09",
-    "description": "Explore the galaxy, expand your empire, and discover the mysteries of the universe...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Paradox Interactive",
     "publisher": "Paradox Interactive",
     "rating": 4.9,
@@ -6085,7 +6825,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2013-08-13",
-    "description": "Shape the course of history through diplomacy, trade, warfare, and exploration...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
     "rating": 4.8,
@@ -6166,7 +6916,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-06-06",
-    "description": "Lead your nation through World War II and shape history's outcome...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Paradox Development Studio",
     "publisher": "Paradox Interactive",
     "rating": 4.7,
@@ -6247,7 +7007,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-04-16",
-    "description": "Build and manage your own industrial city during the dawn of the 19th century...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Blue Byte",
     "publisher": "Ubisoft",
     "rating": 4.7,
@@ -6328,7 +7098,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2013-06-25",
-    "description": "Experience intense tactical warfare on the Eastern Front during World War II...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Relic Entertainment",
     "publisher": "SEGA",
     "rating": 4.6,
@@ -6409,7 +7189,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2020-01-28",
-    "description": "Relive the epic saga of Warcraft III with reimagined graphics and updated gameplay...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Blizzard Entertainment",
     "publisher": "Blizzard Entertainment",
     "rating": 3.9,
@@ -6490,7 +7280,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2021-10-28",
-    "description": "Lead civilizations through different eras in this highly anticipated installment of the series...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Relic Entertainment",
     "publisher": "Xbox Game Studios",
     "rating": 4.5,
@@ -6571,7 +7371,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2018-10-17",
-    "description": "Build and manage a colony on an alien world, facing challenges and making tough decisions...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Ludeon Studios",
     "publisher": "Ludeon Studios",
     "rating": 4.9,
@@ -6652,7 +7462,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-10-21",
-    "description": "Build a civilization from the Stone Age to the Information Age and achieve victory through various paths...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Firaxis Games",
     "publisher": "2K",
     "rating": 4.8,
@@ -6733,7 +7553,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-05-23",
-    "description": "Experience the epic conflict of ancient China's Three Kingdoms era in this grand strategy game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Creative Assembly",
     "publisher": "SEGA",
     "rating": 4.7,
@@ -6814,7 +7644,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2011-04-18",
-    "description": "Navigate through mind-bending puzzles using the Portal gun in this captivating first-person game...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Valve",
     "publisher": "Valve",
     "rating": 4.9,
@@ -6895,7 +7735,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
-    "description": "Explore a mysterious island and solve intricate puzzles to uncover its secrets...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
     "rating": 4.7,
@@ -6976,7 +7826,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2019-03-13",
-    "description": "Manipulate the rules of the game to solve puzzles and progress through a whimsical world...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Hempuli",
     "publisher": "Hempuli",
     "rating": 4.8,
@@ -7057,7 +7917,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2014-12-11",
-    "description": "Embark on a philosophical journey filled with challenging puzzles and existential themes...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Croteam",
     "publisher": "Devolver Digital",
     "rating": 4.7,
@@ -7138,7 +8008,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2013-05-01",
-    "description": "Explore a 2D world with a twist: rotate the 3D perspective to solve puzzles and uncover secrets...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Polytron Corporation",
     "publisher": "Trapdoor",
     "rating": 4.6,
@@ -7219,7 +8099,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2010-07-21",
-    "description": "Embark on a dark and atmospheric journey as a boy searching for his sister, solving puzzles along the way...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Playdead",
     "publisher": "Playdead",
     "rating": 4.8,
@@ -7300,7 +8190,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2014-04-03",
-    "description": "Guide a silent princess through mesmerizing architectural puzzles inspired by optical illusions...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "ustwo games",
     "publisher": "ustwo games",
     "rating": 4.7,
@@ -7381,7 +8281,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2014-07-28",
-    "description": "Solve intricate mechanical puzzles in a mysterious room filled with secrets...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Fireproof Games",
     "publisher": "Fireproof Games",
     "rating": 4.9,
@@ -7462,7 +8372,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2010-08-02",
-    "description": "Embark on a monochromatic journey filled with platforming challenges and atmospheric puzzles...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Playdead",
     "publisher": "Playdead",
     "rating": 4.8,
@@ -7543,7 +8463,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2008-10-13",
-    "description": "Construct wobbly structures using goo balls to navigate through challenging puzzles...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "2D BOY",
     "publisher": "2D BOY",
     "rating": 4.7,
@@ -7624,7 +8554,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-01-26",
-    "description": "Explore a vibrant island filled with intricate puzzles that test your observation and logic skills...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Jonathan Blow",
     "publisher": "Jonathan Blow",
     "rating": 4.6,
@@ -7705,7 +8645,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2008-04-10",
-    "description": "Manipulate time to solve complex puzzles and uncover the mystery of a rescue mission...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Number None, Inc.",
     "publisher": "Number None, Inc.",
     "rating": 4.9,
@@ -7786,7 +8736,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on an epic open-world journey as Geralt of Rivia, a monster hunter, in a war-ravaged fantasy world...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -7867,7 +8827,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-04-11",
-    "description": "Journey through a dark and challenging world as you face relentless enemies and uncover the mysteries of the past...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.8,
@@ -7948,7 +8918,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
-    "description": "Step into the vast province of Skyrim and become the Dragonborn as you explore a world of epic quests and dragons...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8029,7 +9009,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
-    "description": "Embark on a multiplayer fantasy adventure with deep storytelling, tactical combat, and an expansive world to explore...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
     "rating": 4.9,
@@ -8110,7 +9100,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2010-01-26",
-    "description": "Commander Shepard returns in this epic space RPG where your choices shape the galaxy's fate...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.8,
@@ -8191,7 +9191,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
-    "description": "Lead the Inquisition and restore order to a world torn by chaos, in this fantasy RPG filled with epic quests and tough choices...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.7,
@@ -8272,7 +9282,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2010-10-19",
-    "description": "Step into the post-apocalyptic wasteland of the Mojave Desert and shape your destiny in this RPG filled with choices...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Obsidian Entertainment",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8353,7 +9373,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2018-02-13",
-    "description": "Experience a realistic medieval RPG where your actions have consequences in a rich historical setting...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Warhorse Studios",
     "publisher": "Deep Silver",
     "rating": 4.7,
@@ -8434,7 +9464,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "1998-07-02",
-    "description": "Enter the iconic world of Final Fantasy VII and join Cloud Strife on a journey to save the planet from the malevolent Sephiroth...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Square Enix",
     "publisher": "Square Enix",
     "rating": 4.9,
@@ -8515,7 +9555,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2015-05-19",
-    "description": "Embark on a dark fantasy RPG adventure as Geralt of Rivia in search of his missing loved ones...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "CD Projekt Red",
     "publisher": "CD Projekt",
     "rating": 4.9,
@@ -8596,7 +9646,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2016-04-12",
-    "description": "Test your skills in this challenging action RPG set in a dark and atmospheric world filled with deadly foes...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "FromSoftware",
     "publisher": "Bandai Namco Entertainment",
     "rating": 4.7,
@@ -8677,7 +9737,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2017-09-14",
-    "description": "Gather your party and embark on an epic RPG adventure filled with choices, tactical combat, and a deep and immersive world...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Larian Studios",
     "publisher": "Larian Studios",
     "rating": 4.8,
@@ -8758,7 +9828,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2011-11-11",
-    "description": "Step into the vast open world of Skyrim and embark on an epic fantasy RPG adventure filled with dragons, quests, and exploration...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "Bethesda Game Studios",
     "publisher": "Bethesda Softworks",
     "rating": 4.8,
@@ -8839,7 +9919,17 @@
     "image": "example.com",
     "platforms": ["PC"],
     "releaseDate": "2014-11-18",
-    "description": "Lead the Inquisition in a fantasy RPG epic where your choices shape the world and your alliances determine the fate of nations...",
+    "description": {
+      "description1": "lorem15",
+      "description2": "lorem15",
+      "description3": "lorem15",
+      "description4": "lorem15"
+    },
+    "extraText": {
+      "extraText1": "extraText1",
+      "extraText2": "extraText1",
+      "extraText3": "extraText1"
+    },
     "developer": "BioWare",
     "publisher": "Electronic Arts",
     "rating": 4.7,
