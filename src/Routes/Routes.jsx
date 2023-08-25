@@ -10,6 +10,7 @@ import Register from "../Pages/Register/Register";
 import AllGames from "../Pages/AllGames/AllGames";
 import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
+import Esports from "../Pages/Esports/Components/Esports";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
       {
         path: "/games/:id",
         element: <GamesDetails />,
+      },
+      {
+        path: "/esports",
+        element: <Esports></Esports>,
       },
     ],
   },
