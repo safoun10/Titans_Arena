@@ -27,16 +27,17 @@ const OurTeamMembers = () => {
           ></path>
         </svg>
       </div>
-      <div className="grid md:grid-cols-4   gap-4 grid-cols max-w-6xl  mx-auto  text-white ">
+      <div className="grid md:grid-cols-6 justify-center  gap-4 grid-cols-1  md:mx-auto mx-6  text-white ">
         {members.map((member) => (
-          <div className="border-2 rounded-2xl  h-96 border-[#68fb9a] flex-col  flex items-center justify-center">
-            {/* <div className="h-16 left-20 team-member-card w-96  -z-1 rotate-45 pt-20"></div> */}
+          <div className="border-2 rounded-2xl h-64  bg-[#121a23] 
+          hover:bg-gradient-to-b from-transparent to-[#68fb9a]
+            border-[#68fb9a] flex-col   flex items-center justify-center  ">
             <img
-              className="w-44 z-10 border-2 rounded-full "
+              className="w-32 z-10 border-2 rounded-full "
               src={member.image}
               alt=""
             />
-            <h1 className="font-bold uppercase text-center my-10">
+            <h1 className="font-bold uppercase text-center  mt-5">
               {member.title}
             </h1>
             <h1 className="text-sm font-semibold">{member.designation}</h1>

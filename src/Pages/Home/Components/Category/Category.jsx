@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import "./Category.css";
 import "react-tabs/style/react-tabs.css";
+import AllGames from "../AllGames/AllGames";
+import GameCard from "../AllGames/GameCard";
 const Category = () => {
+  const [games, setGames] = useState([]);
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
+
+  const url = `https://titans-arena-server.vercel.app/games?category=${category}`;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setGames(data);
+      });
+  }, [category]);
 
   const toggleTabList = () => {
     setIsTabListVisible(!isTabListVisible);
   };
   console.log(category);
+
   return (
     <>
       <div>
@@ -16,12 +31,11 @@ const Category = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleTabList}
-              className="bg-green-500 text-white w-full flex justify-center  p-2 rounded"
+              className="bg-green-500 text-white w-full flex justify-center mt-10 p-2 rounded"
             >
               Menu
             </button>
           </div>
-
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
             <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8">
               <Tab
@@ -34,358 +48,169 @@ const Category = () => {
               >
                 All Games
               </Tab>
-
               <Tab
                 className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
-                  category === "Call Of Duty"
+                  category === "CallOfDuty"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("Call Of Duty")}
+                onClick={() => setCategory("Action")}
               >
-                Call Of Duty
+                Action
               </Tab>
               <Tab
                 className={`border p-3  transition-all transform duration-700   rounded text-white ${
-                  category === "PUBG"
+                  category === "Assassin's Creed"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("PUBG")}
+                onClick={() => setCategory("Battle Royale")}
               >
-                PUBG
+                Battle Royale
               </Tab>
               <Tab
                 className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
-                  category === "BattleField"
+                  category === "RPG"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("BattleField")}
+                onClick={() => setCategory("RPG")}
               >
-                BattleField
+                RPG
               </Tab>
               <Tab
                 className={`border p-3 text-white transition-all transform duration-700   rounded  ${
-                  category === "Car Racing"
+                  category === "Uncharted"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
                 }`}
-                onClick={() => setCategory("Car Racing")}
+                onClick={() => setCategory("Adventure")}
               >
-                Car Racing
+                Adventure
+              </Tab>
+
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "RedDeadRedemption"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Racing")}
+              >
+                Racing
+              </Tab>
+
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "Battlefield"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Simulation")}
+              >
+                Simulation
+              </Tab>
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "FarCry"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Sports")}
+              >
+                Sports
+              </Tab>
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "FarCry1"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Strategy")}
+              >
+                Strategy
+              </Tab>
+              <Tab
+                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                  category === "FarCry2"
+                    ? "hover:bg-green-500 border-green-500"
+                    : "hover:bg-green-500 border-green-500"
+                }`}
+                onClick={() => setCategory("Puzzle")}
+              >
+                Puzzle
               </Tab>
             </TabList>
           </div>
 
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                    className=""
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                    className=""
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                    className=""
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                    className=""
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-10 mt-6">
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                    className=""
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5  w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
-              <div className="border border-green-500 rounded-lg p-5 w-full lg:w-full lg:w-96 bg-transparent text-white shadow-xl">
-                <figure>
-                  <img
-                    src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">
-                    Shoes!
-                    <div className="badge badge-secondary">NEW</div>
-                  </h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div className="card-actions justify-end">
-                    <div className="badge badge-outline">Fashion</div>
-                    <div className="badge badge-outline">Products</div>
-                  </div>
-                </div>
-              </div>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
+              {games.slice(0, 8).map((game, i) => (
+                <GameCard key={i} game={game}></GameCard>
+              ))}
             </div>
           </TabPanel>
         </Tabs>
