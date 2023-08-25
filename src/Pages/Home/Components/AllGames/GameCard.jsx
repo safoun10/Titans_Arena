@@ -22,9 +22,17 @@ const GameCard = ({ game }) => {
     recommendedRequirements,
     features,
     systemSupport,
-    category
+    category,
   } = game;
-  
+
+  const limitDescription = (description, limit) => {
+    const words = description.split(" ");
+    const limitedWords = words.slice(0, limit);
+    return limitedWords.join(" ");
+  };
+
+  const limitedDescription = limitDescription(description.description1, 20);
+
   return (
     <div
       style={{
@@ -59,7 +67,7 @@ const GameCard = ({ game }) => {
         </div>
 
         <p className="md:text-sm my-1 text-gray-400 text-center">
-          {description}
+          {limitedDescription}
         </p>
 
         <p className="text-warning justify-center mb-1 flex items-center gap-1">
@@ -67,9 +75,11 @@ const GameCard = ({ game }) => {
           <span className="text-gray-400  text-xs">{review}</span>
         </p>
         {/* <p className="text-green-400  font-semibold text-center border-2 border-green-500 ">Learn More</p> */}
-        <button className="border-2 md:text-[13px] rounded-tl-box rounded-br-box p-2 w-full font-bold hover:bg-green-500  border-green-500">
-        <Link to={`/games/${_id}`}>View Details</Link>
-        </button>
+        <Link to={`/games/${_id}`}>
+          <button className="border-2 md:text-[13px] rounded-tl-box rounded-br-box p-2 w-full font-bold hover:bg-green-500  border-green-500">
+            View Details
+          </button>
+        </Link>
       </div>
     </div>
   );

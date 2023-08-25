@@ -10,6 +10,7 @@ import AllGames from "../Pages/AllGames/AllGames";
 import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
+import Esports from "../Pages/Esports/Components/Esports";
 
 const router = createBrowserRouter([
   {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/blog/:id",
-        element: <SingleBlog/>
+        element: <SingleBlog />,
       },
       {
         path: "/support",
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         path: "/games/:id",
         element: <GamesDetails />,
+      },
+      {
+        path: "/esports",
+        element: <Esports></Esports>,
       },
     ],
   },
