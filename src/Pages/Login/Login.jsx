@@ -66,7 +66,7 @@ const Login = () => {
                       type="email"
                       id="email"
                       {...register("email", { required: true })}
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs italic">
@@ -86,7 +86,7 @@ const Login = () => {
                       type="password"
                       id="password"
                       {...register("password", { required: true })}
-                      className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                      className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                     />
                     {errors.password && (
                       <p className="text-red-500 text-xs italic">
