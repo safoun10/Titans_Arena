@@ -26,7 +26,7 @@ const AboutTeamEs = () => {
         <div className="bg-gray-100 dark:bg-gray-800 lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center">
           <div>
             <h1 className="dark:text-white md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full xl:text-6xl sm:text-5xl text-4xl font-semibold text-gray-800 capitalize">
-              Modern Interior Decor
+              ABOUT CLOUX <span className="text-green-500"> ESPORT TEAM</span>
             </h1>
             <p className="dark:text-gray-300 md:w-9/12 lg:w-11/12 xl:w-10/12 2xl:9/12 text-base leading-normal text-gray-600 mt-5">
               Get inspired by our curated selection of luxiwood interiors. We
