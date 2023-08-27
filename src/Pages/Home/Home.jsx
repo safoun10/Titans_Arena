@@ -32,7 +32,7 @@ const Home = () => {
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />
-        <ReviewSection></ReviewSection>
+        <ReviewSection/>
         <OurTeamMembers />
         <StayConnect />
       
