@@ -11,8 +11,8 @@ import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
-import Dashboard from "../Dashboard/Dashboard";
-import DashboardLayout from "../Dashboard/DashboardLayout";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import DashboardLayout from "../Pages/Dashboard/DashboardLayout";
 
 const router = createBrowserRouter([
   {
