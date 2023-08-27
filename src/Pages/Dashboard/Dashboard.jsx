@@ -1,7 +1,43 @@
 import React from "react";
-import { Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Dashboard = () => {
+  const navOptions = (
+    <>
+      <li className="text-black">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          HOME
+        </NavLink>
+      </li>
+      <li className="text-black">
+        <NavLink
+          to="/dashboard/users"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Users
+        </NavLink>
+      </li>
+      <li className="text-black">
+        <NavLink
+          to="/dashboard/selectedGames"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Add To Cart Games
+        </NavLink>
+      </li>
+      <li className="text-black">
+        <NavLink
+          to="/dashboard/enrolledTour"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Enrolled Tournaments
+        </NavLink>
+      </li>
+    </>
+  );
   return (
     <>
       <div className="drawer lg:drawer-open">
@@ -18,14 +54,9 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+          <ul className="menu p-4 w-80 min-h-full bg-base-200">
             {/* Sidebar content here */}
-            <li>
-              <a>Sidebar Item 1</a>
-            </li>
-            <li>
-              <a>Sidebar Item 2</a>
-            </li>
+           {navOptions}
           </ul>
         </div>
       </div>
