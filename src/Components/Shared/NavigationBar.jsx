@@ -63,6 +63,14 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li>
+      <li className="nav-link">
+        <NavLink
+          to="/dashboard"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Dashboard
+        </NavLink>
+      </li>
     </>
   );
 
@@ -99,7 +107,7 @@ const NavigationBar = () => {
               logo
             </span> */}
             <img
-              className="absolute h-[18rem] -top-[7rem] "
+              className="absolute h-[18rem] -top-[7rem]"
               src={logo}
               alt=""
             />
@@ -107,7 +115,7 @@ const NavigationBar = () => {
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="flex gap-4">{navOptions}</ul>
+          <ul className="flex gap-4 lg:ml-28">{navOptions}</ul>
         </div>
         <div className="navbar-end">
           <div>

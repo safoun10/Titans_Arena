@@ -11,6 +11,8 @@ import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
+import Dashboard from "../Dashboard/Dashboard";
+import DashboardLayout from "../Dashboard/DashboardLayout";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +65,16 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path : "/dashboard",
+    element : <DashboardLayout></DashboardLayout>,
+    children : [
+      {
+        path : "/dashboard",
+        element : <Dashboard></Dashboard>
+      }
+    ]
+  }
 ]);
 
 export default router;
