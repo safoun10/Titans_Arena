@@ -12,7 +12,7 @@ import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
 import Dashboard from "../Pages/Dashboard/Dashboard";
-import DashboardLayout from "../Pages/Dashboard/DashboardLayout";
+
 
 const router = createBrowserRouter([
   {
@@ -67,12 +67,9 @@ const router = createBrowserRouter([
   },
   {
     path : "/dashboard",
-    element : <DashboardLayout></DashboardLayout>,
+    element : <Dashboard/>,
     children : [
-      {
-        path : "/dashboard",
-        element : <Dashboard></Dashboard>
-      }
+      
     ]
   }
 ]);
