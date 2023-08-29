@@ -10,6 +10,10 @@ import AllGames from "../Pages/AllGames/AllGames";
 import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
+import Esports from "../Pages/Esports/Components/Esports";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import DashboardLayout from "../Pages/Dashboard/DashboardLayout";
+import Gallery from "../Pages/Gallery/Gallery";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery/>,
       },
       {
         path: "/contact",
@@ -46,7 +54,7 @@ const router = createBrowserRouter([
       }, 
       {
         path: "/blog/:id",
-        element: <SingleBlog/>
+        element: <SingleBlog />,
       },
       {
         path: "/support",
@@ -56,8 +64,22 @@ const router = createBrowserRouter([
         path: "/games/:id",
         element: <GamesDetails />,
       },
+      {
+        path: "/esports",
+        element: <Esports></Esports>,
+      },
     ],
   },
+  {
+    path : "/dashboard",
+    element : <DashboardLayout></DashboardLayout>,
+    children : [
+      {
+        path : "/dashboard",
+        element : <Dashboard></Dashboard>
+      }
+    ]
+  }
 ]);
 
 export default router;

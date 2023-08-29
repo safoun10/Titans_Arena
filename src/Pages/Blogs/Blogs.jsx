@@ -14,7 +14,7 @@ const Blogs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3; // Number of games to display per page
 
-  const url = `http://localhost:5000/searchblogs?search=${search}`;
+  const url = `https://titans-arena-server.vercel.app/searchblogs?search=${search}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -44,12 +44,16 @@ const Blogs = () => {
               <BlogElement key={i} blog={blog} />
             ))}
           {/* single blog end*/}
-          <Pagination
+          {blogs.length >= 3 ? (
+            <Pagination
               totalGames={blogs.length}
               gamesPerPage={gamesPerPage}
               currentPage={currentPage}
               paginate={setCurrentPage}
             />
+          ) : (
+            ""
+          )}
         </div>
         {/* Blogs page left side end*/}
         {/* Blogs page right side start */}
@@ -85,7 +89,9 @@ const Blogs = () => {
           </div>
           {/* Relative part Start*/}
           <div className="text-white py-6">
-            <h1 className="font-bold text-2xl pb-6 uppercase">Relative POSTS</h1>
+            <h1 className="font-bold text-2xl pb-6 uppercase">
+              Relative POSTS
+            </h1>
             {blogs.slice(5, 9).map((blog, i) => (
               <Link key={i}>
                 <div className="flex gap-4 pb-4">

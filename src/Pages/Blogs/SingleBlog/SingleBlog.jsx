@@ -19,13 +19,13 @@ const SingleBlog = () => {
   const [blog, setBlog] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/blogs/${id}`)
+    fetch(`https://titans-arena-server.vercel.app/blogs/${id}`)
       .then((res) => res.json())
       .then((data) => setBlog(data));
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:5000/blogs")
+    fetch("https://titans-arena-server.vercel.app/blogs")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -162,7 +162,7 @@ const SingleBlog = () => {
             </form>
           </div>
           {/* NEWS LETTER part end*/}
-          
+
           {/* TAG CLOUD */}
           <div className="py-6">
             <h1 className="text-2xl font-bold uppercase pb-6 text-white">

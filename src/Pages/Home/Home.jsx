@@ -1,4 +1,3 @@
-import AllGames from "./Components/AllGames/AllGames";
 import FeatureGames from "./Components/FeatureGames/FeatureGames";
 import { Helmet } from "react-helmet-async";
 import FlipCard from "./Components/Fetured/FlipCard";
@@ -25,6 +24,7 @@ const Home = () => {
         <Banner />
       </div>
       <div className="max-w-[1280px] mx-auto">
+       
         <FlipCard />
         <Category />
         <PrizePoolJoin/> 
@@ -32,7 +32,7 @@ const Home = () => {
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />
-        <ReviewSection></ReviewSection>
+        <ReviewSection/>
         <OurTeamMembers />
         <StayConnect />
       

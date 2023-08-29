@@ -44,7 +44,7 @@ const Register = () => {
                 photoURL: data.photoUrl,
               };
 
-              fetch("http://localhost:5000/users", {
+              fetch("https://titans-arena-server.vercel.app/users", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -106,8 +106,10 @@ const Register = () => {
                       <input
                         type="text"
                         id="name"
-                        {...register("name", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        {...register("name", {
+                          required: true,
+                        })}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.name && (
                         <p className="text-red-500 text-xs italic">
@@ -126,8 +128,10 @@ const Register = () => {
                       <input
                         type="email"
                         id="email"
-                        {...register("email", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                        {...register("email", {
+                          required: true,
+                        })}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.email && (
                         <p className="text-red-500 text-xs italic">
@@ -146,8 +150,10 @@ const Register = () => {
                       <input
                         type="password"
                         id="password"
-                        {...register("password", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white leading-tight focus:outline-none focus:shadow-outline"
+                        {...register("password", {
+                          required: true,
+                        })}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.password && (
                         <p className="text-red-500 text-xs italic">
@@ -167,7 +173,7 @@ const Register = () => {
                         type="password"
                         id="confirmPassword"
                         {...register("confirmPassword", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                       {errors.confirmPassword && (
                         <p className="text-red-500 text-xs italic">
@@ -187,7 +193,7 @@ const Register = () => {
                         type="text"
                         id="photoUrl"
                         {...register("photoUrl")}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-white  leading-tight focus:outline-none focus:shadow-outline"
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                     </div>
 
