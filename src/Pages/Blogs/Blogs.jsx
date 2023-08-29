@@ -5,6 +5,7 @@ import "./Blogs.css";
 import BlogElement from "./BlogElement";
 import BlogBanner from "./BlogBanner";
 import Pagination from "../AllGames/Pagination";
+import { Helmet } from "react-helmet-async";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -26,6 +27,9 @@ const Blogs = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>TitanArena || Blogs</title>
+      </Helmet>
       {/* blog page banner start */}
       <BlogBanner title="Blogs List" />
       {/* blog page banner end */}

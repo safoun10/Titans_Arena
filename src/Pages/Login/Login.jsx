@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
   const { signin } = useContext(AuthContext);
@@ -42,6 +43,9 @@ const Login = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>TitanArena || LogIn</title>
+      </Helmet>
       <div className="hero min-h-screen bg-base-200 bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100 ">

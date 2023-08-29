@@ -10,6 +10,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 const SingleBlog = () => {
   const { id } = useParams();
@@ -33,6 +34,9 @@ const SingleBlog = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>TitanArena || Blog</title>
+      </Helmet>
       <BlogBanner title="Single Blog" />
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}

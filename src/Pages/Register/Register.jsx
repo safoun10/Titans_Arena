@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
   const { createUser, user, updateUserData, updateUserProfile } =
@@ -78,6 +79,9 @@ const Register = () => {
   };
   return (
     <div className="">
+      <Helmet>
+        <title>TitanArena || Register</title>
+      </Helmet>
       <div>
         <div className="hero min-h-screen bg-base-200 pt-20">
           <div className="hero-content flex-col lg:flex-row-reverse">
