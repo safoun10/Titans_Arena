@@ -4,7 +4,7 @@ import { NavLink, Outlet } from "react-router-dom";
 const Dashboard = () => {
   const navOptions = (
     <>
-      <li className="text-black">
+      <li className="text-white">
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -12,7 +12,7 @@ const Dashboard = () => {
           HOME
         </NavLink>
       </li>
-      <li className="text-black">
+      <li className="text-white">
         <NavLink
           to="/dashboard/users"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -20,7 +20,7 @@ const Dashboard = () => {
           Users
         </NavLink>
       </li>
-      <li className="text-black">
+      <li className="text-white">
         <NavLink
           to="/dashboard/selectedGames"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -28,7 +28,7 @@ const Dashboard = () => {
           Add To Cart Games
         </NavLink>
       </li>
-      <li className="text-black">
+      <li className="text-white">
         <NavLink
           to="/dashboard/enrolledTour"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -40,6 +40,25 @@ const Dashboard = () => {
   );
   return (
     <>
+     <style>
+        {`
+          /* Style for navigation menu */
+          .text-white {
+            color: white;
+          }
+          
+          .text-white:hover {
+            color: green;
+          }
+
+          /* Linear gradient background for the body */
+          body {
+            background: linear-gradient(to bottom, black, #111);
+            margin: 0;
+            padding: 0;
+          }
+        `}
+      </style>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col items-center justify-center">
@@ -54,9 +73,9 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu p-4 w-80 min-h-full bg-base-200">
+          <ul className="p-10 space-y-4 w-80 min-h-full bg-black">
             {/* Sidebar content here */}
-           {navOptions}
+            {navOptions}
           </ul>
         </div>
       </div>
