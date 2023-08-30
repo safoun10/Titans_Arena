@@ -107,7 +107,7 @@ const NavigationBar = () => {
               logo
             </span> */}
             <img
-              className="absolute h-[18rem] -top-[7rem]"
+              className="absolute md:h-[18rem] h-[12rem] md:ml-0 ml-3 md:-top-[7rem]"
               src={logo}
               alt=""
             />
