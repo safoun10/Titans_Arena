@@ -14,6 +14,7 @@ import Esports from "../Pages/Esports/Components/Esports";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import DashboardLayout from "../Pages/Dashboard/DashboardLayout";
 import Gallery from "../Pages/Gallery/Gallery";
+import AddBlog from "../Components/addBlog/AddBlog";
 
 const router = createBrowserRouter([
   {
@@ -77,6 +78,10 @@ const router = createBrowserRouter([
       {
         path : "/dashboard",
         element : <Dashboard></Dashboard>
+      },
+      {
+        path : "/dashboard/addblog",
+        element : <AddBlog/>
       }
     ]
   }

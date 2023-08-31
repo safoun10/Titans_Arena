@@ -64,7 +64,7 @@ const Blogs = () => {
                 type="text"
                 ref={searchRef}
                 placeholder="Search…"
-                className="input input-bordered border-[#45f882] bg-transparent w-full max-w-lg"
+                className="input text-white font-bold input-bordered border-[#45f882] bg-transparent w-full max-w-lg"
               />
               <button
                 onClick={handleSearch}
