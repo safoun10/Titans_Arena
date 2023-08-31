@@ -44,51 +44,51 @@ const Register = () => {
                 photoURL: data.photoUrl,
               };
 
-              fetch("https://titans-arena-server.vercel.app/users", {
-                method: "POST",
-                headers: {
-                  "Content-Type": "application/json",
-                },
-                body: JSON.stringify(saveUser),
-              })
-                .then((res) => res.json())
-                .then((data) => {
-                  if (data.insertedId) {
-                    Swal.fire({
-                      title: "User Registered Successfully",
-                      icon: "success",
-                      timer: 2000,
-                    }).then(() => {
-                      navigate("/");
-                    });
-                  }
-                })
-                .catch((error) => console.log(error));
-            })
-            .catch((error) => console.log(error));
-        })
-        .catch((error) => {
-          setErr(error.message);
-          Swal.fire({
-            title: "Error",
-            text: error.message,
-            icon: "error",
-          });
-        });
-    }
-  };
-  return (
-    <div className="">
-      <Helmet>
-        <title>TitanArena || Register</title>
-      </Helmet>
-      <div>
-        <div className="hero min-h-screen bg-base-200 pt-20">
-          <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-              <h1 className="text-5xl mt-5 text-center font-bold text-green-500 mb-5 font-mono">
-                Register now!
-              </h1>
+							fetch(
+								"http://localhost:5000/users",
+								{
+									method: "POST",
+									headers: {
+										"Content-Type": "application/json",
+									},
+									body: JSON.stringify(saveUser),
+								}
+							)
+								.then((res) => res.json())
+								.then((data) => {
+									if (data.insertedId) {
+										Swal.fire({
+											title: "User Registered Successfully",
+											icon: "success",
+											timer: 2000,
+										}).then(() => {
+											navigate("/");
+										});
+									}
+								})
+								.catch((error) => console.log(error));
+						})
+						.catch((error) => console.log(error));
+				})
+				.catch((error) => {
+					setErr(error.message);
+					Swal.fire({
+						title: "Error",
+						text: error.message,
+						icon: "error",
+					});
+				});
+		}
+	};
+	return (
+		<div className="">
+			<div>
+				<div className="hero min-h-screen bg-base-200 pt-20">
+					<div className="hero-content flex-col lg:flex-row-reverse">
+						<div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+							<h1 className="text-5xl mt-5 text-center font-bold text-green-500 mb-5 font-mono">
+								Register now!
+							</h1>
 
               <div>
                 <div className="flex justify-center items-center border border-green-400 p-4 ">
