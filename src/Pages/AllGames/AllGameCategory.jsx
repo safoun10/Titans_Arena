@@ -205,63 +205,63 @@ const AllGameCategory = () => {
 
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
+              {games.slice(0, 8).map((game, i) => (
                 <GameCard key={i} game={game}></GameCard>
               ))}
             </div>
