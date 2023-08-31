@@ -15,6 +15,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import Users from "../Pages/Dashboard/Users/Users";
 import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
 import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
+import AddBlog from "../Components/addBlog/AddBlog";
 
 
 const router = createBrowserRouter([
@@ -30,10 +31,10 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      {
-        path: "/gallery",
-        element: <Gallery/>,
-      },
+      // {
+      //   path: "/gallery",
+      //   element: <Gallery/>,
+      // },
       {
         path: "/contact",
         element: <Contact />,
@@ -87,7 +88,11 @@ const router = createBrowserRouter([
       {
         path : "enrolledTour",
         element : <EnrolledTour/>
-      }
+      },
+      {
+        path : "addblog",
+        element : <AddBlog/>
+      },
     ]
   }
 ]);

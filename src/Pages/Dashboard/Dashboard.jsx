@@ -36,6 +36,14 @@ const Dashboard = () => {
           Enrolled Tournaments
         </NavLink>
       </li>
+      <li className="text-white">
+        <NavLink
+          to="/dashboard/addblog"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Add Blog
+        </NavLink>
+      </li>
     </>
   );
   return (

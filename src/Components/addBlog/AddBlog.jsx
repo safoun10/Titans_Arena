@@ -16,14 +16,20 @@ const AddBlog = () => {
     data.Category = categoryOption;
     data.tags = tagOption;
 
-    fetch("http://localhost:5000/", {
+    fetch("http://localhost:5000/blog", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
     })
-      .then((res) => res.json())
       .then((result) => {
         console.log(result);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Blog successfuly added',
+          showConfirmButton: false,
+          timer: 1500
+        })
       });
     console.log("add a blog",data);
   };
@@ -51,7 +57,7 @@ const AddBlog = () => {
   ];
 
   return (
-    <div className="pt-6 mb-12 card w-full bg-base-100 shadow-xl px-5">
+    <div className="pt-6 w-full bg-base-100 shadow-xl px-5">
       <h2 className="text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
         Public Blog
       </h2>
