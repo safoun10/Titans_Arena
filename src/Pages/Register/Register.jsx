@@ -44,7 +44,7 @@ const Register = () => {
 							};
 
 							fetch(
-								"https://titans-arena-server.vercel.app/users",
+								"http://localhost:5000/users",
 								{
 									method: "POST",
 									headers: {
