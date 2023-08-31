@@ -15,7 +15,7 @@ const AddBlog = () => {
   const onSubmit = (data) => {
     data.Category = categoryOption;
     data.tags = tagOption;
-    
+
     fetch("http://localhost:5000/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,7 +25,7 @@ const AddBlog = () => {
       .then((result) => {
         console.log(result);
       });
-    console.log(data);
+    console.log("add a blog",data);
   };
 
   const categoryOptions = [
@@ -130,43 +130,43 @@ const AddBlog = () => {
           </div>
         </div>
         <div className="flex justify-between gap-2">
-            <div className="form-control w-full">
-              <label className="label">
-                <span className="label-text">Facebook</span>
-              </label>
-              <input
-                type="text"
-                name="social_media"
-                className="input input-bordered "
-                placeholder="Facebook"
-                {...register("facebook")}
-              />
-            </div>
-            <div className="form-control w-full">
-              <label className="label">
-                <span className="label-text">Twitter</span>
-              </label>
-              <input
-                type="text"
-                name="social_media"
-                className="input input-bordered"
-                placeholder="Twitter"
-                {...register("twitter")}
-              />
-            </div>
-            <div className="form-control w-full">
-              <label className="label">
-                <span className="label-text">Linked In</span>
-              </label>
-              <input
-                type="text"
-                name="social_media"
-                className="input input-bordered"
-                placeholder="Linked In"
-                {...register("linked_in")}
-              />
-            </div>
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Facebook</span>
+            </label>
+            <input
+              type="text"
+              name="social_media"
+              className="input input-bordered "
+              placeholder="Facebook"
+              {...register("facebook")}
+            />
           </div>
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Twitter</span>
+            </label>
+            <input
+              type="text"
+              name="social_media"
+              className="input input-bordered"
+              placeholder="Twitter"
+              {...register("twitter")}
+            />
+          </div>
+          <div className="form-control w-full">
+            <label className="label">
+              <span className="label-text">Linked In</span>
+            </label>
+            <input
+              type="text"
+              name="social_media"
+              className="input input-bordered"
+              placeholder="Linked In"
+              {...register("linked_in")}
+            />
+          </div>
+        </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Blog</span>
