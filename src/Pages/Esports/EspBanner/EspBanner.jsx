@@ -5,11 +5,11 @@ const EspBanner = () => {
   return (
     <div className="esproot">
       <section
-        className=" espoBanner"
+        className=" espoBanner  "
         id="home"
         aria-label=""
         style={{
-          backgroundImage: `url('https://i.ibb.co/9qnrb2Q/hero-bg.jpg')`,
+          backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.60fpsgaming.com/wp-content/uploads/2021/07/valorant-error.jpg')`,
         }}
       >
         <div className="mx-auto container py-12 px-6 xl:px-0 flex justify-center items-center flex-col">

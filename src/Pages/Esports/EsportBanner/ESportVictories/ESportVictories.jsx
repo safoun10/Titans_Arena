@@ -135,7 +135,7 @@ const ESportVictories = () => {
               <div className="hidden bg-black bg-gray-1 w-full lg:w-11/12 lg:h-full lg:flex justify-end items-center">
                 <div className="w-full lg:w-auto lg:-mr-32 border border-green-500 border-r-0 border-b-0">
                   <img
-                    src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/11/27/1331762141170_2/team-secret%E2%80%99s-win-at-red-bull-battlegrounds"
+                    src="https://cq-esports.com/storage/uploads/images/1313978/1.jpg"
                     alt="image with decent chairs"
                     className="w-full relative z-30 lg:pl-15 md:px-5 py-9 md:py-7 "
                   />
@@ -144,7 +144,7 @@ const ESportVictories = () => {
               <div className="absolute top-0 dark:bg-gray-800 bg-gray-100 md:h-96 w-full hidden md:block lg:hidden"></div>
               <div className="w-full h-full lg:hidden">
                 <img
-                  src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2015/11/27/1331762141170_2/team-secret%E2%80%99s-win-at-red-bull-battlegrounds"
+                  src="https://cq-esports.com/storage/uploads/images/1313978/1.jpg"
                   alt="image with decent chairs"
                   className="w-full relative z-30 lg:pl-20 md:px-6 py-5 md:py-14 "
                 />
