@@ -18,74 +18,78 @@ import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
 
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/register",
-        element: <Register></Register>,
-      },
-      {
-        path: "/allgame",
-        element: <AllGames></AllGames>,
-      },
-      {
-        path: "/blogs",
-        element: <Blogs />,
-      },
-      {
-        path: "/blog/:id",
-        element: <SingleBlog />,
-      },
-      {
-        path: "/support",
-        element: <Support />,
-      },
-      {
-        path: "/games/:id",
-        element: <GamesDetails />,
-      },
-      {
-        path: "/esports",
-        element: <Esports></Esports>,
-      },
-    ],
-  },
-  {
-    path : "/dashboard",
-    element : <Dashboard/>,
-    children : [
-      {
-        path : "users",
-        element : <Users/>
-      },
-      {
-        path : "selectedGames",
-        element : <AddToCart/>
-      },
-      {
-        path : "enrolledTour",
-        element : <EnrolledTour/>
-      }
-    ]
-  }
+	{
+		path: "/",
+		element: <Root />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "/contact",
+				element: <Contact />,
+			},
+			{
+				path: "/login",
+				element: <Login />,
+			},
+			{
+				path: "/register",
+				element: <Register></Register>,
+			},
+			{
+				path: "/allgame",
+				element: <AllGames></AllGames>,
+			},
+			{
+				path: "/blogs",
+				element: <Blogs />,
+			},
+			{
+				path: "/blog/:id",
+				element: <SingleBlog />,
+			},
+			{
+				path: "/support",
+				element: <Support />,
+			},
+			{
+				path: "/games/:id",
+				element: <GamesDetails />,
+			},
+			{
+				path: "/esports",
+				element: <Esports></Esports>,
+			},
+		],
+	},
+	{
+		path: "/dashboard",
+		element: <Dashboard />,
+		children: [
+			{
+				path: "users",
+				element: <Users />,
+			},
+			{
+				path: "selectedGames",
+				element: <AddToCart />,
+			},
+			{
+				path: "enrolledTour",
+				element: <EnrolledTour />,
+			},
+		],
+	},
+	{
+		path: "*",
+		element: <div>404 | Page not found</div>,
+	},
 ]);
 
 export default router;

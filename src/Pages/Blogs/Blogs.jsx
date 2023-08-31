@@ -5,6 +5,7 @@ import "./Blogs.css";
 import BlogElement from "./BlogElement";
 import BlogBanner from "./BlogBanner";
 import Pagination from "../AllGames/Pagination";
+import DataComponent from "../../Redux/DataComponent";
 
 const Blogs = () => {
 	const [blogs, setBlogs] = useState([]);
@@ -29,6 +30,9 @@ const Blogs = () => {
 			{/* blog page banner start */}
 			<BlogBanner title="Blogs List" />
 			{/* blog page banner end */}
+			{/* ///////////////////////////////////////////////////////////////////////// */}
+			<DataComponent></DataComponent>
+			{/* ///////////////////////////////////////////////////////////////////////// */}
 
 			<div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
 				{/* Blogs page left side start*/}

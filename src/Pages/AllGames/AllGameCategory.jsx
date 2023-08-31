@@ -12,7 +12,7 @@ const AllGameCategory = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 8; // Number of games to display per page
 
-  console.log(games);
+  // console.log(games);
 
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
@@ -34,7 +34,7 @@ const AllGameCategory = () => {
       .then((res) => res.json())
       .then((data) => {
         setGames(data);
-        console.log(data);
+        // console.log(data);
       });
   }, [search]);
 
