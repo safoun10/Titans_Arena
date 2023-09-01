@@ -12,11 +12,12 @@ import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
 import Dashboard from "../Layout/Dashboard";
-import Users from "../Pages/Dashboard/Users/Users";
-import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
-import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
-import Profile from "../Pages/Dashboard/Profile";
-import BlogManagement from "../Pages/Dashboard/BlogsManagement/BlogManagement";
+import Users from "../Pages/Dashboard/Admin/Users/Users";
+import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
+import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
+import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
+import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
+import AddBlog from "../Components/addBlog/AddBlog";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
       {
         path: "blogManagement",
         element: <BlogManagement />,
+      },
+      {
+        path: "addblog",
+        element: <AddBlog />,
       },
     ],
   },

@@ -6,7 +6,7 @@ import {
   AiOutlineProfile,
 } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
-import useAuth from "../../Hooks/useAuth";
+import useAuth from "../../../Hooks/useAuth";
 
 const Profile = () => {
   const { user } = useAuth();

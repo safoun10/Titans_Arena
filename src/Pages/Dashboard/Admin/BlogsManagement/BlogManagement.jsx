@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaDeleteLeft } from "react-icons/fa6";
-import useAuth from "../../../Hooks/useAuth";
+import useAuth from "../../../../Hooks/useAuth";
 
 const BlogManagement = () => {
   const [blogs, setBlogs] = useState([]);

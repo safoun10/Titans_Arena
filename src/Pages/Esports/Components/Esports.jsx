@@ -6,8 +6,12 @@ import ESportVictories from "../EsportBanner/ESportVictories/ESportVictories";
 import MatchFixered from "../MatchFixered/MatchFixered";
 import EspSponsored from "../EspSponsored/EspSponsored";
 import EspBanner from "../EspBanner/EspBanner";
+import { Helmet } from "react-helmet-async";
 
 const Esports = () => {
+  <Helmet>
+    <title>TitanArena || Esports</title>
+  </Helmet>;
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       {/* <EsportBanner /> */}
