@@ -13,29 +13,28 @@ import Category from "./Components/Category/Category";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import PrizePoolJoin from "./Components/PrizePoolJoin/PrizePoolJoin";
 const Home = () => {
- 
-
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <Helmet>
-        <title>TitanArena | Home</title>
+        <title>TitanArena || Home</title>
       </Helmet>
       <div id="#top">
-        <Banner />
+        <div>
+          <Banner />
+        </div>
       </div>
+
       <div className="max-w-[1280px] mx-auto">
-       
         <FlipCard />
         <Category />
-        <PrizePoolJoin/> 
+        <PrizePoolJoin />
         <FeatureGames />
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />
-        <ReviewSection/>
+        <ReviewSection />
         <OurTeamMembers />
         <StayConnect />
-      
       </div>
     </div>
   );
