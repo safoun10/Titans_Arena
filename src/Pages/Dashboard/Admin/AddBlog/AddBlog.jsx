@@ -10,6 +10,7 @@ const AddBlog = () => {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
@@ -23,6 +24,7 @@ const AddBlog = () => {
     })
       .then((result) => {
         console.log(result);
+        reset();
         Swal.fire({
           position: 'center',
           icon: 'success',
