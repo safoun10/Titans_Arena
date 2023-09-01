@@ -1,0 +1,119 @@
+[
+  {
+    "esport": "CALL OF DUTY",
+    "event": "GLORIA XTRA 2017 CUP",
+    "event_description": "Lorem ipsum dolor sit amet...",
+    "match": {
+      "team1": "RHING UNITED",
+      "team2": "BULLS",
+      "date": "December 8, 2018",
+      "time": "16:30",
+      "stream_link": "http://150"
+    },
+    "result": "upcoming",
+    "team1_logo": "https://i.ibb.co/CmkmZ4N/pic1.png",
+    "team2_logo": "https://i.ibb.co/p1QWFgr/pic2.jpg"
+  },
+  {
+    "esport": "CS:GO",
+    "event": "Summer Championship 2023",
+    "event_description": "Join us for the intense battles...",
+    "match": {
+      "team1": "Astralis",
+      "team2": "Fnatic",
+      "date": "August 30, 2023",
+      "time": "18:00",
+      "stream_link": "http://stream-link"
+    },
+    "result": {
+      "team1_score": 16,
+      "team2_score": 12
+    },
+    "team1_logo": "https://i.ibb.co/fpPC3gQ/pic4.jpg",
+    "team2_logo": "https://i.ibb.co/hL7N488/pic5.jpg"
+  },
+  {
+    "esport": "League of Legends",
+    "event": "Worlds Championship 2023",
+    "event_description": "Witness the clash of titans...",
+    "match": {
+      "team1": "Team SoloMid",
+      "team2": "G2 Esports",
+      "date": "September 15, 2023",
+      "time": "20:45",
+      "stream_link": "http://stream-link"
+    },
+    "result": {
+      "team1_score": 3,
+      "team2_score": 1
+    },
+    "team1_logo": "https://i.ibb.co/M21dPn7/pic5.jpg",
+    "team2_logo": "https://i.ibb.co/7nrGKL4/pic6.jpg"
+  },
+  {
+    "esport": "Overwatch",
+    "event": "League of Legends",
+    "event_description": "Prepare for the epic showdown...",
+    "match": {
+      "team1": "Team A",
+      "team2": "Team B",
+      "date": "October 5, 2023",
+      "time": "14:00",
+      "stream_link": "http://stream-link"
+    },
+    "result": "upcoming",
+    "team1_logo": "https://i.ibb.co/7nrGKL4/pic6.jpg",
+    "team2_logo": "https://i.ibb.co/7nrGKL4/pic6.jpg"
+  },
+  {
+    "esport": "Dota 2",
+    "event": "Grand Tournament 2023",
+    "event_description": "Prepare for the epic showdown...",
+    "match": {
+      "team1": "Team A",
+      "team2": "Team B",
+      "date": "October 5, 2023",
+      "time": "14:00",
+      "stream_link": "http://stream-link"
+    },
+    "result": "upcoming",
+    "team1_logo": "https://i.ibb.co/DwV17wk/pic8.jpg",
+    "team2_logo": "https://i.ibb.co/p1QWFgr/pic2.jpg"
+  },
+  {
+    "esport": "FIFA",
+    "event": "World Cup 2023",
+    "event_description": "Experience the excitement...",
+    "match": {
+      "team1": "Brazil",
+      "team2": "Germany",
+      "date": "November 20, 2023",
+      "time": "16:30",
+      "stream_link": "http://stream-link"
+    },
+    "result": {
+      "team1_score": 3,
+      "team2_score": 2
+    },
+    "team1_logo": "https://i.ibb.co/DwV17wk/pic8.jpg",
+    "team2_logo": "https://i.ibb.co/D8TnTNC/pic10.webp"
+  },
+  {
+    "esport": "Dota 2",
+    "event": "International Championship 2023",
+    "event_description": "The battle for supremacy begins...",
+    "match": {
+      "team1": "Team X",
+      "team2": "Team Y",
+      "date": "December 10, 2023",
+      "time": "19:00",
+      "stream_link": "http://stream-link"
+    },
+    "result": {
+      "team1_score": 2,
+      "team2_score": 1
+    },
+    "team1_logo": "https://i.ibb.co/Rhh0HWC/pic11.webp",
+    "team2_logo": "https://i.ibb.co/xfRgDqG/pic12.jpg"
+  }
+]

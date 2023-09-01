@@ -67,7 +67,7 @@ const EsportBanner = () => {
         <SwiperSlide>
           {/* Slide 2 */}
           <div className="max-w-full relative">
-            <img className="h-cover w-full" src={Banner2} alt="" />
+            <img className="img1 h-cover w-full" src={Banner2} alt="" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
               <h1 className="text-5xl font-bold">
                 Join the Esports{" "}
@@ -120,7 +120,7 @@ const EsportBanner = () => {
         <SwiperSlide>
           {/* Slide 3 */}
           <div className="max-w-full relative">
-            <img className="h-cover w-full" src={Banner3} alt="" />
+            <img className="img1 h-cover w-full" src={Banner3} alt="" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white bg-black bg-opacity-50">
               <h1 className="text-5xl font-bold">
                 Esports <span className="text-green-500">Championships</span>{" "}

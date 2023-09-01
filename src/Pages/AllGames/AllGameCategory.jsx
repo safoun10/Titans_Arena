@@ -59,7 +59,7 @@ const AllGameCategory = () => {
           ref={searchRef}
           placeholder="Search Games"
         />
-        <div className="absolute lg:left-[345px] left-12">
+        <div className="absolute lg:left-[300px] left-12">
           <FaSearch></FaSearch>
         </div>
         <input
