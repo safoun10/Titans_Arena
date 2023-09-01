@@ -1,9 +1,8 @@
-// store.js
 import { configureStore } from '@reduxjs/toolkit';
-import dataReducer from './reducer';
+import blogReducer from './blogSlice';
 
 const store = configureStore({
-    reducer: dataReducer
+    reducer: blogReducer
 });
 
 export default store;

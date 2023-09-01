@@ -1,16 +1,19 @@
-// actions.js
-import { fetchDataRequest, fetchDataSuccess, fetchDataFailure } from './reducer';
+// import { fetchDataRequest, fetchDataSuccess, fetchDataFailure } from './reducer';
 
-export const fetchData = () => {
-    return (dispatch) => {
-        dispatch(fetchDataRequest());
-        fetch('https://titans-arena-server.vercel.app/blogs')
-            .then(response => response.json())
-            .then(data => {
-                dispatch(fetchDataSuccess(data));
-            })
-            .catch(error => {
-                dispatch(fetchDataFailure(error.message));
-            });
-    };
-};
+// export const fetchBlogData = (blogData) => async (dispatch) => {
+//     const completedURL = `https://titans-arena-server.vercel.app/searchblogs?search=${blogData}`;
+
+//     try {
+//         // Dispatch request action
+//         dispatch(fetchDataRequest());
+
+//         const response = await fetch(completedURL);
+//         const fetchedData = await response.json();
+
+//         // Dispatch success action with fetched data
+//         dispatch(fetchDataSuccess(fetchedData));
+//     } catch (error) {
+//         // Dispatch failure action with error message
+//         dispatch(fetchDataFailure(error.message));
+//     }
+// };
