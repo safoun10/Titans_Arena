@@ -11,11 +11,12 @@ import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
-import Dashboard from "../Pages/Dashboard/Dashboard";
+import Dashboard from "../Layout/Dashboard";
 import Users from "../Pages/Dashboard/Users/Users";
 import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
 import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
-
+import Profile from "../Pages/Dashboard/Profile";
+import BlogManagement from "../Pages/Dashboard/BlogsManagement/BlogManagement";
 
 const router = createBrowserRouter([
   {
@@ -69,23 +70,31 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path : "/dashboard",
-    element : <Dashboard/>,
-    children : [
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
       {
-        path : "users",
-        element : <Users/>
+        path: "users",
+        element: <Users />,
       },
       {
-        path : "selectedGames",
-        element : <AddToCart/>
+        path: "selectedGames",
+        element: <AddToCart />,
       },
       {
-        path : "enrolledTour",
-        element : <EnrolledTour/>
-      }
-    ]
-  }
+        path: "enrolledTour",
+        element: <EnrolledTour />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "blogManagement",
+        element: <BlogManagement />,
+      },
+    ],
+  },
 ]);
 
 export default router;

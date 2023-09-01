@@ -14,10 +14,26 @@ const Dashboard = () => {
       </li>
       <li className="text-white">
         <NavLink
+          to="/dashboard/profile"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          profile
+        </NavLink>
+      </li>
+      <li className="text-white">
+        <NavLink
           to="/dashboard/users"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Users
+        </NavLink>
+      </li>
+      <li className="text-white">
+        <NavLink
+          to="/dashboard/blogManagement"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          Blog Management
         </NavLink>
       </li>
       <li className="text-white">
@@ -40,7 +56,7 @@ const Dashboard = () => {
   );
   return (
     <>
-     <style>
+      <style>
         {`
           /* Style for navigation menu */
           .text-white {
@@ -61,7 +77,7 @@ const Dashboard = () => {
       </style>
       <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col items-center justify-center">
+        <div className="drawer-content flex flex-col">
           {/* Page content here */}
           <Outlet></Outlet>
           <label
@@ -73,7 +89,7 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="p-10 space-y-4 w-80 min-h-full bg-black">
+          <ul className="p-10 space-y-4 w-80 min-h-full bg-black ">
             {/* Sidebar content here */}
             {navOptions}
           </ul>
