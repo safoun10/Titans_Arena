@@ -17,7 +17,7 @@ import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
 import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
 import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
 import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
-import AddBlog from "../Components/addBlog/AddBlog";
+import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 
 const router = createBrowserRouter([
   {
