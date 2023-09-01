@@ -11,12 +11,13 @@ import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
-import Dashboard from "../Pages/Dashboard/Dashboard";
-import Users from "../Pages/Dashboard/Users/Users";
-import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
-import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
+import Dashboard from "../Layout/Dashboard";
+import Users from "../Pages/Dashboard/Admin/Users/Users";
+import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
+import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
+import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
+import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
 import AddBlog from "../Components/addBlog/AddBlog";
-
 
 const router = createBrowserRouter([
   {
@@ -31,10 +32,6 @@ const router = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      // {
-      //   path: "/gallery",
-      //   element: <Gallery/>,
-      // },
       {
         path: "/contact",
         element: <Contact />,
@@ -54,7 +51,7 @@ const router = createBrowserRouter([
       {
         path: "/blogs",
         element: <Blogs />,
-      }, 
+      },
       {
         path: "/blog/:id",
         element: <SingleBlog />,
@@ -74,27 +71,35 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path : "/dashboard",
-    element : <Dashboard/>,
-    children : [
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
       {
-        path : "users",
-        element : <Users/>
+        path: "users",
+        element: <Users />,
       },
       {
-        path : "selectedGames",
-        element : <AddToCart/>
+        path: "selectedGames",
+        element: <AddToCart />,
       },
       {
-        path : "enrolledTour",
-        element : <EnrolledTour/>
+        path: "enrolledTour",
+        element: <EnrolledTour />,
       },
       {
-        path : "addblog",
-        element : <AddBlog/>
+        path: "profile",
+        element: <Profile />,
       },
-    ]
-  }
+      {
+        path: "blogManagement",
+        element: <BlogManagement />,
+      },
+      {
+        path: "addblog",
+        element: <AddBlog />,
+      },
+    ],
+  },
 ]);
 
 export default router;
