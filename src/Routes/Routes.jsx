@@ -15,7 +15,7 @@ import Dashboard from "../Pages/Dashboard/Dashboard";
 import Users from "../Pages/Dashboard/Users/Users";
 import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
 import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
-
+import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 
 const router = createBrowserRouter([
   {
@@ -66,26 +66,30 @@ const router = createBrowserRouter([
         path: "/esports",
         element: <Esports></Esports>,
       },
+      {
+        path: "/matchdetails",
+        element: <MatchDetails />,
+      },
     ],
   },
   {
-    path : "/dashboard",
-    element : <Dashboard/>,
-    children : [
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
       {
-        path : "users",
-        element : <Users/>
+        path: "users",
+        element: <Users />,
       },
       {
-        path : "selectedGames",
-        element : <AddToCart/>
+        path: "selectedGames",
+        element: <AddToCart />,
       },
       {
-        path : "enrolledTour",
-        element : <EnrolledTour/>
-      }
-    ]
-  }
+        path: "enrolledTour",
+        element: <EnrolledTour />,
+      },
+    ],
+  },
 ]);
 
 export default router;

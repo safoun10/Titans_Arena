@@ -22,7 +22,7 @@ const EspBanner = () => {
             <div className="flex justify-center items-start flex-col xl:w-2/5 md:w-5/12 xl:px-7 px-6 md:px-0 md:py-0 py-5">
               <div>
                 <p className="text-3xl text-white mb-5 xl:text-6xl font-semibold leading-9  ">
-                  Esports<span className="text-green-500 ">Arena</span>{" "}
+                  Esports<span className="text-green-500 ">WelComeToArena</span>{" "}
                   <span className="text-yellow-400 ">Hub</span>
                 </p>
               </div>
@@ -32,8 +32,17 @@ const EspBanner = () => {
                   with us. As passionate gamers and industry enthusiasts, we're{" "}
                   dedicated to bringing you the latest news
                 </p>
-                <button className=" active  border border-yellow-500 rounded-lg p-1 mt-5 hover:bg-black hover:text-yellow-500">
+                <button className=" active border-b-2 border-b-green-500  border border-yellow-500 rounded-lg p-1 mt-5 hover:bg-black hover:text-yellow-500">
                   {" "}
+                  <div className="form-control">
+                    <div className="input-group">
+                      <input
+                        type="text"
+                        placeholder="Search…"
+                        className="input input-bordered bg-black text-green-500"
+                      />
+                    </div>
+                  </div>{" "}
                   Explore
                 </button>
               </div>
