@@ -14,7 +14,7 @@ const Error = () => {
         </h1>
         <Link to={"/"}>
         <button
-          className="border-2 uppercase md:text-[13px] mt-28 p-3 absolute -left-7 text-white w-full rounded  font-bold bg-blue-700 hover:bg-[rgb(254,45,45)] hover:border-[rgb(254,45,45)] border-blue-500 transition duration-500 transform  ease-in-out "
+          className="border-2 uppercase md:text-[13px] mt-28 w-[80%]  p-3 absolute lg:-left-7 left-9 text-white lg:w-full rounded  font-bold bg-blue-700 hover:bg-[rgb(254,45,45)] hover:border-[rgb(254,45,45)] border-blue-500 transition duration-500 transform  ease-in-out "
           style={{
             clipPath:
               "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
