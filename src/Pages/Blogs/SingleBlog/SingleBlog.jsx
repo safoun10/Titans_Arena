@@ -61,8 +61,7 @@ const SingleBlog = () => {
                   <span>{blog.date}</span>
                 </p>
                 <p className="flex gap-3 items-center font-semibold text-lg">
-                  <FaComments className="text-[#45f882] text-lg" />{" "}
-                  {/* <span>{blog.comments.length == 0 ? "No Comments" : `${blog.comments.length,"Comments"}`}</span>{" "} */}
+                  <FaComments className="text-[#45f882] text-lg" /> Comments
                 </p>
               </div>
               <div className="text-white">
@@ -89,9 +88,17 @@ const SingleBlog = () => {
 
                 <div className="flex items-center gap-3">
                   <p className="mr-2">SHARE :</p>
-                  <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
+                  <Link to={blog.twitter}>
+                    {" "}
+                    <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
+                  <Link to={blog.facebook}>
+                    {" "}
+                    <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
+                  <Link to={blog.linked_in}>
+                    <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,7 +126,7 @@ const SingleBlog = () => {
           <div className="text-white py-6">
             <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
             {blogs.slice(2, 6).map((blog, i) => (
-              <Link key={i}>
+              <Link to={`/blog/${blog._id}`} key={i}>
                 <div className="flex gap-4 pb-4">
                   <img
                     className="w-[128px] rounded-md"

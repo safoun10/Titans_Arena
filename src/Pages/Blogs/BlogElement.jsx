@@ -7,12 +7,11 @@ import {
   FaTwitter,
   FaArrowRight,
 } from "react-icons/fa6";
-import img from "../../../public/Images/Banner1.png";
 import { Link } from "react-router-dom";
 
 const BlogElement = ({blog}) => {
-    const {_id,title,author,date, comments, content, featured_image} = blog;
-    
+    const {_id,title,author,date, comments, content, featured_image, facebook, twitter, linked_in} = blog;
+     
     return (
     <div className="bg-[#182029] mb-10">
       <img className="w-full" src={featured_image} alt="blog-image" />
@@ -51,9 +50,11 @@ const BlogElement = ({blog}) => {
 
           <div className="flex items-center gap-3">
             <p className="mr-2">SHARE :</p>
-            <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
-            <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
+           <Link to={twitter}> <FaTwitter className="text-white hover:text-[#45f882] transition-colors" /></Link>
+           <Link to={facebook}> <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" /></Link>
+           <Link to={linked_in}>
             <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
+           </Link>
           </div>
         </div>
       </div>
