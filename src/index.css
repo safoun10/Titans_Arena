@@ -34,3 +34,14 @@ body {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.custom-tabs {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 20px,
+    100% 100%,
+    20px 100%,
+    0 calc(100% - 20px)
+  );
+}

@@ -72,7 +72,7 @@ const AllGameCategory = () => {
         />
       </div>
 
-      <div>
+      <div className="pb-10">
         <Tabs>
           <div className="lg:hidden">
             <button
@@ -85,7 +85,7 @@ const AllGameCategory = () => {
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
             <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8">
               <Tab
-                className={`border p-3  transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
                   category === "All Games"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -95,7 +95,7 @@ const AllGameCategory = () => {
                 All Games
               </Tab>
               <Tab
-                className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
                   category === "CallOfDuty"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -105,7 +105,7 @@ const AllGameCategory = () => {
                 Action
               </Tab>
               <Tab
-                className={`border p-3  transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
                   category === "Assassin's Creed"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -115,7 +115,7 @@ const AllGameCategory = () => {
                 Battle Royale
               </Tab>
               <Tab
-                className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
                   category === "RPG"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -125,7 +125,7 @@ const AllGameCategory = () => {
                 RPG
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "Uncharted"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -136,7 +136,7 @@ const AllGameCategory = () => {
               </Tab>
 
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "RedDeadRedemption"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -147,7 +147,7 @@ const AllGameCategory = () => {
               </Tab>
 
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "Battlefield"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -157,7 +157,7 @@ const AllGameCategory = () => {
                 Simulation
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -167,7 +167,7 @@ const AllGameCategory = () => {
                 Sports
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry1"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -177,7 +177,7 @@ const AllGameCategory = () => {
                 Strategy
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry2"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -205,66 +205,120 @@ const AllGameCategory = () => {
 
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
           <TabPanel>
             <div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
-              {games.slice(0, 7).map((game, i) => (
-                <GameCard key={i} game={game}></GameCard>
-              ))}
+            {games
+                .slice(
+                  (currentPage - 1) * gamesPerPage,
+                  currentPage * gamesPerPage
+                )
+                .map((game, i) => (
+                  <GameCard key={i} game={game}></GameCard>
+                ))}
             </div>
+            <Pagination totalGames={games.length} gamesPerPage={gamesPerPage} currentPage={currentPage} paginate={setCurrentPage} />
           </TabPanel>
         </Tabs>
       </div>
