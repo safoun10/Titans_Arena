@@ -66,7 +66,7 @@ const Blogs = () => {
       <BlogBanner title="Blogs List" />
       {/* blog page banner end */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-4 lg:px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}
         <div className="col-span-4">
           {/* single blog start*/}
@@ -134,7 +134,7 @@ const Blogs = () => {
                   />
                   <div className="">
                     <h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
-                      {blog.title}
+                      {blog.title.slice(0, 54)}...
                     </h2>
                     <p className="text-lg font-semibold text-slate-500">
                       {blog.date}
