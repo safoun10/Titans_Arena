@@ -74,16 +74,16 @@ const AllGameCategory = () => {
 
       <div className="pb-10">
         <Tabs>
-          <div className="lg:hidden">
+          <div className="lg:hidden flex justify-center">
             <button
               onClick={toggleTabList}
-              className="bg-green-500 text-white w-full flex justify-center mt-10 p-2 rounded"
+              className="bg-green-500 text-white w-[50%] mt-10 p-2 rounded"
             >
               Menu
             </button>
           </div>
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
-            <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8">
+            <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
               <Tab
                 className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
                   category === "All Games"
