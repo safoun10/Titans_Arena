@@ -8,12 +8,14 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Register = () => {
   const { createUser, user, updateUserData, updateUserProfile } =
     useContext(AuthContext);
 
   const [error, setErr] = useState("");
+  const [verify, SetVerify] = useState(false);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -44,51 +46,56 @@ const Register = () => {
                 photoURL: data.photoUrl,
               };
 
-							fetch(
-								"http://localhost:5000/users",
-								{
-									method: "POST",
-									headers: {
-										"Content-Type": "application/json",
-									},
-									body: JSON.stringify(saveUser),
-								}
-							)
-								.then((res) => res.json())
-								.then((data) => {
-									if (data.insertedId) {
-										Swal.fire({
-											title: "User Registered Successfully",
-											icon: "success",
-											timer: 2000,
-										}).then(() => {
-											navigate("/");
-										});
-									}
-								})
-								.catch((error) => console.log(error));
-						})
-						.catch((error) => console.log(error));
-				})
-				.catch((error) => {
-					setErr(error.message);
-					Swal.fire({
-						title: "Error",
-						text: error.message,
-						icon: "error",
-					});
-				});
-		}
-	};
-	return (
-		<div className="">
-			<div>
-				<div className="hero min-h-screen bg-base-200 pt-20">
-					<div className="hero-content flex-col lg:flex-row-reverse">
-						<div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-							<h1 className="text-5xl mt-5 text-center font-bold text-green-500 mb-5 font-mono">
-								Register now!
-							</h1>
+              fetch("http://localhost:5000/users", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(saveUser),
+              })
+                .then((res) => res.json())
+                .then((data) => {
+                  if (data.insertedId) {
+                    Swal.fire({
+                      title: "User Registered Successfully",
+                      icon: "success",
+                      timer: 2000,
+                    }).then(() => {
+                      navigate("/");
+                    });
+                  }
+                })
+                .catch((error) => console.log(error));
+            })
+            .catch((error) => console.log(error));
+        })
+        .catch((error) => {
+          setErr(error.message);
+          Swal.fire({
+            title: "Error",
+            text: error.message,
+            icon: "error",
+          });
+        });
+    }
+  };
+
+
+  const onChange = (value) =>{
+    console.log("Captcha Value", value)
+    SetVerify(true)
+  }
+
+
+  return (
+    <div className="">
+      <div>
+        <div className="hero min-h-screen bg-base-200 pt-20">
+          <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+              <h1 className="text-5xl mt-5 text-center font-bold text-green-500 mb-5 font-mono">
+                Register now!
+              </h1>
 
               <div>
                 <div className="flex justify-center items-center border border-green-400 p-4 ">
@@ -196,11 +203,23 @@ const Register = () => {
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
                       />
                     </div>
+                    <div>
+                      <ReCAPTCHA
+                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                        onChange={onChange}
+                      />
+                      ,
+                    </div>
 
                     <div className="flex items-center justify-between">
                       <button
                         type="submit"
-                        className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        disabled={!verify}
+                        className={`${
+                          !verify
+                            ? "bg-gray-500"
+                            : "bg-green-500 hover:bg-blue-700"
+                        } text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
                       >
                         Register
                       </button>
