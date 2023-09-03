@@ -1,10 +1,10 @@
-.espoBanner {
+.matchHeader {
   --section-padding: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
-  min-height: 100vh;
+  min-height: 70vh;
   display: grid;
   align-items: center;
 }
