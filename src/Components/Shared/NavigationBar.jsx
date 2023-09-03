@@ -97,7 +97,7 @@ const NavigationBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow text-white bg-base-100 rounded-box w-52 z-10"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow text-white bg-black rounded-box w-52 z-10"
             >
               {navOptions}
             </ul>
