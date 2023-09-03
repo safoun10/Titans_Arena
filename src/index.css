@@ -46,10 +46,4 @@ body {
   );
 }
 
-.login-button {
-  --path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
-    14px 100%, 0px calc(100% - 14px);
-  font-family: "resobot-bold";
-  -webkit-clip-path: polygon(var(--path));
-  clip-path: polygon(var(--path));
-}
+
