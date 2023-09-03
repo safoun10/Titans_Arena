@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
@@ -7,11 +7,14 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Login = () => {
   const { signin } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
+  const [verify, SetVerify] = useState(false);
+
 
   const from = location.state?.from?.pathname || "/";
   const {
@@ -40,6 +43,12 @@ const Login = () => {
       })
       .catch((error) => console.log(error));
   };
+
+  const onChange = (value) =>{
+    console.log("Captcha Value", value)
+    SetVerify(true)
+  }
+
 
   return (
     <div>
@@ -98,14 +107,26 @@ const Login = () => {
                       </p>
                     )}
                   </div>
+                  <div>
+                      <ReCAPTCHA
+                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                        onChange={onChange}
+                      />
+                      ,
+                    </div>
 
                   <div className="flex items-center justify-between">
-                    <button
-                      type="submit"
-                      className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                    >
-                      Login
-                    </button>
+                  <button
+                        type="submit"
+                        disabled={!verify}
+                        className={`${
+                          !verify
+                            ? "bg-gray-500"
+                            : "bg-green-500 hover:bg-blue-700"
+                        } text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
+                      >
+                        Login
+                      </button>
                   </div>
                 </form>
               </div>
