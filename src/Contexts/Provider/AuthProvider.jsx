@@ -6,6 +6,7 @@ import {
   createUserWithEmailAndPassword,
   getAuth,
   onAuthStateChanged,
+  sendPasswordResetEmail,
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
@@ -55,6 +56,10 @@ const AuthProvider = ({ children }) => {
     return signInWithPopup(auth, facebookProvider)
   }
 
+  const passwordReset = (email) =>{
+    return sendPasswordResetEmail(auth, email)
+  }
+
   const logOut = () => {
     setLoading(true);
 
@@ -91,7 +96,8 @@ const AuthProvider = ({ children }) => {
     googleSignIn,
     githulogin,
     updateUserProfile,
-    FacebookSign
+    FacebookSign,
+    passwordReset
   };
 
   return (

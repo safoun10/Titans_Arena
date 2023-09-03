@@ -10,7 +10,7 @@ import { Helmet } from "react-helmet-async";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Login = () => {
-  const { signin } = useContext(AuthContext);
+  const { signin, user, passwordReset } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
   const [verify, SetVerify] = useState(false);
@@ -47,6 +47,22 @@ const Login = () => {
     console.log("Captcha Value", value);
     SetVerify(true);
   };
+
+  const passwordResetHandle = () =>{
+    const userEmail = user.email
+    passwordReset(userEmail)
+    .then(() => {
+      // Password reset email sent!
+      // ..
+      console.log("password reset done")
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+  
+  }
 
   return (
     <div>
@@ -134,6 +150,7 @@ const Login = () => {
                   </button>
                 </div>
               </form>
+              <button onClick={passwordResetHandle} className="pt-3 text-purple-500">Forget Password?</button>
               <div className="">
                 <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                   <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
