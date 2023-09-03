@@ -81,7 +81,6 @@ const GamesDetails = () => {
   );
 
   return (
-<<<<<<< HEAD
     <>
       <Helmet>
         <title>TitanArena || Game Details</title>
@@ -101,27 +100,10 @@ const GamesDetails = () => {
                 <div className="navbar-center  hidden lg:flex">
                   <ul className="flex gap-4 text-xs">{navOptions}</ul>
                 </div>
-=======
-    <div className="text-white bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <div className="bg-[url('https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/tw-bg-1920x450.jpg')] bg-cover ">
-        <div
-          style={{
-            background:
-              "radial-gradient(310.48% 100.00% at 50.00% 0.00%, rgba(128, 0, 128, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%)",
-            /* add other styles here if needed */
-          }}
-          className=" h-[350px] flex items-center"
-        >
-          <div>
-            <div>
-              <div className="navbar-center  hidden lg:flex">
-                <ul className="flex gap-4 text-xs">{navOptions}</ul>
->>>>>>> b9c62f7439b0a1428b2cc5f8f78ba20ad1e40c0b
               </div>
             </div>
           </div>
         </div>
-<<<<<<< HEAD
         <div>
           <GameHeading gameDetails={gameDetails} />
         </div>
@@ -137,23 +119,6 @@ const GamesDetails = () => {
         <RealLinks />
       </div>
     </>
-=======
-      </div>
-      <div>
-        <GameHeading gameDetails={gameDetails} />
-      </div>
-      <div>
-        <GameInfo gameDetails={gameDetails} />
-        <div>
-          <Description gameDetails={gameDetails} />
-        </div>
-      </div>
-
-      <GameReviews gameDetails={gameDetails} />
-      <Comments />
-      <RealLinks />
-    </div>
->>>>>>> b9c62f7439b0a1428b2cc5f8f78ba20ad1e40c0b
   );
 };
 

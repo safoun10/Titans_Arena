@@ -129,10 +129,7 @@ const Dashboard = () => {
               <ul className="mt-[3.7rem]">
                 <div className="">
                   <div className="space-y-1">
-                    {navOptions}
-                    {navOptions}
-
-                    {navOptions}
+                 
                     {navOptions}
                   </div>
                 </div>
@@ -155,8 +152,8 @@ const Dashboard = () => {
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
           <ul className="p-5 space-y-4 min-h-full bg-black">
-            {navOptions}
-            {navOptions}
+          
+           
             {navOptions}
           </ul>
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./Blogs.css";
@@ -6,13 +6,17 @@ import BlogElement from "./BlogElement";
 import BlogBanner from "./BlogBanner";
 import Pagination from "../AllGames/Pagination";
 import { Helmet } from "react-helmet-async";
+import Swal from "sweetalert2";
+import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 
 const Blogs = () => {
+  const { user } = useContext(AuthContext);
   const [blogs, setBlogs] = useState([]);
   const searchRef = useRef(null);
   const [search, setSearch] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3; // Number of games to display per page
+
 
   const url = `https://titans-arena-server.vercel.app/searchblogs?search=${search}`;
   useEffect(() => {
@@ -25,6 +29,34 @@ const Blogs = () => {
     setSearch(searchRef.current.value);
   };
 
+
+  const handleNewsLetter = (event) =>{
+    event.preventDefault();
+    const email = event.target.email.value;
+    const data = {
+      userEmail: user.email, 
+      email: email,
+    }
+
+    console.log(data);
+
+    fetch("http://localhost:5000/newsletter", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    }).then((result) => {
+      console.log(result);
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "successfuly add to newsletter list!",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    });
+    // reset()
+  }
+
   return (
     <div>
       <Helmet>
@@ -34,7 +66,7 @@ const Blogs = () => {
       <BlogBanner title="Blogs List" />
       {/* blog page banner end */}
 
-      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-4 lg:px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}
         <div className="col-span-4">
           {/* single blog start*/}
@@ -93,7 +125,7 @@ const Blogs = () => {
               Relative POSTS
             </h1>
             {blogs.slice(5, 9).map((blog, i) => (
-              <Link key={i}>
+              <Link to={`/blog/${blog._id}`} key={i}>
                 <div className="flex gap-4 pb-4">
                   <img
                     className="w-[128px] rounded-md"
@@ -102,7 +134,7 @@ const Blogs = () => {
                   />
                   <div className="">
                     <h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
-                      {blog.title}
+                      {blog.title.slice(0, 54)}...
                     </h2>
                     <p className="text-lg font-semibold text-slate-500">
                       {blog.date}
@@ -122,9 +154,10 @@ const Blogs = () => {
               {" "}
               Scripting the Epic Tale of Gaming News!
             </p>
-            <form className="flex items-center relative">
+            <form onSubmit={handleNewsLetter} className="flex items-center relative">
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="ENTER YOUR EMAIL"
                 className="w-full max-w-lg  
              font-semibold placeholder-[#45f882] pb-3 bg-transparent focus:outline-none border-b-2 border-gray-800
@@ -142,12 +175,12 @@ const Blogs = () => {
               TAG CLOUD
             </h1>
             <div className="flex flex-wrap gap-4">
-              <Link className="styled-link">E-SPORTS</Link>
-              <Link className="styled-link">FANTSY</Link>
-              <Link className="styled-link">TOURNAMENTS</Link>
-              <Link className="styled-link">GAME</Link>
-              <Link className="styled-link">MATCHES</Link>
-              <Link className="styled-link">STREAMERS</Link>
+              <Link className="styled-link">#E-SPORTS</Link>
+              <Link className="styled-link">#FANTSY</Link>
+              <Link className="styled-link">#TOURNAMENTS</Link>
+              <Link className="styled-link">#GAME</Link>
+              <Link className="styled-link">#MATCHES</Link>
+              <Link className="styled-link">#STREAMERS</Link>
             </div>
           </div>
         </div>
