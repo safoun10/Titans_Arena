@@ -1,80 +1,89 @@
 import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
-
+import { Outlet, Link } from "react-router-dom";
+import logo from "../../public/logoTest41.png";
+import {
+  FaAlignCenter,
+  FaCartArrowDown,
+  FaDiceD6,
+  FaHome,
+  FaPlus,
+  FaProductHunt,
+  FaUser,
+} from "react-icons/fa";
+import useAuth from "../Hooks/useAuth";
+import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
 const Dashboard = () => {
+  const { user } = useAuth();
   const navOptions = (
     <>
-      <li className="text-white">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          HOME
-        </NavLink>
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaHome className="text-yellow-500 text-lg" /> HOME
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/profile"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          profile
-        </NavLink>
+
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/profile">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaProductHunt className="text-yellow-500 text-lg" /> profile
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/users"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Users
-        </NavLink>
+
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/users">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaUser className="text-yellow-500 text-lg" /> Users
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/blogManagement"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Blog Management
-        </NavLink>
+
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/blogManagement">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaAlignCenter className="text-yellow-500 text-lg" /> Blog
+            Management
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/selectedGames"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Add To Cart Games
-        </NavLink>
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/selectedGames">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaCartArrowDown className="text-yellow-500 text-lg" /> Add To Cart
+            Games
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/enrolledTour"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Enrolled Tournaments
-        </NavLink>
+
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/enrolledTour">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
+            Tournaments
+          </p>
+        </Link>
       </li>
-      <li className="text-white">
-        <NavLink
-          to="/dashboard/addblog"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Add Blog
-        </NavLink>
+
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/addblog">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaPlus className="text-yellow-500 text-lg" /> Add Blog
+          </p>
+        </Link>
       </li>
     </>
   );
   return (
-    <>
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <style>
         {`
           /* Style for navigation menu */
           .text-white {
             color: white;
           }
-          
-          .text-white:hover {
-            color: green;
-          }
-
+        
           /* Linear gradient background for the body */
           body {
             background: linear-gradient(to bottom, black, #111);
@@ -83,9 +92,48 @@ const Dashboard = () => {
           }
         `}
       </style>
-      <div className="drawer lg:drawer-open">
+      <div className="drawer">
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content ">
+          <div>
+            <DashboardNavigationBar />
+
+            <div className="md:flex flex w-12/12">
+              <div className="h-[20000px]  w-3/12 hidden md:block  bg-black ">
+                <ul className="  ">
+                  <div className="fixed md:p-5 ">
+                    <Link
+                      to="/"
+                      className="normal-case text-xl flex items-center"
+                    >
+                      <img className="w-56 my-12" src={logo} alt="" />
+                    </Link>
+
+                    <div className="space-y-1 ">{navOptions}</div>
+                  </div>
+                </ul>
+              </div>
+              <div className="w-full">
+                <Outlet />
+              </div>
+            </div>
+          </div>
+          <label
+            htmlFor="my-drawer"
+            className="btn btn-primary drawer-button md:hidden"
+          >
+            Open drawer
+          </label>
+        </div>
+        <div className="drawer-side">
+          <label htmlFor="my-drawer" className="drawer-overlay"></label>
+          <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
+        </div>
+      </div>
+      {/* <div className="drawer lg:drawer-open">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
+       
           <Outlet></Outlet>
           <label
             htmlFor="my-drawer-2"
@@ -96,13 +144,12 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="p-10 space-y-4 w-80 min-h-full bg-black ">
-            {/* Sidebar content here */}
+          <ul className="p-10 space-y-4 w-80 min-h-full bg-black">
             {navOptions}
           </ul>
         </div>
-      </div>
-    </>
+      </div> */}
+    </div>
   );
 };
 

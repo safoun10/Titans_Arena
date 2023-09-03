@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
 
-import logo from "././../../../public/logoTest4.png";
+import logo from "././../../../public/logoTest41.png";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
@@ -103,15 +103,13 @@ const NavigationBar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
-              logo
-            </span> */}
+         
             <img
-              className="absolute md:h-[18rem] h-[12rem] md:ml-0 ml-3 md:-top-[7rem]"
+              className=""
               src={logo}
               alt=""
             />
-            {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
+       
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
