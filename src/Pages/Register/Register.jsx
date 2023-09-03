@@ -95,7 +95,7 @@ const Register = () => {
                 Register To Titans Arena
               </h1>
 
-              <div className="flex flex-col rounded-md justify-center items-center border border-green-400 p-4 ">
+              <div className="flex  flex-col rounded-md justify-center items-center border border-green-400 lg:p-4 -mx-1 lg:mx-0 ">
                 <form
                   onSubmit={handleSubmit(onSubmit)}
                   className=" shadow-md rounded px-8 pt-6 pb-8 w-full"

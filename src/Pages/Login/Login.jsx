@@ -60,7 +60,7 @@ const Login = () => {
               Login To Titans Arena
             </h1>
 
-            <div className="flex flex-col justify-center items-center rounded-md border-green-500 border p-3 ">
+            <div className="flex flex-col justify-center items-center rounded-md border-green-500 border lg:p-3 -mx-1 lg:mx-0 ">
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="   shadow-md rounded px-8 pt-6 pb-8 w-full"
