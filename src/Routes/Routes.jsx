@@ -18,11 +18,14 @@ import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
 import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
 import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
 import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
+import Error from "../Components/Error/Error";
+import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement : <Error/>,
     children: [
       {
         path: "/",
@@ -68,11 +71,16 @@ const router = createBrowserRouter([
         path: "/esports",
         element: <Esports></Esports>,
       },
+      {
+        path: "/matchdetails",
+        element: <MatchDetails />,
+      },
     ],
   },
   {
     path: "/dashboard",
     element: <Dashboard />,
+    errorElement : <Error/>,
     children: [
       {
         path: "users",
