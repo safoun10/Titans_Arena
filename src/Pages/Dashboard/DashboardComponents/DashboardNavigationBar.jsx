@@ -38,7 +38,7 @@ const DashboardNavigationBar = () => {
     </>
   );
   return (
-    <div className="text-white">
+    <div className="text-white bg-black">
       <div className="z-10 flex justify-around items-center  border-b p-2 w-full">
         <div className="">
           <Link to="/" className="normal-case text-xl flex items-center">

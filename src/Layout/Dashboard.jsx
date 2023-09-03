@@ -95,25 +95,52 @@ const Dashboard = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content ">
-          <div>
-            <DashboardNavigationBar />
+          <div className="">
+            <div className="fixed top-0  w-full z-10">
+              <DashboardNavigationBar />
+            </div>
 
-            <div className="md:flex flex w-12/12">
-              <div className="h-[20000px]  w-3/12 hidden md:block  bg-black ">
-                <ul className="  ">
-                  <div className="fixed md:p-5 ">
-                    <Link
-                      to="/"
-                      className="normal-case text-xl flex items-center"
-                    >
-                      <img className="w-56 my-12" src={logo} alt="" />
-                    </Link>
+            {/* <div className="md:flex flex w-12/12">
+           
+              <div className="h-screen w-[20%] hidden md:block  bg-black overflow-y-scroll  ">
+             
+                <ul className="mt-[3.7rem]">
+                  <div className="  ">
+                    <div className="space-y-1 border">
+                      {navOptions}
 
-                    <div className="space-y-1 ">{navOptions}</div>
+                      {navOptions}
+                      {navOptions}
+                      {navOptions}
+                    </div>
                   </div>
                 </ul>
               </div>
-              <div className="w-full">
+             
+              <div className="w-full mt-[3.7rem]">
+                <div className="">
+                  <Outlet />
+                </div>
+              </div>
+            </div> */}
+
+            <div className="fixed left-0 top-0   bottom-0 md:w-1/5 md:block hidden bg-black overflow-y-auto">
+              {/* Sidebar content */}
+              <ul className="mt-[3.7rem]">
+                <div className="">
+                  <div className="space-y-1">
+                    {navOptions}
+                    {navOptions}
+
+                    {navOptions}
+                    {navOptions}
+                  </div>
+                </div>
+              </ul>
+            </div>
+            {/* Content area */}
+            <div className="md:ml-[20%]">
+              <div className="max-w-[220rem] mx-auto mt-10 p-4">
                 <Outlet />
               </div>
             </div>
@@ -127,7 +154,11 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
+          <ul className="p-5 space-y-4 min-h-full bg-black">
+            {navOptions}
+            {navOptions}
+            {navOptions}
+          </ul>
         </div>
       </div>
       {/* <div className="drawer lg:drawer-open">
