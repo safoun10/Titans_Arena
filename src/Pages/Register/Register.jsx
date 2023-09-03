@@ -80,168 +80,172 @@ const Register = () => {
     }
   };
 
-
-  const onChange = (value) =>{
-    console.log("Captcha Value", value)
-    SetVerify(true)
-  }
-
+  const onChange = (value) => {
+    console.log("Captcha Value", value);
+    SetVerify(true);
+  };
 
   return (
     <div className="">
       <div>
-        <div className="hero min-h-screen bg-base-200 pt-20">
+        <div className="hero min-h-screen bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] py-20">
           <div className="hero-content flex-col lg:flex-row-reverse">
-            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
               <h1 className="text-5xl mt-5 text-center font-bold text-green-500 mb-5 font-mono">
-                Register now!
+                Register To Titans Arena
               </h1>
 
-              <div>
-                <div className="flex justify-center items-center border border-green-400 p-4 ">
-                  <form
-                    onSubmit={handleSubmit(onSubmit)}
-                    className="bg-white shadow-md rounded px-8 pt-6 pb-8 w-full"
+              <div className="flex flex-col rounded-md justify-center items-center border border-green-400 p-4 ">
+                <form
+                  onSubmit={handleSubmit(onSubmit)}
+                  className=" shadow-md rounded px-8 pt-6 pb-8 w-full"
+                >
+                  <div className="mb-4">
+                    <label
+                      className="block text-green-500  text-xl font-bold mb-2"
+                      htmlFor="name"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      {...register("name", {
+                        required: true,
+                      })}
+                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    />
+                    {errors.name && (
+                      <p className="text-red-500 text-xs italic">
+                        Name is required.
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mb-4">
+                    <label
+                      className="block text-green-500  text-xl font-bold mb-2"
+                      htmlFor="email"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      {...register("email", {
+                        required: true,
+                      })}
+                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    />
+                    {errors.email && (
+                      <p className="text-red-500 text-xs italic">
+                        Email is required.
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mb-4">
+                    <label
+                      className="block text-green-500  text-xl font-bold mb-2"
+                      htmlFor="password"
+                    >
+                      Password
+                    </label>
+                    <input
+                      type="password"
+                      id="password"
+                      {...register("password", {
+                        required: true,
+                      })}
+                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    />
+                    {errors.password && (
+                      <p className="text-red-500 text-xs italic">
+                        Password is required.
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mb-4">
+                    <label
+                      className="block text-green-500  text-xl font-bold mb-2"
+                      htmlFor="confirmPassword"
+                    >
+                      Confirm Password
+                    </label>
+                    <input
+                      type="password"
+                      id="confirmPassword"
+                      {...register("confirmPassword", { required: true })}
+                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    />
+                    {errors.confirmPassword && (
+                      <p className="text-red-500 text-xs italic">
+                        Confirm Password is required.
+                      </p>
+                    )}
+                  </div>
+
+                  <div className="mb-4">
+                    <label
+                      className="block text-green-500  text-xl font-bold mb-2"
+                      htmlFor="photoUrl"
+                    >
+                      Photo URL
+                    </label>
+                    <input
+                      type="text"
+                      id="photoUrl"
+                      {...register("photoUrl")}
+                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    />
+                  </div>
+                  <div>
+                    <ReCAPTCHA
+                      sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                      onChange={onChange}
+                    />
+                    ,
+                  </div>
+
+                  <div className="flex items-center justify-between">
+                  <button
+                    type="submit"
+                    disabled={!verify}
+                    className={`${
+                      !verify
+                        ? "bg-gray-500"
+                        : "custom-button hover:bg-green-500 py-2 px-5"
+                    } border w-full rounded py-2 px-5 border-none my-2`}
+                    style={{
+                      "--path":
+                        "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
+                      fontFamily: "resobot-bold",
+                      WebkitClipPath: "polygon(var(--path))",
+                      clipPath: "polygon(var(--path))",
+                    }}
                   >
-                    <div className="mb-4">
-                      <label
-                        className="block text-green-500  text-xl font-bold mb-2"
-                        htmlFor="name"
-                      >
-                        Name
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        {...register("name", {
-                          required: true,
-                        })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
-                      />
-                      {errors.name && (
-                        <p className="text-red-500 text-xs italic">
-                          Name is required.
-                        </p>
-                      )}
-                    </div>
+                    Register
+                  </button>
+                  </div>
+                </form>
+                <div className="">
+                <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                  <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
+                    Or
+                  </p>
+                </div>
+                <div className="ml-5">
+                  <SocialLogin></SocialLogin>
 
-                    <div className="mb-4">
-                      <label
-                        className="block text-green-500  text-xl font-bold mb-2"
-                        htmlFor="email"
-                      >
-                        Email
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        {...register("email", {
-                          required: true,
-                        })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-                      />
-                      {errors.email && (
-                        <p className="text-red-500 text-xs italic">
-                          Email is required.
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="mb-4">
-                      <label
-                        className="block text-green-500  text-xl font-bold mb-2"
-                        htmlFor="password"
-                      >
-                        Password
-                      </label>
-                      <input
-                        type="password"
-                        id="password"
-                        {...register("password", {
-                          required: true,
-                        })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-                      />
-                      {errors.password && (
-                        <p className="text-red-500 text-xs italic">
-                          Password is required.
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="mb-4">
-                      <label
-                        className="block text-green-500  text-xl font-bold mb-2"
-                        htmlFor="confirmPassword"
-                      >
-                        Confirm Password
-                      </label>
-                      <input
-                        type="password"
-                        id="confirmPassword"
-                        {...register("confirmPassword", { required: true })}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
-                      />
-                      {errors.confirmPassword && (
-                        <p className="text-red-500 text-xs italic">
-                          Confirm Password is required.
-                        </p>
-                      )}
-                    </div>
-
-                    <div className="mb-4">
-                      <label
-                        className="block text-green-500  text-xl font-bold mb-2"
-                        htmlFor="photoUrl"
-                      >
-                        Photo URL
-                      </label>
-                      <input
-                        type="text"
-                        id="photoUrl"
-                        {...register("photoUrl")}
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-black  leading-tight focus:outline-none focus:shadow-outline"
-                      />
-                    </div>
-                    <div>
-                      <ReCAPTCHA
-                        sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                        onChange={onChange}
-                      />
-                      ,
-                    </div>
-
-                    <div className="flex items-center justify-between">
-                      <button
-                        type="submit"
-                        disabled={!verify}
-                        className={`${
-                          !verify
-                            ? "bg-gray-500"
-                            : "bg-green-500 hover:bg-blue-700"
-                        } text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline`}
-                      >
-                        Register
-                      </button>
-                    </div>
-                  </form>
+                  <p className="mt-4 text-center text-green-500 flex items-center gap-3 mb-3">
+                     Have an Account Go To
+                    <Link className="text-indigo-600 " to="/login">
+                      Login{" "}
+                    </Link>{" "}
+                  </p>
                 </div>
               </div>
-              <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
-                <p className="mx-4 mb-0 text-center font-semibold ">Or</p>
-              </div>
-              <div className="">
-                <SocialLogin></SocialLogin>
-
-                <p className="text-danger">{error} </p>
-
-                <p className="mt-4 text-center">
-                  Already Have an Account
-                  <Link className="text-indigo-600" to="/login">
-                    {" "}
-                    Login{" "}
-                  </Link>{" "}
-                </p>
               </div>
             </div>
             <div className="text-center lg:text-left">
