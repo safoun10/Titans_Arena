@@ -16,6 +16,21 @@ const Users = () => {
       });
   }, []);
 
+  const makeAdmin = (user) => {
+    axiosSecure.patch(`/users/admin/${user._id}`).then((data) => {
+      console.log(data);
+      if (data.data.modifiedCount) {
+        Swal.fire({
+          position: "top-end",
+          icon: "success",
+          title: `${user.name} is an Admin Now!`,
+          showConfirmButton: false,
+          timer: 1500,
+        });
+      }
+    });
+  };
+
   const Delete = (user) => {
     Swal.fire({
       title: "Are you sure?",
@@ -60,9 +75,10 @@ const Users = () => {
                 <td>{user.email}</td>
                 <td>
                   {user?.role === "admin" ? (
-                    "admin"
+                    "Admin"
                   ) : (
                     <button
+                    onClick={() => makeAdmin(user)}
                       className=" w-full h-full flex border w rounded border-none bg-green-500 hover:bg-green-700 transition-all duration-500 ease-in-out transform justify-center py-3  text-black"
                       style={{
                         "--path":

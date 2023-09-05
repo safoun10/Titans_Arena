@@ -15,7 +15,7 @@ const Register = () => {
     useContext(AuthContext);
 
   const [error, setErr] = useState("");
-  const [verify, SetVerify] = useState(false);
+  const [verify, SetVerify] = useState(true);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -200,13 +200,13 @@ const Register = () => {
                       className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
                   </div>
-                  <div>
+                  {/* <div>
                     <ReCAPTCHA
                       sitekey="6LcnffYnAAAAAEe1BdERt1psjf-PTK-R7IsS3etm"
                       onChange={onChange}
                     />
                     ,
-                  </div>
+                  </div> */}
 
                   <div className="flex items-center justify-between">
                   <button
