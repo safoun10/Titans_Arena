@@ -1,9 +1,12 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { FaTrashAlt, FaUserShield } from "react-icons/fa";
+import Swal from "sweetalert2";
+import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
+  const [axiosSecure] = useAxiosSecure();
   const url = `https://titans-arena-server.vercel.app/users`;
   useEffect(() => {
     fetch(url)
@@ -13,8 +16,27 @@ const Users = () => {
       });
   }, []);
 
+  const Delete = (user) => {
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        axiosSecure.delete(`/users/${user._id}`).then((data) => {
+          console.log(data);
+          Swal.fire("Deleted!", "Your file has been deleted.", "success");
+        });
+      }
+    });
+  };
+
   return (
-    <div className="text-white w-full ">
+    <div className="text-white h-[100vh] w-full ">
       <h3 className="text-3xl font-semibold my-4">
         Total Users: {users.length}
       </h3>
@@ -26,7 +48,7 @@ const Users = () => {
               <th>Serial</th>
               <th>Name</th>
               <th>Email</th>
-              <th>Role</th>
+              <th>Admin</th>
               <th>Action</th>
             </tr>
           </thead>
@@ -40,13 +62,32 @@ const Users = () => {
                   {user?.role === "admin" ? (
                     "admin"
                   ) : (
-                    <button className="btn btn-ghost bg-orange-600 text-white">
+                    <button
+                      className=" w-full h-full flex border w rounded border-none bg-green-500 hover:bg-green-700 transition-all duration-500 ease-in-out transform justify-center py-3  text-black"
+                      style={{
+                        "--path":
+                          "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
+                        fontFamily: "resobot-bold",
+                        WebkitClipPath: "polygon(var(--path))",
+                        clipPath: "polygon(var(--path))",
+                      }}
+                    >
                       <FaUserShield></FaUserShield>
                     </button>
                   )}
                 </td>
                 <td>
-                  <button className="btn btn-ghost bg-red-600  text-white">
+                  <button
+                    onClick={() => Delete(user)}
+                    className=" bg-red-600 w-full h-full flex justify-center items-center py-3 hover:bg-red-900  border w rounded border-none text-white transition-all duration-500 ease-in-out transform"
+                    style={{
+                      "--path":
+                        "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
+                      fontFamily: "resobot-bold",
+                      WebkitClipPath: "polygon(var(--path))",
+                      clipPath: "polygon(var(--path))",
+                    }}
+                  >
                     <FaTrashAlt />
                   </button>
                 </td>
