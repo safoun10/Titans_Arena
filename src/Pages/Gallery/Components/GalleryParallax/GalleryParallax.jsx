@@ -204,7 +204,7 @@ const GalleryParallax = () => {
             <div className="text-4xl p-8 font-bold text-center">
               Screen Shots
             </div>
-            <div className="grid grid-cols-3 gap-4 text-black">
+            <div className="grid lg:grid-cols-3 grid-cols-1 lg:mb-0  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
               <div>
                 <button
                   className=""
@@ -213,7 +213,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://generationzero.com/content/1-home/multiplayer-customization.jpg"
                     alt=""
                   />
@@ -241,7 +241,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://nxtmag.tech/wp-content/uploads/2019/09/pubg-mobile-prime-ss.jpg"
                     alt=""
                   />
@@ -269,7 +269,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://www.videogameschronicle.com/files/2020/04/MW2R_SS_FavelaGameplay.jpg"
                     alt=""
                   />
@@ -297,7 +297,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://i0.wp.com/insider-gaming.com/wp-content/uploads/2023/07/assassins-creed.jpg?fit=1920%2C1080&ssl=1"
                     alt=""
                   />
@@ -325,7 +325,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://i.ytimg.com/vi/jmZs8lX_QkY/maxresdefault.jpg"
                     alt=""
                   />
@@ -353,7 +353,7 @@ const GalleryParallax = () => {
                   }
                 >
                   <img
-                    className="w-full mx-4"
+                    className="w-full lg:mx-4"
                     src="https://images.pushsquare.com/3b0b5d4aec6bc/1280x720.jpg"
                     alt=""
                   />
