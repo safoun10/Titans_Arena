@@ -15,7 +15,7 @@ const Register = () => {
     useContext(AuthContext);
 
   const [error, setErr] = useState("");
-  const [verify, SetVerify] = useState(false);
+  const [verify, SetVerify] = useState(true);
 
   const navigate = useNavigate();
   const location = useLocation();

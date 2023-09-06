@@ -63,7 +63,9 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li>
-      <li className="nav-link">
+     {
+      user ? <>
+       <li className="nav-link">
         <NavLink
           to="/dashboard/profile"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -71,6 +73,8 @@ const NavigationBar = () => {
           Dashboard
         </NavLink>
       </li>
+      </> : <></>
+     }
     </>
   );
 
@@ -140,7 +144,9 @@ const NavigationBar = () => {
             <div className="navbar-end">
               {user ? (
                 <>
-                  {console.log("user photo", user?.photoURL)}
+                {
+                  // console.log("user photo", user?.photoURL)
+                }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">
