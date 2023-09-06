@@ -1,5 +1,11 @@
 import React from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
+import {
+  FaArrowCircleRight,
+  FaFacebook,
+  FaInstagram,
+  FaTwitch,
+  FaYoutube,
+} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const TournamentBanner = () => {
@@ -57,14 +63,14 @@ const TournamentBanner = () => {
                   />
                 </div>
               </div>
-              <div>
+              <div className="w-1/2">
                 <img
-                  src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/20/1416478623158/344ec273-4c4b-42f1-adba-f1ec30f3581f-2060x1236.jpeg?width=465&dpr=1&s=none"
+                  src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg"
                   alt="shoes"
                   className="lg:block md:hidden hidden"
                 />
                 <img
-                  src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/20/1416478623158/344ec273-4c4b-42f1-adba-f1ec30f3581f-2060x1236.jpeg?width=465&dpr=1&s=none"
+                  src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg"
                   alt
                   className="lg:hidden md:block hidden"
                 />
@@ -80,25 +86,54 @@ const TournamentBanner = () => {
                   <ul className="flex gap-10  text-xs">{navOptions}</ul>
                 </div>
 
-                <p className="text-xs text-center text-white pt-4">
-                  Shop enchanting designs with bold and classy colors at
-                  discunted price
+                <p className="text-lg text-center  pt-2 flex gap-5 mt-2 text-green-400 ">
+                  <FaTwitch /> <FaYoutube /> <FaInstagram /> <FaFacebook />
+                </p>
+                <p className="mt-3 animate-bounce font-bold text-white">
+                  {" "}
+                  PLAY <span className="text-red-500">TO </span>WIN
                 </p>
               </div>
-              <div>
+              <div className="w-1/2 mx-auto">
                 <img
-                  src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/20/1416478623158/344ec273-4c4b-42f1-adba-f1ec30f3581f-2060x1236.jpeg?width=465&dpr=1&s=none"
-                  alt="sandles"
+                  src="https://thesmartsource.com/wp-content/uploads/2019/08/Video-game-tournament-1024x683.jpg"
                   className="lg:block md:hidden block"
                 />
                 <img
-                  src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/11/20/1416478623158/344ec273-4c4b-42f1-adba-f1ec30f3581f-2060x1236.jpeg?width=465&dpr=1&s=none"
+                  src="https://thesmartsource.com/wp-content/uploads/2019/08/Video-game-tournament-1024x683.jpg"
                   alt
                   className="lg:hidden md:block hidden"
                 />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="text-center items-center flex justify-center mt-5 text-1xl gap-7">
+        <div className="">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-yellow-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
+            PUBG{" "}
+          </h1>
+        </div>
+        <div className="">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-red-600 hover: border-b-2 hover:border-b-0 hover:border-t-2 ">
+            WOW{" "}
+          </h1>
+        </div>
+        <div className="">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-green-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
+            DOTA2{" "}
+          </h1>
+        </div>
+        <div className="">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2">
+            PUBG{" "}
+          </h1>
+        </div>
+        <div className="">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-blue-600 hover: border-b-2 hover:border-b-0 hover:border-t-2">
+            SFN2.0{" "}
+          </h1>
         </div>
       </div>
     </div>
