@@ -65,6 +65,14 @@ const NavigationBar = () => {
       </li>
       <li className="nav-link">
         <NavLink
+          to="/tournament"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          TOURNAMENTS
+        </NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink
           to="/dashboard"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
@@ -106,11 +114,7 @@ const NavigationBar = () => {
             {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
               logo
             </span> */}
-            <img
-              className="absolute h-[18rem] -top-[7rem]"
-              src={logo}
-              alt=""
-            />
+            <img className="absolute h-[18rem] -top-[7rem]" src={logo} alt="" />
             {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
           </Link>
         </div>

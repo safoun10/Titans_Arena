@@ -1,0 +1,55 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
+import "react-tabs/style/react-tabs.css";
+import MatchCard from "./MatchCard";
+
+const Matches = () => {
+  const [data, setData] = useState([]);
+  const [showAll, setShowAll] = useState(true); // Default to show all matches
+
+  useEffect(() => {
+    axios
+      .get("Fixered.json") // Replace with the correct path to your JSON data
+      .then((response) => {
+        setData(response.data);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+
+  const upcomingMatches = data.filter((match) => match.matches === "upcoming");
+  const finishedMatches = data.filter((match) => match.matches === "finished");
+
+  return (
+    <div className="container mx-auto text-center ">
+      <Tabs>
+        <TabList className="  text-1xl font-bold text-white uppercase underline">
+          <Tab onClick={() => setShowAll(true)}>All Matches</Tab>
+          <Tab onClick={() => setShowAll(false)}>Upcoming Matches</Tab>
+          <Tab onClick={() => setShowAll(false)}>Finished Matches</Tab>
+        </TabList>
+
+        <TabPanel>
+          {showAll &&
+            data.map((match, index) => <MatchCard key={index} match={match} />)}
+        </TabPanel>
+        <TabPanel>
+          {!showAll &&
+            upcomingMatches.map((match, index) => (
+              <MatchCard key={index} match={match} />
+            ))}
+        </TabPanel>
+        <TabPanel>
+          {!showAll &&
+            finishedMatches.map((match, index) => (
+              <MatchCard key={index} match={match} />
+            ))}
+        </TabPanel>
+      </Tabs>
+    </div>
+  );
+};
+
+export default Matches;

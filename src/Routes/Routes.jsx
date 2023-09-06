@@ -16,6 +16,7 @@ import Users from "../Pages/Dashboard/Users/Users";
 import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
 import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
+import Tournament from "../Pages/Tournament/Tournament";
 
 const router = createBrowserRouter([
   {
@@ -67,8 +68,12 @@ const router = createBrowserRouter([
         element: <Esports></Esports>,
       },
       {
-        path: "/matchdetails",
+        path: "/espMatchFixered/:id",
         element: <MatchDetails />,
+      },
+      {
+        element: <Tournament />,
+        path: "/tournament",
       },
     ],
   },
