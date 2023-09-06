@@ -9,6 +9,8 @@ import {
   FaPlus,
   FaProductHunt,
   FaUser,
+  FaCog,
+  FaSignOutAlt,
 } from "react-icons/fa";
 import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
@@ -73,6 +75,13 @@ const Dashboard = () => {
           </p>
         </Link>
       </li>
+      <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+        <Link to="/dashboard/test1">
+          <p className="flex items-center gap-2 text- font-semibold ">
+            <FaPlus className="text-yellow-500 text-lg" /> Test1
+          </p>
+        </Link>
+      </li>
     </>
   );
   return (
@@ -128,16 +137,19 @@ const Dashboard = () => {
               {/* Sidebar content */}
               <ul className="mt-[3.7rem]">
                 <div className="">
-                  <div className="space-y-1">
-                 
-                    {navOptions}
+                  <div className="space-y-1">{navOptions}</div>
+                  <div className="absolute bottom-2 left-[35%]">
+                    <ul className="flex gap-4 items-center">
+                      <FaCog className="w-5 h-5" />
+                      <FaSignOutAlt className="w-5 h-5" />
+                    </ul>
                   </div>
                 </div>
               </ul>
             </div>
             {/* Content area */}
             <div className="md:ml-[20%]">
-              <div className="max-w-[220rem] mx-auto mt-10 p-4">
+              <div className="max-w-[220rem] mx-auto mt-10 ">
                 <Outlet />
               </div>
             </div>
@@ -151,11 +163,7 @@ const Dashboard = () => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
-          <ul className="p-5 space-y-4 min-h-full bg-black">
-          
-           
-            {navOptions}
-          </ul>
+          <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
         </div>
       </div>
       {/* <div className="drawer lg:drawer-open">
