@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./PrizePoolJoin.css";
 
@@ -10,12 +11,12 @@ const PrizePoolJoin = () => {
           <h3 className="text-lg font-bold">CHECK OUT OUR NEXT</h3>
           <h2 className="text-3xl font-bold">GAMING TOURNAMENTS !</h2>
           <p className="text-gray-400 font-semibold my-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
-            facilis sint, sit illo iure odit?
+            Enter the Arena, Show Your Skills, and Emerge as the Champion in Our
+            Thrilling and Rewarding Gaming Tournaments.
           </p>
-          <button className="bg-green-600 py-2 px-6 rounded-r-3xl text-black font-bold">
+          <Link to="/eSports" className="bg-green-600 py-2 px-6 rounded-r-3xl text-black font-bold">
             JOIN WITH US
-          </button>
+          </Link>
         </div>
         <div className="w-2/6 ">
           <h2 className="text-3xl font-bold text-center ">PRIZE POOL</h2>
@@ -42,7 +43,7 @@ const PrizePoolJoin = () => {
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
             <div className="flex flex-col p-2 bg-green-600 rounded-box">
               <Countdown
-                date={Date.now() + 15 * 24 * 60 * 60 * 1000} 
+                date={Date.now() + 15 * 24 * 60 * 60 * 1000}
                 renderer={({ days }) => (
                   <>
                     <span className="countdown font-mono text-5xl">
@@ -81,7 +82,7 @@ const PrizePoolJoin = () => {
             </div>
             <div className="flex flex-col p-2 bg-green-600 rounded-box">
               <Countdown
-                date={Date.now() + 42 * 1000}
+                date={Date.now() + 60 * 1000}
                 renderer={({ seconds }) => (
                   <>
                     <span className="countdown font-mono text-5xl">

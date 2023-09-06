@@ -11,12 +11,8 @@ const StayConnect = () => {
 
   return (
     <div className="mt-20">
-       <Title
-        primaryText="CONNECT WITH US"
-        secondaryText="STAY CONNECTED"
-        
-      />
-      <div className="pb-20">                
+      <Title primaryText="CONNECT WITH US" secondaryText="STAY CONNECTED" />
+      <div className="pb-20">
         {/* <div className="text-center my-10">
           <h3 className="text-[#68fb9a] font-semibold ">CONNECT WITH US</h3>
           <h1 className="text-white text-4xl font-bold my-2">STAY CONNECTED</h1>
@@ -35,16 +31,22 @@ const StayConnect = () => {
         </div> */}
         <div className="grid md:grid-cols-6  grid-cols-2   ">
           {social.map((link, i) => (
-            <div key={i} className="text-white 
-            ">
-          
-              <div className="border-2 w-44 h-44 flex flex-col 
+            <div
+              key={i}
+              className="text-white 
+            "
+            >
+              <div
+                className="border-2 w-44 h-44 flex flex-col 
               bg-[#121a23]
-              justify-center items-center border-[#68fb9a]">
-                <img className="h-20 w-20" src={link.image} alt="" />
-                <h2 className="text-2xl text-[#68fb9a] text-bold">
-                  {link.title}
-                </h2>
+              justify-center items-center border-[#68fb9a]"
+              >
+                <a href={link.link}>
+                  <img className="h-20 w-20" src={link.image} alt="" />
+                  <h2 className="text-2xl text-[#68fb9a] text-bold">
+                    {link.title}
+                  </h2>
+                </a>
               </div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
