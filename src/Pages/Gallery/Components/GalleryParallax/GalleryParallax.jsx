@@ -198,7 +198,184 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax md:h-screen h-96 z-20 flex bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]"></div>
+        <div className="parallax md:h-screen h-96 z-20 flex justify-around bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
+          {/* screen shots section */}
+          <div className="px-4">
+            <div className="text-4xl p-8 font-bold text-center">
+              Screen Shots
+            </div>
+            <div className="grid grid-cols-3 gap-4 text-black">
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_1").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://generationzero.com/content/1-home/multiplayer-customization.jpg"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_1" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://generationzero.com/content/1-home/multiplayer-customization.jpg"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_2").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://nxtmag.tech/wp-content/uploads/2019/09/pubg-mobile-prime-ss.jpg"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_2" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://nxtmag.tech/wp-content/uploads/2019/09/pubg-mobile-prime-ss.jpg"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://www.videogameschronicle.com/files/2020/04/MW2R_SS_FavelaGameplay.jpg"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_3" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://www.videogameschronicle.com/files/2020/04/MW2R_SS_FavelaGameplay.jpg"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_4").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://i0.wp.com/insider-gaming.com/wp-content/uploads/2023/07/assassins-creed.jpg?fit=1920%2C1080&ssl=1"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_4" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://i0.wp.com/insider-gaming.com/wp-content/uploads/2023/07/assassins-creed.jpg?fit=1920%2C1080&ssl=1"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_5").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://i.ytimg.com/vi/jmZs8lX_QkY/maxresdefault.jpg"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_5" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://i.ytimg.com/vi/jmZs8lX_QkY/maxresdefault.jpg"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+              <div>
+                <button
+                  className=""
+                  onClick={() =>
+                    document.getElementById("my_modal_6").showModal()
+                  }
+                >
+                  <img
+                    className="w-full mx-4"
+                    src="https://images.pushsquare.com/3b0b5d4aec6bc/1280x720.jpg"
+                    alt=""
+                  />
+                </button>
+                <dialog id="my_modal_6" className="modal">
+                  <div className="modal-box">
+                    <form method="dialog">
+                      <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+                        ✕
+                      </button>
+                    </form>
+                    <img
+                      className="w-cus rounded-xl mx-auto"
+                      src="https://images.pushsquare.com/3b0b5d4aec6bc/1280x720.jpg"
+                      alt=""
+                    />
+                  </div>
+                </dialog>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
