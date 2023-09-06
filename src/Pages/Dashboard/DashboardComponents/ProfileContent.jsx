@@ -13,6 +13,7 @@ import {
 } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import useAuth from "../../../Hooks/useAuth";
+import Test2 from "../Admin/Test2/Test2";
 
 const ProfileContent = () => {
   const { user } = useAuth();
@@ -54,7 +55,13 @@ const ProfileContent = () => {
           </div>
         </div>
 
-        <div className="grid-cols-4 grid-rows-2 bg-primary-400 overflow-auto">
+        <div  style={{
+            background:
+              "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
+              boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
+              backdropFilter: "blur(30px)",
+              border: "1px solid var(--outline-dark-update-layout, #FFF)",
+            }} className="grid-cols-4 grid-rows-2 bg-primary-400 overflow-auto">
           <div className="flex justify-between items-center border-b-4 border-primary-500 text-grey-100 p-5">
             <h5 className="text-grey-100 font-semibold">Recent Transactions</h5>
           </div>
@@ -99,12 +106,12 @@ const ProfileContent = () => {
             style={{
               background:
                 "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
-              boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
-              backdropFilter: "blur(30px)",
-              border: "1px solid var(--outline-dark-update-layout, #FFF)",
-            }}
-            className="bg-primary-400 flex bg-slate-700 items-center justify-center flex-col rounded-md"
-          >
+                boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
+                backdropFilter: "blur(30px)",
+                border: "1px solid var(--outline-dark-update-layout, #FFF)",
+              }}
+              className="bg-primary-400 flex bg-slate-700 items-center justify-center flex-col rounded-md"
+              >
             <FaGamepad className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">12,361</div>
             <div className="text-white text-lg">Won Matches</div>
@@ -112,7 +119,7 @@ const ProfileContent = () => {
           <div
             style={{
               background:
-                "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
+              "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
               boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
               backdropFilter: "blur(30px)",
               border: "1px solid var(--outline-dark-update-layout, #FFF)",
@@ -126,13 +133,13 @@ const ProfileContent = () => {
           <div
             style={{
               background:
-                "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
+              "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
               boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
               backdropFilter: "blur(30px)",
               border: "1px solid var(--outline-dark-update-layout, #FFF)",
             }}
             className="bg-primary-400 flex bg-slate-700 items-center justify-center p-10 flex-col rounded-md"
-          >
+            >
             <FaPlaystation className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">32,441</div>
             <div className="text-white text-lg">Played Tournarments</div>
@@ -140,18 +147,19 @@ const ProfileContent = () => {
           <div
             style={{
               background:
-                "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
+              "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
               boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
               backdropFilter: "blur(30px)",
               border: "1px solid var(--outline-dark-update-layout, #FFF)",
             }}
             className="bg-primary-400 flex bg-slate-700 items-center justify-center p-10 flex-col rounded-md"
-          >
+            >
             <FaShieldHeart className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">1,325,134</div>
             <div className="text-white text-lg">Tournaments Hosted</div>
           </div>
         </div>
+<Test2/>
       </div>
     </div>
   );

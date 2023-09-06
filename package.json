@@ -13,6 +13,12 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.5",
     "@emailjs/browser": "^3.11.0",
+    "@fullcalendar/daygrid": "^6.1.8",
+    "@fullcalendar/interaction": "^6.1.8",
+    "@fullcalendar/list": "^6.1.8",
+    "@fullcalendar/react": "^6.1.8",
+    "@fullcalendar/timegrid": "^6.1.8",
+    "@headlessui/react": "^1.7.17",
     "@lottiefiles/react-lottie-player": "^3.5.3",
     "@reduxjs/toolkit": "^1.9.5",
     "axios": "^1.5.0",

@@ -21,6 +21,7 @@ import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
+import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
 
 const router = createBrowserRouter([
   {
@@ -110,6 +111,10 @@ const router = createBrowserRouter([
       {
         path: "test1",
         element: <Test1 />,
+      },
+      {
+        path: "test2",
+        element: <Test2 />,
       },
     ],
   },

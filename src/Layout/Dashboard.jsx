@@ -80,6 +80,13 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/test2">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Test2
+              </p>
+            </Link>
+          </li>
         </>
       ) : (
         <>
@@ -120,7 +127,7 @@ const Dashboard = () => {
     </>
   );
   return (
-    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] bg-cover">
       <style>
         {`
           /* Style for navigation menu */
