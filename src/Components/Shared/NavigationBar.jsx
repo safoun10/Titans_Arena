@@ -63,7 +63,9 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li>
-      <li className="nav-link">
+     {
+      user ? <>
+       <li className="nav-link">
         <NavLink
           to="/dashboard/profile"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -71,6 +73,8 @@ const NavigationBar = () => {
           Dashboard
         </NavLink>
       </li>
+      </> : <></>
+     }
     </>
   );
 
