@@ -166,12 +166,10 @@ const Dashboard = () => {
               </div>
             </div> */}
 
-            <div className="fixed left-0 top-0   bottom-0 md:w-1/5 md:block hidden bg-black overflow-y-auto">
+            <div className="fixed left-0 top-2  bottom-0 md:w-1/5 md:block hidden overflow-y-auto">
               {/* Sidebar content */}
               <ul className="mt-[3.7rem]">
-                <div className="">
-                  <div className="space-y-1">{navOptions}</div>
-                </div>
+                <div className="space-y-1">{navOptions}</div>
               </ul>
             </div>
             {/* Content area */}

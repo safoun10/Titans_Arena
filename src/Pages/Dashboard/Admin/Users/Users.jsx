@@ -64,7 +64,7 @@ const Users = () => {
               <th>Name</th>
               <th>Email</th>
               <th>Admin</th>
-              <th>Action</th>
+              <th>Remove</th>
             </tr>
           </thead>
           <tbody className="text-lg font-bold">

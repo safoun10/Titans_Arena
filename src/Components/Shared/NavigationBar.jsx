@@ -147,7 +147,7 @@ const NavigationBar = () => {
               {user ? (
                 <>
                 {
-                  console.log("user photo", user?.photoURL)
+                  // console.log("user photo", user?.photoURL)
                 }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
