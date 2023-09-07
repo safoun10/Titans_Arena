@@ -7,7 +7,7 @@ import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [axiosSecure] = useAxiosSecure();
-  const url = `https://titans-arena-server.vercel.app/users`;
+  const url = `http://localhost:5000/users`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

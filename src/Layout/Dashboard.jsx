@@ -18,7 +18,7 @@ const Dashboard = () => {
   console.log(user?.email);
   const [axiosSecure] = useAxiosSecure();
   const [isLoading, SetIsLoading] = useState(true);
-  const [admin, setAdmin] = useState();
+  const [admin, setAdmin] = useState(true);
 
   const Admin = async () => {
     // SetIsLoading(true)
@@ -101,6 +101,13 @@ const Dashboard = () => {
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaCartArrowDown className="text-yellow-500 text-lg" /> Add To
                 Cart Games
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/users">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaUser className="text-yellow-500 text-lg" /> Users
               </p>
             </Link>
           </li>
