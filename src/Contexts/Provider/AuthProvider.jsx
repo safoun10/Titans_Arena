@@ -13,7 +13,8 @@ import {
   updateProfile,
 } from "firebase/auth";
 import app from "../../Firebase/Firebase.config";
-import useAxiosSecure from "../../Hooks/useAxiosSecure";
+
+import axios from "axios";
 
 
 export const AuthContext = createContext("");
@@ -22,7 +23,7 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [axiosSecure] = useAxiosSecure()
+  
 
   const createUser = (email, password) => {
     setLoading(true);
@@ -72,10 +73,10 @@ const AuthProvider = ({ children }) => {
       setUser(currentUser);
       console.log("current user", currentUser);
       if (currentUser) {
-        axiosSecure.post('/jwt', {email : currentUser.email})
+        axios.post('http://localhost:5000/jwt', {email : currentUser.email})
         .then(data =>{
-            console.log(data.data.token)
-            localStorage.setItem("access-token", data.data.token)
+            // console.log(data.data.token)
+            localStorage.setItem('access-token', data.data.token)
             setLoading(false)
         })
       }
