@@ -11,6 +11,7 @@ const Users = () => {
     axiosSecure.get(`/users`)
     .then(data=>{
       setUsers(data.data)
+      console.log(data)
     })
     // fetch(url)
     //   .then((res) => res.json())
@@ -58,8 +59,8 @@ const Users = () => {
       <h3 className="text-3xl font-semibold my-4">
         Total Users: {users.length}
       </h3>
-      <div className="border">
-        <table className="table  w-full">
+      <div className="overflow-x-scroll border lg:overflow-hidden">
+        <table className="table">
           {/* head */}
           <thead className="text-white bg-green-500 text-xl">
             <tr>
