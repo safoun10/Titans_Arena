@@ -7,13 +7,16 @@ import useAxiosSecure from "../../../../Hooks/useAxiosSecure";
 const Users = () => {
   const [users, setUsers] = useState([]);
   const [axiosSecure] = useAxiosSecure();
-  const url = `http://localhost:5000/users`;
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setUsers(data);
-      });
+    axiosSecure.get(`/users`)
+    .then(data=>{
+      setUsers(data.data)
+    })
+    // fetch(url)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setUsers(data);
+    //   });
   }, []);
 
   const makeAdmin = (user) => {

@@ -104,13 +104,7 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
-          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-            <Link to="/dashboard/users">
-              <p className="flex items-center gap-2 text- font-semibold ">
-                <FaUser className="text-yellow-500 text-lg" /> Users
-              </p>
-            </Link>
-          </li>
+  
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/enrolledTour">
