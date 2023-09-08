@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
 
-import logo from "././../../../public/logoTest4.png";
+import logo from "././../../../public/logoTest41.png";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
@@ -74,10 +74,37 @@ const NavigationBar = () => {
       <li className="nav-link">
         <NavLink
           to="/dashboard"
+          to="/dashboard/profile"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Dashboard
         </NavLink>
+      </li>
+    </>
+  );
+
+  const navOptionsForMobile = (
+    <>
+      <li className="nav-link">
+        <NavLink to="/">HOME</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/gallery">GALLERY</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/allgame">All GAMES</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/blogs">BLOGS</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/support">SUPPORT</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/eSports">ESPORTS</NavLink>
+      </li>
+      <li className="nav-link">
+        <NavLink to="/dashboard/profile">Dashboard</NavLink>
       </li>
     </>
   );
@@ -90,7 +117,7 @@ const NavigationBar = () => {
             <label tabIndex={0} className="lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -105,17 +132,13 @@ const NavigationBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow text-white bg-base-100 rounded-box w-52 z-10"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-10 text-black font-semibold"
             >
-              {navOptions}
+              {navOptionsForMobile}
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-            {/* <span className="text-md pl-2 md:text-3xl uppercase font-bold">
-              logo
-            </span> */}
-            <img className="absolute h-[18rem] -top-[7rem]" src={logo} alt="" />
-            {/* <img className="absolute h-[20rem] " src={logoTest2}  alt="" /> */}
+            <img className="" src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -126,6 +149,7 @@ const NavigationBar = () => {
             <div className="navbar-end">
               {user ? (
                 <>
+                  {console.log("user photo", user?.photoURL)}
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">

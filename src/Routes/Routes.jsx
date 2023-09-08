@@ -11,10 +11,14 @@ import Blogs from "../Pages/Blogs/Blogs";
 import GamesDetails from "../Pages/GamesDetails/GamesDetails";
 import SingleBlog from "../Pages/Blogs/SingleBlog/SingleBlog";
 import Esports from "../Pages/Esports/Components/Esports";
-import Dashboard from "../Pages/Dashboard/Dashboard";
-import Users from "../Pages/Dashboard/Users/Users";
-import AddToCart from "../Pages/Dashboard/AddToCart/AddToCart";
-import EnrolledTour from "../Pages/Dashboard/EnrolledTour/EnrolledTour";
+import Dashboard from "../Layout/Dashboard";
+import Users from "../Pages/Dashboard/Admin/Users/Users";
+import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
+import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
+import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
+import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
+import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
+import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Tournament from "../Pages/Tournament/Tournament";
 
@@ -22,6 +26,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement : <Error/>,
     children: [
       {
         path: "/",
@@ -80,6 +85,7 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
+    errorElement : <Error/>,
     children: [
       {
         path: "users",
@@ -92,6 +98,18 @@ const router = createBrowserRouter([
       {
         path: "enrolledTour",
         element: <EnrolledTour />,
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "blogManagement",
+        element: <BlogManagement />,
+      },
+      {
+        path: "addblog",
+        element: <AddBlog />,
       },
     ],
   },

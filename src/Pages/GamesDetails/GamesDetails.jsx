@@ -9,6 +9,7 @@ import GameInfo from "./Components/GameInfo/GameInfo";
 import RealLinks from "./Components/RealLinks/RealLinks";
 import "./GamesDetails.css";
 import GameReviews from "./Components/GameReviews/GameReviews";
+import { Helmet } from "react-helmet-async";
 
 const GamesDetails = () => {
   const [gameDetails, setGameDetails] = useState({});
@@ -80,39 +81,44 @@ const GamesDetails = () => {
   );
 
   return (
-    <div className="text-white bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <div className="bg-[url('https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/tw-bg-1920x450.jpg')] bg-cover ">
-        <div
-          style={{
-            background:
-              "radial-gradient(310.48% 100.00% at 50.00% 0.00%, rgba(128, 0, 128, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%)",
-            /* add other styles here if needed */
-          }}
-          className=" h-[350px] flex items-center"
-        >
-          <div>
+    <>
+      <Helmet>
+        <title>TitanArena || Game Details</title>
+      </Helmet>
+      <div className="text-white bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+        <div className="bg-[url('https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/tw-bg-1920x450.jpg')] bg-cover ">
+          <div
+            style={{
+              background:
+                "radial-gradient(310.48% 100.00% at 50.00% 0.00%, rgba(128, 0, 128, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%)",
+              /* add other styles here if needed */
+            }}
+            className=" h-[350px] flex items-center"
+          >
             <div>
-              <div className="navbar-center  hidden lg:flex">
-                <ul className="flex gap-4 text-xs">{navOptions}</ul>
+              <div>
+                <div className="navbar-center  hidden lg:flex">
+                  <ul className="flex gap-4 text-xs">{navOptions}</ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <GameHeading gameDetails={gameDetails} />
-      </div>
-      <div>
-        <GameInfo gameDetails={gameDetails} />
         <div>
-          <Description gameDetails={gameDetails} />
+          <GameHeading gameDetails={gameDetails} />
         </div>
-      </div>
+        <div>
+          <GameInfo gameDetails={gameDetails} />
+          <div>
+            <Description gameDetails={gameDetails} />
+          </div>
+        </div>
 
-      <GameReviews gameDetails={gameDetails} />
-      <Comments />
-      <RealLinks />
-    </div>
+        <GameReviews gameDetails={gameDetails} />
+        <Comments />
+        <RealLinks />
+      </div>
+    </>
   );
 };
 

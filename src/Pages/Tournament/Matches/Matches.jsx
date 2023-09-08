@@ -6,11 +6,11 @@ import MatchCard from "./MatchCard";
 
 const Matches = () => {
   const [data, setData] = useState([]);
-  const [showAll, setShowAll] = useState(true); // Default to show all matches
+  const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     axios
-      .get("Fixered.json") // Replace with the correct path to your JSON data
+      .get("Fixered.json")
       .then((response) => {
         setData(response.data);
       })
@@ -26,9 +26,34 @@ const Matches = () => {
     <div className="container mx-auto text-center ">
       <Tabs>
         <TabList className="  text-1xl font-bold text-white uppercase underline">
-          <Tab onClick={() => setShowAll(true)}>All Matches</Tab>
-          <Tab onClick={() => setShowAll(false)}>Upcoming Matches</Tab>
-          <Tab onClick={() => setShowAll(false)}>Finished Matches</Tab>
+          <Tab
+            classID=""
+            style={{
+              clipPath:
+                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+            }}
+            onClick={() => setShowAll(true)}
+          >
+            All Matches
+          </Tab>
+          <Tab
+            style={{
+              clipPath:
+                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+            }}
+            onClick={() => setShowAll(false)}
+          >
+            Upcoming Matches
+          </Tab>
+          <Tab
+            style={{
+              clipPath:
+                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+            }}
+            onClick={() => setShowAll(false)}
+          >
+            Finished Matches
+          </Tab>
         </TabList>
 
         <TabPanel>

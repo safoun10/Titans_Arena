@@ -32,7 +32,7 @@ const UpcomingTournaments = () => {
     <div>
       <div className="mt-28 mb-28 max-w-7xl mx-auto">
         <div className="flex justify-between">
-          <div className="border-l-2 font-extrabold text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
+          <div className="border-l-2 font-extrabold sm:text-lg md:text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
             <h3>Upcoming Matches</h3>
           </div>
           <div className="">
@@ -53,12 +53,19 @@ const UpcomingTournaments = () => {
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-1 place-items-center uppercase">
           {visibleData.map((match) => (
             <div key={match.id} card={match}>
-              <div className="bg-black shadow-md mb-14 h-[350px] w-72 rounded-md">
+              <div
+                style={{
+                  backgroundColor: "#121a23",
+                  backgroundImage:
+                    "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+                }}
+                className="bg-black border-2  border-black p-1 shadow-md mb-14 h-[350px] w-72 rounded-md"
+              >
                 <div className="flex justify-center items-center leading-none">
                   <img
                     src={match.tournamentPicture}
                     alt="pic"
-                    className="h-44 w-60 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
+                    className="h-44 border-4 border-black w-60 rounded-md shadow-2xl mt-6 transform -translate-y-10 hover:-translate-y-4 transition duration-700"
                   />
                 </div>
                 <div className="p-3 ">
@@ -97,7 +104,7 @@ const UpcomingTournaments = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex justify-between items-center p-2">
+                <div className="flex justify-between items-center p-2 ">
                   <img
                     src={match.authorImage}
                     alt=""

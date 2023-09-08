@@ -3,6 +3,7 @@ import TournamentBanner from "./TournamentBanner/TournamentBanner";
 import PopularTournaments from "./TournamentBanner/PopularTournaments/PopularTournaments";
 import UpcomingTournaments from "./TournamentBanner/UpcomingTournaments/UpcomingTournaments";
 import Matches from "./Matches/Matches";
+import TournamentsVideo from "./TournamentsVideo/TournamentsVideo";
 
 const Tournament = () => {
   return (
@@ -16,6 +17,9 @@ const Tournament = () => {
       </div>
       <div className="hidden md:block">
         <Matches />
+      </div>
+      <div>
+        <TournamentsVideo />
       </div>
     </div>
   );

@@ -4,7 +4,14 @@ import { FaTwitch, FaYoutube } from "react-icons/fa";
 const MatchCard = ({ match }) => {
   return (
     <div className="bg-[url('')]">
-      <div className="lg:max-w-5xl border-l-2 border-r-2  border-r-green-400 border-l-green-500 h-32 items-center mt-5 md:max-w-[696px] max-w-[343px] mx-auto bg-black bg-opacity-60 lg:px-10 md:px-6 px-4 py-4 rounded-full uppercase ">
+      <div
+        style={{
+          backgroundColor: "#121a23",
+          backgroundImage:
+            "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+        }}
+        className="lg:max-w-5xl border-l-2 border-r-2  border-r-yellow-400 border-dotted   hover:border-t-2 border-yellow-400  border-l-yellow-500 h-32 items-center mt-5 md:max-w-[696px] sm:max-w-[343px] mx-auto bg-black bg-opacity-60 lg:px-10 md:px-6 px-4 py-4 rounded-full uppercase "
+      >
         <div className="lg:flex md:flex block">
           <div className="items-center mx-auto  gap-10 flex">
             <div className="w-28 h-28 sm:w-20 sm:h-20 md:w-24 md:h-24">
@@ -30,7 +37,7 @@ const MatchCard = ({ match }) => {
             <p className="lg:text-4xl md:text-2xl sm:text-xl text-2xl font-semibold text-center text-white">
               {/* {match.team1.name} vs. {match.team2.name} */}
             </p>
-            <p className="lg:text-3xl animate-bounce text-yellow-400 md:text-xl sm:text-lg text-xl font-semibold text-center text-white">
+            <p className="lg:text-3xl animate-bounce text-yellow-400 md:text-xl sm:text-lg text-xl font-semibold text-center ">
               {match.result.score}
             </p>
             <p className="lg:text-2xl md:text-xl sm:text-lg text-xl font-semibold text-center text-white">
@@ -42,7 +49,9 @@ const MatchCard = ({ match }) => {
                 ? "Upcoming"
                 : match.result.winner}
             </p>
-            {/* Add any other match details you want to display */}
+            <div>
+              <p> {match.time}</p>
+            </div>
           </div>
           <div className="items-center mx-auto  gap-10 flex">
             <div>

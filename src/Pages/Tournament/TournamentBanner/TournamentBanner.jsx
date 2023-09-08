@@ -45,14 +45,14 @@ const TournamentBanner = () => {
 
   return (
     <div>
-      <div className=" bg-[url('https://c0.wallpaperflare.com/preview/153/380/988/headphones-red-black-dark.jpg')] border-b-red-600 border-b-2">
+      <div className=" bg-[url('https://c0.wallpaperflare.com/preview/153/380/988/headphones-red-black-dark.jpg')] border-black   border-b-4">
         <div className="px-3 py-12">
           <div className="lg:max-w-[1280px] mt-5 md:max-w-[696px] max-w-[343px] mx-auto bg-black bg-opacity-60  lg:px-20 md:px-6 px-4 py-12">
             <div className="lg:flex md:flex block">
               <div className="flex">
-                <div className="bg-black  max-w-[66px] w-full border border-yellow-400 ">
-                  <p className="xl:text-1xl font-bold lg:text-base  leading-normal text-white -rotate-90 whitespace-nowrap  2xl:mt-32 xl:mt-[130px]  lg:mt-[140%] md:mt-[85px] mt-28">
-                    JOIN NOW HERE
+                <div className="bg-black  max-w-[50px] w-full border hidden md:block border-yellow-400 ">
+                  <p className="xl:text-1xl mx-auto  font-bold lg:text-base  leading-normal text-white -rotate-90 whitespace-nowrap  2xl:mt-32 xl:mt-[130px]  lg:mt-[140%] md:mt-[85px] mt-28">
+                    JOIN NOW
                   </p>
                 </div>
                 <div>
@@ -116,7 +116,7 @@ const TournamentBanner = () => {
           </h1>
         </div>
         <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-red-600 hover: border-b-2 hover:border-b-0 hover:border-t-2 ">
+          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2 ">
             WOW{" "}
           </h1>
         </div>
@@ -128,11 +128,6 @@ const TournamentBanner = () => {
         <div className="">
           <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2">
             PUBG{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-blue-600 hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            SFN2.0{" "}
           </h1>
         </div>
       </div>
