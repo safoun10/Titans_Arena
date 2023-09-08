@@ -22,6 +22,8 @@ import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
+import PrivetRouter from "./PrivetRouter/PrivetRouter";
+import AdminOnly from "./PrivetRouter/AdminOnly";
 
 const router = createBrowserRouter([
   {
@@ -81,12 +83,20 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,
+    element: (
+      <PrivetRouter>
+        <Dashboard />
+      </PrivetRouter>
+    ),
     // errorElement: <Error />,
     children: [
       {
         path: "users",
-        element: <Users />,
+        element: (
+          <AdminOnly>
+            <Users />
+          </AdminOnly>
+        ),
       },
       {
         path: "selectedGames",
@@ -102,11 +112,19 @@ const router = createBrowserRouter([
       },
       {
         path: "blogManagement",
-        element: <BlogManagement />,
+        element: (
+          <AdminOnly>
+            <BlogManagement />
+          </AdminOnly>
+        ),
       },
       {
         path: "addblog",
-        element: <AddBlog />,
+        element: (
+          <AdminOnly>
+            <AddBlog />
+          </AdminOnly>
+        ),
       },
       {
         path: "test1",

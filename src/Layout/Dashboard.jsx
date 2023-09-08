@@ -9,36 +9,37 @@ import {
   FaPlus,
   FaProductHunt,
   FaUser,
-  FaCog,
-  FaSignOutAlt,
 } from "react-icons/fa";
 import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
 import useAxiosSecure from "../Hooks/useAxiosSecure";
+import useAuthorization from "../Hooks/useAuthorization";
 const Dashboard = () => {
+  
   const { user } = useAuth();
+  const { role } = useAuthorization();
   console.log(user?.email);
   const [axiosSecure] = useAxiosSecure();
   const [isLoading, SetIsLoading] = useState(true);
-  const [admin, setAdmin] = useState();
+  // const [admin, setAdmin] = useState();
 
-  const Admin = async () => {
-    // SetIsLoading(true)
-    const res = await axiosSecure(`/users/admin/${user?.email}`);
-    const data = res.data.admin;
-    setAdmin(data);
-    SetIsLoading(false);
-    console.log(data);
-  };
-  Admin();
+  // const Admin = async () => {
+  //   // SetIsLoading(true)
+  //   const res = await axiosSecure(`/users/admin/${user?.email}`);
+  //   const data = res.data.admin;
+  //   setAdmin(data);
+  //   SetIsLoading(false);
+  //   console.log(data);
+  // };
+  // Admin();
 
-  if (isLoading === true) {
-    return <h2>Loading</h2>;
-  }
+  // if (isLoading === true) {
+  //   return <h2>Loading</h2>;
+  // }
 
   const navOptions = (
     <>
-      {admin ? (
+      {role === "admin" ?  (
         <>
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/">
