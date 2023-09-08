@@ -14,31 +14,19 @@ import {
 } from "react-icons/fa";
 import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
-import useAxiosSecure from "../Hooks/useAxiosSecure";
+import useAdmin from "../Hooks/useAdmin";
+
+
 const Dashboard = () => {
   const { user } = useAuth();
   console.log(user?.email);
-  const [axiosSecure] = useAxiosSecure();
-  const [isLoading, SetIsLoading] = useState(true);
-  const [admin, setAdmin] = useState();
+  const [isAdmin] = useAdmin()
 
-  const Admin = async () => {
-    // SetIsLoading(true)
-    const res = await axiosSecure(`/users/admin/${user?.email}`);
-    const data = res.data.admin;
-    setAdmin(data);
-    SetIsLoading(false);
-    console.log(data);
-  };
-  Admin();
-
-  if (isLoading === true) {
-    return <h2>Loading</h2>;
-  }
+ 
 
   const navOptions = (
     <>
-      {admin ? (
+      {isAdmin ? (
         <>
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/">
@@ -113,6 +101,7 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+  
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/enrolledTour">

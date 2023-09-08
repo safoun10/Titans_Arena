@@ -46,7 +46,7 @@ const Register = () => {
                 photoURL: data.photoUrl,
               };
 
-              fetch("http://localhost:5000/users", {
+              fetch("https://titans-arena-server.vercel.app/users", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",

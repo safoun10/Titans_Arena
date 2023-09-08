@@ -6,36 +6,51 @@ import "react-tabs/style/react-tabs.css";
 import GameCard from "../Home/Components/AllGames/GameCard";
 import { FaSearch } from "react-icons/fa";
 import Pagination from "./Pagination";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
 
 const AllGameCategory = () => {
   const [games, setGames] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [axiosSecure] = useAxiosSecure()
   const gamesPerPage = 8; // Number of games to display per page
 
-  console.log(games);
+  // console.log(games);
 
   const [category, setCategory] = useState("All Games");
   const [isTabListVisible, setIsTabListVisible] = useState(false);
   const searchRef = useRef(null);
   const [search, setSearch] = useState("");
 
-  const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
+  // const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        // console.log(data);
-        setGames(data);
-      });
+    axiosSecure(`/Games?category=${category}`)
+    .then(data => {
+      console.log(data.data)
+      setGames(data.data)
+    })
+
+    // fetch(url)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     // console.log(data);
+    //     setGames(data);
+    //   });
   }, [category]);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/searchGames?search=${search}`)
-      .then((res) => res.json())
-      .then((data) => {
-        setGames(data);
-        console.log(data);
-      });
+    // fetch(`https://titans-arena-server.vercel.app/searchGames?search=${search}`)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     setGames(data);
+    //     // console.log(data);
+    //   });
+
+    axiosSecure(`searchGames?search=${search}`)
+    .then(data => {
+      console.log(data.data)
+      setGames(data.data)
+    })
+
   }, [search]);
 
   const handleSearch = () => {
