@@ -13,11 +13,6 @@ const Users = () => {
       setUsers(data.data)
       console.log(data)
     })
-    // fetch(url)
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     setUsers(data);
-    //   });
   }, []);
 
   const makeAdmin = (user) => {
