@@ -11,8 +11,8 @@ import { Helmet } from "react-helmet-async";
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Register = () => {
-  const { createUser, user, updateUserData, updateUserProfile } =
-    useContext(AuthContext);
+  const { createUser, user, updateUserData,
+     updateUserProfile } = useContext(AuthContext);
 
   const [error, setErr] = useState("");
   const [verify, SetVerify] = useState(false);
@@ -209,44 +209,44 @@ const Register = () => {
                   </div>
 
                   <div className="flex items-center justify-between">
-                  <button
-                    type="submit"
-                    disabled={!verify}
-                    className={`${
-                      !verify
-                        ? "bg-gray-500"
-                        : "custom-button hover:bg-green-500 py-2 px-5"
-                    } border w-full rounded py-2 px-5 border-none my-2`}
-                    style={{
-                      "--path":
-                        "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
-                      fontFamily: "resobot-bold",
-                      WebkitClipPath: "polygon(var(--path))",
-                      clipPath: "polygon(var(--path))",
-                    }}
-                  >
-                    Register
-                  </button>
+                    <button
+                      type="submit"
+                      disabled={!verify}
+                      className={`${
+                        !verify
+                          ? "bg-gray-500"
+                          : "custom-button hover:bg-green-500 py-2 px-5"
+                      } border w-full rounded py-2 px-5 border-none my-2`}
+                      style={{
+                        "--path":
+                          "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
+                        fontFamily: "resobot-bold",
+                        WebkitClipPath: "polygon(var(--path))",
+                        clipPath: "polygon(var(--path))",
+                      }}
+                    >
+                      Register
+                    </button>
                   </div>
                 </form>
-              
-                <div className="">
-                <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
-                  <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
-                    Or
-                  </p>
-                </div>
-                <div className="ml-5">
-                  <SocialLogin></SocialLogin>
 
-                  <p className="mt-4 text-center text-green-500 flex items-center gap-3 mb-3">
-                     Have an Account Go To
-                    <Link className="text-indigo-600 " to="/login">
-                      Login{" "}
-                    </Link>{" "}
-                  </p>
+                <div className="">
+                  <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                    <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
+                      Or
+                    </p>
+                  </div>
+                  <div className="ml-5">
+                    <SocialLogin></SocialLogin>
+
+                    <p className="mt-4 text-center text-green-500 flex items-center gap-3 mb-3">
+                      Have an Account Go To
+                      <Link className="text-indigo-600 " to="/login">
+                        Login{" "}
+                      </Link>{" "}
+                    </p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <div className="text-center lg:text-left">
