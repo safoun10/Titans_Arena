@@ -13,33 +13,34 @@ import { fetchData } from "../../Redux/dataSlice";
 const Blogs = () => {
 	const searchRef = useRef(null);
 	const [search, setSearch] = useState("");
+	const [blogs, setBlogs] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const gamesPerPage = 3;
-  
-  const dispatch = useDispatch();
-  
-  const data = useSelector((state) => state.data);
-  const blogs = data?.data || [];
-  console.log(data);
 
-	// const url = `https://titans-arena-server.vercel.app/searchblogs?search=${search}`;
-	// useEffect(() => {
-	//   fetch(url)
-	//     .then((res) => res.json())
-	//     .then((data) => setBlogs(data));
-	// }, [search]);
+	//   const dispatch = useDispatch();
 
-	// const handleSearch = () => {
-	//   setSearch(searchRef.current.value);
-	// };
+	//   const data = useSelector((state) => state.data);
+	//   const blogs = data?.data || [];
+	//   console.log(data);
+
+	const url = `https://titans-arena-server.vercel.app/searchblogs?search=${search}`;
+	useEffect(() => {
+		fetch(url)
+			.then((res) => res.json())
+			.then((data) => setBlogs(data));
+	}, [search]);
+
+	const handleSearch = () => {
+		setSearch(searchRef.current.value);
+	};
 
 	// const { blogs, loading, error } = useSelector((state) => state.search);
 
-	const handleSearch = () => {
-		const searchTerm = searchRef.current.value;
-		setSearch(searchTerm);
-		dispatch(fetchData(search));
-	};
+	// const handleSearch = () => {
+	// 	const searchTerm = searchRef.current.value;
+	// 	setSearch(searchTerm);
+	// 	dispatch(fetchData(search));
+	// };
 
 	// if (loading) {
 	// 	return <div>Loading...</div>;
