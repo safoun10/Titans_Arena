@@ -25,7 +25,7 @@ const Profile = () => {
         .then((res) => res.json())
         .then((data) => {
           // console.log(data.userAllInfo);
-          SetUserInfo(data.userAllInfo.role);
+          SetUserInfo(data.userInfo.role);
         })
         .catch((error) => {
           console.error("Error fetching user role:", error);
