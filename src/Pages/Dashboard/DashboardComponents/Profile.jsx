@@ -1,4 +1,4 @@
- import React from "react";
+ import React, { useEffect, useState } from "react";
 import {
   AiFillAndroid,
   AiOutlineMail,
@@ -15,6 +15,24 @@ import ProfileContent from "./ProfileContent";
 
 const Profile = () => {
   const { user } = useAuth();
+  const [userInfo, SetUserInfo] = useState()
+
+  // console.log(user?.email)
+
+  useEffect(() => {
+    if (user?.email) {
+      fetch(`http://localhost:5000/userInfo/${user?.email}`)
+        .then((res) => res.json())
+        .then((data) => {
+          // console.log(data.userAllInfo);
+          SetUserInfo(data.userInfo.role);
+        })
+        .catch((error) => {
+          console.error("Error fetching user role:", error);
+        });
+    }
+  }, [user?.email]);
+  
   return (
     <div className="text-white">
   
@@ -52,7 +70,7 @@ const Profile = () => {
                 alt={`${user?.displayName}'s profile photo`}
               />
               <h3 className="text-2xl font-bold">{user?.displayName}</h3>
-              <p className="border rounded-sm w-20 mx-auto">Member</p>
+              <p className="border rounded-sm w-20 mx-auto uppercase">{userInfo || "member"}</p>
             </div>
           </div>
           <div className="flex gap-4  w-4/12 justify-center">
