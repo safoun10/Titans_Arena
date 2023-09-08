@@ -13,26 +13,18 @@ import {
 import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
 import useAxiosSecure from "../Hooks/useAxiosSecure";
+import useAdmin from "../Hooks/useAdmin";
 const Dashboard = () => {
   const { user } = useAuth();
   console.log(user?.email);
   const [axiosSecure] = useAxiosSecure();
-  const [isLoading, SetIsLoading] = useState(true);
-  const [admin, setAdmin] = useState(true);
+  const [admin, adminLoading] = useAdmin()
 
-  const Admin = async () => {
-    // SetIsLoading(true)
-    const res = await axiosSecure(`/users/admin/${user?.email}`);
-    const data = res.data.admin;
-    setAdmin(data);
-    SetIsLoading(false);
-    console.log(data);
-  };
-  Admin();
-
-  if (isLoading === true) {
-    return <h2>Loading</h2>;
+  if (adminLoading) {
+    <h1>Loading</h1>
   }
+
+ 
 
   const navOptions = (
     <>

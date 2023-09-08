@@ -40,7 +40,7 @@ const Blogs = () => {
 
     console.log(data);
 
-    fetch("http://localhost:5000/newsletter", {
+    fetch("https://titans-arena-server.vercel.app/newsletter", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

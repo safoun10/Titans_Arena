@@ -38,7 +38,7 @@ const AllGameCategory = () => {
   }, [category]);
 
   useEffect(() => {
-    // fetch(`http://localhost:5000/searchGames?search=${search}`)
+    // fetch(`https://titans-arena-server.vercel.app/searchGames?search=${search}`)
     //   .then((res) => res.json())
     //   .then((data) => {
     //     setGames(data);
