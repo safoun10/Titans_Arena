@@ -19,7 +19,7 @@ import useAdmin from "../Hooks/useAdmin";
 
 const Dashboard = () => {
   const { user } = useAuth();
-  console.log(user?.email);
+  // console.log(user?.email);
   const [isAdmin] = useAdmin()
 
  
