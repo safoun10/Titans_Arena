@@ -20,6 +20,7 @@ import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagem
 import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
+import Tournament from "../Pages/Tournament/Tournament";
 import Gallery from "../Pages/Gallery/Gallery";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
@@ -80,8 +81,12 @@ const router = createBrowserRouter([
         element: <Esports></Esports>,
       },
       {
-        path: "/matchdetails",
+        path: "/espMatchFixered/:id",
         element: <MatchDetails />,
+      },
+      {
+        element: <Tournament />,
+        path: "/tournament",
       },
     ],
   },
