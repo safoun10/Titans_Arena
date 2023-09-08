@@ -21,7 +21,7 @@ const Footer = () => {
 					</div>
 
 					<section>
-						<h1 className="text-slate-300 text-xl font-semibold pb-3">
+						<h1 className="text-white text-xl font-semibold pb-3">
 							Explore
 						</h1>
 
@@ -48,7 +48,7 @@ const Footer = () => {
 					</section>
 
 					<section>
-						<h1 className="text-slate-300 text-xl font-semibold pb-3">
+						<h1 className="text-white text-xl font-semibold pb-3">
 							Help
 						</h1>
 						<p className="text-slate-300 font-normal text-base">
@@ -63,7 +63,7 @@ const Footer = () => {
 					</section>
 
 					<section>
-						<h1 className="text-slate-300 text-xl font-semibold pb-3">
+						<h1 className="text-white text-xl font-semibold pb-3">
 							Get in touch
 						</h1>
 						<p className="text-slate-300 font-normal text-base">
