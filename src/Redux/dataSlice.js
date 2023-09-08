@@ -1,17 +1,45 @@
-import { createSlice } from "@reduxjs/toolkit";
+// searchSlice.js
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import axios from 'axios';
 
+// Define the initial state
+const initialState = {
+    blogs: [],
+    loading: false,
+    error: null,
+};
 
-// https://titans-arena-server.vercel.app/blogs
-
-export const dataSlice = createSlice({
-	name: "data",
-	initialState: {
-		value: {},
-	},
-	reducers: {},
+// Create an async thunk for fetching data
+export const fetchData = createAsyncThunk('search/fetchData', async (keyword = '') => {
+    try {
+        const response = await axios.get(`https://titans-arena-server.vercel.app/searchblogs?search=${keyword}`);
+        console.log(response.data);
+        return await response.data;
+    } catch (error) {
+        throw error;
+    }
 });
 
-// Action creators are generated for each case reducer function
-export const {} = dataSlice.actions;
+// Create a slice for the search
+const dataSlice = createSlice({
+    name: 'search',
+    initialState,
+    reducers: {},
+    extraReducers: (builder) => {
+        builder
+            .addCase(fetchData.pending, (state) => {
+                state.loading = true;
+                state.error = null;
+            })
+            .addCase(fetchData.fulfilled, (state, action) => {
+                state.loading = false;
+                state.data = action.payload;
+            })
+            .addCase(fetchData.rejected, (state, action) => {
+                state.loading = false;
+                state.error = action.error.message;
+            });
+    },
+});
 
 export default dataSlice.reducer;

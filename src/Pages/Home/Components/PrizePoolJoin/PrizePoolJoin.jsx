@@ -25,7 +25,7 @@ const PrizePoolJoin = () => {
             $8000
           </p>
 
-          <div class="text-center relative">
+          <div className="text-center relative">
             <img
               className="h-48 mx-auto my-2"
               src="https://themebeyond.com/beyond/dune/wp-content/uploads/2023/03/a.png"
