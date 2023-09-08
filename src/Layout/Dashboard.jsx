@@ -12,23 +12,19 @@ import {
 } from "react-icons/fa";
 import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
-import useAxiosSecure from "../Hooks/useAxiosSecure";
 import useAdmin from "../Hooks/useAdmin";
+
+
 const Dashboard = () => {
   const { user } = useAuth();
   console.log(user?.email);
-  const [axiosSecure] = useAxiosSecure();
-  const [admin, adminLoading] = useAdmin()
-
-  if (adminLoading) {
-    <h1>Loading</h1>
-  }
+  const [isAdmin] = useAdmin()
 
  
 
   const navOptions = (
     <>
-      {admin ? (
+      {isAdmin ? (
         <>
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/">
