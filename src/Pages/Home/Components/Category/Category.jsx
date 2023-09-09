@@ -14,7 +14,7 @@ const Category = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setGames(data);
       });
   }, [category]);
@@ -22,7 +22,7 @@ const Category = () => {
   const toggleTabList = () => {
     setIsTabListVisible(!isTabListVisible);
   };
-  console.log(category);
+  // console.log(category);
 
   return (
     <>

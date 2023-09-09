@@ -63,23 +63,29 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li>
-      <li className="nav-link">
-        <NavLink
-          to="/tournament"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          TOURNAMENTS
-        </NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink
-          to="/dashboard"
-          to="/dashboard/profile"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Dashboard
-        </NavLink>
-      </li>
+      {user ? (
+        <>
+          <li className="nav-link">
+            <NavLink
+              to="/tournament"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              TOURNAMENTS
+            </NavLink>
+          </li>
+          <li className="nav-link">
+            <NavLink
+              to="/dashboard"
+              to="/dashboard/profile"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Dashboard
+            </NavLink>
+          </li>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 
@@ -149,11 +155,17 @@ const NavigationBar = () => {
             <div className="navbar-end">
               {user ? (
                 <>
-                  {console.log("user photo", user?.photoURL)}
+                  {
+                    // console.log("user photo", user?.photoURL)
+                  }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">
-                        <img src={user?.photoURL} alt="User Avatar" />
+                        <img
+                          className=""
+                          src={user?.photoURL}
+                          alt="User Avatar"
+                        />
                       </div>
                     </div>
                     <button
