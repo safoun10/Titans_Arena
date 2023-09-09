@@ -75,7 +75,7 @@ const NavigationBar = () => {
           </li>
           <li className="nav-link">
             <NavLink
-              to="/dashboard"
+              // to="/dashboard"
               to="/dashboard/profile"
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
