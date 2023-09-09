@@ -1,27 +1,33 @@
 [
   {
-    "image": "/public/icons/facebook.png",
-    "title": "Facebook"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/facebook.e96143e5.png",
+    "title": "Facebook",
+    "link":"https://web.facebook.com/"
   },
   {
-    "image": "/public/icons/twitter.png",
-    "title": "Twitter"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/twitter.44ea9c7c.png",
+    "title": "Twitter",
+    "link":"https://twitter.com/"
   },
   {
-    "image": "/public/icons/youtube.png",
-    "title": "Youtube"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/youtube.a8224612.png",
+    "title": "Youtube",
+    "link":"https://www.youtube.com/"
   },
 
   {
-    "image": "/public/icons/whatsapp.png",
-    "title": "Instagram"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/tiktok.cb61d741.png",
+    "title": "Tiktok",
+    "link":"https://www.whatsapp.com/"
   },
   {
-    "image": "/public/icons/instagram.png",
-    "title": "Discord"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/instagram.a89b5e48.png",
+    "title": "Instagram",
+    "link":"https://www.instagram.com/"
   },
   {
-    "image": "/public/icons/instagram.png",
-    "title": "Discord"
+    "image": "https://asphalt9.assets.gameloft.com/static/_next/static/media/discord.87b031fc.png",
+    "title": "Discord",
+    "link":"https://discord.com/"
   }
 ]

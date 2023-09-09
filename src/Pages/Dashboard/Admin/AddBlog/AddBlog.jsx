@@ -59,7 +59,7 @@ const AddBlog = () => {
   ];
 
   return (
-    <div className="pt-6 w-full bg-base-100 shadow-xl px-5">
+    <div className="pt-6 w-full  shadow-xl px-5 text-white">
       <h2 className="text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
         Public Blog
       </h2>
@@ -194,7 +194,7 @@ const AddBlog = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Title</span>
+              <span className="">Title</span>
             </label>
             <input
               type="text"
@@ -206,7 +206,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Author Name</span>
+              <span className="">Author Name</span>
             </label>
             <input
               type="text"
@@ -218,7 +218,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Date</span>
+              <span className="">Date</span>
             </label>
             <input
               type="date"
@@ -229,7 +229,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">photo url</span>
+              <span className="">photo url</span>
             </label>
             <input
               type="text"
@@ -241,7 +241,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Category</span>
+              <span className="">Category</span>
             </label>
             <CreatableSelect
               className="w-75"
@@ -253,7 +253,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text">Tags</span>
+              <span className="">Tags</span>
             </label>
             <CreatableSelect
               className="w-75"
@@ -267,7 +267,7 @@ const AddBlog = () => {
         <div className="flex justify-between gap-2">
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Facebook</span>
+              <span className="">Facebook</span>
             </label>
             <input
               type="text"
@@ -279,7 +279,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Twitter</span>
+              <span className="">Twitter</span>
             </label>
             <input
               type="text"
@@ -291,7 +291,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text">Linked In</span>
+              <span className="">Linked In</span>
             </label>
             <input
               type="text"
@@ -304,7 +304,7 @@ const AddBlog = () => {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Blog</span>
+            <span className="">Blog</span>
           </label>
           <textarea
             type="text"
