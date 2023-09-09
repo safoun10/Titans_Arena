@@ -22,8 +22,8 @@ import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Tournament from "../Pages/Tournament/Tournament";
 import Gallery from "../Pages/Gallery/Gallery";
-import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
+import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 
 const router = createBrowserRouter([
   {
