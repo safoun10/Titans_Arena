@@ -18,7 +18,7 @@ const ReviewSection = () => {
       .then((res) => res.json())
       .then((data) => setReview(data));
   }, []);
-  console.log("review",review);
+  // console.log("review",review);
 
 
   return (

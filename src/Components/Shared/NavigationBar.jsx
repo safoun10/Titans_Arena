@@ -63,7 +63,9 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li>
-      <li className="nav-link">
+     {
+      user ? <>
+       <li className="nav-link">
         <NavLink
           to="/dashboard/profile"
           className={({ isActive }) => (isActive ? "active" : "default")}
@@ -71,6 +73,8 @@ const NavigationBar = () => {
           Dashboard
         </NavLink>
       </li>
+      </> : <></>
+     }
     </>
   );
 
@@ -129,13 +133,7 @@ const NavigationBar = () => {
             </ul>
           </div>
           <Link to="/" className="normal-case text-xl flex items-center">
-         
-            <img
-              className=""
-              src={logo}
-              alt=""
-            />
-       
+            <img className="" src={logo} alt="" />
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -147,12 +145,16 @@ const NavigationBar = () => {
               {user ? (
                 <>
                 {
-                  console.log("user photo", user?.photoURL)
+                  // console.log("user photo", user?.photoURL)
                 }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">
-                        <img src={user?.photoURL} alt="User Avatar" />
+                        <img
+                          className=""
+                          src={user?.photoURL}
+                          alt="User Avatar"
+                        />
                       </div>
                     </div>
                     <button

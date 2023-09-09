@@ -54,7 +54,7 @@ const GameCard = ({ game }) => {
         <h2 className="font-bold text-3xl text-center md:text-[19px]">
           {title}
         </h2>
-       <div className="flex flex-col justify-center items-center gap-3">
+       <div className="flex flex-col justify-center items-center gap-1">
        <p className="md:text-[13px] text-center text-gray-300 font-semibold">
         Brand : {publisher}
         </p>
@@ -69,7 +69,7 @@ const GameCard = ({ game }) => {
         </p>
        </div>
 
-        <p className="md:text-sm my-1 text-gray-400 text-center">
+        <p className="md:text-sm my-1 text-gray-400 text-center line-clamp-3">
           {limitedDescription}
         </p>
 

@@ -20,12 +20,14 @@ import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagem
 import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
+import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
+import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement : <Error/>,
+    errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -80,7 +82,7 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-    errorElement : <Error/>,
+    // errorElement: <Error />,
     children: [
       {
         path: "users",
@@ -106,7 +108,19 @@ const router = createBrowserRouter([
         path: "addblog",
         element: <AddBlog />,
       },
+      {
+        path: "test1",
+        element: <Test1 />,
+      },
+      {
+        path: "test2",
+        element: <Test2 />,
+      },
     ],
+  },
+  {
+    path: "*",
+    element: <div>404 | Page not found</div>,
   },
 ]);
 

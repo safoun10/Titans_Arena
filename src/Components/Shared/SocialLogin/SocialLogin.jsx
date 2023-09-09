@@ -4,12 +4,15 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import { AuthContext } from "../../../Contexts/Provider/AuthProvider";
 import { FacebookAuthProvider } from "firebase/auth";
+import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const SocialLogin = () => {
-  const facebookProvider = new FacebookAuthProvider()
+  const facebookProvider = new FacebookAuthProvider();
   const { createUser, user, updateUserData, googleSignIn, FacebookSign } =
     useContext(AuthContext);
   const [error, setErr] = useState("");
+  const [axiosSecure] = useAxiosSecure();
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -19,13 +22,19 @@ const SocialLogin = () => {
     FacebookSign()
       .then((userCredential) => {
         const user = userCredential.user;
-        const credential = FacebookAuthProvider.credentialFromResult(userCredential);
+
+        const credential =
+          FacebookAuthProvider.credentialFromResult(userCredential);
         const accessToken = credential.accessToken;
         console.log(user);
         navigate(from, { replace: true });
 
         if (user) {
-          toast("Acount Create Success");
+          Swal.fire({
+            title: "User Registered Successfully",
+            icon: "success",
+            timer: 2000,
+          })
         }
       })
       .catch((error) => {
@@ -37,11 +46,24 @@ const SocialLogin = () => {
     googleSignIn()
       .then((userCredential) => {
         const user = userCredential.user;
-        console.log(user);
-        navigate(from, { replace: true });
-        if (user) {
-          toast("Acount Create Success");
-        }
+        // console.log(user);
+        const savedUser = {
+          name: user.displayName,
+          email: user.email,
+          photoURL: user.photoURL,
+        };
+
+        axiosSecure.post("/users", savedUser).then((data) => {
+          console.log(data);
+          navigate(from, { replace: true });
+          if (user) {
+            Swal.fire({
+              title: "User Registered Successfully",
+              icon: "success",
+              timer: 2000,
+            })
+          }
+        });
       })
       .catch((error) => {
         const errorMessage = error.message;

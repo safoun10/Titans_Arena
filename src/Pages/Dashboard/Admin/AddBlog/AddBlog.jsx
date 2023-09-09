@@ -18,7 +18,7 @@ const AddBlog = () => {
     data.Category = categoryOption;
     data.tags = tagOption;
 
-    fetch("http://localhost:5000/blog", {
+    fetch("https://titans-arena-server.vercel.app/blog", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
