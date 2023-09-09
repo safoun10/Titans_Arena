@@ -21,8 +21,9 @@ import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
 import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Tournament from "../Pages/Tournament/Tournament";
-import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
+import Gallery from "../Pages/Gallery/Gallery";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
+import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 
 const router = createBrowserRouter([
   {
@@ -46,9 +47,14 @@ const router = createBrowserRouter([
         path: "/login",
         element: <Login />,
       },
+
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/gallery",
+        element: <Gallery />,
       },
       {
         path: "/allgame",
@@ -87,7 +93,7 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />,
-    // errorElement: <Error />,
+    errorElement: <Error />,
     children: [
       {
         path: "users",
