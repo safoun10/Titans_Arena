@@ -14,7 +14,7 @@ const Category = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setGames(data);
       });
   }, [category]);
@@ -22,24 +22,24 @@ const Category = () => {
   const toggleTabList = () => {
     setIsTabListVisible(!isTabListVisible);
   };
-  console.log(category);
+  // console.log(category);
 
   return (
     <>
       <div>
         <Tabs>
-          <div className="lg:hidden">
+          <div className="lg:hidden flex justify-center">
             <button
               onClick={toggleTabList}
-              className="bg-green-500 text-white w-full flex justify-center mt-10 p-2 rounded"
+              className="bg-green-500 text-white w-[50%]  mt-10 p-2 rounded"
             >
               Menu
             </button>
           </div>
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
-            <TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8">
+            <TabList className="lg:flex mx-10  flex-wrap justify-center text-center  mt-16 gap-5 md:gap-8">
               <Tab
-                className={`border p-3  transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
                   category === "All Games"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -49,7 +49,7 @@ const Category = () => {
                 All Games
               </Tab>
               <Tab
-                className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 my-5 custom-tabs lg:my-0 transition-all transform duration-700   rounded text-white ${
                   category === "CallOfDuty"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -59,7 +59,7 @@ const Category = () => {
                 Action
               </Tab>
               <Tab
-                className={`border p-3  transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 custom-tabs  transition-all transform duration-700   rounded text-white ${
                   category === "Assassin's Creed"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -69,7 +69,7 @@ const Category = () => {
                 Battle Royale
               </Tab>
               <Tab
-                className={`border p-3 my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+                className={`border p-3 my-5 custom-tabs lg:my-0 transition-all transform duration-700   rounded text-white ${
                   category === "RPG"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -79,7 +79,7 @@ const Category = () => {
                 RPG
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "Uncharted"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -90,7 +90,7 @@ const Category = () => {
               </Tab>
 
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 my-5 lg:my-0 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "RedDeadRedemption"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -101,7 +101,7 @@ const Category = () => {
               </Tab>
 
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "Battlefield"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -111,7 +111,7 @@ const Category = () => {
                 Simulation
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 my-5 lg:my-0 custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -121,7 +121,7 @@ const Category = () => {
                 Sports
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3  custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry1"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"
@@ -131,7 +131,7 @@ const Category = () => {
                 Strategy
               </Tab>
               <Tab
-                className={`border p-3 text-white transition-all transform duration-700   rounded  ${
+                className={`border p-3 my-5 lg:my-0  custom-tabs text-white transition-all transform duration-700   rounded  ${
                   category === "FarCry2"
                     ? "hover:bg-green-500 border-green-500"
                     : "hover:bg-green-500 border-green-500"

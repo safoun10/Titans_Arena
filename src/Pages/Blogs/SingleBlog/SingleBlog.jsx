@@ -38,7 +38,7 @@ const SingleBlog = () => {
         <title>TitanArena || Blog</title>
       </Helmet>
       <BlogBanner title="Single Blog" />
-      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
+      <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-4 lg:px-8 pt-24 pb-16 bg-[#0f161b]">
         {/* Blogs page left side start*/}
         <div className="col-span-4">
           {/* single blog start*/}
@@ -48,33 +48,32 @@ const SingleBlog = () => {
               src={blog.featured_image}
               alt="blog-image"
             />
-            <div className="py-6 px-11">
-              <div className="text-white flex gap-6">
-                <p className="flex gap-3 items-center font-semibold text-lg">
+            <div className="py-3 px-4 lg:py-6 lg:px-11">
+              <div className="text-white flex gap-3 lg:gap-6">
+                <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
                   By{" "}
                   <span className="duration-200 hover:text-[#45f882]">
                     {blog.author}
                   </span>
                 </p>
-                <p className="flex gap-3 items-center font-semibold text-lg">
+                <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
                   <FaCalendarDays className="text-[#45f882]" />{" "}
                   <span>{blog.date}</span>
                 </p>
-                <p className="flex gap-3 items-center font-semibold text-lg">
-                  <FaComments className="text-[#45f882] text-lg" />{" "}
-                  {/* <span>{blog.comments.length == 0 ? "No Comments" : `${blog.comments.length,"Comments"}`}</span>{" "} */}
+                <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
+                  <FaComments className="text-[#45f882] text-lg" /> Comments
                 </p>
               </div>
               <div className="text-white">
-                <h1 className="text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
+                <h1 className="text-2xl lg:text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
                   {blog.title}
                 </h1>
-                <p className="text-slate-400 text-xl font-semibold pb-3">
+                <p className="text-slate-400 text-base lg:text-xl font-semibold pb-3">
                   {blog.content}
                 </p>
               </div>
 
-              <div className="text-slate-400 py-4 text-lg flex justify-between font-semibold items-center">
+              <div className="text-slate-400 py-4 text-sm lg:text-lg flex justify-between font-semibold items-center">
                 <div className="flex items-center">
                   <Link
                     className="hover:text-[#45f882] group flex items-center"
@@ -89,9 +88,17 @@ const SingleBlog = () => {
 
                 <div className="flex items-center gap-3">
                   <p className="mr-2">SHARE :</p>
-                  <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
-                  <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
+                  <Link to={blog.twitter}>
+                    {" "}
+                    <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
+                  <Link to={blog.facebook}>
+                    {" "}
+                    <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
+                  <Link to={blog.linked_in}>
+                    <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
+                  </Link>
                 </div>
               </div>
             </div>
@@ -119,16 +126,16 @@ const SingleBlog = () => {
           <div className="text-white py-6">
             <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
             {blogs.slice(2, 6).map((blog, i) => (
-              <Link key={i}>
+              <Link to={`/blog/${blog._id}`} key={i}>
                 <div className="flex gap-4 pb-4">
                   <img
-                    className="w-[128px] rounded-md"
+                    className="w-[160px] rounded-md"
                     src={blog.featured_image}
                     alt=""
                   />
                   <div className="">
-                    <h2 className="lg:pr-7 text-xl font-semibold hover:text-[#45f882] transition-colors">
-                      {blog.title}
+                    <h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
+                      {blog.title.slice(0, 54)}...
                     </h2>
                     <p className="text-lg font-semibold text-slate-500">
                       {blog.date}

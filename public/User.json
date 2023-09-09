@@ -1,0 +1,32 @@
+{
+    "_id": "64f1810b7ca49a8fed21ddea",
+    "name": "Nur Mohammad Chowdhury Sakib",
+    "email": "bksumon51@gmail.com",
+    "username": "bksumon51671",
+    "date": "2023-09-01T06:13:30.774Z",
+    "userRole": "premium",
+    "gender": "male",
+    "address": "San fransisco, America",
+    "fbLinks": "https://facebook.com/sakib.sjs",
+    "LinkLinks": "https://facebook.com/sakib.sjs",
+    "webSiteLink": "https://sakib-portfolio-beta.vercel.app/",
+    "mobile": 8801301437873,
+    "dateOfBirth": "2005-08-31T00:00:00.000Z",
+    "education": [
+        {
+            "degreeTitle": "",
+            "InstituteName": ""
+        }
+    ],
+    "skills": [
+        "css",
+        "express js",
+        "mongodb",
+        "tailwind",
+        "node js"
+    ],
+    "userPhotoUrl": "https://lh3.googleusercontent.com/a/AAcHTteQaN9r-DyUm9xV_WKLo6rECEwQu4XwljpG5hcpZcvg=s96-c",
+    "__v": 0,
+    "github": "https://github.com/nmcsakib",
+    "isPremium": true
+}

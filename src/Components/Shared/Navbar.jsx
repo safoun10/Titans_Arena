@@ -53,10 +53,16 @@ const Navbar = () => {
           eSports
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/instructors"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          eSports
+        </NavLink>
+      </li>
     </>
   );
-
-
 
   return (
     <div className="fixed w-full z-10 shadow-sm">
@@ -66,12 +72,12 @@ const Navbar = () => {
           <div className="hidden lg:block">
             <div className="flex list-none">{navOptions}</div>
           </div>
-          
+
           <div className="flex">
-          <Link to="/login" className="bt-primary font-bold">
-            Log In
-          </Link>
-          <MenuDropDown/>
+            <Link to="/login" className="bt-primary font-bold">
+              Log In
+            </Link>
+            <MenuDropDown />
           </div>
         </div>
       </div>

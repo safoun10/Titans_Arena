@@ -1,6 +1,4 @@
 import React from "react";
-import EsportBanner from "../EsportBanner/EsportBanner";
-import About from "../../About/About";
 import AboutTeamEs from "../AboutTeamEs/AboutTeamEs";
 import ESportVictories from "../EsportBanner/ESportVictories/ESportVictories";
 import MatchFixered from "../MatchFixered/MatchFixered";
