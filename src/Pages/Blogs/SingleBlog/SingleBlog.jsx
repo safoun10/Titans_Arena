@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import BlogBanner from "../BlogBanner";
 import {
@@ -11,26 +10,14 @@ import {
 } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
+import { useGetBlogByIdQuery, useGetBlogsQuery } from "../../../Redux/api/blogApi";
 
 const SingleBlog = () => {
   const { id } = useParams();
 
-  const [blogs, setBlogs] = useState([]);
-  const [blog, setBlog] = useState([]);
+  const {data: blogs} = useGetBlogsQuery();
+  const { data: blog, isLoading } = useGetBlogByIdQuery(id);
 
-  useEffect(() => {
-    fetch(`https://titans-arena-server.vercel.app/blogs/${id}`)
-      .then((res) => res.json())
-      .then((data) => setBlog(data));
-  }, []);
-
-  useEffect(() => {
-    fetch("https://titans-arena-server.vercel.app/blogs")
-      .then((res) => res.json())
-      .then((data) => setBlogs(data));
-  }, []);
-
-  console.log("first", blog);
 
   return (
     <div>
@@ -45,7 +32,7 @@ const SingleBlog = () => {
           <div className="bg-[#182029] mb-10">
             <img
               className="w-full"
-              src={blog.featured_image}
+              src={blog?.featured_image}
               alt="blog-image"
             />
             <div className="py-3 px-4 lg:py-6 lg:px-11">
@@ -53,12 +40,12 @@ const SingleBlog = () => {
                 <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
                   By{" "}
                   <span className="duration-200 hover:text-[#45f882]">
-                    {blog.author}
+                    {blog?.author}
                   </span>
                 </p>
                 <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
                   <FaCalendarDays className="text-[#45f882]" />{" "}
-                  <span>{blog.date}</span>
+                  <span>{blog?.date}</span>
                 </p>
                 <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
                   <FaComments className="text-[#45f882] text-lg" /> Comments
@@ -66,10 +53,10 @@ const SingleBlog = () => {
               </div>
               <div className="text-white">
                 <h1 className="text-2xl lg:text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
-                  {blog.title}
+                  {blog?.title}
                 </h1>
                 <p className="text-slate-400 text-base lg:text-xl font-semibold pb-3">
-                  {blog.content}
+                  {blog?.content}
                 </p>
               </div>
 
@@ -88,15 +75,15 @@ const SingleBlog = () => {
 
                 <div className="flex items-center gap-3">
                   <p className="mr-2">SHARE :</p>
-                  <Link to={blog.twitter}>
+                  <Link to={blog?.twitter}>
                     {" "}
                     <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
                   </Link>
-                  <Link to={blog.facebook}>
+                  <Link to={blog?.facebook}>
                     {" "}
                     <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
                   </Link>
-                  <Link to={blog.linked_in}>
+                  <Link to={blog?.linked_in}>
                     <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
                   </Link>
                 </div>
@@ -125,20 +112,20 @@ const SingleBlog = () => {
 
           <div className="text-white py-6">
             <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
-            {blogs.slice(2, 6).map((blog, i) => (
-              <Link to={`/blog/${blog._id}`} key={i}>
+            {blogs?.slice(2, 6).map((blog, i) => (
+              <Link to={`/blog/${blog?._id}`} key={i}>
                 <div className="flex gap-4 pb-4">
                   <img
                     className="w-[160px] rounded-md"
-                    src={blog.featured_image}
+                    src={blog?.featured_image}
                     alt=""
                   />
                   <div className="">
                     <h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
-                      {blog.title.slice(0, 54)}...
+                      {blog?.title.slice(0, 54)}...
                     </h2>
                     <p className="text-lg font-semibold text-slate-500">
-                      {blog.date}
+                      {blog?.date}
                     </p>
                   </div>
                 </div>
@@ -176,18 +163,18 @@ const SingleBlog = () => {
               TAG CLOUD
             </h1>
             <div className="flex flex-wrap gap-4">
-              {blog.length == 0 ? (
+              {blog?.length == 0 ? (
                 <>
-                  <Link className="styled-link">E-SPORTS</Link>
-                  <Link className="styled-link">FANTSY</Link>
-                  <Link className="styled-link">TOURNAMENTS</Link>
-                  <Link className="styled-link">GAME</Link>
-                  <Link className="styled-link">MATCHES</Link>
-                  <Link className="styled-link">STREAMERS</Link>
+                  <Link className="styled-link"># E-SPORTS</Link>
+                  <Link className="styled-link"># FANTSY</Link>
+                  <Link className="styled-link"># TOURNAMENTS</Link>
+                  <Link className="styled-link"># GAME</Link>
+                  <Link className="styled-link"># MATCHES</Link>
+                  <Link className="styled-link"># STREAMERS</Link>
                 </>
               ) : (
                 blog?.tags.map((tag, i) => (
-                  <Link className="styled-link">{tag}</Link>
+                  <Link className="styled-link"><span>#</span>{tag}</Link>
                 ))
               )}
             </div>
