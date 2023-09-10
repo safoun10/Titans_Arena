@@ -3,18 +3,31 @@ import baseApi from "./baseApi";
 const blogApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getBlogs: builder.query({
-        query: () => "/blogs"
-      }),
-      invalidatesTags: ['invalidCash'],
+      query: () => "/blogs",
+    }),
+    invalidatesTags: ["invalidCash"],
     getBlogSearch: builder.query({
       query: (search) => `/searchblogs?search=${search}`,
+      invalidatesTags: ["invalidCash"],
     }),
-    invalidatesTags: ['invalidCash'],
     getBlogById: builder.query({
-      query: (id) => `/blogs/${id}`
+      query: (id) => `/blogs/${id}`,
+      invalidatesTags: ["invalidCash"],
     }),
-    invalidatesTags: ['invalidCash'],
+    addNewsLetter: builder.mutation({
+      query: (newEmail) => ({
+        url: "/newsletter",
+        method: "POST",
+        body: newEmail,
+      }),
+      invalidatesTags: ["invalidCash"],
+    }),
   }),
 });
 
-export const { useGetBlogsQuery,useGetBlogSearchQuery,useGetBlogByIdQuery } = blogApi;
+export const {
+  useAddNewsLetterMutation,
+  useGetBlogsQuery,
+  useGetBlogSearchQuery,
+  useGetBlogByIdQuery,
+} = blogApi;

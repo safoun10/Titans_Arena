@@ -6,21 +6,50 @@ import BlogElement from "./BlogElement";
 import BlogBanner from "./BlogBanner";
 import Pagination from "../AllGames/Pagination";
 import { Helmet } from "react-helmet-async";
-import { useGetBlogSearchQuery } from "../../Redux/api/blogApi";
+import {
+  useAddNewsLetterMutation,
+  useGetBlogSearchQuery,
+} from "../../Redux/api/blogApi";
+import useAuth from "../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Blogs = () => {
   const searchRef = useRef(null);
   const [search, setSearch] = useState("");
-  
+  const { user } = useAuth();
+  const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
+
+  console.log("blog user", user.email);
+
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3;
 
   const { data: blogs, isLoading } = useGetBlogSearchQuery(search);
 
-  
   const handleSearch = () => {
     setSearch(searchRef.current.value);
   };
+
+  const handleNersletter = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const newEmail = {
+      userEmail: user.email,
+      email: email,
+    };
+    addNewsLetter(newEmail);
+    console.log(newEmail);
+  };
+
+  if (isSuccess === true) {
+  Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Your email is added to the newsletter.',
+  showConfirmButton: false,
+  timer: 1500
+})
+  }
 
   return (
     <div>
@@ -93,7 +122,7 @@ const Blogs = () => {
               Relative POSTS
             </h1>
             {blogs?.slice(5, 9).map((blog, i) => (
-              <Link key={i}>
+              <Link to={`/blog/${blog._id}`} key={blog._id}>
                 <div className="flex gap-4 pb-4">
                   <img
                     className="w-[128px] rounded-md"
@@ -122,9 +151,13 @@ const Blogs = () => {
               {" "}
               Scripting the Epic Tale of Gaming News!
             </p>
-            <form className="flex items-center relative">
+            <form
+              onSubmit={handleNersletter}
+              className="flex items-center relative"
+            >
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="ENTER YOUR EMAIL"
                 className="w-full max-w-lg  
              font-semibold placeholder-[#45f882] pb-3 bg-transparent focus:outline-none border-b-2 border-gray-800
