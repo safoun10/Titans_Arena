@@ -182,7 +182,7 @@ const Dashboard = () => {
             </div>
             {/* Content area */}
             <div className="md:ml-[20%]">
-              <div className="max-w-[220rem] mx-auto mt-10 ">
+              <div className="max-w-[220rem] mx-auto  ">
               {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
                 <Outlet />
               </div>

@@ -24,6 +24,7 @@ import Tournament from "../Pages/Tournament/Tournament";
 import Gallery from "../Pages/Gallery/Gallery";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
+import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
 
 const router = createBrowserRouter([
   {
@@ -127,11 +128,11 @@ const router = createBrowserRouter([
         path: "test2",
         element: <Test2 />,
       },
+      {
+        path: "profileEdit",
+        element: <ProfileEdit />,
+      },
     ],
-  },
-  {
-    path: "*",
-    element: <div>404 | Page not found</div>,
   },
 ]);
 

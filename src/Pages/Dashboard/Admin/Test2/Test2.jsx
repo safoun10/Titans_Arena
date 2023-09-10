@@ -35,13 +35,7 @@ const Test2 = () => {
   };
 
     return (
-        <div  style={{
-            background:
-              "var(--layout-dark-landing, linear-gradient(142deg, rgba(27, 51, 81, 0.30) 19.63%, rgba(155, 97, 149, 0.30) 83.01%))",
-              boxShadow: "0px 40px 40px 0px rgba(0, 0, 0, 0.25)",
-              backdropFilter: "blur(30px)",
-              border: "1px solid var(--outline-dark-update-layout, #FFF)",
-            }} className="m-2 p-2  text-white">
+        <div  className="m-2 p-2  text-white bg-slate-800">
        
   
         <div className="flex flex-row-reverse justify-between">
