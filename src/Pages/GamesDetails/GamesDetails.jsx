@@ -10,6 +10,7 @@ import RealLinks from "./Components/RealLinks/RealLinks";
 import "./GamesDetails.css";
 import GameReviews from "./Components/GameReviews/GameReviews";
 import { Helmet } from "react-helmet-async";
+import PostComments from "./Components/Comment/PostComments";
 
 const GamesDetails = () => {
   const [gameDetails, setGameDetails] = useState({});
@@ -115,6 +116,7 @@ const GamesDetails = () => {
         </div>
 
         <GameReviews gameDetails={gameDetails} />
+        <PostComments></PostComments>
         <Comments />
         <RealLinks />
       </div>
