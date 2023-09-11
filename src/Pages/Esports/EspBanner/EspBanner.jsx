@@ -46,12 +46,12 @@ const EspBanner = () => {
   return (
     <div>
       <div className=" bg-[url('https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77700458045.jpg')] border-b-green-600 border-b-2">
-        <div className="px-3 py-12">
-          <div className="lg:max-w-[1280px] mt-5 md:max-w-[696px] max-w-[343px] mx-auto bg-black bg-opacity-60  lg:px-20 md:px-6 px-4 py-12">
+        <div className=" py-12 tems-center">
+          <div className="lg:max-w-[1280px] i mt-10 md:max-w-[696px] max-w-[343px] mx-auto sm:h-full md:h-[560px] bg-black bg-opacity-60  lg:px- md:px-6 px-4 py-32">
             <div className="lg:flex md:flex block">
               <div className="flex">
                 <div className="bg-black  max-w-[66px] w-full border border-yellow-400 ">
-                  <p className="xl:text-1xl font-bold lg:text-base  leading-normal text-white -rotate-90 whitespace-nowrap  2xl:mt-32 xl:mt-[130px]  lg:mt-[140%] md:mt-[85px] mt-28">
+                  <p className="xl:text-1xl hidden md:block font-bold lg:text-base  leading-normal text-white -rotate-90 whitespace-nowrap  2xl:mt-32 xl:mt-[130px]  lg:mt-[140%] md:mt-[85px] mt-28">
                     JOIN NOW HERE
                   </p>
                 </div>
