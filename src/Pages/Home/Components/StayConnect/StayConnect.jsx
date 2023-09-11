@@ -12,7 +12,7 @@ const StayConnect = () => {
   return (
     <div className="mt-20">
       <Title primaryText="CONNECT WITH US" secondaryText="STAY CONNECTED" />
-      <div className="pb-20">
+      <div className="pb-20 mx-5 ">
         {/* <div className="text-center my-10">
           <h3 className="text-[#68fb9a] font-semibold ">CONNECT WITH US</h3>
           <h1 className="text-white text-4xl font-bold my-2">STAY CONNECTED</h1>
@@ -29,7 +29,7 @@ const StayConnect = () => {
             ></path>
           </svg>
         </div> */}
-        <div className="grid md:grid-cols-6  grid-cols-2   ">
+        <div className="grid md:grid-cols-6 gap-5 grid-cols-2   ">
           {social.map((link, i) => (
             <div
               key={i}
@@ -37,7 +37,7 @@ const StayConnect = () => {
             "
             >
               <div
-                className="border-2 w-44 h-44 flex flex-col 
+                className="border-2 lg:w-44 h-44  flex flex-col 
               bg-[#121a23]
               justify-center items-center border-[#68fb9a]"
               >

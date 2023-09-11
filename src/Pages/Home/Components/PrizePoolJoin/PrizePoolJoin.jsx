@@ -6,15 +6,15 @@ import Countdown from "react-countdown";
 const PrizePoolJoin = () => {
   return (
     <div className="max-w-6xl mx-auto text-white my-20">
-      <div className="flex items-center">
-        <div className="w-2/6  ">
+      <div className="lg:flex items-center">
+        <div className="lg:w-2/6 text-center">
           <h3 className="text-lg font-bold">CHECK OUT OUR NEXT</h3>
           <h2 className="text-3xl font-bold">GAMING TOURNAMENTS !</h2>
           <p className="text-gray-400 font-semibold my-2">
             Enter the Arena, Show Your Skills, and Emerge as the Champion in Our
             Thrilling and Rewarding Gaming Tournaments.
           </p>
-          <Link to="/eSports" className="bg-green-600 py-2 px-6 rounded-r-3xl text-black font-bold">
+          <Link to="/eSports" className="bg-green-600  py-2 px-6 rounded-r-3xl text-black font-bold">
             JOIN WITH US
           </Link>
         </div>
@@ -38,9 +38,9 @@ const PrizePoolJoin = () => {
             />
           </div>
         </div>
-        <div className="w-2/6 ">
+        <div className="lg:w-2/6 mx-5 mt-10">
           {/* timer starts */}
-          <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
+          <div className="grid grid-flow-col gap-5 text-center auto-cols-max ml-2">
             <div className="flex flex-col p-2 bg-green-600 rounded-box">
               <Countdown
                 date={Date.now() + 15 * 24 * 60 * 60 * 1000}
