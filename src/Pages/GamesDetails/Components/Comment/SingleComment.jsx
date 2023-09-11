@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SingleComment = ({ name, content, date, likes, replies }) => {
+const SingleComment = ({ name, content, img, date }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [showReplies, setShowReplies] = useState(false);
 
@@ -13,12 +13,12 @@ const SingleComment = ({ name, content, date, likes, replies }) => {
   };
 
   return (
-    <div className="p-6 bg-[] w-4/6 justify-between">
+    <div className="p-6 ml-10 lg:w-4/6 lg:justify-between">
       <div className="flex">
         <div className="flex items-center gap-4">
           <img
             className="w-[6.5rem] z-10 border-2 rounded-full "
-            src="https://themedox.com/demo/mykd/assets/img/team/team03.png"
+            src={img}
             alt=""
           />
           <div className="flex flex-col">
@@ -26,7 +26,7 @@ const SingleComment = ({ name, content, date, likes, replies }) => {
             <span className="text-sm">{date}</span>
             <span className="text-lg font-semibold">{content}</span>
             <div className="flex items-center space-x-4 font-bold  text-lg text-green-300">
-              <button
+              {/* <button
                 className={` hover:text-green-500 focus:outline-none ${
                   isLiked ? "text-green-500" : ""
                 }`}
@@ -39,13 +39,13 @@ const SingleComment = ({ name, content, date, likes, replies }) => {
                 onClick={toggleReplies}
               >
                 {showReplies ? "Hide Replies" : "Show Replies"}
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
-        <p className="font-bold text-green-300 text-xl">Reply</p>
+        {/* <p className="font-bold text-green-300 text-xl">Reply</p> */}
       </div>
-      {showReplies && (
+      {/* {showReplies && (
         <div className="ml-32 mt-2 space-y-4">
           {replies.map((reply, index) => (
             <div key={index} className=" mb-2 flex justify-between ">
@@ -75,7 +75,7 @@ const SingleComment = ({ name, content, date, likes, replies }) => {
             </div>
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 };

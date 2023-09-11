@@ -50,7 +50,7 @@ const Users = () => {
   };
 
   return (
-    <div className="text-white h-[100vh] w-full ">
+    <div className="text-white h-[100vh] mb-20 w-full ">
       <h3 className="text-3xl font-semibold my-4">
         Total Users: {users.length}
       </h3>
