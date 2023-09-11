@@ -7,7 +7,7 @@ const AllGames = () => {
   return (
     <>
       <Helmet>
-        <title>TitanArena || All Games</title>
+        <title>Titans Arena || All Games</title>
       </Helmet>
       <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <AllGamesBanner></AllGamesBanner>

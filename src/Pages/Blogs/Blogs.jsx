@@ -19,7 +19,7 @@ const Blogs = () => {
   const { user } = useAuth();
   const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
 
-  console.log("blog user", user.email);
+  console.log("blog user", user?.email);
 
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3;
@@ -49,6 +49,10 @@ const Blogs = () => {
   showConfirmButton: false,
   timer: 1500
 })
+  }
+
+  if (isLoading) {
+		return <div>Loading...</div>;
   }
 
   return (

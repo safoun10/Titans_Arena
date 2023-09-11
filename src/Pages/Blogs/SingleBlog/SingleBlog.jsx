@@ -22,7 +22,7 @@ const SingleBlog = () => {
   return (
     <div>
       <Helmet>
-        <title>TitanArena || Blog</title>
+        <title>Titans Arena || Blog</title>
       </Helmet>
       <BlogBanner title="Single Blog" />
       <div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-4 lg:px-8 pt-24 pb-16 bg-[#0f161b]">
