@@ -7,58 +7,39 @@ import GameCard from "../Home/Components/AllGames/GameCard";
 import { FaSearch } from "react-icons/fa";
 import Pagination from "./Pagination";
 import useAxiosSecure from "../../Hooks/useAxiosSecure";
-import { useGetGameSearchQuery } from "../../Redux/slice/AllGameCategory";
+import {
+	useGetGameCategoryQuery,
+	useGetGameSearchQuery,
+} from "../../Redux/slice/AllGameCategory";
 
 const AllGameCategory = () => {
-	// const [games, setGames] = useState([]);
+	const [games, setGames] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [axiosSecure] = useAxiosSecure();
 	const gamesPerPage = 8; // Number of games to display per page
-
-	// console.log(games);
 
 	const [category, setCategory] = useState("All Games");
 	const [isTabListVisible, setIsTabListVisible] = useState(false);
 	const searchRef = useRef(null);
 	const [search, setSearch] = useState("");
 
-	// // const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
-	// useEffect(() => {
-	// 	axiosSecure(`/Games?category=${category}`).then((data) => {
-	// 		// console.log(data.data);
-	// 		setGames(data.data);
-	// 	});
+	// ---------------------------------------------------------------------------------------
 
-	// 	// fetch(url)
-	// 	//   .then((res) => res.json())
-	// 	//   .then((data) => {
-	// 	//     // console.log(data);
-	// 	//     setGames(data);
-	// 	//   });
-	// }, [category]);
+	const { data: gamesCategory, isLoading } =
+		useGetGameCategoryQuery(category);
 
 	// ---------------------------------------------------------------------------------------
 
-	// const { data: blogs, isLoading } = useGetBlogSearchQuery(search);
-  const { data : games, isLoading } = useGetGameSearchQuery(category); 
-
-  console.log(games);
+	const { data: gamesSearch } = useGetGameSearchQuery(search);
 
 	// ---------------------------------------------------------------------------------------
 
 	useEffect(() => {
-		// fetch(`https://titans-arena-server.vercel.app/searchGames?search=${search}`)
-		//   .then((res) => res.json())
-		//   .then((data) => {
-		//     setGames(data);
-		//     // console.log(data);
-		//   });
+		setGames(gamesCategory);
+		setGames(gamesSearch);
+	}, [gamesCategory, gamesSearch]);
 
-		axiosSecure(`searchGames?search=${search}`).then((data) => {
-			// console.log(data.data);
-			setGames(data.data);
-		});
-	}, [search]);
+	// ---------------------------------------------------------------------------------------
 
 	const handleSearch = () => {
 		console.log(searchRef.current.value);
@@ -70,10 +51,9 @@ const AllGameCategory = () => {
 	};
 	// console.log(searchGames);
 
-
-  if (isLoading) {
+	if (isLoading) {
 		return <div>Loading...</div>;
-  }
+	}
 
 	return (
 		<>
