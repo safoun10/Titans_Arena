@@ -29,12 +29,13 @@ const TournamentsVideo = () => {
       text: "Lorem ipsum dolor,",
     },
   ];
+
   return (
     <div className="max-w-7xl mx-auto  mb-32 mt-28 ">
       <div className="border-l-2 w-72  font-extrabold text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
-        <h3>Upcoming Matches</h3>
+        <h3> Match Videos</h3>
       </div>
-      <div className="flex  justify-center items-center space-x-4 ">
+      <div className="  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-center items-center space-x-4 ">
         {esportsCards.map((card, index) => (
           <a
             key={index}
