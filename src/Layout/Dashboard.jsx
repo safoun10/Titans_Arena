@@ -136,9 +136,9 @@ const Dashboard = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content ">
           <div className="">
-            <div className="fixed top-0  w-full z-10">
+            {/* <div className="fixed top-0  w-full z-10">
               <DashboardNavigationBar />
-            </div>
+            </div> */}
 
             {/* <div className="md:flex flex w-12/12">
            

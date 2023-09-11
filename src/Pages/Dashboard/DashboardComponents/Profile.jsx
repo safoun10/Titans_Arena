@@ -52,7 +52,7 @@ const Profile = () => {
                 alt={`${user?.displayName}'s profile photo`}
               />
               <h3 className="text-2xl font-bold">{user?.displayName}</h3>
-              <p className="border rounded-sm w-20 mx-auto">Member</p>
+              <p className="border rounded-sm w-20 mx-auto">Admin</p>
             </div>
           </div>
           <div className="flex gap-4  w-4/12 justify-center">
