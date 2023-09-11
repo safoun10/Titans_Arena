@@ -10,7 +10,7 @@ import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import { useGetGameSearchQuery } from "../../Redux/slice/AllGameCategory";
 
 const AllGameCategory = () => {
-	const [games, setGames] = useState([]);
+	// const [games, setGames] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [axiosSecure] = useAxiosSecure();
 	const gamesPerPage = 8; // Number of games to display per page
@@ -22,27 +22,27 @@ const AllGameCategory = () => {
 	const searchRef = useRef(null);
 	const [search, setSearch] = useState("");
 
-	// const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
-	useEffect(() => {
-		axiosSecure(`/Games?category=${category}`).then((data) => {
-			console.log(data.data);
-			setGames(data.data);
-		});
+	// // const url = `https://titans-arena-server.vercel.app/Games?category=${category}`;
+	// useEffect(() => {
+	// 	axiosSecure(`/Games?category=${category}`).then((data) => {
+	// 		// console.log(data.data);
+	// 		setGames(data.data);
+	// 	});
 
-		// fetch(url)
-		//   .then((res) => res.json())
-		//   .then((data) => {
-		//     // console.log(data);
-		//     setGames(data);
-		//   });
-	}, [category]);
+	// 	// fetch(url)
+	// 	//   .then((res) => res.json())
+	// 	//   .then((data) => {
+	// 	//     // console.log(data);
+	// 	//     setGames(data);
+	// 	//   });
+	// }, [category]);
 
 	// ---------------------------------------------------------------------------------------
 
 	// const { data: blogs, isLoading } = useGetBlogSearchQuery(search);
-  // const { data } = useGetGameSearchQuery(category); 
+  const { data : games, isLoading } = useGetGameSearchQuery(category); 
 
-  // console.log(data);
+  console.log(games);
 
 	// ---------------------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ const AllGameCategory = () => {
 		//   });
 
 		axiosSecure(`searchGames?search=${search}`).then((data) => {
-			console.log(data.data);
+			// console.log(data.data);
 			setGames(data.data);
 		});
 	}, [search]);
@@ -69,6 +69,11 @@ const AllGameCategory = () => {
 		setIsTabListVisible(!isTabListVisible);
 	};
 	// console.log(searchGames);
+
+
+  if (isLoading) {
+		return <div>Loading...</div>;
+  }
 
 	return (
 		<>
