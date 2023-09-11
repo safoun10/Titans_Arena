@@ -14,7 +14,6 @@ import Esports from "../Pages/Esports/Components/Esports";
 import Dashboard from "../Layout/Dashboard";
 import Users from "../Pages/Dashboard/Admin/Users/Users";
 import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
-import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
 import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
 import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
 import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
@@ -25,6 +24,7 @@ import Gallery from "../Pages/Gallery/Gallery";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
+import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/EnrolledTournaments";
 
 const router = createBrowserRouter([
   {
@@ -105,10 +105,6 @@ const router = createBrowserRouter([
         element: <AddToCart />,
       },
       {
-        path: "enrolledTour",
-        element: <EnrolledTour />,
-      },
-      {
         path: "profile",
         element: <Profile />,
       },
@@ -132,6 +128,15 @@ const router = createBrowserRouter([
         path: "profileEdit",
         element: <ProfileEdit />,
       },
+      {
+        path: "profileEdit",
+        element: <ProfileEdit />,
+      },
+      {
+        path: "enrolledTournaments",
+        element: <EnrolledTournaments/>
+
+      }
     ],
   },
 ]);

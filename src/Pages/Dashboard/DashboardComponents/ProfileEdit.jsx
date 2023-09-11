@@ -14,6 +14,7 @@ const ProfileEdit = () => {
   } = useForm();
 
   const onSubmit = (data) => {
+    console.log(data);
     fetch(`http://localhost:5000/usersInfo/${user.email}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
@@ -78,7 +79,7 @@ const ProfileEdit = () => {
               type="text"
               name="phoneNumber"
               className="input input-bordered"
-              defaultValue={userInfo?.phoneNumber || ""}
+              defaultValue={userInfo?.phoneNumber}
               placeholder="Phone Number"
               {...register("phoneNumber")}
             />
@@ -118,7 +119,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered "
-              defaultValue={userInfo?.facebook || ""}
+              defaultValue={userInfo?.facebook}
               placeholder="Facebook"
               {...register("facebook")}
             />
@@ -131,7 +132,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered"
-              defaultValue={userInfo?.twitter || ""}
+              defaultValue={userInfo?.twitter}
               placeholder="Twitter"
               {...register("twitter")}
             />
@@ -144,7 +145,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered"
-              defaultValue={userInfo?.instagram || ""}
+              defaultValue={userInfo?.instagram}
               placeholder="Instagram"
               {...register("instagram")}
             />
@@ -157,7 +158,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered"
-              defaultValue={userInfo?.youtube || ""}
+              defaultValue={userInfo?.youtube}
               placeholder="Youtube"
               {...register("youtube")}
             />
@@ -170,7 +171,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered"
-              defaultValue={userInfo?.discord || ""}
+              defaultValue={userInfo?.discord}
               placeholder="Discord"
               {...register("discord")}
             />
@@ -183,7 +184,7 @@ const ProfileEdit = () => {
               type="text"
               name="social_media"
               className="input input-bordered"
-              defaultValue={userInfo?.tiktok || ""}
+              defaultValue={userInfo?.tiktok}
               placeholder="Tiktok"
               {...register("tiktok")}
             />
@@ -197,7 +198,7 @@ const ProfileEdit = () => {
             type="text"
             name="bio"
             className="input input-bordered"
-            defaultValue={userInfo?.bio || ""}
+            defaultValue={userInfo?.bio}
             placeholder="Add Your Bio"
             {...register("bio")}
           />
