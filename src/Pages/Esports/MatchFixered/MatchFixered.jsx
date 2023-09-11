@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Title from "../../../Components/Shared/AnimatedTitle/Titile";
+import { FaTwitch, FaYoutube } from "react-icons/fa";
 
 function MatchFixered() {
   const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ function MatchFixered() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/espMatchFixered")
+      .get("Fixered.json")
       .then((response) => {
         setData(response.data);
       })
@@ -20,20 +21,20 @@ function MatchFixered() {
 
   const filteredData =
     activeTab === "upcoming"
-      ? data.filter((item) => item.result === "upcoming")
+      ? data.filter((item) => item.matches === "upcoming")
       : activeTab === "results"
-      ? data.filter((item) => typeof item.result === "object")
+      ? data.filter((item) => item.matches === "finished")
       : data;
 
   return (
     <div className="max-w-7xl mx-auto">
       <div className="mt-48">
         <div className="animate-bounce">
-          <img
+          {/* <img
             className="w-24 mx-auto mt- transform hover:translate-y-2 hover:shadow-xl transition duration-300"
             src="https://i.ibb.co/QQs83pz/pngwing-com-12.png"
             alt=""
-          />
+          /> */}
           <Title
             secondaryText="FIXTURED OF ESPORTS GAME"
             primaryText="Explore The Fixture"
@@ -49,7 +50,7 @@ function MatchFixered() {
           backgroundPosition: "center",
         }}
       >
-        <div className="tabs mb-4 bg-black w-1/2 mx-auto p-2 text-center gap-9 rounded-md border border-green-500 font-extrabold text-1xl">
+        <div className="tabs flex items-center justify-center mb-4 bg-black w-1/2 mx-auto p-2  gap-9 rounded-md border border-green-500 font-extrabold text-center text-1xl">
           <button
             className={`${
               activeTab === "upcoming" ? "active" : ""
@@ -75,82 +76,87 @@ function MatchFixered() {
             All Matches
           </button>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 p-2">
           {filteredData.map((match, index) => (
-            <div
-              key={index}
-              className="bg-black-dark bg-black bg-opacity-50 text-white rounded-lg overflow-hidden hover:bg-black focus:bg-black-dark shadow-md hover:shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 border-b-4 border-green-500 "
-            >
-              <div className="flex items-center justify-between p-4 border-r-4 rounded-lg border-t-2 rounded-r-2xl rounded-l-2xl border border-l-2 ">
-                <h2 className="text-2xl font-bold text-yellow-400 ">
-                  {match.tournamentName}
-                </h2>
-                <p className="">{match.matchStage}</p>
-              </div>
-              <div className="p-4 rounded-t-2xl border-l-2 border-r-yellow-400 border-r-2 text-lg border-l-yellow-400 ">
-                <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center">
-                    <img
-                      src={match.team1.teamLogo}
-                      alt="Team 1 Logo"
-                      className="w-14 h-14 rounded-full mr-2"
-                    />
-                    <p>{match.team1.name}</p>
+            <div className="bg-[url('')]">
+              <div
+                style={{
+                  backgroundColor: "#121a23",
+                  backgroundImage:
+                    "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+                }}
+                className=" max-w-7xl border-l-2 border-r-2  border-r-yellow-400 border-dotted   hover:border-t-2 border-yellow-400  border-l-yellow-500 h-32 items-center mt-5  mx-auto bg-black bg-opacity-60 lg:px-0 md:px-6 px- py-8 rounded-full uppercase "
+              >
+                <div className="flex   ">
+                  <div className="items-center mx-auto  gap-2 flex">
+                    <div className="w-16 hidden md:block h-16 mx-auto">
+                      <img
+                        src={match.team1.team1Logo}
+                        alt={match.team1.name}
+                        className="lg:block md:hidden hidden"
+                      />
+                      <img
+                        src={match.team1.team1Logo}
+                        alt={match.team1.name}
+                        className="lg:hidden md:block hidden"
+                      />
+                    </div>
+
+                    <div>
+                      <h1 className="text-xl  font-bold text-yellow-400">
+                        {" "}
+                        {match.team1.name}
+                      </h1>
+                      <p className="flex gap-2 text-green-400">
+                        Watch <FaTwitch className="mt-1" />{" "}
+                        <FaYoutube className="mt-1" />{" "}
+                      </p>
+                    </div>
                   </div>
-                  <p className="animate-bounce">
-                    {match.result === "upcoming"
-                      ? "VS"
-                      : `${match.result.score}`}
-                  </p>
-                  <div className="flex items-center">
-                    <p>{match.team2.name}</p>
-                    <img
-                      src={match.team2.teamLogo}
-                      alt="Team 2 Logo"
-                      className="w-14 h-14 rounded-full ml-2"
-                    />
+
+                  <div className="lg:py-2 md:py-2 py-4 lg:px-5 md:px-4 px-3 flex flex-col items-center justify-center">
+                    <p className=" text-xl font-semibold text-center text-white"></p>
+                    <p className=" animate-bounce text-yellow-400  text-1xl font-semibold text-center ">
+                      {match.result.score}
+                    </p>
+                    <p className=" md:text-xl sm:text-lg text-xl font-semibold text-center text-white"></p>
+                    <p className="text-xs uppercase  text-center text-white">
+                      Winner:{" "}
+                      {match.result.winner === "upcoming"
+                        ? "Upcoming"
+                        : match.result.winner}
+                    </p>
+                    <div>
+                      <p> {match.matchTime}</p>
+                    </div>
+                  </div>
+
+                  <div className="items-center text-center mx-auto  gap-2 flex">
+                    <div>
+                      <h1 className="text-xl  font-bold text-yellow-400">
+                        {" "}
+                        {match.team2.name}
+                      </h1>
+                      <p className="flex gap-2 text-green-400">
+                        Watch <FaTwitch className="mt-1" />{" "}
+                        <FaYoutube className="mt-1" />{" "}
+                      </p>
+                    </div>
+
+                    <div className="w-16 hidden md:block h-16 mx-auto">
+                      <img
+                        src={match.team2.team2Logo}
+                        alt={match.team2.name}
+                        className="lg:block md:hidden block"
+                      />
+                      <img
+                        src={match.team2.team2Logo}
+                        alt={match.team2.name}
+                        className="lg:hidden md:block hidden"
+                      />
+                    </div>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-2 mt-4   ">
-                  {match.matchDescription}
-                </p>
-                <a
-                  href={match.streamURL}
-                  className="text-blue-500 hover:underline"
-                >
-                  {match.result === "upcoming"
-                    ? "Watch Stream"
-                    : "View Details"}
-                </a>
-
-                {match.result === "upcoming" && (
-                  <p className="text-white">
-                    Start: {match.matchDate} - {match.matchTime}
-                  </p>
-                )}
-
-                <Link to={`/espMatchFixered/${match._id}`}>
-                  <button
-                    href=""
-                    className="rounded-full bg-green-500 text-white hover:bg-white hover:text-purple-900 hover:shadow-xl focus:outline-none w-5 h-5 flex ml-auto transition duration-300"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      className="stroke-current m-auto"
-                    >
-                      <line x1="12" y1="5" x2="12" y2="19"></line>
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                    </svg>
-                  </button>
-                </Link>
               </div>
             </div>
           ))}
