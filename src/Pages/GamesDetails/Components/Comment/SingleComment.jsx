@@ -13,7 +13,7 @@ const SingleComment = ({ name, content, img, date }) => {
   };
 
   return (
-    <div className="p-6 bg-[] w-4/6 justify-between">
+    <div className="p-6 ml-10 lg:w-4/6 lg:justify-between">
       <div className="flex">
         <div className="flex items-center gap-4">
           <img
