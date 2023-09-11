@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const SingleComment = ({ name, content, img }) => {
+const SingleComment = ({ name, content, img, date }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [showReplies, setShowReplies] = useState(false);
 
@@ -23,7 +23,7 @@ const SingleComment = ({ name, content, img }) => {
           />
           <div className="flex flex-col">
             <span className="font-bold text-xl">{name}</span>
-            {/* <span className="text-sm">{date}</span> */}
+            <span className="text-sm">{date}</span>
             <span className="text-lg font-semibold">{content}</span>
             <div className="flex items-center space-x-4 font-bold  text-lg text-green-300">
               {/* <button

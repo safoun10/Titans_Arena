@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import useAuth from "../../../../Hooks/useAuth";
-import { json, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
-const PostComments = () => {
-  const [comments, setComments] = useState([]);
+const PostComments = ({ id }) => {
+  // const [comments, setComments] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { user } = useAuth();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   //   const handleCommentChange = (e) => {
   //     setNewComment(e.target.value);
@@ -17,36 +17,38 @@ const PostComments = () => {
     e.preventDefault();
     const form = e.target;
     const message = form.message.value;
-    const comments = {  
-        user_email : user?.email,
-        user_name : user?.displayName,
-        user_img : user?.photoURL,
-        comment_text : message
-         };
+    const currentDate = new Date();
+    const comments = {
+      game_id: id,
+      user_email: user?.email,
+      user_name: user?.displayName,
+      user_img: user?.photoURL,
+      comment_text: message,
+      Date: currentDate.toISOString().split('T')[0],
+    };
     console.log(comments);
 
-    const url = "http://localhost:5000/comments"
+    const url = "http://localhost:5000/comments";
     fetch(url, {
-        method : "POST",
-        headers : {
-            'Content-Type': 'application/json',
-        },
-        body : JSON.stringify(comments)
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(comments),
     })
-   .then(res=> res.json())
-   .then(data => {
-    console.log(data)
-    if (data.insertedId) {
-        Swal.fire({
-            title: 'Success!',
-            text: 'Comments posted Successfully',
-            icon: 'success',
-            confirmButtonText: 'Cool'
-        })
-        form.reset()
-    }
-   
-   })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "Comments posted Successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+          form.reset();
+        }
+      });
 
     setIsModalOpen(false);
   };
@@ -59,16 +61,16 @@ const PostComments = () => {
     setIsModalOpen(false);
   };
 
-  const validate = () =>{
+  const validate = () => {
     if (!user) {
-        Swal.fire({
-            icon: 'error',
-            title: 'Oops...',
-            text: 'Something went wrong!',
-          })
-          navigate("/login")
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
+      });
+      navigate("/login");
     }
-  }
+  };
 
   return (
     <div className="mt-16 flex justify-center flex-col items-center">
@@ -81,10 +83,9 @@ const PostComments = () => {
         </div>
         <div
           onClick={openModal}
-          
           className=" py-5 cursor-pointer px-4 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-full text-left"
         >
-            Type your comment
+          Type your comment
         </div>
       </button>
 
@@ -128,7 +129,7 @@ const PostComments = () => {
                 </button>
                 <button
                   type="submit"
-                  onClick={()=> validate()}
+                  onClick={() => validate()}
                   //   className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
                   className="custom-button px-5 py-2 text-white hover:bg-green-500"
                 >
