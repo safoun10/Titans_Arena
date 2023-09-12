@@ -1,5 +1,5 @@
 import React from "react";
-import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
+import Title from "../../../../../Components/Shared/AnimatedTitle/Titile";
 
 const Teaminfo = ({ matchDetails }) => {
   // Destructure properties from matchDetails
@@ -8,7 +8,7 @@ const Teaminfo = ({ matchDetails }) => {
   return (
     <div>
       <div
-        className="just-gamers-bg h-[550px] "
+        className="just-gamers-bg h-[710px] "
         style={{
           backgroundImage: `url(${tournamentName})`,
           backgroundSize: "cover",
@@ -65,12 +65,12 @@ const Teaminfo = ({ matchDetails }) => {
               </ul>
               <p className="text-yellow-400 font-bold text-3xl">Country:</p>
               <p>{team2?.country}</p>
-              <p className="text-yellow-400 font-bold text-3xl">Wins:</p>
-              {/* <p>{team2?.wins}</p> */}
+              <p className="text-yellow-400 font-bold text-3xl">Wins: </p>
+              <p>{team1.trophies}</p>
               <p className="text-yellow-400 font-bold text-3xl">Trophies:</p>
-              <p>{team2?.trophies}</p>
+              <p>{team1?.trophies}</p>
               <p className="text-yellow-400 font-bold text-3xl">Ranking:</p>
-              <p>{team2?.ranking}</p>
+              <p>{team1?.ranking}</p>
             </div>
           </div>
         </div>
