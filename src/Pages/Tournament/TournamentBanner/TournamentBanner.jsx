@@ -35,6 +35,7 @@ const TournamentBanner = () => {
 
       <li className="nav-link">
         <NavLink
+          to="/esports"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           Esports

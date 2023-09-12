@@ -15,7 +15,7 @@ const Tournament = () => {
       <div>
         <UpcomingTournaments />
       </div>
-      <div className="hidden md:block">
+      <div className="">
         <Matches />
       </div>
       <div>
