@@ -198,14 +198,14 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax md:h-screen h-96 z-20 px-5 lg:px-0 flex justify-around bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
+        <div className="parallax md:h-screen h-[50%] z-20 px-5 lg:px-0 flex justify-around items-center bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
           {/* screen shots section */}
           <div className="px-4">
-            <div className="text-4xl  font-bold text-center">
+            <div className="text-4xl p-8 font-bold text-center">
               Screen Shots
             </div>
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:pl-0 pl-20 max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
-              <div class="w-2/3 lg:w-full">
+            <div className="grid lg:grid-cols-3 grid-cols-2  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -233,7 +233,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div class="w-2/3 lg:w-full">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -261,7 +261,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div class="w-2/3 lg:w-full">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -289,7 +289,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div class="w-2/3 lg:w-full">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -317,7 +317,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div class="w-2/3 lg:w-full">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -345,7 +345,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-             <div class="w-2/3 lg:w-full">
+             <div >
                 <button
                   className=""
                   onClick={() =>
