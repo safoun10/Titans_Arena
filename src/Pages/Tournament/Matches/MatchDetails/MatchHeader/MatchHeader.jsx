@@ -4,12 +4,14 @@ import { FaArrowCircleRight, FaVideo } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const MatchHeader = ({ matchDetails }) => {
+  console.log(matchDetails);
   const {
     result,
 
     tournamentName,
     team2,
     team1,
+    tournamentPicture,
   } = matchDetails;
   const navOptions = (
     <>

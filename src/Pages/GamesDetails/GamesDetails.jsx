@@ -10,6 +10,7 @@ import RealLinks from "./Components/RealLinks/RealLinks";
 import "./GamesDetails.css";
 import GameReviews from "./Components/GameReviews/GameReviews";
 import { Helmet } from "react-helmet-async";
+import PostComments from "./Components/Comment/PostComments";
 
 const GamesDetails = () => {
   const [gameDetails, setGameDetails] = useState({});
@@ -83,7 +84,7 @@ const GamesDetails = () => {
   return (
     <>
       <Helmet>
-        <title>TitanArena || Game Details</title>
+        <title>Titans Arena || Game Details</title>
       </Helmet>
       <div className="text-white bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <div className="bg-[url('https://demo.gloriathemes.com/wp/cloux/wp-content/uploads/2017/12/tw-bg-1920x450.jpg')] bg-cover ">
@@ -115,6 +116,7 @@ const GamesDetails = () => {
         </div>
 
         <GameReviews gameDetails={gameDetails} />
+        <PostComments id={id}></PostComments>
         <Comments />
         <RealLinks />
       </div>

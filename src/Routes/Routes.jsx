@@ -14,39 +14,40 @@ import Esports from "../Pages/Esports/Components/Esports";
 import Dashboard from "../Layout/Dashboard";
 import Users from "../Pages/Dashboard/Admin/Users/Users";
 import AddToCart from "../Pages/Dashboard/Members/AddToCart/AddToCart";
-import EnrolledTour from "../Pages/Dashboard/Members/EnrolledTour/EnrolledTour";
 import Profile from "../Pages/Dashboard/DashboardComponents/Profile";
 import BlogManagement from "../Pages/Dashboard/Admin/BlogsManagement/BlogManagement";
 import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
-import MatchDetails from "../Pages/Esports/MatchDetails/MatchDetails";
 import Tournament from "../Pages/Tournament/Tournament";
 import Gallery from "../Pages/Gallery/Gallery";
 import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
+import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
+import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/EnrolledTournaments";
+import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
+	{
+		path: "/",
+		element: <Root />,
+		errorElement: <Error />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "/contact",
+				element: <Contact />,
+			},
+			{
+				path: "/login",
+				element: <Login />,
+			},
 
       {
         path: "/register",
@@ -104,10 +105,6 @@ const router = createBrowserRouter([
         element: <AddToCart />,
       },
       {
-        path: "enrolledTour",
-        element: <EnrolledTour />,
-      },
-      {
         path: "profile",
         element: <Profile />,
       },
@@ -127,11 +124,20 @@ const router = createBrowserRouter([
         path: "test2",
         element: <Test2 />,
       },
+      {
+        path: "profileEdit",
+        element: <ProfileEdit />,
+      },
+      {
+        path: "profileEdit",
+        element: <ProfileEdit />,
+      },
+      {
+        path: "enrolledTournaments",
+        element: <EnrolledTournaments/>
+
+      }
     ],
-  },
-  {
-    path: "*",
-    element: <div>404 | Page not found</div>,
   },
 ]);
 

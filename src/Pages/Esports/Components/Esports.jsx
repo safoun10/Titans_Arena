@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet-async";
 
 const Esports = () => {
   <Helmet>
-    <title>TitanArena || Esports</title>
+    <title>Titans Arena || Esports</title>
   </Helmet>;
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
