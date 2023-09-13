@@ -22,7 +22,7 @@ const Test1 = () => {
   return (
     <div>
       
-      {/* <p className="border rounded-sm w-20 mx-auto uppercase">{userInfo || "member"}</p> */}
+      
     </div>
   );
 };

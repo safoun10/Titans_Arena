@@ -28,7 +28,9 @@ const Home = () => {
         <FlipCard />
         <Category />
         <PrizePoolJoin />
-        <FeatureGames />
+        <div className="w-full">
+          <FeatureGames />
+        </div>
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />

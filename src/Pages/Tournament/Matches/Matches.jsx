@@ -10,7 +10,7 @@ const Matches = () => {
 
   useEffect(() => {
     axios
-      .get("Fixered.json")
+      .get("http://localhost:5000/espMatchFixered")
       .then((response) => {
         setData(response.data);
       })

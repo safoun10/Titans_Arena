@@ -106,7 +106,7 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-3 md:h-screen h-96 z-20 flex bg-[url('https://assets.mspimages.in/gear/wp-content/uploads/2022/05/pubg-mobile-has-earned-krafton-8-billion.jpg')]">
+        <div className="parallax mb-3 md:h-screen h-96 z-20 flex  via-transparent bg-[url('https://ggtalks.com/wp-content/uploads/2022/01/PUBG-Battleground.jpg')]">
           <div className="my-auto items-center  mx-4 px-4">
             <div className="sub-title-gallery text-2xl font-bold ">
               PUBG: Battlegrounds Unleashed
@@ -129,15 +129,15 @@ const GalleryParallax = () => {
               Read the latest news from the Tech Titans development team.
             </div>
             <div className="bg-[#182029] mb-10 w-1/2 mx-auto">
-              <div className="flex">
+              <div className="lg:flex">
                 <div>
                   <img
-                    className="w-96 rounded p-4"
+                    className="w-96 h-full rounded p-4"
                     src={blog.featured_image}
                     alt="blog-image"
                   />
                 </div>
-                <div className="text-white my-6 gap-3 lg:gap-6">
+                <div className="text-white lg:my-6  gap-3 text-center lg:gap-6">
                   <div className="font-semibold text-xs lg:text-lg px-2 m-2">
                     By{" "}
                     <span className="duration-200 hover:text-[#45f882]">
@@ -165,10 +165,10 @@ const GalleryParallax = () => {
                 </div>
                 {/*  blogs card start*/}
 
-                <div className="text-slate-400 py-4 text-sm lg:text-lg flex justify-between font-semibold items-center">
+                <div className="text-slate-400 py-4 text-sm lg:text-lg lg:flex lg:justify-between  font-semibold items-center">
                   <div className="flex items-center">
                     <Link
-                      className="hover:text-[#45f882] group flex items-center"
+                      className="hover:text-[#45f882] group flex py-2 lg:py-0 items-center"
                       to="/blogs"
                     >
                       Read More
@@ -198,14 +198,14 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax md:h-screen h-96 z-20 flex justify-around bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
+        <div className="parallax md:h-screen h-[50%] z-20 px-5 lg:px-0 flex justify-around items-center bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
           {/* screen shots section */}
           <div className="px-4">
             <div className="text-4xl p-8 font-bold text-center">
               Screen Shots
             </div>
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:mb-0  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
-              <div>
+            <div className="grid lg:grid-cols-3 grid-cols-2  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -233,7 +233,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div>
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -261,7 +261,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div>
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -289,7 +289,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div>
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -317,7 +317,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div>
+              <div >
                 <button
                   className=""
                   onClick={() =>
@@ -345,7 +345,7 @@ const GalleryParallax = () => {
                   </div>
                 </dialog>
               </div>
-              <div>
+             <div >
                 <button
                   className=""
                   onClick={() =>

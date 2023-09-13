@@ -64,7 +64,6 @@ const AddBlog = () => {
         Public Blog
       </h2>
 
-
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="form-control">
