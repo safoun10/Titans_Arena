@@ -75,6 +75,14 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/enrolledTournaments">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
+                Tournaments
+              </p>
+            </Link>
+          </li>
         </>
       ) : (
         <>
@@ -104,7 +112,7 @@ const Dashboard = () => {
   
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-            <Link to="/dashboard/enrolledTour">
+            <Link to="/dashboard/enrolledTournaments">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
                 Tournaments
@@ -182,7 +190,7 @@ const Dashboard = () => {
             </div>
             {/* Content area */}
             <div className="md:ml-[20%]">
-              <div className="max-w-[220rem] mx-auto mt-10 ">
+              <div className="max-w-[220rem] mx-auto  ">
               {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
                 <Outlet />
               </div>

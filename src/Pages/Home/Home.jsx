@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <Helmet>
-        <title>TitanArena || Home</title>
+        <title>Titans Arena || Home</title>
       </Helmet>
       <div id="#top">
         <div>
@@ -28,7 +28,9 @@ const Home = () => {
         <FlipCard />
         <Category />
         <PrizePoolJoin />
-        <FeatureGames />
+        <div className="w-full">
+          <FeatureGames />
+        </div>
         <SiteStates />
         <LatestGallery />
         <BlogAndNews />

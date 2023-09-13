@@ -17,7 +17,7 @@ const Title = ({ primaryText, secondaryText }) => {
         </h1>
         <div id="bar2"></div>
       </div> */}
-       <div className="text-center my-10">
+       <div className="text-center my-10 lg:mx-0 mx-5">
         <h3 className="text-[#68fb9a] font-semibold text-lg uppercase">{primaryText}</h3>
         <h1 className="text-white text-4xl font-bold mb-2  uppercase">{secondaryText}</h1>
         <svg

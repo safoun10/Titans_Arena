@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FlipCard = () => {
   const [games, setGames] = useState([]);
   useEffect(() => {
-    fetch("https://titans-arena-server.vercel.app/games")
+    fetch("http://localhost:5000/flip-games")
       .then((res) => res.json())
       .then((data) => {
         setGames(data.slice(0, 4));
@@ -19,7 +19,10 @@ const FlipCard = () => {
 
   return (
     <div>
-      <Title primaryText="WELCOME OUR GALLERY SECTION" secondaryText="it's awesome!" />
+      <Title
+        primaryText="WELCOME OUR GALLERY SECTION"
+        secondaryText="it's awesome!"
+      />
 
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
@@ -42,12 +45,15 @@ const FlipCard = () => {
                         />
                       </div>
                     </div>
-                    <div className="back-page">
-                      <p>Surprise! SAFOAN BROOOOOOOOOOO</p>
-                      <Link to={`/games/${card._id}`}>
-                        <button className="btn">Details</button>
-                      </Link>
-                    </div>
+                      <div className="back-page flex flex-col justify-between h-full">
+                        <div>
+                          <div className="font-bold">{card.game_name}</div>
+                          <div className="text-base">{card.game_history}</div>
+                        </div>
+                        <Link to={`/allgame`}>
+                          <button className="btn mb-4 mt-auto">See More games</button>
+                        </Link>
+                      </div>
                   </div>
                 </div>
               ))}

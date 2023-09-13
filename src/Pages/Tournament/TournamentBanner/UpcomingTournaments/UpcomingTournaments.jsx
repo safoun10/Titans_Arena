@@ -31,7 +31,7 @@ const UpcomingTournaments = () => {
   return (
     <div>
       <div className="mt-28 mb-28 max-w-7xl mx-auto">
-        <div className="flex justify-between">
+        <div className="flex justify-between mx-9">
           <div className="border-l-2 font-extrabold sm:text-lg md:text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
             <h3>Upcoming Matches</h3>
           </div>

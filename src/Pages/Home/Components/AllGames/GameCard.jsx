@@ -41,7 +41,7 @@ const GameCard = ({ game }) => {
         backgroundImage:
           "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
       }}
-      className="border rounded-md border-[#68fb9a] w-full text-white my-4 "
+      className="border rounded-md border-[#68fb9a] w-full text-white my-4"
     >
       <figure className="">
         <img
@@ -50,24 +50,24 @@ const GameCard = ({ game }) => {
           alt={title}
         />
       </figure>
-      <div className="mx-5 my-5  h-full">
+      <div className="mx-5 my-5 h-full">
         <h2 className="font-bold text-3xl text-center md:text-[19px]">
           {title}
         </h2>
-       <div className="flex flex-col justify-center items-center gap-1">
-       <p className="md:text-[13px] text-center text-gray-300 font-semibold">
-        Brand : {publisher}
-        </p>
-        <p className="md:text-[13px] flex justify-center items-center gap-2 text-gray-300 font-semibold">
-         <HiCodeBracket/> : {developer}
-        </p>
-        <p className="md:text-[13px] text-center text-gray-300 font-semibold">
-        Type : {category}
-        </p>
-        <p className="md:text-[13px] text-center text-gray-300 font-semibold">
-         Age : {ageRating}
-        </p>
-       </div>
+        <div className="flex flex-col justify-center items-center gap-1">
+          <p className="md:text-[13px] text-center text-gray-300 font-semibold">
+            Brand: {publisher}
+          </p>
+          <p className="md:text-[13px] flex justify-center items-center gap-2 text-gray-300 font-semibold">
+            <HiCodeBracket />: {developer}
+          </p>
+          <p className="md:text-[13px] text-center text-gray-300 font-semibold">
+            Type: {category}
+          </p>
+          <p className="md:text-[13px] text-center text-gray-300 font-semibold">
+            Age: {ageRating}
+          </p>
+        </div>
 
         <p className="md:text-sm my-1 text-gray-400 text-center line-clamp-3">
           {limitedDescription}
@@ -75,16 +75,15 @@ const GameCard = ({ game }) => {
 
         <p className="text-warning justify-center mb-1 flex items-center gap-1">
           <FaStar /> <span>{rating}</span>
-          <span className="text-gray-400  text-xs">{review}</span>
+          <span className="text-gray-400 text-xs">{review}</span>
         </p>
-        {/* <p className="text-green-400  font-semibold text-center border-2 border-green-500 ">Learn More</p> */}
+
         <Link to={`/games/${_id}`}>
           <button
-            className="border-2 md:text-[13px]  p-3  w-full rounded  font-bold hover:bg-green-700  border-green-500 transition duration-500 transform  ease-in-out "
+            className="border-2 md:text-[13px] p-3 w-full rounded font-bold hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
             style={{
               clipPath:
                 "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-                
             }}
           >
             View Details
@@ -92,6 +91,7 @@ const GameCard = ({ game }) => {
         </Link>
       </div>
     </div>
+
   );
 };
 
