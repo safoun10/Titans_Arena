@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
-	AiFillAndroid,
-	AiOutlineMail,
-	AiOutlinePhone,
-	AiOutlineProfile,
+  AiFillAndroid,
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineProfile,
 } from "react-icons/ai";
 import { FaCommentAlt, FaEdit } from "react-icons/fa";
 import { FaUsersViewfinder } from "react-icons/fa6";
@@ -19,7 +19,7 @@ const Profile = () => {
   const { user } = useAuth();
   const [userInfo, SetUserInfo] = useState();
   useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);

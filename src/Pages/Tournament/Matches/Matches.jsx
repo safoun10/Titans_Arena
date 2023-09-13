@@ -10,7 +10,7 @@ const Matches = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/espMatchFixered")
+      .get("https://titans-arena-server.vercel.app/espMatchFixered")
       .then((response) => {
         setData(response.data);
       })

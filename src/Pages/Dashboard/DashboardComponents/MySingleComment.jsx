@@ -1,9 +1,39 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaThumbsUp } from "react-icons/fa";
 
-const MySingleComment = ({ name, content, img, date }) => {
+const MySingleComment = ({ name, content, img, date, game_id }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [showReplies, setShowReplies] = useState(false);
+
+  const [gameDetails, setGameDetails] = useState({});
+  useEffect(() => {
+    fetch(`https://titans-arena-server.vercel.app/games/${game_id}`)
+      .then((res) => res.json())
+      .then((data) => setGameDetails(data));
+  }, []);
+  const {
+    _id,
+    image,
+    review,
+    title,
+    level,
+    genre,
+    description,
+    rating,
+    platforms,
+    releaseDate,
+    developer,
+    publisher,
+    ageRating,
+    modes,
+    tags,
+    languageSupport,
+    minimumRequirements,
+    recommendedRequirements,
+    features,
+    systemSupport,
+    category,
+  } = gameDetails;
 
   const toggleLike = () => {
     setIsLiked(!isLiked);
@@ -27,6 +57,12 @@ const MySingleComment = ({ name, content, img, date }) => {
         }}
         className="p-6 text-base bg-white border-t border-b mb-4 border-gray-200 dark:border-gray-700 dark:bg-gray-900"
       >
+        <div className="flex justify-between">
+          <h3 className="text-red-500 text-2xl font-bold dark:text-red-400 mb-2">Game Name</h3>
+          <p className="text-green-500 text-2xl font-bold dark:text-green-400 mb-2">
+            {title}
+          </p>
+        </div>
         <footer className="flex justify-between items-center mb-2">
           <div className="flex items-center">
             <p className="inline-flex items-center mr-3 text-sm text-gray-900 dark:text-white font-semibold">
@@ -128,7 +164,7 @@ const MySingleComment = ({ name, content, img, date }) => {
           </button>
         </div>
       </article>
-      <article
+      {/* <article
         style={{
           borderRadius: "21px",
           background: "#111827",
@@ -170,7 +206,7 @@ const MySingleComment = ({ name, content, img, date }) => {
             </svg>
             <span className="sr-only">Comment settings</span>
           </button>
-          {/* Dropdown menu */}
+      
           <div
             id="dropdownComment2"
             className="hidden z-10 w-36 bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-700 dark:divide-gray-600"
@@ -237,7 +273,7 @@ const MySingleComment = ({ name, content, img, date }) => {
             Reply
           </button>
         </div>
-      </article>
+      </article> */}
     </div>
   );
 };

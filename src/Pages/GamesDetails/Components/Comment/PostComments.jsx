@@ -24,11 +24,11 @@ const PostComments = ({ id }) => {
       user_name: user?.displayName,
       user_img: user?.photoURL,
       comment_text: message,
-      Date: currentDate.toISOString().split('T')[0],
+      Date: currentDate.toISOString().split("T")[0],
     };
     console.log(comments);
 
-    const url = "http://localhost:5000/comments";
+    const url = "https://titans-arena-server.vercel.app/comments";
     fetch(url, {
       method: "POST",
       headers: {

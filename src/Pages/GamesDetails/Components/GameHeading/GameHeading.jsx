@@ -35,7 +35,7 @@ const GameHeading = ({ gameDetails }) => {
           <img className=" h-[24rem] bg" src={image} alt="" />
         </div>
         <div className="lg:mt-20">
-          <h1 className="lg:text-5xl text-2xl font-bold tracking-[0.1rem] text-center">{title}</h1>
+          <h1 className="lg:text-3xl text-green-400 text-2xl font-bold tracking-[0.1rem]">{title}</h1>
           <div className="flex gap-32 lg:ml-0 ml-5 lg:pt-0 pt-5">
             <div>
               <div className="">

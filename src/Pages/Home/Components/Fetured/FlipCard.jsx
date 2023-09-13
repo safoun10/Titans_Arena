@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FlipCard = () => {
   const [games, setGames] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/flip-games")
+    fetch("https://titans-arena-server.vercel.app/flip-games")
       .then((res) => res.json())
       .then((data) => {
         setGames(data.slice(0, 4));
@@ -45,15 +45,17 @@ const FlipCard = () => {
                         />
                       </div>
                     </div>
-                      <div className="back-page flex flex-col justify-between h-full">
-                        <div>
-                          <div className="font-bold">{card.game_name}</div>
-                          <div className="text-base">{card.game_history}</div>
-                        </div>
-                        <Link to={`/allgame`}>
-                          <button className="btn mb-4 mt-auto">See More games</button>
-                        </Link>
+                    <div className="back-page flex flex-col justify-between h-full">
+                      <div>
+                        <div className="font-bold">{card.game_name}</div>
+                        <div className="text-base">{card.game_history}</div>
                       </div>
+                      <Link to={`/allgame`}>
+                        <button className="btn mb-4 mt-auto">
+                          See More games
+                        </button>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               ))}

@@ -117,7 +117,7 @@ const GamesDetails = () => {
 
         <GameReviews gameDetails={gameDetails} />
         <PostComments id={id}></PostComments>
-        <Comments />
+        <Comments id={id} />
         <RealLinks />
       </div>
     </>
