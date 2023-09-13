@@ -11,7 +11,9 @@ import { MdLocationPin } from "react-icons/md";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
+import MyComments from "./MyComments";
 import ProfileContent from "./ProfileContent";
+import "./Profile.css";
 
 const Profile = () => {
   const { user } = useAuth();
@@ -36,7 +38,7 @@ const Profile = () => {
           <div className="bg-[url('https://w.forfun.com/fetch/a9/a9ce3832408d37e4a0ac6f97230b3297.jpeg')] bg-no-repeat bg-cover h-[300px] "></div>
         </Parallax>
 
-        <div className="h-36 bg-slate-700 flex w-12/12 relative ">
+        <div className="h-36 bg-slate-800  border flex w-12/12 relative ">
           <div className="flex gap-4 w-4/12 justify-center">
             <div className="flex flex-col justify-center items-center">
               <FaCommentAlt className="text-yellow-500" />
@@ -240,210 +242,6 @@ const Profile = () => {
                     </td>
                     <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
                       authurmelo@example.com
-                    </td>
-                    <td className="px-4 py-4 text-sm whitespace-nowrap">
-                      <div className="flex items-center gap-x-2">
-                        <button>
-                          <p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            Profile
-                          </p>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
-
-                        <div className="flex items-center gap-x-2">
-                          <img
-                            className="object-cover w-10 h-10 rounded-full"
-                            src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
-                            alt=""
-                          />
-                          <div>
-                            <h2 className="font-medium text-gray-800 dark:text-white ">
-                              Amelia. Anderson
-                            </h2>
-                            <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                              @ameliaanderson
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-
-                        <h2 className="text-sm font-normal text-emerald-500">
-                          5
-                        </h2>
-                      </div>
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      450
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      ameliaanderson@example.com
-                    </td>
-                    <td className="px-4 py-4 text-sm whitespace-nowrap">
-                      <div className="flex items-center gap-x-2">
-                        <button>
-                          <p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            Profile
-                          </p>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
-
-                        <div className="flex items-center gap-x-2">
-                          <img
-                            className="object-cover w-10 h-10 rounded-full"
-                            src="https://images.unsplash.com/photo-1608174386344-80898cec6beb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                            alt=""
-                          />
-                          <div>
-                            <h2 className="font-medium text-gray-800 dark:text-white ">
-                              junior REIS
-                            </h2>
-                            <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                              @junior
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-
-                        <h2 className="text-sm font-normal text-emerald-500">
-                          6
-                        </h2>
-                      </div>
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      420
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      junior@example.com
-                    </td>
-                    <td className="px-4 py-4 text-sm whitespace-nowrap">
-                      <div className="flex items-center gap-x-2">
-                        <button>
-                          <p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            Profile
-                          </p>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
-
-                        <div className="flex items-center gap-x-2">
-                          <img
-                            className="object-cover w-10 h-10 rounded-full"
-                            src="https://images.unsplash.com/photo-1488508872907-592763824245?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                            alt=""
-                          />
-                          <div>
-                            <h2 className="font-medium text-gray-800 dark:text-white ">
-                              Olivia Wathan
-                            </h2>
-                            <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                              @oliviawathan
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-
-                        <h2 className="text-sm font-normal text-emerald-500">
-                          7
-                        </h2>
-                      </div>
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      400
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      oliviawathan@example.com
-                    </td>
-                    <td className="px-4 py-4 text-sm whitespace-nowrap">
-                      <div className="flex items-center gap-x-2">
-                        <button>
-                          <p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            Profile
-                          </p>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
-
-                        <div className="flex items-center gap-x-2">
-                          <img
-                            className="object-cover w-10 h-10 rounded-full"
-                            src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
-                            alt=""
-                          />
-                          <div>
-                            <h2 className="font-medium text-gray-800 dark:text-white ">
-                              Mia
-                            </h2>
-                            <p className="text-sm font-normal text-gray-600 dark:text-gray-400">
-                              @mia
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-12 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
-                        <span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-
-                        <h2 className="text-sm font-normal text-emerald-500">
-                          8
-                        </h2>
-                      </div>
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      380
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      mia@example.com
                     </td>
                     <td className="px-4 py-4 text-sm whitespace-nowrap">
                       <div className="flex items-center gap-x-2">

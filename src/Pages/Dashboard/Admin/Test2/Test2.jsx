@@ -1,4 +1,4 @@
-import './Test2.css'
+import "./Test2.css";
 import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
@@ -6,7 +6,7 @@ import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
 const Test2 = () => {
-    const [currentEvents, setCurrentEvents] = useState([]);
+  const [currentEvents, setCurrentEvents] = useState([]);
 
   const handleDateClick = (selected) => {
     const title = prompt("Please enter a new title for your event");
@@ -34,69 +34,65 @@ const Test2 = () => {
     }
   };
 
-    return (
-        <div  className="m-2 p-2  text-white bg-slate-800">
-       
-  
-        <div className="flex flex-row-reverse justify-between">
-          {/* Calendar Sidebar */}
-          <div className="w-1/3 bg-primary-400 p-4 rounded">
-            <h2 className="text-xl font-semibold">Events</h2>
-            <ul>
-              {currentEvents.map((event) => (
-                <li
-                  key={event.id}
-                  className="bg-greenAccent-500 my-2 p-2 rounded"
-                >
-                  <div className="font-semibold">{event.title}</div>
-                  <div>
-                    {/* Format date here */}
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </div>
-  
-          {/* Calendar */}
-          <div className="w-2/3 ml-4">
-            <FullCalendar
-              height="75vh"
-              plugins={[
-                dayGridPlugin,
-                timeGridPlugin,
-                interactionPlugin,
-                listPlugin,
-              ]}
-              headerToolbar={{
-                left: "prev,next today",
-                center: "title",
-                right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
-              }}
-              initialView="dayGridMonth"
-              editable={true}
-              selectable={true}
-              selectMirror={true}
-              dayMaxEvents={true}
-              select={handleDateClick}
-              eventClick={handleEventClick}
-              eventsSet={(events) => setCurrentEvents(events)}
-              initialEvents={[
-                {
-                  id: "12315",
-                  title: "All-day event",
-                  date: "2022-09-14",
-                },
-                {
-                  id: "5123",
-                  title: "Timed event",
-                  date: "2022-09-28",
-                },
-              ]}
-            />
-          </div>
+  return (
+    <div className="m-2 p-2 border rounded-md text-white bg-slate-800 ">
+      <div className="flex flex-row-reverse justify-between">
+        {/* Calendar Sidebar */}
+        <div className="w-1/3 bg-primary-400 p-4 rounded">
+          <h2 className="text-xl font-semibold">Events</h2>
+          <ul>
+            {currentEvents.map((event) => (
+              <li
+                key={event.id}
+                className="bg-greenAccent-500 my-2 p-2 rounded"
+              >
+                <div className="font-semibold">{event.title}</div>
+                <div>{/* Format date here */}</div>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Calendar */}
+        <div className="w-2/3 ml-4">
+          <FullCalendar
+            height="75vh"
+            plugins={[
+              dayGridPlugin,
+              timeGridPlugin,
+              interactionPlugin,
+              listPlugin,
+            ]}
+            headerToolbar={{
+              left: "prev,next today",
+              center: "title",
+              right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+            }}
+            initialView="dayGridMonth"
+            editable={true}
+            selectable={true}
+            selectMirror={true}
+            dayMaxEvents={true}
+            select={handleDateClick}
+            eventClick={handleEventClick}
+            eventsSet={(events) => setCurrentEvents(events)}
+            initialEvents={[
+              {
+                id: "12315",
+                title: "All-day event",
+                date: "2022-09-14",
+              },
+              {
+                id: "5123",
+                title: "Timed event",
+                date: "2022-09-28",
+              },
+            ]}
+          />
         </div>
       </div>
-    );
+    </div>
+  );
 };
 
 export default Test2;
