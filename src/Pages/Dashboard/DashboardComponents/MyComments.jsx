@@ -3,20 +3,7 @@ import { useEffect } from "react";
 import useAuth from "../../../Hooks/useAuth";
 import MySingleComment from "./MySingleComment";
 
-const MyComments = () => {
-  const { user } = useAuth();
-  const [myComments, setMyComments] = useState([]);
-  const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
-  useEffect(() => {
-    fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      setMyComments(data);
-    });
-  }, [user?.email]);
-  
-  
-  console.log(myComments);
+const MyComments = ({ myComments }) => {
   return (
     <div>
       <section className=" bg-slate-800 border py-8 lg:py-16 antialiased">
@@ -35,7 +22,7 @@ const MyComments = () => {
               img={comment.user_img}
               content={comment.comment_text}
               date={comment.Date}
-            
+
               // likes={comment.likes}
               // replies={comment.replies}
             />
