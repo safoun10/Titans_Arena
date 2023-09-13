@@ -67,7 +67,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title>TitanArena || LogIn</title>
+        <title>Titans Arena || LogIn</title>
       </Helmet>
       <div className="hero min-h-screen  bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <div className="hero-content flex-col my-20 lg:flex-row-reverse">

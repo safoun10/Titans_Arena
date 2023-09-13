@@ -27,27 +27,27 @@ import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
+	{
+		path: "/",
+		element: <Root />,
+		errorElement: <Error />,
+		children: [
+			{
+				path: "/",
+				element: <Home />,
+			},
+			{
+				path: "/about",
+				element: <About />,
+			},
+			{
+				path: "/contact",
+				element: <Contact />,
+			},
+			{
+				path: "/login",
+				element: <Login />,
+			},
 
       {
         path: "/register",

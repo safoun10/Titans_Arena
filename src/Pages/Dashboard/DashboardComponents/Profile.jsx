@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {
-  AiFillAndroid,
-  AiOutlineMail,
-  AiOutlinePhone,
-  AiOutlineProfile,
+	AiFillAndroid,
+	AiOutlineMail,
+	AiOutlinePhone,
+	AiOutlineProfile,
 } from "react-icons/ai";
 import { FaCommentAlt, FaEdit } from "react-icons/fa";
 import { FaUsersViewfinder } from "react-icons/fa6";

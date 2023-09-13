@@ -5,8 +5,8 @@ import Title from "../../../Components/Shared/AnimatedTitle/Titile";
 import { FaTwitch, FaYoutube } from "react-icons/fa";
 
 function MatchFixered() {
-  const [data, setData] = useState([]);
-  const [activeTab, setActiveTab] = useState("all");
+	const [data, setData] = useState([]);
+	const [activeTab, setActiveTab] = useState("all");
 
   useEffect(() => {
     axios

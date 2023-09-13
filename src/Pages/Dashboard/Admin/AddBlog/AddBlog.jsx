@@ -59,8 +59,8 @@ const AddBlog = () => {
   ];
 
   return (
-    <div className="pt-6 w-full  shadow-xl px-5 text-white">
-      <h2 className="text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
+    <div className="pt-6 w-full shadow-xl px-5 bg-[#23252d]">
+      <h2 className="text-[#45f882] text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
         Public Blog
       </h2>
 
@@ -68,57 +68,57 @@ const AddBlog = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="form-control">
             <label className="label">
-              <span className="">Title</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Title</span>
             </label>
             <input
               type="text"
               name="title"
-              className="input input-bordered"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               placeholder="Title"
               {...register("title")}
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="">Author Name</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Author Name</span>
             </label>
             <input
               type="text"
-              name="author"
-              className="input input-bordered"
+              name="Author"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               placeholder="Author Name"
               {...register("author")}
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="">Date</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Date</span>
             </label>
             <input
               type="date"
               name="date"
-              className="input input-bordered"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               {...register("date")}
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="">photo url</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">photo url</span>
             </label>
             <input
               type="text"
               name="featured_image"
-              className="input input-bordered"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               placeholder="photo url"
               {...register("featured_image")}
             />
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="">Category</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Category</span>
             </label>
             <CreatableSelect
-              className="w-75"
+              className="w-75 font-semibold bg-[#303540]"
               defaultValue={categoryOption}
               onChange={setCategoryOption}
               options={categoryOptions}
@@ -127,10 +127,10 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="">Tags</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Tags</span>
             </label>
             <CreatableSelect
-              className="w-75"
+              className="w-75 font-semibold bg-[#303540]"
               defaultValue={tagOption}
               onChange={setTagOption}
               options={tagOptions}
@@ -138,39 +138,39 @@ const AddBlog = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between gap-2">
+        <div className="flex flex-col lg:flex-row justify-between gap-2">
           <div className="form-control w-full">
             <label className="label">
-              <span className="">Facebook</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Facebook</span>
             </label>
             <input
               type="text"
               name="social_media"
-              className="input input-bordered "
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold "
               placeholder="Facebook"
               {...register("facebook")}
             />
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="">Twitter</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Twitter</span>
             </label>
             <input
               type="text"
               name="social_media"
-              className="input input-bordered"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               placeholder="Twitter"
               {...register("twitter")}
             />
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="">Linked In</span>
+              <span className="label-text text-[#ffff] text-base font-semibold">Linked In</span>
             </label>
             <input
               type="text"
               name="social_media"
-              className="input input-bordered"
+              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               placeholder="Linked In"
               {...register("linked_in")}
             />
@@ -178,12 +178,12 @@ const AddBlog = () => {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="">Blog</span>
+            <span className="label-text text-[#ffff] text-base font-semibold">Blog</span>
           </label>
           <textarea
             type="text"
             name="content"
-            className="input input-bordered"
+            className="h-24 input input-bordered bg-[#303540] placeholder-white font-semibold"
             placeholder="Detail description"
             {...register("content")}
           />
