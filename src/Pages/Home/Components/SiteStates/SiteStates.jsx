@@ -1,17 +1,13 @@
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./SiteStates.css";
+import CountUp from "react-countup";
+import { Link } from "react-router-dom";
 
 const SiteStates = () => {
   return (
     <div>
-       <Title
+      <Title primaryText="KNOW ABOUT FROM" secondaryText="WEBSITE" />
 
-        primaryText="KNOW ABOUT FROM"
-        secondaryText="WEBSITE"
-        
-      />
-    
-      
       <div className="max-w-6xl md:mx-auto mx-6">
         <div className="md:flex  text-white items-center gap-7 my-10">
           <div className="md:w-1/2">
@@ -19,30 +15,41 @@ const SiteStates = () => {
               The Journey of the <br /> Titan Arena Site
             </h2>
             <p className="text-gray-400 md:text-sm md:py-2 py-6">
-              Gorem npsum dolor sit amet consectetur adipiscing elit. Duis
-              elementum sollici tudin augue euismod. Nulla ullamcorper nunc.
-              Morbi pharetra mi tellus mollis tincidunt massa venenatis. Etiam
-              lacinia ipsumultrices.
+              In the heart of the bustling city, the Titan Arena stands tall as
+              a symbol of competition, camaraderie, and thrilling gaming
+              tournaments. Our mission is to provide gamers of all levels a
+              platform to showcase their skills, forge new friendships, and bask
+              in the glory of victory. Join us in this epic journey, where every
+              game is a story waiting to be told, and every player is a hero in
+              the making.
             </p>
             <div className="flex justify-between">
               <div>
-                <h2 className="text-3xl font-bold">40K</h2>
+                <h2 className="text-3xl font-bold">
+                  {" "}
+                  <CountUp end={40000} duration={20} />+
+                </h2>
                 <p className="font-">Member</p>
               </div>
               <div>
-                <h2 className="text-3xl font-bold">12K</h2>
+                <h2 className="text-3xl font-bold">
+                  <CountUp end={1200} duration={10} />+
+                </h2>
                 <p className="font-">Games</p>
               </div>
               <div>
-                <h2 className="text-3xl font-bold">3.6K</h2>
+                <h2 className="text-3xl font-bold">
+                  <CountUp end={3600} duration={10} />
+                </h2>
                 <p className="font-">Reviews</p>
               </div>
-
             </div>
             <div>
-              <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
-                READ MORE
-              </button>
+              <Link to='/support'>
+                <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
+                  READ MORE
+                </button>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/2">

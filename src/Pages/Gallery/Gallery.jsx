@@ -1,13 +1,14 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import GalleryParallax from "./Components/GalleryParallax/GalleryParallax";
 
 const Gallery = () => {
   return (
-    <div>
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <Helmet>
         <title>TitanArena || Gallery</title>
       </Helmet>
-      <h1 className="pt-20 text-3xl font-bold text-center">Gallery</h1>
+      <GalleryParallax></GalleryParallax>
     </div>
   );
 };

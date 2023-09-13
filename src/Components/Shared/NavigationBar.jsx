@@ -55,26 +55,36 @@ const NavigationBar = () => {
           SUPPORT
         </NavLink>
       </li>
-      <li className="nav-link">
+      {/* <li className="nav-link">
         <NavLink
           to="/eSports"
           className={({ isActive }) => (isActive ? "active" : "default")}
         >
           ESPORTS
         </NavLink>
-      </li>
-     {
-      user ? <>
-       <li className="nav-link">
-        <NavLink
-          to="/dashboard/profile"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          Dashboard
-        </NavLink>
-      </li>
-      </> : <></>
-     }
+      </li> */}
+      {user ? (
+        <>
+          <li className="nav-link">
+            <NavLink
+              to="/tournament"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              TOURNAMENTS
+            </NavLink>
+          </li>
+          <li className="nav-link">
+            <NavLink
+              to="/dashboard/profile"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              Dashboard
+            </NavLink>
+          </li>
+        </>
+      ) : (
+        <></>
+      )}
     </>
   );
 
@@ -95,9 +105,9 @@ const NavigationBar = () => {
       <li className="nav-link">
         <NavLink to="/support">SUPPORT</NavLink>
       </li>
-      <li className="nav-link">
+      {/* <li className="nav-link">
         <NavLink to="/eSports">ESPORTS</NavLink>
-      </li>
+      </li> */}
       <li className="nav-link">
         <NavLink to="/dashboard/profile">Dashboard</NavLink>
       </li>
@@ -144,9 +154,9 @@ const NavigationBar = () => {
             <div className="navbar-end">
               {user ? (
                 <>
-                {
-                  // console.log("user photo", user?.photoURL)
-                }
+                  {
+                    // console.log("user photo", user?.photoURL)
+                  }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">

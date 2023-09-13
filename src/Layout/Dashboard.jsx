@@ -19,7 +19,7 @@ import useAdmin from "../Hooks/useAdmin";
 
 const Dashboard = () => {
   const { user } = useAuth();
-  console.log(user?.email);
+  // console.log(user?.email);
   const [isAdmin] = useAdmin()
 
  
@@ -71,7 +71,7 @@ const Dashboard = () => {
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/test2">
               <p className="flex items-center gap-2 text- font-semibold ">
-                <FaPlus className="text-yellow-500 text-lg" /> Test2
+                <FaPlus className="text-yellow-500 text-lg" /> Calendar
               </p>
             </Link>
           </li>
@@ -136,9 +136,9 @@ const Dashboard = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content ">
           <div className="">
-            <div className="fixed top-0  w-full z-10">
+            {/* <div className="fixed top-0  w-full z-10">
               <DashboardNavigationBar />
-            </div>
+            </div> */}
 
             {/* <div className="md:flex flex w-12/12">
            
@@ -166,7 +166,8 @@ const Dashboard = () => {
 
             <div className="fixed left-0 top-2  bottom-0 md:w-1/5 md:block hidden overflow-y-auto">
               {/* Sidebar content */}
-              <ul className="mt-[3.7rem]">
+            <ul className="">
+              {/* <ul className="mt-[3.7rem]"> */}
                 {/* <div className="">
                   <div className="space-y-1">{navOptions}</div>
                   <div className="absolute bottom-2 left-[35%]">
@@ -182,6 +183,7 @@ const Dashboard = () => {
             {/* Content area */}
             <div className="md:ml-[20%]">
               <div className="max-w-[220rem] mx-auto mt-10 ">
+              {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
                 <Outlet />
               </div>
             </div>

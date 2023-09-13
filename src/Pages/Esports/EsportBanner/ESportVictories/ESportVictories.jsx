@@ -70,22 +70,10 @@ const ESportVictories = () => {
         ></Title>
       </div>
       <div className="bg-[url('https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/08/17/16291886670895.jpg')] mt- ">
-        <div className=" bg-black bg-opacity-80 ">
-          <div className="flex flex-col lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-10 py-8 2xl:mx-auto 2xl:container">
-            <div className="bg-black bg-opacity-50  lg:w-max-5xl lg:ml-12 lg:p-14 p-8 flex items-center">
+        <div className=" bg-black   bg-opacity-80 ">
+          <div className="flex flex-col max-w-7xl mx-auto  lg:flex-row items-stretch justify-between lg:px-0 px-6 lg:py-10 py-8 ">
+            <div className="bg-black  bg-opacity-50  lg:w-max-2xl lg:ml- lg:p-2 p-8 flex items-center   mx-auto">
               <div>
-                {/* <div className="avatar">
-                  <div className="w-32 rounded-lg bg-black">
-                    <Player
-                      className=" "
-                      autoplay
-                      loop
-                      src={victoryLogo}
-                      // style={{ height: "500px", width: "700px" }}
-                    ></Player>
-                  </div>
-                </div> */}
-
                 <h1 className="dark:text-white md:w-8/12 lg:w-10/12 xl:8/12 2xl:w-8/12 w-full xl:text-6xl sm:text-5xl text-4xl font-semibold text-gray-800 capitalize">
                   WELCOME TO{" "}
                   <span className="hover:text-green-500">VICTORIES</span> OF{" "}
@@ -133,7 +121,7 @@ const ESportVictories = () => {
             </div>
             <div className="z-30 relative lg:w-1/2">
               <div className="hidden bg-black bg-gray-1 w-full lg:w-11/12 lg:h-full lg:flex justify-end items-center">
-                <div className="w-full lg:w-auto lg:-mr-32 border border-green-500 border-r-0 border-b-0">
+                <div className="w-full lg:w-auto lg:-mr-10 border border-green-500 border-r-0 border-b-0">
                   <img
                     src="https://cq-esports.com/storage/uploads/images/1313978/1.jpg"
                     alt="image with decent chairs"
@@ -156,13 +144,14 @@ const ESportVictories = () => {
             {/* ------------------------------ */}
 
             <div
-              className="flex items-center  border-r-4 border-r-yellow-500 rounded-r-3xl shadow-md  max-w-7xl mx-auto p-5  bg-black bg-opacity-50 mb-10"
+              className="flex items-center  border-r-4 border-r-yellow-500 rounded-r-3xl shadow-md  max-w-5xl mx-auto p-5   bg-black bg-opacity-50 mb-10"
               // style="font-family: 'Muli', sans-serif;"
             >
-              <div className="container ml-auto mr-auto flex flex-wrap items-start">
+              <div className="  ml-auto mr-auto flex flex-wrap items-start">
                 <div className="w-full pl-5 lg:pl-2 mb-4 mt-4">
                   <h1 className="text-3xl lg:text-4xl  text-green-500 font-extrabold">
-                    THE ACHIVEMENT OF ESPORTS
+                    THE <span className="hover:text-white">ACHIVEMENT</span> OF
+                    <span className="text-yellow-400"> ESPORTS </span>
                   </h1>
                 </div>
                 {victory.map((win) => (
@@ -173,7 +162,7 @@ const ESportVictories = () => {
                     <div className=" border  border-r-green-500 border-b-2 border-b-green-500 rounded-lg m-h-64 p-2 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
                       <div className="rounded-lg  flex flex-col">
                         <div>
-                          <h5 className="text-white text-2xl font-bold leading-none">
+                          <h5 className="text-yellow-400 text-2xl font-bold leading-none">
                             {win.name}
                           </h5>
                           <span className="text-xs text-gray-400 leading-none">

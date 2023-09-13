@@ -1,22 +1,22 @@
+import { Link } from "react-router-dom";
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./PrizePoolJoin.css";
+
+import Countdown from "react-countdown";
 const PrizePoolJoin = () => {
   return (
-    
     <div className="max-w-6xl mx-auto text-white my-20">
-      
-
-      <div className="lg:flex text-center lg:text-left items-center">
-        <div className="lg:w-2/6 w-full flex flex-col justify-center  ">
+      <div className="flex items-center">
+        <div className="w-2/6  ">
           <h3 className="text-lg font-bold">CHECK OUT OUR NEXT</h3>
           <h2 className="text-3xl font-bold">GAMING TOURNAMENTS !</h2>
           <p className="text-gray-400 font-semibold my-2">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
-            facilis sint, sit illo iure odit?
+            Enter the Arena, Show Your Skills, and Emerge as the Champion in Our
+            Thrilling and Rewarding Gaming Tournaments.
           </p>
-          <button className="bg-green-600  w-[50%] mx-auto lg:mx-0 py-2 px-6 rounded-r-3xl text-black font-bold">
+          <Link to="/eSports" className="bg-green-600 py-2 px-6 rounded-r-3xl text-black font-bold">
             JOIN WITH US
-          </button>
+          </Link>
         </div>
         <div className="lg:w-2/6 lg:pt-0 pt-8 ">
           <h2 className="text-3xl font-bold text-center ">PRIZE POOL</h2>
@@ -38,37 +38,66 @@ const PrizePoolJoin = () => {
             />
           </div>
         </div>
-        <div className="lg:w-2/6 flex justify-center items-center lg:mt-0 mt-7 ">
+        <div className="w-2/6 ">
+          {/* timer starts */}
           <div className="grid grid-flow-col gap-5 text-center auto-cols-max">
-            <div className="flex flex-col p-2 bg-green-600 rounded-box ">
-              <span className="countdown font-mono text-5xl">
-                <span style={{ "--value": 15 }}></span>
-              </span>
-              days
+            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+              <Countdown
+                date={Date.now() + 15 * 24 * 60 * 60 * 1000}
+                renderer={({ days }) => (
+                  <>
+                    <span className="countdown font-mono text-5xl">
+                      <span style={{ "--value": days }}></span>
+                    </span>
+                    days
+                  </>
+                )}
+              />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box ">
-              <span className="countdown font-mono text-5xl">
-                <span style={{ "--value": 10 }}></span>
-              </span>
-              hours
+            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+              <Countdown
+                date={Date.now() + 10 * 60 * 60 * 1000}
+                renderer={({ hours }) => (
+                  <>
+                    <span className="countdown font-mono text-5xl">
+                      <span style={{ "--value": hours }}></span>
+                    </span>
+                    hours
+                  </>
+                )}
+              />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box ">
-              <span className="countdown font-mono text-5xl">
-                <span style={{ "--value": 24 }}></span>
-              </span>
-              min
+            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+              <Countdown
+                date={Date.now() + 24 * 60 * 60 * 1000}
+                renderer={({ minutes }) => (
+                  <>
+                    <span className="countdown font-mono text-5xl">
+                      <span style={{ "--value": minutes }}></span>
+                    </span>
+                    min
+                  </>
+                )}
+              />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box ">
-              <span className="countdown font-mono text-5xl">
-                <span style={{ "--value": 42 }}></span>
-              </span>
-              sec
+            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+              <Countdown
+                date={Date.now() + 60 * 1000}
+                renderer={({ seconds }) => (
+                  <>
+                    <span className="countdown font-mono text-5xl">
+                      <span style={{ "--value": seconds }}></span>
+                    </span>
+                    sec
+                  </>
+                )}
+              />
             </div>
           </div>
+          {/* timer ends */}
         </div>
       </div>
     </div>
-  
   );
 };
 

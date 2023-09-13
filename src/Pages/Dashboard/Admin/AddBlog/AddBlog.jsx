@@ -59,8 +59,8 @@ const AddBlog = () => {
   ];
 
   return (
-    <div className="pt-6 w-full shadow-xl px-5 bg-[#23252d]">
-      <h2 className="text-[#45f882] text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
+    <div className="pt-6 w-full  shadow-xl px-5 text-white">
+      <h2 className="text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
         Public Blog
       </h2>
 
@@ -69,7 +69,7 @@ const AddBlog = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Title</span>
+              <span className="">Title</span>
             </label>
             <input
               type="text"
@@ -81,7 +81,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Author Name</span>
+              <span className="">Author Name</span>
             </label>
             <input
               type="text"
@@ -93,7 +93,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Date</span>
+              <span className="">Date</span>
             </label>
             <input
               type="date"
@@ -104,7 +104,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">photo url</span>
+              <span className="">photo url</span>
             </label>
             <input
               type="text"
@@ -116,7 +116,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Category</span>
+              <span className="">Category</span>
             </label>
             <CreatableSelect
               className="w-75 font-semibold bg-[#303540]"
@@ -128,7 +128,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Tags</span>
+              <span className="">Tags</span>
             </label>
             <CreatableSelect
               className="w-75 font-semibold bg-[#303540]"
@@ -142,7 +142,7 @@ const AddBlog = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-2">
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Facebook</span>
+              <span className="">Facebook</span>
             </label>
             <input
               type="text"
@@ -154,7 +154,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Twitter</span>
+              <span className="">Twitter</span>
             </label>
             <input
               type="text"
@@ -166,7 +166,7 @@ const AddBlog = () => {
           </div>
           <div className="form-control w-full">
             <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Linked In</span>
+              <span className="">Linked In</span>
             </label>
             <input
               type="text"
@@ -179,7 +179,7 @@ const AddBlog = () => {
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-[#ffff] text-base font-semibold">Blog</span>
+            <span className="">Blog</span>
           </label>
           <textarea
             type="text"
