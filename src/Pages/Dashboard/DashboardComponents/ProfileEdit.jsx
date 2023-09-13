@@ -1,32 +1,61 @@
-import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 import useAuth from "../../../Hooks/useAuth";
 
 const ProfileEdit = () => {
   const { user } = useAuth();
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    console.log(data);
-    fetch(`https://titans-arena-server.vercel.app/usersInfo/${user.email}`, {
+  const handleProfileUpdate = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const name = form.name.value;
+    const username = form.username.value;
+    const phoneNumber = form.phoneNumber.value;
+    const email = form.email.value;
+    const photoURL = form.photoURL.value;
+    const facebook = form.facebook.value;
+    const twitter = form.twitter.value;
+    const instagram = form.instagram.value;
+    const youtube = form.youtube.value;
+    const discord = form.discord.value;
+    const tiktok = form.tiktok.value;
+    const bio = form.bio.value;
+    const information = {
+      name,
+      username,
+      phoneNumber,
+      email,
+      photoURL,
+      facebook,
+      twitter,
+      instagram,
+      youtube,
+      discord,
+      tiktok,
+      bio,
+    };
+    fetch(`http://localhost:5000/usersInfo/${user.email}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      body: JSON.stringify(information),
     })
-      .then((response) => console.log(response))
-      .catch((err) => console.error(err));
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.modifiedCount) {
+          Swal.fire({
+            title: "",
+            text: "Profile Updated Successfully!",
+            icon: "success",
+            confirmButtonColor: "#B2A4FF",
+            confirmButtonText: "ok",
+          });
+        }
+      });
   };
 
   const [userInfo, SetUserInfo] = useState();
   useEffect(() => {
-    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
+    fetch(`http://localhost:5000/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);
@@ -43,7 +72,7 @@ const ProfileEdit = () => {
         Edit Profile Information
       </h2>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleProfileUpdate}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="form-control">
             <label className="label">
@@ -55,7 +84,6 @@ const ProfileEdit = () => {
               className="input input-bordered"
               defaultValue={userInfo?.name || user?.displayName}
               placeholder="name"
-              {...register("name")}
             />
           </div>
           <div className="form-control">
@@ -68,7 +96,6 @@ const ProfileEdit = () => {
               defaultValue={userInfo?.username}
               className="input input-bordered"
               placeholder="Username"
-              {...register("username")}
             />
           </div>
           <div className="form-control">
@@ -81,7 +108,6 @@ const ProfileEdit = () => {
               className="input input-bordered"
               defaultValue={userInfo?.phoneNumber}
               placeholder="Phone Number"
-              {...register("phoneNumber")}
             />
           </div>
           <div className="form-control">
@@ -92,8 +118,7 @@ const ProfileEdit = () => {
               type="email"
               name="email"
               className="input input-bordered"
-              value={user?.email && userInfo?.email}
-              {...register("email")}
+              value={userInfo?.email}
             />
           </div>
           <div className="form-control">
@@ -106,7 +131,6 @@ const ProfileEdit = () => {
               className="input input-bordered"
               defaultValue={userInfo?.photoURL || user?.photoURL}
               placeholder="Photo url"
-              {...register("photoURL")}
             />
           </div>
         </div>
@@ -117,11 +141,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="facebook"
               className="input input-bordered "
               defaultValue={userInfo?.facebook}
               placeholder="Facebook"
-              {...register("facebook")}
             />
           </div>
           <div className="form-control w-full">
@@ -130,11 +153,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="twitter"
               className="input input-bordered"
               defaultValue={userInfo?.twitter}
               placeholder="Twitter"
-              {...register("twitter")}
             />
           </div>
           <div className="form-control w-full">
@@ -143,11 +165,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="instagram"
               className="input input-bordered"
               defaultValue={userInfo?.instagram}
               placeholder="Instagram"
-              {...register("instagram")}
             />
           </div>
           <div className="form-control w-full">
@@ -156,11 +177,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="youtube"
               className="input input-bordered"
               defaultValue={userInfo?.youtube}
               placeholder="Youtube"
-              {...register("youtube")}
             />
           </div>
           <div className="form-control w-full">
@@ -169,11 +189,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="discord"
               className="input input-bordered"
               defaultValue={userInfo?.discord}
               placeholder="Discord"
-              {...register("discord")}
             />
           </div>
           <div className="form-control w-full">
@@ -182,11 +201,10 @@ const ProfileEdit = () => {
             </label>
             <input
               type="text"
-              name="social_media"
+              name="tiktok"
               className="input input-bordered"
               defaultValue={userInfo?.tiktok}
               placeholder="Tiktok"
-              {...register("tiktok")}
             />
           </div>
         </div>
@@ -200,7 +218,6 @@ const ProfileEdit = () => {
             className="input input-bordered"
             defaultValue={userInfo?.bio}
             placeholder="Add Your Bio"
-            {...register("bio")}
           />
         </div>
         <div className="form-control pb-5 mt-6">
