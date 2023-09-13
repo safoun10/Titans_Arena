@@ -199,7 +199,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -208,7 +208,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -218,7 +218,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -227,7 +227,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -236,7 +236,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -245,7 +245,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -254,7 +254,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -263,7 +263,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -272,7 +272,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -281,7 +281,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -290,7 +290,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -299,7 +299,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -308,7 +308,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -317,7 +317,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -326,7 +326,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -335,7 +335,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -344,7 +344,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -353,7 +353,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}
@@ -362,7 +362,7 @@ const AllGameCategory = () => {
 					<TabPanel>
 						<div className="grid md:grid-cols-4  gap-4 max-w-6xl mx-6 md:mx-auto">
 							{games
-								.slice(
+								?.slice(
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
@@ -371,7 +371,7 @@ const AllGameCategory = () => {
 								))}
 						</div>
 						<Pagination
-							totalGames={games.length}
+							totalGames={games?.length}
 							gamesPerPage={gamesPerPage}
 							currentPage={currentPage}
 							paginate={setCurrentPage}

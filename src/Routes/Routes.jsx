@@ -30,7 +30,6 @@ const router = createBrowserRouter([
 	{
 		path: "/",
 		element: <Root />,
-		errorElement: <Error />,
 		children: [
 			{
 				path: "/",
@@ -49,96 +48,98 @@ const router = createBrowserRouter([
 				element: <Login />,
 			},
 
-      {
-        path: "/register",
-        element: <Register></Register>,
-      },
-      {
-        path: "/gallery",
-        element: <Gallery />,
-      },
-      {
-        path: "/allgame",
-        element: <AllGames></AllGames>,
-      },
-      {
-        path: "/blogs",
-        element: <Blogs />,
-      },
-      {
-        path: "/blog/:id",
-        element: <SingleBlog />,
-      },
-      {
-        path: "/support",
-        element: <Support />,
-      },
-      {
-        path: "/games/:id",
-        element: <GamesDetails />,
-      },
-      {
-        path: "/esports",
-        element: <Esports></Esports>,
-      },
-      {
-        path: "/espMatchFixered/:id",
-        element: <MatchDetails />,
-      },
-      {
-        element: <Tournament />,
-        path: "/tournament",
-      },
-    ],
-  },
-  {
-    path: "/dashboard",
-    element: <Dashboard />,
-    errorElement: <Error />,
-    children: [
-      {
-        path: "users",
-        element: <Users />,
-      },
-      {
-        path: "selectedGames",
-        element: <AddToCart />,
-      },
-      {
-        path: "profile",
-        element: <Profile />,
-      },
-      {
-        path: "blogManagement",
-        element: <BlogManagement />,
-      },
-      {
-        path: "addblog",
-        element: <AddBlog />,
-      },
-      {
-        path: "test1",
-        element: <Test1 />,
-      },
-      {
-        path: "test2",
-        element: <Test2 />,
-      },
-      {
-        path: "profileEdit",
-        element: <ProfileEdit />,
-      },
-      {
-        path: "profileEdit",
-        element: <ProfileEdit />,
-      },
-      {
-        path: "enrolledTournaments",
-        element: <EnrolledTournaments/>
-
-      }
-    ],
-  },
+			{
+				path: "/register",
+				element: <Register></Register>,
+			},
+			{
+				path: "/gallery",
+				element: <Gallery />,
+			},
+			{
+				path: "/allgame",
+				element: <AllGames></AllGames>,
+			},
+			{
+				path: "/blogs",
+				element: <Blogs />,
+			},
+			{
+				path: "/blog/:id",
+				element: <SingleBlog />,
+			},
+			{
+				path: "/support",
+				element: <Support />,
+			},
+			{
+				path: "/games/:id",
+				element: <GamesDetails />,
+			},
+			{
+				path: "/esports",
+				element: <Esports></Esports>,
+			},
+			{
+				path: "/espMatchFixered/:id",
+				element: <MatchDetails />,
+			},
+			{
+				element: <Tournament />,
+				path: "/tournament",
+			},
+		],
+	},
+	{
+		path: "/dashboard",
+		element: <Dashboard />,
+		children: [
+			{
+				path: "users",
+				element: <Users />,
+			},
+			{
+				path: "selectedGames",
+				element: <AddToCart />,
+			},
+			{
+				path: "profile",
+				element: <Profile />,
+			},
+			{
+				path: "blogManagement",
+				element: <BlogManagement />,
+			},
+			{
+				path: "addblog",
+				element: <AddBlog />,
+			},
+			{
+				path: "test1",
+				element: <Test1 />,
+			},
+			{
+				path: "test2",
+				element: <Test2 />,
+			},
+			{
+				path: "profileEdit",
+				element: <ProfileEdit />,
+			},
+			{
+				path: "profileEdit",
+				element: <ProfileEdit />,
+			},
+			{
+				path: "enrolledTournaments",
+				element: <EnrolledTournaments />,
+			},
+		],
+	},
+	{
+		path: "*",
+		element: <Error />
+	},
 ]);
 
 export default router;
