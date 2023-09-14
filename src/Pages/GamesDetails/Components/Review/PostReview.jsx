@@ -94,7 +94,7 @@ const PostReview = ({ title, id }) => {
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="z-50  p-6 rounded-lg shadow-lg w-[50%] lg:mx-20">
+          <div className="z-50  p-6 rounded-lg shadow-lg lg:w-[50%] lg:mx-20">
             <form onSubmit={handleSubmitComment}>
               <div   style={{
                     "--path":
@@ -109,7 +109,7 @@ const PostReview = ({ title, id }) => {
                     OTransition: "all 0.3s ease-in-out", // Add -o-transition property
                     transition: "all 0.3s ease-in-out", // Add standard transition property
                   }} className="mb-4 border border-none bg-green-700   px-4 py-8 ">
-                <h1 className="text-3xl font-bold ml-10 pb-5">{title}</h1>
+                <h1 className="text-3xl font-bold lg:ml-10 ml-4 pb-5">{title}</h1>
                 <hr className="pb-3" />
                 <div className="pl-10">
                   <Rating
@@ -167,7 +167,7 @@ const PostReview = ({ title, id }) => {
                   name="message"
                   id=""
                   placeholder="Describe your experience"
-                  className="w-[80%]  p-5 my-5 mx-12 text-white font-bold outline-none hover:shadow-[#0b9817] shadow-inner h-[100px] resize-none bg-[#222222]"
+                  className="w-[80%]  p-5 my-5 lg:mx-12 mx-7 text-white font-bold outline-none hover:shadow-[#0b9817] shadow-inner h-[100px] resize-none bg-[#222222]"
                 />
               </div>
               <div className="text-right">

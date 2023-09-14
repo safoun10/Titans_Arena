@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Marquee from "react-fast-marquee";
 
 const GameReviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -21,7 +22,8 @@ const GameReviews = () => {
       <h2 className="text-3xl text-center font-bold py-5">Reviews</h2>
       <div className="flex max-w-4xl gap-4 mx-auto">
         {reviews.map((review, index) => (
-          <div
+          <Marquee >
+            <div
             key={index}
             className="border text-white rounded-lg w-full shadow-lg p-6"
           >
@@ -54,6 +56,7 @@ const GameReviews = () => {
               </div>
             </div>
           </div>
+          </Marquee>
         ))}
       </div>
     </div>
