@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const GameReviews = () => {
   const [reviews, setReviews] = useState([]);
 
-  const url = "https://titans-arena-server.vercel.app";
+  const url = "https://titans-arena-server.vercel.app/reviews";
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
