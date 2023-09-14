@@ -9,7 +9,6 @@ const FlipCard = () => {
 	const { data } = useGetFlipCardQuery();
 	useEffect(() => {
 		setGames(data?.slice(0, 4));
-		console.log(data);
 	}, [data]);
 
 	return (
