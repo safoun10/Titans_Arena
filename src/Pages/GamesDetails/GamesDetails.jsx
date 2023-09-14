@@ -11,6 +11,7 @@ import "./GamesDetails.css";
 import GameReviews from "./Components/GameReviews/GameReviews";
 import { Helmet } from "react-helmet-async";
 import PostComments from "./Components/Comment/PostComments";
+import PostReview from "./Components/Review/PostReview";
 
 const GamesDetails = () => {
   const [gameDetails, setGameDetails] = useState({});
@@ -114,7 +115,7 @@ const GamesDetails = () => {
             <Description gameDetails={gameDetails} />
           </div>
         </div>
-
+         <PostReview title={title} id={id}></PostReview>
         <GameReviews gameDetails={gameDetails} />
         <PostComments id={id}></PostComments>
         <Comments id={id} />

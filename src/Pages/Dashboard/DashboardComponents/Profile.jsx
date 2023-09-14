@@ -30,7 +30,7 @@ const Profile = () => {
       });
   }, [user?.email]);
 
-  console.log(userInfo?.bio);
+  // console.log(userInfo?.bio);
 
   return (
     <div className="text-white">

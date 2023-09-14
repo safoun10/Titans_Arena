@@ -55,7 +55,7 @@ const AllGameCategory = () => {
 		//   });
 
 		axiosSecure(`searchGames?search=${search}`).then((data) => {
-			// console.log(data.data);
+			
 			setGames(data.data);
 		});
 	}, [search]);
