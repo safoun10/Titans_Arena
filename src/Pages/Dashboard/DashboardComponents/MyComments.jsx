@@ -7,7 +7,7 @@ const MyComments = ({ myComments }) => {
   return (
     <div>
       <section className=" bg-slate-800 border py-8 lg:py-16 antialiased">
-        <div className="mx-auto px-4">
+        <div className="mx-auto px-4 ">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg lg:text-2xl font-bold text-gray-900 dark:text-white">
               My Comments ({myComments.length})

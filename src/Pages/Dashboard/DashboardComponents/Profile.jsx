@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 import ProfileContent from "./ProfileContent";
 import "./Profile.css";
+import Chat from "../Members/Chat/Chat";
 
 const Profile = () => {
   const { user } = useAuth();
@@ -203,7 +204,7 @@ const Profile = () => {
                     </th>
                   </tr>
                 </thead>
-                <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+                <tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
                   <tr>
                     <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
                       <div className="inline-flex items-center gap-x-3">
@@ -260,6 +261,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
+      <Chat/>
     </div>
   );
 };

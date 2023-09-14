@@ -16,13 +16,10 @@ import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
 import useAdmin from "../Hooks/useAdmin";
 
-
 const Dashboard = () => {
   const { user } = useAuth();
   // console.log(user?.email);
-  const [isAdmin] = useAdmin()
-
- 
+  const [isAdmin] = useAdmin();
 
   const navOptions = (
     <>
@@ -109,13 +106,20 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
-  
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/enrolledTournaments">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
                 Tournaments
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled My
+                Comments And Reviews
               </p>
             </Link>
           </li>
@@ -174,8 +178,8 @@ const Dashboard = () => {
 
             <div className="fixed left-0 top-2  bottom-0 md:w-1/5 md:block hidden overflow-y-auto">
               {/* Sidebar content */}
-            <ul className="">
-              {/* <ul className="mt-[3.7rem]"> */}
+              <ul className="">
+                {/* <ul className="mt-[3.7rem]"> */}
                 {/* <div className="">
                   <div className="space-y-1">{navOptions}</div>
                   <div className="absolute bottom-2 left-[35%]">
@@ -191,7 +195,7 @@ const Dashboard = () => {
             {/* Content area */}
             <div className="md:ml-[20%]">
               <div className="max-w-[220rem] mx-auto  ">
-              {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
+                {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
                 <Outlet />
               </div>
             </div>
@@ -208,7 +212,6 @@ const Dashboard = () => {
           <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
         </div>
       </div>
-     
     </div>
   );
 };
