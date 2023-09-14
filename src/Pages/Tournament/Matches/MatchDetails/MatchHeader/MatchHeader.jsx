@@ -91,7 +91,7 @@ const MatchHeader = ({ matchDetails }) => {
                     {team1?.name} <span className="text-yellow-400">VS </span>{" "}
                     {team2?.name}
                   </h1>
-                  <h1 className="animate-bounce">
+                  <h1 className="">
                     Winner: {result?.winner}, Score: {result?.score}
                   </h1>
 

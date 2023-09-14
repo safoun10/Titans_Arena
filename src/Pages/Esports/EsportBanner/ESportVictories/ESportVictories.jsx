@@ -49,7 +49,7 @@ const ESportVictories = () => {
 
 	return (
 		<div>
-			<div className="animate-bounce">
+			<div className="">
 				{/* <img
               className=" w-24 mx-auto mt- transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               src="https://i.ibb.co/NsZD8GM/pngwing-com-13.png"

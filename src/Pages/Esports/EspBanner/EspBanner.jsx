@@ -104,7 +104,7 @@ const EspBanner = () => {
                 <p className="text-lg text-center  pt-2 flex gap-5 mt-2 text-green-400 ">
                   <FaTwitch /> <FaYoutube /> <FaInstagram /> <FaFacebook />
                 </p>
-                <p className="mt-3 animate-bounce font-bold text-white">
+                <p className="mt-3 font-bold text-white">
                   {" "}
                   PLAY <span className="text-red-500">TO </span>WIN
                 </p>

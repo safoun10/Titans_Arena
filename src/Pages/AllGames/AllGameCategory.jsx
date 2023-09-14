@@ -6,7 +6,6 @@ import "react-tabs/style/react-tabs.css";
 import GameCard from "../Home/Components/AllGames/GameCard";
 import { FaSearch } from "react-icons/fa";
 import Pagination from "./Pagination";
-import useAxiosSecure from "../../Hooks/useAxiosSecure";
 import {
 	useGetGameCategoryQuery,
 	useGetGameSearchQuery,
@@ -15,8 +14,7 @@ import {
 const AllGameCategory = () => {
 	const [games, setGames] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [axiosSecure] = useAxiosSecure();
-	const gamesPerPage = 8; // Number of games to display per page
+	const gamesPerPage = 8;
 
 	const [category, setCategory] = useState("All Games");
 	const [isTabListVisible, setIsTabListVisible] = useState(false);
@@ -42,14 +40,12 @@ const AllGameCategory = () => {
 	// ---------------------------------------------------------------------------------------
 
 	const handleSearch = () => {
-		console.log(searchRef.current.value);
 		setSearch(searchRef.current.value);
 	};
 
 	const toggleTabList = () => {
 		setIsTabListVisible(!isTabListVisible);
 	};
-	// console.log(searchGames);
 
 	if (isLoading) {
 		return <div>Loading...</div>;

@@ -56,7 +56,7 @@ const AboutMatch = ({ matchDetails }) => {
                     <p className="text-lg text-gray-600 dark:text-gray-100 ">
                       Winner: {matchDetails.result.winner}
                     </p>
-                    <p className="text-lg text-gray-600 dark:text-gray-100 animate-bounce">
+                    <p className="text-lg text-gray-600 dark:text-gray-100">
                       Score:{" "}
                       <span className=" text-yellow-400">
                         {matchDetails.result.score}
