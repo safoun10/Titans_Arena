@@ -30,6 +30,12 @@ const Blogs = () => {
     setSearch(searchRef.current.value);
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleSearch();
+    }
+  };
+
   const handleNersletter = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -93,6 +99,7 @@ const Blogs = () => {
                 type="text"
                 ref={searchRef}
                 placeholder="Search…"
+                onKeyPress={handleKeyPress}
                 className="input text-white font-bold input-bordered border-[#45f882] bg-transparent w-full max-w-lg"
               />
               <button
