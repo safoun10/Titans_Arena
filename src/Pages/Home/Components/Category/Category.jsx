@@ -37,7 +37,7 @@ const Category = () => {
             </button>
           </div>
           <div className={isTabListVisible ? "" : "hidden lg:block"}>
-            <TabList className="lg:flex mx-10  flex-wrap justify-center text-center  mt-16 gap-5 md:gap-8">
+            <TabList className="lg:flex mx-10 mb-10 flex-wrap justify-center text-center  mt-16 gap-5 md:gap-8">
               <Tab
                 className={`border p-3 hover:cursor-pointer custom-tabs transition-all transform duration-700   rounded text-white ${
                   category === "All Games"

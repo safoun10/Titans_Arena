@@ -86,7 +86,7 @@ const AllGameCategory = () => {
 						</button>
 					</div>
 					<div className={isTabListVisible ? "" : "hidden lg:block"}>
-						<TabList className="lg:flex mx-10  flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
+						<TabList className="lg:flex mx-10 mb-10 flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
 							<Tab
 								className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
 									category === "All Games"
@@ -193,7 +193,7 @@ const AllGameCategory = () => {
 					</div>
 
 					<TabPanel>
-						<div className="grid md:grid-cols-4 gap-4 max-w-6xl mx-6 md:mx-auto">
+						<div className="grid md:grid-cols-4 gap-2 max-w-6xl mx-6 md:mx-auto">
 							{games
 								?.slice(
 									(currentPage - 1) * gamesPerPage,
