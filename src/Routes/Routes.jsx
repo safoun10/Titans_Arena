@@ -25,29 +25,30 @@ import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
 import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/EnrolledTournaments";
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
+import CommentAndReviewManage from "../Pages/Dashboard/Members/Chat/CommentAndReviewManage/CommentAndReviewManage";
 
 const router = createBrowserRouter([
-	{
-		path: "/",
-		element: <Root />,
-		// errorElement: <Error />,
-		children: [
-			{
-				path: "/",
-				element: <Home />,
-			},
-			{
-				path: "/about",
-				element: <About />,
-			},
-			{
-				path: "/contact",
-				element: <Contact />,
-			},
-			{
-				path: "/login",
-				element: <Login />,
-			},
+  {
+    path: "/",
+    element: <Root />,
+    // errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
 
       {
         path: "/register",
@@ -134,9 +135,12 @@ const router = createBrowserRouter([
       },
       {
         path: "enrolledTournaments",
-        element: <EnrolledTournaments/>
-
-      }
+        element: <EnrolledTournaments />,
+      },
+      {
+        path: "CommentAndReviewManage",
+        element: <CommentAndReviewManage />,
+      },
     ],
   },
 ]);

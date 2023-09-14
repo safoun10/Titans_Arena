@@ -4,7 +4,7 @@ import Title from "../../../Components/Shared/AnimatedTitle/Titile";
 import useAuth from "../../../Hooks/useAuth";
 
 const ProfileEdit = () => {
-  const { user } = useAuth();
+	const { user } = useAuth();
 
   const handleProfileUpdate = (event) => {
     event.preventDefault();
@@ -77,74 +77,75 @@ const ProfileEdit = () => {
             <div className="flex justify-center py-4">
               <img
                 className="rounded-full w-36 border-4 p-2"
-                src={user?.photoURL}
+                src={userInfo?.photoURL || user?.photoURL}
                 alt=""
               />
             </div>
             <h3 className="text-center text-3xl font-bold">{userInfo?.name}</h3>
-            
           </div>
-          <div className="w-1/2 border p-4 "> <div className="form-control">
-          <label className="label">
-            <span className="text-xl font-bold ">Your Name</span>
-          </label>
-          <input
-            type="text"
-            name="name"
-            className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
-            defaultValue={userInfo?.name || user?.displayName}
-            placeholder="name"
-          />
+          <div className="w-1/2 border p-4 ">
+            {" "}
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold ">Your Name</span>
+              </label>
+              <input
+                type="text"
+                name="name"
+                className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
+                defaultValue={userInfo?.name || user?.displayName}
+                placeholder="name"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold">Username</span>
+              </label>
+              <input
+                type="text"
+                name="username"
+                defaultValue={userInfo?.username}
+                className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
+                placeholder="Username"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold">Phone Number</span>
+              </label>
+              <input
+                type="text"
+                name="phoneNumber"
+                className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
+                defaultValue={userInfo?.phoneNumber}
+                placeholder="Phone Number"
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold">Your Email</span>
+              </label>
+              <input
+                type="email"
+                name="email"
+                className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
+                value={userInfo?.email}
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="text-xl font-bold">Photo url</span>
+              </label>
+              <input
+                type="text"
+                name="photoURL"
+                className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
+                defaultValue={userInfo?.photoURL || user?.photoURL}
+                placeholder="Photo url"
+              />
+            </div>
+          </div>
         </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="text-xl font-bold">Username</span>
-          </label>
-          <input
-            type="text"
-            name="username"
-            defaultValue={userInfo?.username}
-            className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
-            placeholder="Username"
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="text-xl font-bold">Phone Number</span>
-          </label>
-          <input
-            type="text"
-            name="phoneNumber"
-            className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
-            defaultValue={userInfo?.phoneNumber}
-            placeholder="Phone Number"
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="text-xl font-bold">Your Email</span>
-          </label>
-          <input
-            type="email"
-            name="email"
-            className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
-            value={userInfo?.email}
-          />
-        </div>
-        <div className="form-control">
-          <label className="label">
-            <span className="text-xl font-bold">Photo url</span>
-          </label>
-          <input
-            type="text"
-            name="photoURL"
-            className="input input-bordered border-white text-lg font-semibold rounded-none bg-transparent"
-            defaultValue={userInfo?.photoURL || user?.photoURL}
-            placeholder="Photo url"
-          />
-        </div></div>
-        </div>
-       
 
         <div className="form-control w-full">
           <label className="label">

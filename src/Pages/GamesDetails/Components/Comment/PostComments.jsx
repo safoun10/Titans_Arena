@@ -4,14 +4,9 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const PostComments = ({ id }) => {
-  // const [comments, setComments] = useState([]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { user } = useAuth();
   const navigate = useNavigate();
-
-  //   const handleCommentChange = (e) => {
-  //     setNewComment(e.target.value);
-  //   };
 
   const handleSubmitComment = (e) => {
     e.preventDefault();
@@ -38,7 +33,6 @@ const PostComments = ({ id }) => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.insertedId) {
           Swal.fire({
             title: "Success!",
@@ -49,7 +43,6 @@ const PostComments = ({ id }) => {
           form.reset();
         }
       });
-
     setIsModalOpen(false);
   };
 

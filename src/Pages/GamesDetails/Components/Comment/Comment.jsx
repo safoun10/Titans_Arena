@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import SingleComment from "./SingleComment";
+import { useGetCommentQuery } from "../../../../Redux/slice/CommentState";
 
 const Comments = ({ id }) => {
   const [comments, setComments] = useState([]);
@@ -35,5 +36,6 @@ const Comments = ({ id }) => {
     </div>
   );
 };
+
 
 export default Comments;
