@@ -115,8 +115,8 @@ const GamesDetails = () => {
             <Description gameDetails={gameDetails} />
           </div>
         </div>
+        <GameReviews  />
          <PostReview title={title} id={id}></PostReview>
-        <GameReviews gameDetails={gameDetails} />
         <PostComments id={id}></PostComments>
         <Comments id={id} />
         <RealLinks />

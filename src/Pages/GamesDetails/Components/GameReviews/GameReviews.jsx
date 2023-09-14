@@ -1,31 +1,42 @@
-import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
+import { useEffect, useState } from "react";
 
-const GameReviews = ({ gameDetails }) => {
-  const { reviews } = gameDetails;
-  if (!gameDetails || !gameDetails.reviews) {
+const GameReviews = () => {
+  const [reviews, setReviews] = useState([]);
+
+  const url = "http://localhost:5000/reviews";
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setReviews(data)
+      });
+  }, []);
+
+  if (!reviews) {
     return <div>Loading or error message...</div>;
   }
   return (
     <div className="">
-    <h2 className="text-3xl text-center font-bold py-5">Reviews</h2>
+      <h2 className="text-3xl text-center font-bold py-5">Reviews</h2>
       <div className="flex max-w-4xl gap-4 mx-auto">
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="border text-white rounded-lg shadow-lg p-6"
+            className="border text-white rounded-lg w-full shadow-lg p-6"
           >
             <div className="flex items-center mb-4">
               <img
                 className="w-12 h-12 rounded-full mr-4"
-                src="https://themepixer.com/demo/html/geco/Geco/img/bg/cta_bg.jpg"
-                alt={`${review.username} Avatar`}
+                src={review.user_img}
+                alt={`${review.user_img} Avatar`}
               />
               <div>
-                <h3 className="text-lg font-semibold">{review.username}</h3>
-                <p className="text-sm">User</p>
+                <h3 className="text-lg font-semibold">{review.user_name}</h3>
+                <p className="text-sm">{review.Date}</p>
               </div>
             </div>
-            <p className="text-lg mb-6">"{review.reviewText}"</p>
+            <p className="text-lg mb-6">"{review.review_text}"</p>
             <div className="flex justify-between">
               <div className="flex items-center">
                 <svg
@@ -41,7 +52,6 @@ const GameReviews = ({ gameDetails }) => {
                 </svg>
                 <span className="text-sm">{review.rating} stars</span>
               </div>
-              <span className="text-sm">Review Date</span>
             </div>
           </div>
         ))}
