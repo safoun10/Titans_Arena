@@ -53,24 +53,11 @@ const AllGameCategory = () => {
 
   }, [search]);
 
-  // This is nabil code 
-  // const handleSearch = () => {
-  //   console.log(searchRef.current.value);
-  //   setSearch(searchRef.current.value);
-  // };
-
-
-
-// --------- saiful is add when you press enter it will be submit the search box
-// in line 79 add this class focus:outline-none 
-// in line 84 add onKeyPress={handleSearch} ------
-  const handleSearch = (event) => {
-    if (event.key === 'Enter') {
-      console.log(searchRef.current.value);
-      setSearch(searchRef.current.value);
-    }
+  const handleSearch = () => {
+    console.log(searchRef.current.value);
+    setSearch(searchRef.current.value);
   };
-// -----------------
+
   const toggleTabList = () => {
     setIsTabListVisible(!isTabListVisible);
   };
@@ -81,11 +68,10 @@ const AllGameCategory = () => {
       <div className="py-5 px-10 flex justify-center items-center">
         <input
           type="text"
-          className="py-2 rounded px-10 lg:w-[50%] w-full font-bold border-green-500 relative focus:outline-none"
+          className="py-2 rounded px-10 lg:w-[50%] w-full font-bold border-green-500 relative"
           name="search"
           id="search"
           ref={searchRef}
-          onKeyPress={handleSearch}
           placeholder="Search Games"
         />
         <div className="absolute lg:left-[300px] left-12">

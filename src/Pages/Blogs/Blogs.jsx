@@ -28,10 +28,12 @@ const Blogs = () => {
 
   const handleSearch = () => {
     setSearch(searchRef.current.value);
+    searchRef.current.value = "";
   };
 
   const handleKeyPress = (event) => {
-    if (event.key === 'Enter') {
+    if (event.key === "Enter") {
+      event.preventDefault();
       handleSearch();
     }
   };
@@ -48,13 +50,13 @@ const Blogs = () => {
   };
 
   if (isSuccess === true) {
-  Swal.fire({
-  position: 'center',
-  icon: 'success',
-  title: 'Your email is added to the newsletter.',
-  showConfirmButton: false,
-  timer: 1500
-})
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your email is added to the newsletter.",
+      showConfirmButton: false,
+      timer: 1500,
+    });
   }
 
   return (
@@ -179,7 +181,7 @@ const Blogs = () => {
           {/* TAG CLOUD */}
           <div className="py-6">
             <h1 className="text-2xl font-bold uppercase pb-6 text-white">
-              TAG CLOUD
+              CLOUD TAG
             </h1>
             <div className="flex flex-wrap gap-4">
               <Link className="styled-link"># E-SPORTS</Link>
