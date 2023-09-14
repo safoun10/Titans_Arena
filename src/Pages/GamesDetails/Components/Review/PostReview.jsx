@@ -27,7 +27,7 @@ const PostReview = ({ title, id }) => {
     }
     console.log(reviews)
       
-    const url = "http://localhost:5000/reviews";
+    const url = "https://titans-arena-server.vercel.app";
     fetch(url, {
       method: "POST",
       headers: {
