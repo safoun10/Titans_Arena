@@ -29,7 +29,7 @@ function MatchFixered() {
   return (
     <div className="max-w-7xl mx-auto">
       <div className="mt-48">
-        <div className="animate-bounce">
+        <div className="">
           {/* <img
             className="w-24 mx-auto mt- transform hover:translate-y-2 hover:shadow-xl transition duration-300"
             src="https://i.ibb.co/QQs83pz/pngwing-com-12.png"
@@ -116,7 +116,7 @@ function MatchFixered() {
 
                   <div className="lg:py-2 md:py-2 py-4 lg:px-5 md:px-4 px-3 flex flex-col items-center justify-center">
                     <p className=" text-xl font-semibold text-center text-white"></p>
-                    <p className=" animate-bounce text-yellow-400  text-1xl font-semibold text-center ">
+                    <p className=" text-yellow-400  text-1xl font-semibold text-center ">
                       {match.result.score}
                     </p>
                     <p className=" md:text-xl sm:text-lg text-xl font-semibold text-center text-white"></p>

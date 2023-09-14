@@ -4,7 +4,7 @@ import Title from "../../../Components/Shared/AnimatedTitle/Titile";
 import useAuth from "../../../Hooks/useAuth";
 
 const ProfileEdit = () => {
-  const { user } = useAuth();
+	const { user } = useAuth();
 
   const handleProfileUpdate = (event) => {
     event.preventDefault();
@@ -54,17 +54,17 @@ const ProfileEdit = () => {
       });
   };
 
-  const [userInfo, SetUserInfo] = useState();
-  useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
-      .then((res) => res.json())
-      .then((data) => {
-        SetUserInfo(data.userInfo);
-      })
-      .catch((error) => {
-        console.error("Error fetching user role:", error);
-      });
-  }, [user?.email]);
+	const [userInfo, SetUserInfo] = useState();
+	useEffect(() => {
+		fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
+			.then((res) => res.json())
+			.then((data) => {
+				SetUserInfo(data.userInfo);
+			})
+			.catch((error) => {
+				console.error("Error fetching user role:", error);
+			});
+	}, [user?.email]);
 
   console.log(userInfo?.bio);
   return (

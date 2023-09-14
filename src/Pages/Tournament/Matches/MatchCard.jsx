@@ -20,12 +20,10 @@ const MatchCard = ({ match }) => {
               <div className="w-28 border-r-2 border-l-2 border-yellow-400 p-3 rounded-full hidden md:block h-24 mx-auto">
                 <img
                   src={match.team1.team1Logo}
-                  alt={match.team1.name}
                   className="lg:block md:hidden hidden"
                 />
                 <img
                   src={match.team1.team1Logo}
-                  alt={match.team1.name}
                   className="lg:hidden md:block hidden"
                 />
               </div>
@@ -44,7 +42,7 @@ const MatchCard = ({ match }) => {
             {/* ------------------ */}
             <div className="lg:py-2 md:py-2 py-4 lg:px-5 md:px-4 px-3 flex flex-col items-center justify-center">
               <p className=" md:text-3xl sm:text-xl font-semibold text-center text-white"></p>
-              <p className=" animate-bounce text-yellow-400  sm:text-1xl md:text-3xl  font-semibold text-center ">
+              <p className=" text-yellow-400  sm:text-1xl md:text-3xl  font-semibold text-center ">
                 {match.result.score}
               </p>
               <p className=" md:text-xl sm:text-lg text-xl font-semibold text-center text-white"></p>
@@ -77,12 +75,10 @@ const MatchCard = ({ match }) => {
               <div className="w-28 hidden border-l-2 rounded-full p-3 border-r-2 border-yellow-400 md:block h-24 mx-auto">
                 <img
                   src={match.team2.team2Logo}
-                  alt={match.team2.name}
                   className="lg:block md:hidden block"
                 />
                 <img
                   src={match.team2.team2Logo}
-                  alt={match.team2.name}
                   className="lg:hidden md:block hidden"
                 />
               </div>
