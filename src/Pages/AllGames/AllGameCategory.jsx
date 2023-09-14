@@ -18,7 +18,7 @@ const AllGameCategory = () => {
 
 	const [category, setCategory] = useState("All Games");
 	const [isTabListVisible, setIsTabListVisible] = useState(false);
-	const searchRef = useRef(null);
+	const searchRef = useRef("");
 	const [search, setSearch] = useState("");
 
 	// ---------------------------------------------------------------------------------------
@@ -36,6 +36,9 @@ const AllGameCategory = () => {
 		setGames(gamesCategory);
 		setGames(gamesSearch);
 	}, [gamesCategory, gamesSearch]);
+
+	// console.log(games);
+	console.log(search);
 
 	// ---------------------------------------------------------------------------------------
 
@@ -58,6 +61,7 @@ const AllGameCategory = () => {
 					type="text"
 					className="py-2 rounded px-10 lg:w-[50%] w-full font-bold border-green-500 relative"
 					name="search"
+					defaultValue={""}
 					id="search"
 					ref={searchRef}
 					placeholder="Search Games"
@@ -68,7 +72,7 @@ const AllGameCategory = () => {
 				<input
 					type="submit"
 					onClick={() => handleSearch()}
-					className="border lg:px-10 px-3 py-[7px] bg-image font-bold  border-green-500  rounded absolute lg:right-[335px] bg-green-500 text-white right-10 lg:w-[200px] w-[35%]"
+					className="border cursor-pointer lg:px-10 px-3 py-[7px] bg-image font-bold  border-green-500  rounded absolute lg:right-[335px] bg-green-500 text-white right-10 lg:w-[200px] w-[35%]"
 					name=""
 					value="Search Games"
 					id=""
@@ -88,7 +92,7 @@ const AllGameCategory = () => {
 					<div className={isTabListVisible ? "" : "hidden lg:block"}>
 						<TabList className="lg:flex mx-10 mb-10 flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
 							<Tab
-								className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
+								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "All Games"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -98,7 +102,7 @@ const AllGameCategory = () => {
 								All Games
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+								className={`border p-3 custom-tabs cursor-pointer  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "CallOfDuty"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -108,7 +112,7 @@ const AllGameCategory = () => {
 								Action
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs transition-all transform duration-700   rounded text-white ${
+								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "Assassin's Creed"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -118,7 +122,7 @@ const AllGameCategory = () => {
 								Battle Royale
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+								className={`border p-3 custom-tabs cursor-pointer my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "RPG"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -128,7 +132,7 @@ const AllGameCategory = () => {
 								RPG
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Uncharted"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -139,7 +143,7 @@ const AllGameCategory = () => {
 							</Tab>
 
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "RedDeadRedemption"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -150,7 +154,7 @@ const AllGameCategory = () => {
 							</Tab>
 
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Battlefield"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -160,7 +164,7 @@ const AllGameCategory = () => {
 								Simulation
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -170,7 +174,7 @@ const AllGameCategory = () => {
 								Sports
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry1"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
@@ -180,7 +184,7 @@ const AllGameCategory = () => {
 								Strategy
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs text-white transition-all transform duration-700   rounded  ${
+								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry2"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"

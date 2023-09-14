@@ -8,9 +8,6 @@ const OurTeamMembers = () => {
 	const { data } = useGetTeamMembersQuery();
 
 	useEffect(() => {
-		// fetch("teamMember.json")
-		//   .then((res) => res.json())
-		//   .then((data) => setMembers(data));
 		setMembers(data);
 	}, [data]);
 
