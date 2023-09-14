@@ -3,7 +3,7 @@ import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import "./PrizePoolJoin.css";
 
 import Countdown from "react-countdown";
-const PrizePoolJoin = () => {
+const   PrizePoolJoin = () => {
   return (
     <div className="max-w-6xl mx-auto text-white my-20">
       <div className="lg:flex items-center">
@@ -38,10 +38,10 @@ const PrizePoolJoin = () => {
             />
           </div>
         </div>
-        <div className="lg:w-2/6 mx-5 mt-10">
+        <div className="lg:w-2/6 mt-10 mx-auto">
           {/* timer starts */}
-          <div className="grid grid-flow-col gap-5 text-center auto-cols-max ml-2">
-            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+          <div className="grid grid-flow-col mx-auto gap-5 text-center auto-cols-max ml-2">
+            <div className="flex flex-col p-3 bg-green-600 rounded-box">
               <Countdown
                 date={Date.now() + 15 * 24 * 60 * 60 * 1000}
                 renderer={({ days }) => (
@@ -54,7 +54,7 @@ const PrizePoolJoin = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+            <div className="flex flex-col p-3 bg-green-600 rounded-box">
               <Countdown
                 date={Date.now() + 10 * 60 * 60 * 1000}
                 renderer={({ hours }) => (
@@ -67,7 +67,7 @@ const PrizePoolJoin = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+            <div className="flex flex-col p-3 bg-green-600 rounded-box">
               <Countdown
                 date={Date.now() + 24 * 60 * 60 * 1000}
                 renderer={({ minutes }) => (
@@ -80,7 +80,7 @@ const PrizePoolJoin = () => {
                 )}
               />
             </div>
-            <div className="flex flex-col p-2 bg-green-600 rounded-box">
+            <div className="flex flex-col p-3 bg-green-600 rounded-box">
               <Countdown
                 date={Date.now() + 60 * 1000}
                 renderer={({ seconds }) => (

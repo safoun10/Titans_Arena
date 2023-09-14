@@ -2,20 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./FlipCard.css";
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 import { Link } from "react-router-dom";
+import { useGetFlipCardQuery } from "../../../../Redux/slice/FlipCardState";
 
 const FlipCard = () => {
 	const [games, setGames] = useState([]);
+	const { data } = useGetFlipCardQuery();
 	useEffect(() => {
-		fetch("https://titans-arena-server.vercel.app/flip-games")
-			.then((res) => res.json())
-			.then((data) => {
-				setGames(data.slice(0, 4));
-			});
-	}, []);
-
-	const cardData = [
-		// Card data objects
-	];
+		setGames(data?.slice(0, 4));
+		console.log(data);
+	}, [data]);
 
 	return (
 		<div>
@@ -28,7 +23,7 @@ const FlipCard = () => {
 				<div className="max-w-6xl mx-auto">
 					<div className="flex justify-center items-center">
 						<div className="grid md:grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-							{games.map((card, index) => (
+							{games?.map((card, index) => (
 								<div key={index} className="book">
 									<div className="page">
 										<div>
