@@ -10,9 +10,6 @@ const BlogManagement = () => {
 	const { data } = useGetBlogManagementQuery();
 
 	useEffect(() => {
-		// fetch("https://titans-arena-server.vercel.app/blogs")
-		//   .then((res) => res.json())
-		//   .then((data) => setBlogs(data));
 		setBlogs(data);
 	}, [data]);
 

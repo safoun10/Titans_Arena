@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./Category.css";
 import "react-tabs/style/react-tabs.css";
-import AllGames from "../AllGames/AllGames";
 import GameCard from "../AllGames/GameCard";
 const Category = () => {
   const [games, setGames] = useState([]);
