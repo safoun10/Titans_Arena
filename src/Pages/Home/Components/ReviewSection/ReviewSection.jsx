@@ -9,16 +9,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper/modules";
-import { data } from "autoprefixer";
+import { useGetHomeReviewQuery } from "../../../../Redux/slice/HomeReviewState";
 
 const ReviewSection = () => {
 	const isMobileDevice = window.innerWidth <= 500;
 	const [review, setReview] = useState([]);
 
+	const { data } = useGetHomeReviewQuery();
+
 	useEffect(() => {
-		fetch("reviews.json")
-			.then((res) => res.json())
-			.then((data) => setReview(data));
+		setReview(data);
 	}, [data]);
 
 	return (
@@ -35,7 +35,7 @@ const ReviewSection = () => {
 					modules={[Pagination]}
 					className="mySwiper"
 				>
-					{review.map((data, i) => (
+					{review?.map((data, i) => (
 						<SwiperSlide key={i}>
 							<div>
 								<div className="card md:w-72 md:h-80 w-72 h-72 shadow-xl mt-20 bg-[#121a23] border-4 border-green-400 flex-col flex items-center ">
