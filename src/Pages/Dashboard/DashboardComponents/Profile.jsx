@@ -1,31 +1,32 @@
 import React, { useEffect, useState } from "react";
-import {
-	AiFillAndroid,
-	AiOutlineMail,
-	AiOutlinePhone,
-	AiOutlineProfile,
-} from "react-icons/ai";
 import { FaCommentAlt, FaEdit } from "react-icons/fa";
 import { FaUsersViewfinder } from "react-icons/fa6";
-import { MdLocationPin } from "react-icons/md";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
-import MyComments from "./MyComments";
 import ProfileContent from "./ProfileContent";
 import "./Profile.css";
 
 const Profile = () => {
   const { user } = useAuth();
   const [userInfo, SetUserInfo] = useState();
+  const [myComments, setMyComments] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);
       })
       .catch((error) => {
         console.error("Error fetching user role:", error);
+      });
+  }, [user?.email]);
+  const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setMyComments(data);
       });
   }, [user?.email]);
 
@@ -42,7 +43,7 @@ const Profile = () => {
           <div className="flex gap-4 w-4/12 justify-center">
             <div className="flex flex-col justify-center items-center">
               <FaCommentAlt className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
+              <p className="font-bold text-lg">{myComments.length}</p>
               <p className="font-bold text-lg">Comments</p>
             </div>
             <div className="flex flex-col justify-center items-center">
@@ -122,7 +123,7 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <ProfileContent userInfo={userInfo} />
+      <ProfileContent myComments={myComments} userInfo={userInfo} />
       <div className="flex flex-col mt-6">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">

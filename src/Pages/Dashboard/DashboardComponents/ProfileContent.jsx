@@ -16,7 +16,7 @@ import useAuth from "../../../Hooks/useAuth";
 import Test2 from "../Admin/Test2/Test2";
 import MyComments from "./MyComments";
 
-const ProfileContent = ({ userInfo }) => {
+const ProfileContent = ({ userInfo, myComments }) => {
   const { user } = useAuth();
 
   return (
@@ -115,7 +115,7 @@ const ProfileContent = ({ userInfo }) => {
           </div>
         </div>
         <Test2 />
-        <MyComments />
+        <MyComments myComments={myComments} />
       </div>
     </div>
   );

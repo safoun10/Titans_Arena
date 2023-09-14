@@ -3,18 +3,7 @@ import { useEffect } from "react";
 import useAuth from "../../../Hooks/useAuth";
 import MySingleComment from "./MySingleComment";
 
-const MyComments = () => {
-  const { user } = useAuth();
-  const [myComments, setMyComments] = useState([]);
-  const url = `http://localhost:5000/myComments/${user?.email}`;
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setMyComments(data);
-      });
-  }, [user?.email]);
-  console.log(myComments);
+const MyComments = ({ myComments }) => {
   return (
     <div>
       <section className=" bg-slate-800 border py-8 lg:py-16 antialiased">
@@ -28,10 +17,12 @@ const MyComments = () => {
           {myComments.map((comment, index) => (
             <MySingleComment
               key={index}
+              game_id={comment.game_id}
               name={comment.user_name}
               img={comment.user_img}
               content={comment.comment_text}
               date={comment.Date}
+
               // likes={comment.likes}
               // replies={comment.replies}
             />
