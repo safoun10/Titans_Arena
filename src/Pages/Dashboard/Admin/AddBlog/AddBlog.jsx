@@ -60,62 +60,57 @@ const AddBlog = () => {
 
   return (
     <div className="pt-6 w-full shadow-xl px-5 bg-[#23252d]">
-      <h2 className="text-[#45f882] text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
+      <h2 className="bg-gradient-to-b from-transparent to-[#68fb9a] w-1/4 mx-auto text-white text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
         Public Blog
       </h2>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Title</span>
-            </label>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">Name</label>
             <input
               type="text"
-              name="title"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
+              className="border-b bg-transparent text-white w-full py-2 px-3"
               placeholder="Title"
+              name="title"
               {...register("title")}
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Author Name</span>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">
+              Author Name
             </label>
             <input
               type="text"
-              name="Author"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
+              className="border-b bg-transparent text-white w-full py-2 px-3"
               placeholder="Author Name"
+              name="Author"
               {...register("author")}
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Date</span>
-            </label>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">Date</label>
             <input
               type="date"
+              className="border-b bg-transparent text-white w-full py-2 px-3"
               name="date"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
               {...register("date")}
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">photo url</span>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">
+              photo url
             </label>
             <input
               type="text"
+              className="border-b bg-transparent text-white w-full py-2 px-3"
               name="featured_image"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
-              placeholder="photo url"
               {...register("featured_image")}
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Category</span>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">
+              Category
             </label>
             <CreatableSelect
               className="w-75 font-semibold bg-[#303540]"
@@ -125,10 +120,8 @@ const AddBlog = () => {
               isMulti
             />
           </div>
-          <div className="form-control">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Tags</span>
-            </label>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">Tags</label>
             <CreatableSelect
               className="w-75 font-semibold bg-[#303540]"
               defaultValue={tagOption}
@@ -138,59 +131,56 @@ const AddBlog = () => {
             />
           </div>
         </div>
+        
         <div className="flex flex-col lg:flex-row justify-between gap-2">
-          <div className="form-control w-full">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Facebook</span>
-            </label>
-            <input
-              type="text"
-              name="social_media"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold "
-              placeholder="Facebook"
-              {...register("facebook")}
-            />
-          </div>
-          <div className="form-control w-full">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Twitter</span>
-            </label>
-            <input
-              type="text"
-              name="social_media"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
-              placeholder="Twitter"
-              {...register("twitter")}
-            />
-          </div>
-          <div className="form-control w-full">
-            <label className="label">
-              <span className="label-text text-[#ffff] text-base font-semibold">Linked In</span>
-            </label>
-            <input
-              type="text"
-              name="social_media"
-              className="input input-bordered bg-[#303540] placeholder-white font-semibold"
-              placeholder="Linked In"
-              {...register("linked_in")}
-            />
-          </div>
+        <div className="mb-4">
+          <label className="block text-white font-medium mb-1">Facebook</label>
+          <input
+            type="text"
+            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+            name="social_media"
+            placeholder="Facebook"
+            {...register("facebook")}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-white font-medium mb-1">Twitter</label>
+          <input
+            type="text"
+            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+            name="social_media"
+            placeholder="Twitter"
+            {...register("twitter")}
+          />
+        </div>
+        <div className="mb-4">
+          <label className="block text-white font-medium mb-1">Linked In</label>
+          <input
+            type="text"
+            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+            name="social_media"
+            placeholder="Linked In"
+            {...register("linked_in")}
+          />
+        </div>
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text text-[#ffff] text-base font-semibold">Blog</span>
+            <span className="label-text text-[#ffff] text-base font-semibold">
+              Blog
+            </span>
           </label>
           <textarea
             type="text"
             name="content"
-            className="h-24 input input-bordered bg-[#303540] placeholder-white font-semibold"
+            className="h-24 border-b bg-transparent text-white w-full py-2 px-3"
             placeholder="Detail description"
             {...register("content")}
           />
         </div>
         <div className="form-control pb-5 mt-6">
           <input
-            className="btn btn-primary btn-block"
+            className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500 text-white"
             type="submit"
             value="Publish Blog"
           />
