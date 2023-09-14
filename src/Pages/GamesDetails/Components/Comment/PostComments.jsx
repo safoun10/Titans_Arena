@@ -28,7 +28,7 @@ const PostComments = ({ id }) => {
     };
     console.log(comments);
 
-    const url = "http://localhost:5000/comments";
+    const url = "https://titans-arena-server.vercel.app/comments";
     fetch(url, {
       method: "POST",
       headers: {

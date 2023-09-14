@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FaThumbsUp } from "react-icons/fa";
 
-const MySingleComment = ({ name, content, img, date }) => {
+const MySingleComment = ({ name, content, img, date, game_id }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [showReplies, setShowReplies] = useState(false);
 
@@ -12,6 +12,16 @@ const MySingleComment = ({ name, content, img, date }) => {
   const toggleReplies = () => {
     setShowReplies(!showReplies);
   };
+
+  const url2 = `http://localhost:5000/comments/${game_id}`;
+  useEffect(() => {
+    fetch(url2)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        // setGamesComments(data);
+      });
+  }, [game_id]);
 
   return (
     <div>

@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const FlipCard = () => {
   const [games, setGames] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/flip-games")
+    fetch("https://titans-arena-server.vercel.app/flip-games")
       .then((res) => res.json())
       .then((data) => {
         setGames(data.slice(0, 4));

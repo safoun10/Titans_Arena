@@ -4,7 +4,7 @@ import SingleComment from "./SingleComment";
 const Comments = () => {
 const [comments, setComments] = useState([])
 
-const url = "http://localhost:5000/comments"
+const url = "https://titans-arena-server.vercel.app/comments"
 useEffect( ()=>{
   fetch(url)
   .then(res=>res.json())

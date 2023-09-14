@@ -9,7 +9,7 @@ const MatchDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:5000/espMatchFixered/${id}`)
+    fetch(`https://titans-arena-server.vercel.app/espMatchFixered/${id}`)
       .then((res) => res.json())
       .then((data) => setMatchDetail(data))
       .catch((error) => {

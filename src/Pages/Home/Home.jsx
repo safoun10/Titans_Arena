@@ -1,6 +1,6 @@
 import FeatureGames from "./Components/FeatureGames/FeatureGames";
 import { Helmet } from "react-helmet-async";
-import FlipCard from "./Components/Fetured/FlipCard";
+
 import ReviewSection from "./Components/ReviewSection/ReviewSection";
 import "./Home.css";
 import SiteStates from "./Components/SiteStates/SiteStates";
@@ -12,6 +12,7 @@ import OurTeamMembers from "./Components/OurTeamMembers/OurTeamMembers";
 import Category from "./Components/Category/Category";
 import { FaArrowAltCircleUp } from "react-icons/fa";
 import PrizePoolJoin from "./Components/PrizePoolJoin/PrizePoolJoin";
+import FlipCard from "./Components/Fetured/FlipCard";
 const Home = () => {
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">

@@ -6,7 +6,8 @@ import MySingleComment from "./MySingleComment";
 const MyComments = () => {
   const { user } = useAuth();
   const [myComments, setMyComments] = useState([]);
-  const url = `http://localhost:5000/myComments/${user?.email}`;
+  
+  const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
@@ -14,6 +15,10 @@ const MyComments = () => {
         setMyComments(data);
       });
   }, [user?.email]);
+
+ 
+
+
   console.log(myComments);
   return (
     <div>
@@ -32,6 +37,8 @@ const MyComments = () => {
               img={comment.user_img}
               content={comment.comment_text}
               date={comment.Date}
+              game_id={comment.game_id}
+
               // likes={comment.likes}
               // replies={comment.replies}
             />

@@ -15,7 +15,7 @@ const ProfileEdit = () => {
 
   const onSubmit = (data) => {
     console.log(data);
-    fetch(`http://localhost:5000/usersInfo/${user.email}`, {
+    fetch(`https://titans-arena-server.vercel.app/usersInfo/${user.email}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
@@ -26,7 +26,7 @@ const ProfileEdit = () => {
 
   const [userInfo, SetUserInfo] = useState();
   useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);

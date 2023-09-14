@@ -8,7 +8,7 @@ const Test1 = () => {
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/userInfo/${user?.email}`)
+      fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           SetUserInfo(data);
