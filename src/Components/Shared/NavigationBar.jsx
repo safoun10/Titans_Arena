@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
-import PrimaryButton from "../Buttons/PrimaryButton/PrimaryButton";
-
 import logo from "././../../../public/logoTest41.png";
 import "./NavigationBar.css";
 
@@ -154,9 +152,6 @@ const NavigationBar = () => {
             <div className="navbar-end">
               {user ? (
                 <>
-                  {
-                    // console.log("user photo", user?.photoURL)
-                  }
                   <div className="flex gap-4 ">
                     <div className="avatar online">
                       <div className="w-10 rounded-full">

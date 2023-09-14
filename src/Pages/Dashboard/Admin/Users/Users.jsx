@@ -50,11 +50,11 @@ const Users = () => {
   };
 
   return (
-    <div className="text-white h-[100vh] mb-20 w-full ">
+    <div className="text-white mb-20 w-full ">
       <h3 className="text-3xl font-semibold my-4">
         Total Users: {users.length}
       </h3>
-      <div className="overflow-x-scroll border lg:overflow-hidden">
+      <div className="overflow-x-scroll  lg:overflow-hidden">
         <table className="table">
           {/* head */}
           <thead className="text-white bg-green-500 text-xl">
