@@ -20,7 +20,7 @@ const GameReviews = ({ id }) => {
   return (
     <div className="">
       <h2 className="text-3xl text-center font-bold py-5">Reviews</h2>
-      <div className="flex max-w-4xl gap-4 mx-auto">
+      <div className="flex  mx-auto">
         {reviews.map((review, index) => (
           <Marquee>
         

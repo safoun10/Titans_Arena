@@ -14,6 +14,7 @@ const TournamentForm = () => {
     matchTime: "",
     location: "",
     organizer_name: user?.name || "", // Set the default value to the user's name
+    organizer_image: user?.photoURL || "",
     organizer_email: user?.email || "", // Set the default value to the user's email
     prize_pool: "",
     game_title: "",
@@ -235,6 +236,22 @@ const TournamentForm = () => {
                         id="organizer_name"
                         name="organizer_name"
                         value={formData.organizer_name}
+                        onChange={handleChange}
+                      />
+                    </div>
+                    <div className="form-control">
+                      <label
+                        className="text-lg font-semibold my-2 "
+                        htmlFor="organizer_image"
+                      >
+                        Host Name:
+                      </label>
+                      <input
+                        type="text"
+                        className="py-2 bg-slate-800 rounded-none"
+                        id="organizer_image"
+                        name="organizer_image"
+                        value={formData.organizer_image}
                         onChange={handleChange}
                       />
                     </div>

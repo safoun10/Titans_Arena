@@ -16,7 +16,7 @@ const PopularTournaments = () => {
 
   useEffect(() => {
     axios
-      .get("Fixered.json")
+      .get("http://localhost:5000/tournaments")
       .then((response) => {
         setData(response.data);
       })
@@ -35,7 +35,7 @@ const PopularTournaments = () => {
     <div className="mt-28 mb-28  max-w-7xl mx-auto">
       <div className="flex justify-between mx-9">
         <div className="border-l-2 font-extrabold sm:text-lg md:text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 ">
-          <h3>POPULAR LEAGUES</h3>
+          <h3>Our Upcomming Matches</h3>
         </div>
         <div className="">
           <h3>
@@ -61,7 +61,7 @@ const PopularTournaments = () => {
                 backgroundImage:
                   "linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
               }}
-              className="bg-black border-2  border-black shadow-md mb-14 h-[350px] w-72 rounded-md"
+              className="bg-black border-2  border-black shadow-md mb-14 relative h-[350px] w-72 rounded-md"
             >
               <div className="flex justify-center items-center leading-none">
                 <img
@@ -72,12 +72,12 @@ const PopularTournaments = () => {
               </div>
               <div className="p-3 ">
                 <p>
-                  date {match.matchDate} time {match.matchTime}-
-                  <span className="text-green-500"> {match.matchLocation}</span>
+                  date {match.start_date} time {match.matchTime}-
+                  <span className="text-green-500"> {match.location}</span>
                 </p>
 
                 <p className="block mb-1 text-2xl font-extrabold text-yellow-400">
-                  {match.tournamentName}
+                  {match.tournament_name}
                 </p>
 
                 <div className="flex  mb-10 justify-between ">
@@ -85,14 +85,14 @@ const PopularTournaments = () => {
                     <FaPeopleGroup className="mt-1" />
 
                     <p>
-                      <span> {match.teamPlayer}</span>
+                      <span> {match.totalTeam}</span>
                     </p>
                   </div>
                   <div className="flex text-xl font-semibold gap-1 text-white">
                     <FaTv className="mt-1" />
 
                     <p>
-                      <span> {match.views}</span>
+                      <span> {match.matchStage}</span>
                     </p>
                   </div>
                   <div className="flex text-xl font-semibold gap-1 text-white">
@@ -102,10 +102,13 @@ const PopularTournaments = () => {
                     </p>
                   </div>
                 </div>
+                <div className="absolute  -bottom-5">
+                  <button className="custom-button hover:translate-x-4  py-3 px-5">Enroll Now Thi Tournament</button>
+                </div>
               </div>
               <div className="flex justify-between items-center p-2">
                 <img
-                  src={match.authorImage}
+                  src={match.organizer_image}
                   alt=""
                   className="rounded-full h-7"
                 />

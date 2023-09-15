@@ -15,7 +15,7 @@ const TournamentsNewItems = () => {
         </div>
         <div className="flex flex-col items-center justify-center flex-shrink-0 mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 lg:ml-4 lg:mt-0 lg:justify-end">
           <Link to="/addTournament">
-            <button className="inline-flex items-center px-5 py-3 rounded-lg dark:bg-violet-400 dark:text-gray-900">
+            <button className="inline-flex items-center px-5 py-3 rounded-lg custom-button dark:bg-lime-400 dark:text-gray-900">
               <span className="flex flex-col items-start ml-4 leadi">
                 <span className="font-semibold title-font">Create</span>
                 <span className="font-semibold title-font">Tournaments</span>

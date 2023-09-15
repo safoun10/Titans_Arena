@@ -50,7 +50,7 @@ const EspBanner = () => {
     <div>
       <div className=" bg-[url('https://c0.wallpaperflare.com/preview/153/380/988/headphones-red-black-dark.jpg')] border-black   border-b-4">
         <div className="px-3 py-12">
-          <div className="lg:max-w-7xl mt-20 md:max-w-[696px] max-w-[343px] mx-auto bg-black bg-opacity-80  md:px-6  py-12">
+          <div className="lg:max-w-7xl mt-20 md:max-w-[696px] max-w-[343px] mx-auto rounded-lg bg-slate-800 bg-opacity-80  md:px-6  py-12">
             <div className="lg:flex items-center  md:flex block">
               <div className="flex">
                 <div>
@@ -71,17 +71,6 @@ const EspBanner = () => {
                   // style={{ height: "500px", width: "700px" }}
                 ></Player>
 
-                {/* <img
-                  src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg"
-                  alt="shoes"
-                  className="lg:block md:hidden hidden"
-                /> */}
-                {/* <img
-                  src="https://weezevent.com/wp-content/uploads/2018/10/15140712/compet_esport.jpg"
-                  alt
-                  className="lg:hidden md:block hidden"
-                /> */}
-
                 <Player
                   className="w-1/2 lg:hidden md:block hidden"
                   autoplay
@@ -91,7 +80,7 @@ const EspBanner = () => {
                 ></Player>
               </div>
               <div className=" border border-green-400 lg:py-2 md:py-2 py-4 lg:px-5 md:px-4 px-3 flex flex-col items-center justify-center">
-                <p className="lg:text-4xl md:text-2xl text-2xl font-semibold text-center text-white">
+                <p className="lg:text-5xl md:text-2xl text-2xl font-semibold text-center text-white">
                   WelcomeTo<span className="text-green-500">Esports </span>{" "}
                   <br />
                   <span className="text-yellow-400"> Tournaments </span>
@@ -124,28 +113,7 @@ const EspBanner = () => {
           </div>
         </div>
       </div>
-      <div className="text-center items-center flex justify-center mt-5 text-1xl gap-7">
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-yellow-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            PUBG{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2 ">
-            WOW{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-green-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            DOTA2{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            PUBG{" "}
-          </h1>
-        </div>
-      </div>
+  
     </div>
   );
 };

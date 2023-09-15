@@ -80,6 +80,14 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />  My
+                Comments And Reviews
+              </p>
+            </Link>
+          </li>
         </>
       ) : (
         <>
@@ -115,10 +123,10 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
-          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500 ">
             <Link to="/dashboard/CommentAndReviewManage">
               <p className="flex items-center gap-2 text- font-semibold ">
-                <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled My
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My
                 Comments And Reviews
               </p>
             </Link>
@@ -193,19 +201,38 @@ const Dashboard = () => {
               </ul>
             </div>
             {/* Content area */}
-            <div className="md:ml-[20%]">
-              <div className="max-w-[220rem] mx-auto  ">
+            {/* <label
+            htmlFor="my-drawer"
+            className="btn btn-primary drawer-button md:hidden"
+          >
+            Open drawer
+          </label> */}
+            <label
+              htmlFor="my-drawer"
+              className="fixed z-10  drawer-button md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10 text-green-500 mt-4 "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <div className="md:ml-[20%] md:mx-auto  ml-0">
+              <div className=" ">
                 {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
                 <Outlet />
               </div>
             </div>
           </div>
-          <label
-            htmlFor="my-drawer"
-            className="btn btn-primary drawer-button md:hidden"
-          >
-            Open drawer
-          </label>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>

@@ -89,111 +89,19 @@ const PostReview = ({ title, id }) => {
         onClick={openModal}
         className="px-8 text-white  flex items-center gap-3 py-4 mx-auto custom-button mt-4 rounded-lg"
       >
-        Review
+       Add Your Review
       </button>
-      <div className="flex flex-col max-w-xl p-8 shadow-sm rounded-xl lg:p-12 dark:bg-gray-900 dark:text-gray-100">
-        <form onSubmit={handleSubmitComment} >
-        <div className="flex flex-col items-center w-full">
-          <h1 className="text-3xl font-bold lg:ml-10 ml-4 pb-5">{title}</h1>
-          <div className="flex flex-col items-center py-6 space-y-3">
-            <span className="text-center">How was your experience?</span>
-            <div className="">
-              <Rating
-                name="userRating"
-                initialRating={userRating}
-                onClick={handleRatingChange}
-                placeholderRating={userRating}
-                emptySymbol={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 100 100"
-                    className="icon"
-                  >
-                    <polygon
-                      points="50,5 61.8,35.5 94.3,35.5 67.9,57.2 79.7,90.4 50,72.9 20.3,90.4 32.1,57.2 5.7,35.5 38.2,35.5"
-                      fill="white"
-                    />
-                  </svg>
-                }
-                placeholderSymbol={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 100 100"
-                    className="icon"
-                  >
-                    <polygon points="50,5 61.8,35.5 94.3,35.5 67.9,57.2 79.7,90.4 50,72.9 20.3,90.4 32.1,57.2 5.7,35.5 38.2,35.5" />
-                  </svg>
-                }
-                fullSymbol={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 100 100"
-                    className="icon"
-                  >
-                    <polygon
-                      points="50,5 61.8,35.5 94.3,35.5 67.9,57.2 79.7,90.4 50,72.9 20.3,90.4 32.1,57.2 5.7,35.5 38.2,35.5"
-                      fill="black"
-                    />
-                  </svg>
-                }
-              />
-              {userRating !== null && (
-                <div className="text-lg font-bold text-white pl-2">
-                  {feedbackMessages[userRating]}
-                </div>
-              )}
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <textarea
-              name="message"
-              rows="3"
-              placeholder="Describe your experience"
-              className="p-4 border rounded-md resize-none dark:text-gray-100 dark:bg-gray-900"
-            ></textarea>
-            <button
-              type="button"
-              onClick={closeModal}
-              className="py-4 my-8 font-semibold rounded-md dark:text-gray-900 dark:bg-violet-400"
-            >
-              Cencel
-            </button>
-            <button
-              type="submit"
-              onClick={() => validate()}
-              className="py-4 my-8 font-semibold rounded-md dark:text-gray-900 dark:bg-violet-400"
-            >
-              Post
-            </button>
-          </div>
-        </div>
-        </form>
-        <div className="flex items-center justify-center">
-          <a
-            rel="noopener noreferrer"
-            href="#"
-            className="text-sm dark:text-gray-400"
-          >
-            Maybe later
-          </a>
-        </div>
-      </div>
+
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="z-50  p-6 rounded-lg shadow-lg lg:w-[50%] lg:mx-20">
+          <div className="z-50  p-6 rounded-lg shadow-lg lg:w-[40%] lg:mx-20">
             <form onSubmit={handleSubmitComment}>
               <div
                 style={{
                   "--path":
                     "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
-                  fontFamily: "resobot-bold",
+
                   WebkitClipPath: "polygon(var(--path))",
                   clipPath: "polygon(var(--path))",
                   textTransform: "uppercase", // Add text-transform property
@@ -203,13 +111,14 @@ const PostReview = ({ title, id }) => {
                   OTransition: "all 0.3s ease-in-out", // Add -o-transition property
                   transition: "all 0.3s ease-in-out", // Add standard transition property
                 }}
-                className="mb-4 border border-none bg-green-700   px-4 py-8 "
+                className="mb-4  bg-slate-900    px-4 py-8 "
               >
                 <h1 className="text-3xl font-bold lg:ml-10 ml-4 pb-5">
                   {title}
                 </h1>
                 <hr className="pb-3" />
                 <div className="pl-10">
+                  <p>How was your experience</p>
                   <Rating
                     name="userRating"
                     initialRating={userRating}
@@ -261,14 +170,32 @@ const PostReview = ({ title, id }) => {
                     </div>
                   )}
                 </div>
-                <textarea
-                  name="message"
-                  id=""
-                  placeholder="Describe your experience"
-                  className="w-[80%]  p-5 my-5 lg:mx-12 mx-7 text-white font-bold outline-none hover:shadow-[#0b9817] shadow-inner h-[100px] resize-none bg-[#222222]"
-                />
+
+                <div className="flex flex-col w-full">
+                  <textarea
+                    name="message"
+                    rows="4"
+                    placeholder="Describe your experience"
+                    className="p-4 border rounded-md resize-none dark:text-gray-100 dark:bg-gray-900"
+                  ></textarea>
+                  <button
+                    type="button"
+                    onClick={closeModal}
+                    className="py-4 my-2 custom-button  rounded-md  dark:bg-red-500"
+                  >
+                    Cencel
+                  </button>
+                  <button
+                    type="submit"
+                    onClick={() => validate()}
+                    className="py-4  rounded-md custom-button  dark:bg-[#86ff00]"
+                  >
+                    Post
+                  </button>
+                </div>
               </div>
-              <div className="text-right">
+
+              {/* <div className="text-right">
                 <button
                   type="button"
                   onClick={closeModal}
@@ -298,7 +225,7 @@ const PostReview = ({ title, id }) => {
                 >
                   Post
                 </button>
-              </div>
+              </div> */}
             </form>
           </div>
         </div>
