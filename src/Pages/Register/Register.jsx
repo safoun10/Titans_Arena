@@ -8,7 +8,6 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Register = () => {
   const { createUser, user, updateUserData,
@@ -86,7 +85,10 @@ const Register = () => {
   };
 
   return (
-    <div className="">
+    <div>
+      <Helmet>
+        <title>Titans Arena || Register</title>
+      </Helmet>
       <div>
         <div className="hero min-h-screen bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] py-20">
           <div className="hero-content flex-col lg:flex-row-reverse">
@@ -100,7 +102,7 @@ const Register = () => {
                   onSubmit={handleSubmit(onSubmit)}
                   className=" shadow-md rounded px-8 pt-6 pb-8 w-full"
                 >
-                  <div className="mb-4">
+                  <div>
                     <label
                       className="block text-green-500  text-xl font-bold mb-2"
                       htmlFor="name"
@@ -113,7 +115,7 @@ const Register = () => {
                       {...register("name", {
                         required: true,
                       })}
-                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                      className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
                     {errors.name && (
                       <p className="text-red-500 text-xs italic">
@@ -122,7 +124,7 @@ const Register = () => {
                     )}
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <label
                       className="block text-green-500  text-xl font-bold mb-2"
                       htmlFor="email"
@@ -135,7 +137,7 @@ const Register = () => {
                       {...register("email", {
                         required: true,
                       })}
-                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                      className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs italic">
@@ -144,7 +146,7 @@ const Register = () => {
                     )}
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <label
                       className="block text-green-500  text-xl font-bold mb-2"
                       htmlFor="password"
@@ -157,7 +159,7 @@ const Register = () => {
                       {...register("password", {
                         required: true,
                       })}
-                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                      className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
                     {errors.password && (
                       <p className="text-red-500 text-xs italic">
@@ -166,7 +168,7 @@ const Register = () => {
                     )}
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <label
                       className="block text-green-500  text-xl font-bold mb-2"
                       htmlFor="confirmPassword"
@@ -177,7 +179,7 @@ const Register = () => {
                       type="password"
                       id="confirmPassword"
                       {...register("confirmPassword", { required: true })}
-                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                      className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
                     {errors.confirmPassword && (
                       <p className="text-red-500 text-xs italic">
@@ -186,7 +188,7 @@ const Register = () => {
                     )}
                   </div>
 
-                  <div className="mb-4">
+                  <div>
                     <label
                       className="block text-green-500  text-xl font-bold mb-2"
                       htmlFor="photoUrl"
@@ -197,40 +199,21 @@ const Register = () => {
                       type="text"
                       id="photoUrl"
                       {...register("photoUrl")}
-                      className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                      className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                     />
-                  </div>
-                  <div>
-                    <ReCAPTCHA
-                      sitekey="6LcnffYnAAAAAEe1BdERt1psjf-PTK-R7IsS3etm"
-                      onChange={onChange}
-                    />
-                    ,
                   </div>
 
                   <div className="flex items-center justify-between">
                     <button
                       type="submit"
-                      disabled={!verify}
-                      className={`${
-                        !verify
-                          ? "bg-gray-500"
-                          : "custom-button hover:bg-green-500 py-2 px-5"
-                      } border w-full rounded py-2 px-5 border-none my-2`}
-                      style={{
-                        "--path":
-                          "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
-                        fontFamily: "resobot-bold",
-                        WebkitClipPath: "polygon(var(--path))",
-                        clipPath: "polygon(var(--path))",
-                      }}
+                      className="custom-button hover:bg-green-500 py-2 px-5 my-4 w-full"
                     >
                       Register
                     </button>
                   </div>
                 </form>
 
-                <div className="">
+                <div>
                   <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                     <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
                       Or
@@ -251,11 +234,10 @@ const Register = () => {
             </div>
             <div className="text-center lg:text-left">
               <Player
-                className=" rounded-lg  sm:w-[500px] sm:h-[500px]"
+                className=" rounded-lg w-[400px] h-[400px] sm:w-[500px] sm:h-[500px]"
                 autoplay
                 loop
                 src="https://assets6.lottiefiles.com/packages/lf20_nc1bp7st.json"
-                // style={{ height: "500px", width: "700px" }}
               ></Player>
             </div>
           </div>

@@ -48,21 +48,20 @@ const Login = () => {
     SetVerify(true);
   };
 
-  const passwordResetHandle = () =>{
-    const userEmail = user.email
+  const passwordResetHandle = () => {
+    const userEmail = user.email;
     passwordReset(userEmail)
-    .then(() => {
-      // Password reset email sent!
-      // ..
-      console.log("password reset done")
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-    });
-  
-  }
+      .then(() => {
+        // Password reset email sent!
+        // ..
+        console.log("password reset done");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  };
 
   return (
     <div>
@@ -120,37 +119,21 @@ const Login = () => {
                     </p>
                   )}
                 </div>
-                <div>
-                  <ReCAPTCHA
-                  className="bg-transparent"
-                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    onChange={onChange}
-                  />
-                  ,
-                </div>
-
                 <div className="flex items-center justify-between">
                   <button
                     type="submit"
-                    disabled={!verify}
-                    className={`${
-                      !verify
-                        ? "bg-gray-500"
-                        : "custom-button hover:bg-green-500 py-2 px-5"
-                    } border w-full rounded py-2 px-5 border-none my-2`}
-                    style={{
-                      "--path":
-                        "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
-                      fontFamily: "resobot-bold",
-                      WebkitClipPath: "polygon(var(--path))",
-                      clipPath: "polygon(var(--path))",
-                    }}
+                    className="custom-button hover:bg-green-500 py-2 px-5 w-full"
                   >
                     Login
                   </button>
                 </div>
               </form>
-              <button onClick={passwordResetHandle} className="pt-3 text-purple-500">Forget Password?</button>
+              <button
+                onClick={passwordResetHandle}
+                className="pt-3 text-purple-500"
+              >
+                Forget Password?
+              </button>
               <div className="">
                 <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                   <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
