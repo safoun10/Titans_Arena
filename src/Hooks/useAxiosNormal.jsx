@@ -1,7 +1,6 @@
 import axios from "axios";
 
 const axiosNormal = axios.create({
-  // baseURL: "https://titans-arena-server.vercel.app",
   baseURL: "https://titans-arena-server.vercel.app",
 });
 

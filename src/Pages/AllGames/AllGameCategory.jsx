@@ -21,26 +21,15 @@ const AllGameCategory = () => {
 	const searchRef = useRef("");
 	const [search, setSearch] = useState("");
 
-	// ---------------------------------------------------------------------------------------
-
 	const { data: gamesCategory, isLoading } =
 		useGetGameCategoryQuery(category);
 
-	// ---------------------------------------------------------------------------------------
-
 	const { data: gamesSearch } = useGetGameSearchQuery(search);
-
-	// ---------------------------------------------------------------------------------------
 
 	useEffect(() => {
 		setGames(gamesCategory);
 		setGames(gamesSearch);
 	}, [gamesCategory, gamesSearch]);
-
-	// console.log(games);
-	console.log(search);
-
-	// ---------------------------------------------------------------------------------------
 
 	const handleSearch = () => {
 		setSearch(searchRef.current.value);

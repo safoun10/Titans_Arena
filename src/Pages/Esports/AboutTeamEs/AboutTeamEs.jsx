@@ -19,7 +19,6 @@ const AboutTeamEs = () => {
                 autoplay
                 loop
                 src={aboutPic}
-                // style={{ height: "500px", width: "700px" }}
               ></Player>
             </div>
           </div>
@@ -30,7 +29,6 @@ const AboutTeamEs = () => {
               autoplay
               loop
               src={aboutPic}
-              // style={{ height: "500px", width: "700px" }}
             ></Player>
           </div>
         </div>

@@ -9,141 +9,143 @@ import "./Profile.css";
 import Chat from "../Members/Chat/Chat";
 
 const Profile = () => {
-  const { user } = useAuth();
-  const [userInfo, SetUserInfo] = useState();
-  const [myComments, setMyComments] = useState([]);
-  useEffect(() => {
-    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
-      .then((res) => res.json())
-      .then((data) => {
-        SetUserInfo(data.userInfo);
-      })
-      .catch((error) => {
-        console.error("Error fetching user role:", error);
-      });
-  }, [user?.email]);
-  const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
-  useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        setMyComments(data);
-      });
-  }, [user?.email]);
-
-	console.log(userInfo?.bio);
+	const { user } = useAuth();
+	const [userInfo, SetUserInfo] = useState();
+	const [myComments, setMyComments] = useState([]);
+	useEffect(() => {
+		fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
+			.then((res) => res.json())
+			.then((data) => {
+				SetUserInfo(data.userInfo);
+			})
+			.catch((error) => {
+				console.error("Error fetching user role:", error);
+			});
+	}, [user?.email]);
+	const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
+	useEffect(() => {
+		fetch(url)
+			.then((res) => res.json())
+			.then((data) => {
+				setMyComments(data);
+			});
+	}, [user?.email]);
 
 	return (
 		<div className="text-white">
-			<div className="">
+			<div>
 				<Parallax>
 					<div className="bg-[url('https://w.forfun.com/fetch/a9/a9ce3832408d37e4a0ac6f97230b3297.jpeg')] bg-no-repeat bg-cover h-[300px] "></div>
 				</Parallax>
 
-        <div className="h-36 bg-slate-800  border flex w-12/12 relative ">
-          <div className="flex gap-4 w-4/12 justify-center">
-            <div className="flex flex-col justify-center items-center">
-              <FaCommentAlt className="text-yellow-500" />
-              <p className="font-bold text-lg">{myComments.length}</p>
-              <p className="font-bold text-lg">Comments</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <FaUsersViewfinder className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
-              <p className="font-bold text-lg">Reviews</p>
-            </div>
-            <div className="flex flex-col justify-center items-center">
-              <FaCommentAlt className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
-              <p className="font-bold text-lg">Favorite</p>
-            </div>
-          </div>
-          <div className="text-center  w-4/12  justify-center flex">
-            <div className=" flex flex-col items-center absolute bottom-5 ">
-              <img
-                className="rounded-full  border-8 p-1 w-32 h-32 "
-                src={
-                  user?.photoURL ||
-                  "https://themedox.com/demo/mykd/assets/img/team/team02.png"
-                }
-                alt={`${user?.displayName}'s profile photo`}
-              />
-              <h3 className="text-2xl font-bold">{user?.displayName}</h3>
-              <p className="border rounded-sm w-20 mx-auto uppercase">
-                {userInfo?.role || "member"}
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-4  w-4/12 justify-center">
-            <div className="flex flex-col justify-center items-center">
-              {/*  */}
+				<div className="h-36 bg-slate-800  border flex w-12/12 relative ">
+					<div className="flex gap-4 w-4/12 justify-center">
+						<div className="flex flex-col justify-center items-center">
+							<FaCommentAlt className="text-yellow-500" />
+							<p className="font-bold text-lg">
+								{myComments.length}
+							</p>
+							<p className="font-bold text-lg">Comments</p>
+						</div>
+						<div className="flex flex-col justify-center items-center">
+							<FaUsersViewfinder className="text-yellow-500" />
+							<p className="font-bold text-lg">865</p>
+							<p className="font-bold text-lg">Reviews</p>
+						</div>
+						<div className="flex flex-col justify-center items-center">
+							<FaCommentAlt className="text-yellow-500" />
+							<p className="font-bold text-lg">865</p>
+							<p className="font-bold text-lg">Favorite</p>
+						</div>
+					</div>
+					<div className="text-center  w-4/12  justify-center flex">
+						<div className=" flex flex-col items-center absolute bottom-5 ">
+							<img
+								className="rounded-full  border-8 p-1 w-32 h-32 "
+								src={
+									user?.photoURL ||
+									"https://themedox.com/demo/mykd/assets/img/team/team02.png"
+								}
+								alt={`${user?.displayName}'s profile photo`}
+							/>
+							<h3 className="text-2xl font-bold">
+								{user?.displayName}
+							</h3>
+							<p className="border rounded-sm w-20 mx-auto uppercase">
+								{userInfo?.role || "member"}
+							</p>
+						</div>
+					</div>
+					<div className="flex gap-4  w-4/12 justify-center">
+						<div className="flex flex-col justify-center items-center">
+							{/*  */}
 
-              <h1 className="text-lg font-bold text-center">
-                Connected Profiles
-              </h1>
-              <div className="flex gap-4 text-2xl justify-center  ">
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/facebook.e96143e5.png"
-                  alt=""
-                />
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/twitter.44ea9c7c.png"
-                  alt=""
-                />
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/instagram.a89b5e48.png"
-                  alt=""
-                />
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/youtube.a8224612.png"
-                  alt=""
-                />
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/discord.87b031fc.png"
-                  alt=""
-                />
-                <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
-                  src="https://asphalt9.assets.gameloft.com/static/_next/static/media/tiktok.cb61d741.png"
-                  alt=""
-                />
-              </div>
-              {/*  */}
-            </div>
-            <Link to="/dashboard/profileEdit">
-              <div className="absolute right-4  hover:text-green-500 top-2 flex items-center justify-center gap-2">
-                Edit Profile
-                <FaEdit className="text-2xl mb-1 " />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </div>
-      <ProfileContent myComments={myComments} userInfo={userInfo} />
-      <div className="flex flex-col mt-6">
-        <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
-            <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
-              <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
-                <thead className="bg-gray-50 dark:bg-gray-800">
-                  <tr>
-                    <th
-                      scope="col"
-                      className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
-                    >
-                      <div className="flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
-                        <span>Name</span>
-                      </div>
-                    </th>
+							<h1 className="text-lg font-bold text-center">
+								Connected Profiles
+							</h1>
+							<div className="flex gap-4 text-2xl justify-center  ">
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/facebook.e96143e5.png"
+									alt=""
+								/>
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/twitter.44ea9c7c.png"
+									alt=""
+								/>
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/instagram.a89b5e48.png"
+									alt=""
+								/>
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/youtube.a8224612.png"
+									alt=""
+								/>
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/discord.87b031fc.png"
+									alt=""
+								/>
+								<img
+									className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+									src="https://asphalt9.assets.gameloft.com/static/_next/static/media/tiktok.cb61d741.png"
+									alt=""
+								/>
+							</div>
+							{/*  */}
+						</div>
+						<Link to="/dashboard/profileEdit">
+							<div className="absolute right-4  hover:text-green-500 top-2 flex items-center justify-center gap-2">
+								Edit Profile
+								<FaEdit className="text-2xl mb-1 " />
+							</div>
+						</Link>
+					</div>
+				</div>
+			</div>
+			<ProfileContent myComments={myComments} userInfo={userInfo} />
+			<div className="flex flex-col mt-6">
+				<div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+					<div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+						<div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
+							<table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
+								<thead className="bg-gray-50 dark:bg-gray-800">
+									<tr>
+										<th
+											scope="col"
+											className="py-3.5 px-4 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+										>
+											<div className="flex items-center gap-x-3">
+												<input
+													type="checkbox"
+													className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
+												/>
+												<span>Name</span>
+											</div>
+										</th>
 
 										<th
 											scope="col"
@@ -196,22 +198,22 @@ const Profile = () => {
 											Email address
 										</th>
 
-                    <th
-                      scope="col"
-                      className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
-                    >
-                      View Profile
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
+										<th
+											scope="col"
+											className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+										>
+											View Profile
+										</th>
+									</tr>
+								</thead>
+								<tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+									<tr>
+										<td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+											<div className="inline-flex items-center gap-x-3">
+												<input
+													type="checkbox"
+													className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
+												/>
 
 												<div className="flex items-center gap-x-2">
 													<img
@@ -234,36 +236,36 @@ const Profile = () => {
 											<div className="inline-flex items-center px-3 py-1 rounded-full gap-x-2 bg-emerald-100/60 dark:bg-gray-800">
 												<span className="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
 
-                        <h2 className="text-sm font-normal text-emerald-500">
-                          4
-                        </h2>
-                      </div>
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      490
-                    </td>
-                    <td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
-                      authurmelo@example.com
-                    </td>
-                    <td className="px-4 py-4 text-sm whitespace-nowrap">
-                      <div className="flex items-center gap-x-2">
-                        <button>
-                          <p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
-                            Profile
-                          </p>
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Chat/>
-    </div>
-  );
+												<h2 className="text-sm font-normal text-emerald-500">
+													4
+												</h2>
+											</div>
+										</td>
+										<td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+											490
+										</td>
+										<td className="px-4 py-4 text-sm text-gray-500 dark:text-gray-300 whitespace-nowrap">
+											authurmelo@example.com
+										</td>
+										<td className="px-4 py-4 text-sm whitespace-nowrap">
+											<div className="flex items-center gap-x-2">
+												<button>
+													<p className="px-3 py-1 text-xs text-indigo-500 rounded-full dark:bg-gray-800 bg-indigo-100/60">
+														Profile
+													</p>
+												</button>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<Chat />
+		</div>
+	);
 };
 
 export default Profile;

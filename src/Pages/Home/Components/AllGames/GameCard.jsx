@@ -2,39 +2,39 @@ import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiCodeBracket } from "react-icons/hi2";
 const GameCard = ({ game }) => {
-  const {
-    _id,
-    image,
-    review,
-    title,
-    level,
-    genre,
-    description,
-    rating,
-    platforms,
-    releaseDate,
-    developer,
-    publisher,
-    ageRating,
-    modes,
-    tags,
-    languageSupport,
-    minimumRequirements,
-    recommendedRequirements,
-    features,
-    systemSupport,
-    category,
-  } = game;
+	const {
+		_id,
+		image,
+		review,
+		title,
+		level,
+		genre,
+		description,
+		rating,
+		platforms,
+		releaseDate,
+		developer,
+		publisher,
+		ageRating,
+		modes,
+		tags,
+		languageSupport,
+		minimumRequirements,
+		recommendedRequirements,
+		features,
+		systemSupport,
+		category,
+	} = game;
 
-  const limitDescription = (description, limit) => {
-    const words = description.split(" ");
-    const limitedWords = words.slice(0, limit);
-    return limitedWords.join(" ");
-  };
+	const limitDescription = (description, limit) => {
+		const words = description.split(" ");
+		const limitedWords = words.slice(0, limit);
+		return limitedWords.join(" ");
+	};
 
-  const limitedDescription = limitDescription(description.description1, 20);
+	const limitedDescription = limitDescription(description.description1, 20);
 
-  return (
+	return (
 		<div
 			style={{
 				backgroundColor: "#121a23",
@@ -43,7 +43,7 @@ const GameCard = ({ game }) => {
 			}}
 			className="border-2 hover:border-white ease-in-out duration-500 rounded-md border-[#68fb9a] w-full text-white my-1"
 		>
-			<figure className="">
+			<figure>
 				<img
 					className="md:h-64 h-80 w-full md:w-72 rounded-md"
 					src={image}
@@ -95,7 +95,7 @@ const GameCard = ({ game }) => {
 				</Link>
 			</div>
 		</div>
-  );
+	);
 };
 
 export default GameCard;

@@ -55,7 +55,6 @@ const Teaminfo = ({ matchDetails }) => {
 					</div>
 					<div className="w-2/6 ml-12 hidden md:block justify-center">
 						<img
-							className=""
 							src="https://i.ibb.co/GnHGHJX/pngwing-com-29.png"
 							alt=""
 						/>
@@ -68,11 +67,9 @@ const Teaminfo = ({ matchDetails }) => {
 							<p className="text-yellow-400 font-bold text-3xl">
 								Players:
 							</p>
-							<ul className="">
+							<ul>
 								{team2?.players?.map((player, index) => (
-									<li className="" key={index}>
-										{player}
-									</li>
+									<li key={index}>{player}</li>
 								))}
 							</ul>
 							<p className="text-yellow-400 font-bold text-3xl">

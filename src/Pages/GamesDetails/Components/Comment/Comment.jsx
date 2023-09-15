@@ -27,8 +27,6 @@ const Comments = ({ id }) => {
             img={comment.user_img}
             content={comment.comment_text}
             date={comment.Date}
-            // likes={comment.likes}
-            // replies={comment.replies}
           />
         ))}
       </div>

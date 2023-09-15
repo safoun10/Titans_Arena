@@ -14,7 +14,6 @@ import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
 
 const Blogs = () => {
-  
 	const { user } = useAuth();
 
 	const searchRef = useRef(null);
@@ -22,10 +21,9 @@ const Blogs = () => {
 
 	const [search, setSearch] = useState("");
 	const [currentPage, setCurrentPage] = useState(1);
-  
+
 	const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
 	const { data: blogs, isLoading } = useGetBlogSearchQuery(search);
-
 
 	const handleSearch = () => {
 		setSearch(searchRef.current.value);
@@ -61,14 +59,11 @@ const Blogs = () => {
 			<Helmet>
 				<title>Titans Arena || Blogs</title>
 			</Helmet>
-			{/* blog page banner start */}
+
 			<BlogBanner title="Blogs List" />
-			{/* blog page banner end */}
 
 			<div className="grid grid-cols-1 lg:grid-cols-6 gap-6 px-8 pt-24 pb-16 bg-[#0f161b]">
-				{/* Blogs page left side start*/}
 				<div className="col-span-4">
-					{/* single blog start*/}
 					{blogs
 						?.slice(
 							(currentPage - 1) * gamesPerPage,
@@ -77,7 +72,7 @@ const Blogs = () => {
 						?.map((blog, i) => (
 							<BlogElement key={i} blog={blog} />
 						))}
-					{/* single blog end*/}
+
 					{blogs?.length >= 3 ? (
 						<Pagination
 							totalGames={blogs?.length}
@@ -89,8 +84,7 @@ const Blogs = () => {
 						""
 					)}
 				</div>
-				{/* Blogs page left side end*/}
-				{/* Blogs page right side start */}
+
 				<div className="col-span-2">
 					<div className="form-control w-full max-w-lg">
 						<div className="input-group">
@@ -121,7 +115,6 @@ const Blogs = () => {
 							</button>
 						</div>
 					</div>
-					{/* Relative part Start*/}
 					<div className="text-white py-6">
 						<h1 className="font-bold text-2xl pb-6 uppercase">
 							Relative POSTS
@@ -134,7 +127,7 @@ const Blogs = () => {
 										src={blog.featured_image}
 										alt=""
 									/>
-									<div className="">
+									<div>
 										<h2 className="lg:pr-7 text-lg font-semibold hover:text-[#45f882] transition-colors">
 											{blog.title}
 										</h2>
@@ -146,8 +139,6 @@ const Blogs = () => {
 							</Link>
 						))}
 					</div>
-					{/* RECENT POSTS part end*/}
-					{/* NEWS LETTER part start*/}
 					<div className="text-white ">
 						<h1 className="text-2xl font-bold uppercase pb-3 text-white">
 							NEWSLETTER
@@ -173,8 +164,6 @@ const Blogs = () => {
 							</button>
 						</form>
 					</div>
-					{/* NEWS LETTER part end*/}
-					{/* TAG CLOUD */}
 					<div className="py-6">
 						<h1 className="text-2xl font-bold uppercase pb-6 text-white">
 							TAG CLOUD
@@ -189,7 +178,6 @@ const Blogs = () => {
 						</div>
 					</div>
 				</div>
-				{/* Blogs page right side start */}
 			</div>
 		</div>
 	);
