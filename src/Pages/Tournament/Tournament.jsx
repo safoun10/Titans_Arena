@@ -15,7 +15,7 @@ const Tournament = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/tournaments")
+      .get("https://titans-arena-server.vercel.app/tournaments")
       .then((response) => {
         setData(response.data);
       })

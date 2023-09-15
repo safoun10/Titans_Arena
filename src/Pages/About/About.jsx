@@ -6,7 +6,7 @@ const About = () => {
       <div className="rounded-xl py-16 px-5 md:px-0 text-center border-gray-500 transition-all duration-300 hover:border-[#0fcda156] border-2 drop-shadow-lg grid gap-8 md:gap-0 md:grid-cols-3 justify-center text-white divide-y-2 md:divide-y-0 divide-x-0 md:divide-x-2 hover:divide-[#0fcda156] divide-gray-500 group">
         <div className="flex flex-col gap-2 md:gap-5 justify-center items-center">
           <h2 className="text-5xl md:text-7xl font-bold">
-            1000 {/* Static number */}
+            1000
             <span className="group-hover:text-[#0fcda1] duration-300">
               &#43;
             </span>
@@ -17,7 +17,7 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-2 md:gap-5 justify-center items-center pt-8 md:pt-0">
           <h2 className="text-5xl md:text-7xl font-bold">
-            500 {/* Static number */}
+            500
             <span className="group-hover:text-[#0fcda1] duration-300">
               &#43;
             </span>
@@ -26,7 +26,7 @@ const About = () => {
         </div>
         <div className="flex flex-col gap-2 md:gap-5 justify-center items-center pt-8 md:pt-0">
           <h2 className="text-5xl md:text-7xl font-bold">
-            451 {/* Static number */}
+            451
             <span className="group-hover:text-[#0fcda1] duration-300">
               &#43;
             </span>

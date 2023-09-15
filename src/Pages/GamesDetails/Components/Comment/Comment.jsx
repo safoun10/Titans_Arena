@@ -5,12 +5,11 @@ import { useGetCommentQuery } from "../../../../Redux/slice/CommentState";
 const Comments = ({ id }) => {
   const [comments, setComments] = useState([]);
 
-  const url = `http://localhost:5000/singleGameComments/${id}`;
+  const url = `https://titans-arena-server.vercel.app/singleGameComments/${id}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setComments(data);
       });
   }, []);
@@ -28,14 +27,11 @@ const Comments = ({ id }) => {
             img={comment.user_img}
             content={comment.comment_text}
             date={comment.Date}
-            // likes={comment.likes}
-            // replies={comment.replies}
           />
         ))}
       </div>
     </div>
   );
 };
-
 
 export default Comments;

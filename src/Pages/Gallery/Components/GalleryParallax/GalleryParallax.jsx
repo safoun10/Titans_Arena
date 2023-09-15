@@ -15,7 +15,6 @@ import { useGetGalleryQuery } from "../../../../Redux/slice/GalleryState";
 const GalleryParallax = () => {
 	const [blog, setBlog] = useState([]);
 
-
 	const { data } = useGetGalleryQuery();
 
 	useEffect(() => {
@@ -38,9 +37,9 @@ const GalleryParallax = () => {
 				return first10Words;
 			}
 		} else {
-			return "";	
+			return "";
 		}
-	}
+	};
 
 	return (
 		<div className="text-white">
@@ -122,11 +121,11 @@ const GalleryParallax = () => {
 						</div>
 						<div className="w-96 gallery-subtitle">
 							Step into the adrenaline-pumping world of
-							PlayerUnknown's Battlegrounds (PUBG), where survival
-							and strategy collide. Scavenge, strategize, and
-							outlast opponents in the most intense Battle Royale
-							game ever. Will you be the last one standing in this
-							epic fight for victory?
+							PlayerUnknown's Battlegrounds {"(PUBG)"}, where
+							survival and strategy collide. Scavenge, strategies,
+							and outlast opponents in the most intense Battle
+							Royale game ever. Will you be the last one standing
+							in this epic fight for victory?
 						</div>
 					</div>
 				</div>
@@ -174,7 +173,6 @@ const GalleryParallax = () => {
 										{getFirst10Words(blog?.content)}
 									</p>
 								</div>
-								{/*  blogs card start*/}
 
 								<div className="text-slate-400 py-4 text-sm lg:text-lg lg:flex lg:justify-between  font-semibold items-center">
 									<div className="flex items-center">
@@ -204,13 +202,11 @@ const GalleryParallax = () => {
 										</Link>
 									</div>
 								</div>
-								{/*  blogs card ends*/}
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="parallax md:h-screen h-[50%] z-20 px-5 lg:px-0 flex justify-around items-center bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
-					{/* screen shots section */}
 					<div className="px-4">
 						<div className="text-4xl p-8 font-bold text-center">
 							Screen Shots
@@ -218,7 +214,6 @@ const GalleryParallax = () => {
 						<div className="grid lg:grid-cols-3 grid-cols-2  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_1")
@@ -248,7 +243,6 @@ const GalleryParallax = () => {
 							</div>
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_2")
@@ -278,7 +272,6 @@ const GalleryParallax = () => {
 							</div>
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_3")
@@ -308,7 +301,6 @@ const GalleryParallax = () => {
 							</div>
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_4")
@@ -338,7 +330,6 @@ const GalleryParallax = () => {
 							</div>
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_5")
@@ -368,7 +359,6 @@ const GalleryParallax = () => {
 							</div>
 							<div>
 								<button
-									className=""
 									onClick={() =>
 										document
 											.getElementById("my_modal_6")

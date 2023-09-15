@@ -16,7 +16,7 @@ const PopularTournaments = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/tournaments")
+      .get("https://titans-arena-server.vercel.app/tournaments")
       .then((response) => {
         setData(response.data);
       })
@@ -103,7 +103,9 @@ const PopularTournaments = () => {
                   </div>
                 </div>
                 <div className="absolute  -bottom-5">
-                  <button className="custom-button hover:translate-x-4  py-3 px-5">Enroll Now Thi Tournament</button>
+                  <button className="custom-button hover:translate-x-4  py-3 px-5">
+                    Enroll Now Thi Tournament
+                  </button>
                 </div>
               </div>
               <div className="flex justify-between items-center p-2">

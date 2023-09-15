@@ -17,7 +17,6 @@ const Test1 = () => {
         });
     }
   }, [user?.email]);
-  console.log(userInfo);
   return <div></div>;
 };
 

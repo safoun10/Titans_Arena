@@ -5,112 +5,118 @@ import logo from "././../../../public/logoTest41.png";
 import "./NavigationBar.css";
 
 const NavigationBar = () => {
-  const { user, logOut } = useContext(AuthContext);
+	const { user, logOut } = useContext(AuthContext);
 
-  const handleLogOut = () => {
-    logOut().then().catch();
-  };
+	const handleLogOut = () => {
+		logOut().then().catch();
+	};
 
-  const navOptions = (
-    <>
-      <li className="nav-link">
-        <NavLink
-          to="/"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          HOME
-        </NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink
-          to="/gallery"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          GALLERY
-        </NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink
-          to="/allgame"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          All GAMES
-        </NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink
-          to="/blogs"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          BLOGS
-        </NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink
-          to="/support"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          SUPPORT
-        </NavLink>
-      </li>
-      {/* <li className="nav-link">
-        <NavLink
-          to="/eSports"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          ESPORTS
-        </NavLink>
-      </li> */}
-      <li className="nav-link">
-        <NavLink
-          to="/tournament"
-          className={({ isActive }) => (isActive ? "active" : "default")}
-        >
-          TOURNAMENTS
-        </NavLink>
-      </li>
-      {user ? (
-        <>
-          <li className="nav-link">
-            <NavLink
-              to="/dashboard/profile"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Dashboard
-            </NavLink>
-          </li>
-        </>
-      ) : (
-        <></>
-      )}
-    </>
-  );
+	const navOptions = (
+		<>
+			<li className="nav-link">
+				<NavLink
+					to="/"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					HOME
+				</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink
+					to="/gallery"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					GALLERY
+				</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink
+					to="/allgame"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					All GAMES
+				</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink
+					to="/blogs"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					BLOGS
+				</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink
+					to="/support"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					SUPPORT
+				</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink
+					to="/tournament"
+					className={({ isActive }) =>
+						isActive ? "active" : "default"
+					}
+				>
+					TOURNAMENTS
+				</NavLink>
+			</li>
+			{user ? (
+				<>
+					<li className="nav-link">
+						<NavLink
+							to="/dashboard/profile"
+							className={({ isActive }) =>
+								isActive ? "active" : "default"
+							}
+						>
+							Dashboard
+						</NavLink>
+					</li>
+				</>
+			) : (
+				<></>
+			)}
+		</>
+	);
 
-  const navOptionsForMobile = (
-    <>
-      <li className="nav-link">
-        <NavLink to="/">HOME</NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink to="/gallery">GALLERY</NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink to="/allgame">All GAMES</NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink to="/blogs">BLOGS</NavLink>
-      </li>
-      <li className="nav-link">
-        <NavLink to="/support">SUPPORT</NavLink>
-      </li>
-      {/* <li className="nav-link">
+	const navOptionsForMobile = (
+		<>
+			<li className="nav-link">
+				<NavLink to="/">HOME</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink to="/gallery">GALLERY</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink to="/allgame">All GAMES</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink to="/blogs">BLOGS</NavLink>
+			</li>
+			<li className="nav-link">
+				<NavLink to="/support">SUPPORT</NavLink>
+			</li>
+			<li className="nav-link">
         <NavLink to="/eSports">ESPORTS</NavLink>
-      </li> */}
-      <li className="nav-link">
-        <NavLink to="/dashboard/profile">Dashboard</NavLink>
       </li>
-    </>
-  );
+			<li className="nav-link">
+				<NavLink to="/dashboard/profile">Dashboard</NavLink>
+			</li>
+		</>
+	);
 
   return (
     <nav>

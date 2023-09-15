@@ -198,22 +198,22 @@ const Profile = () => {
                       Email address
                     </th>
 
-                    <th
-                      scope="col"
-                      className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
-                    >
-                      View Profile
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
+										<th
+											scope="col"
+											className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+										>
+											View Profile
+										</th>
+									</tr>
+								</thead>
+								<tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+									<tr>
+										<td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+											<div className="inline-flex items-center gap-x-3">
+												<input
+													type="checkbox"
+													className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
+												/>
 
                         <div className="flex items-center gap-x-2">
                           <img

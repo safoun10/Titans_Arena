@@ -83,13 +83,16 @@ const TournamentForm = () => {
       const requestBody = JSON.stringify(formData);
 
       // Send a POST request using the fetch API
-      const response = await fetch("http://localhost:5000/tournaments", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: requestBody,
-      });
+      const response = await fetch(
+        "https://titans-arena-server.vercel.app/tournaments",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: requestBody,
+        }
+      );
 
       if (response.ok) {
         alert("Tournament details submitted successfully!");
