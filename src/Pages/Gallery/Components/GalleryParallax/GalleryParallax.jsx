@@ -72,15 +72,15 @@ const GalleryParallax = () => {
             }}
             className="text-center"
           >
-            <span className="text-3xl font-semibold">
+            <span className="lg:text-3xl font-semibold">
               The largest gaming platform
             </span>
             <br />
-            <span className="text-[120px] bg-gradient-to-b from-transparent to-[#68fb9a] font-bold">
+            <span className="lg:text-[120px] bg-gradient-to-b from-transparent to-[#68fb9a] font-bold">
               Titans Arena
             </span>
             <br />
-            <span className="font-medium text-slate-200">PLAY TO LIVE, LIVE TO WIN</span>
+            <span className="md:text-base lg:text-2xl font-medium text-slate-200">PLAY TO LIVE, LIVE TO WIN</span>
           </div>
         </div>
 
@@ -98,7 +98,7 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-1 md:h-screen h-96 z-20 flex bg-[url('https://i.postimg.cc/NMGYNc8G/wallpaperflare-com-wallpaper-7.jpg')]">
+        <div className="parallax mb-1 md:h-screen h-96 z-20 flex justify-end bg-[url('https://i.postimg.cc/NMGYNc8G/wallpaperflare-com-wallpaper-7.jpg')]">
           <div className="my-auto items-center px-32">
             <div className="sub-title-gallery bg-gradient-to-b from-transparent to-[] text-2xl font-bold">
               Call of Duty: Warfare Unleashed
@@ -111,8 +111,8 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-1 md:h-screen h-96 z-20 flex  via-transparent bg-[url('https://ggtalks.com/wp-content/uploads/2022/01/PUBG-Battleground.jpg')]">
-          <div className="my-auto items-center pl-32">
+        <div className="parallax mb-1 md:h-screen h-96 z-20 flex justify-end via-transparent bg-[url('https://ggtalks.com/wp-content/uploads/2022/01/PUBG-Battleground.jpg')]">
+          <div className="my-auto items-center pr-32">
             <div className="sub-title-gallery text-2xl font-bold  ">
               PUBG: Battlegrounds Unleashed
             </div>
