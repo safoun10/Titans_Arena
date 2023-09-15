@@ -13,7 +13,9 @@ const OurTeamMembers = () => {
 
 	return (
 		<div className="my-16">
+			
 			<Title primaryText="Know Our" secondaryText="Team Member" />
+			
 			<div className="grid md:grid-cols-6 justify-center  gap-4 grid-cols-1 mt-14 md:mx-auto mx-6  text-white ">
 				{members?.map((member, i) => (
 					<div

@@ -3,9 +3,8 @@ import "./SiteStates.css";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 
-const SiteStates = () => {
 
-  
+const SiteStates = () => {
 
   return (
     <div>
@@ -42,13 +41,13 @@ const SiteStates = () => {
               </div>
               <div>
                 <h2 className="text-3xl font-bold">
-                  <CountUp start={3000} end={3600} duration={5} />
+                  <CountUp start={0} end={3600} duration={5} />
                 </h2>
                 <p className="font-">Reviews</p>
               </div>
             </div>
             <div>
-              <Link to='/support'>
+              <Link to="/support">
                 <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
                   READ MORE
                 </button>

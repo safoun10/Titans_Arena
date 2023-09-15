@@ -4,17 +4,20 @@ import PopularTournaments from "./TournamentBanner/PopularTournaments/PopularTou
 import UpcomingTournaments from "./TournamentBanner/UpcomingTournaments/UpcomingTournaments";
 import Matches from "./Matches/Matches";
 import TournamentsVideo from "./TournamentsVideo/TournamentsVideo";
+import AddTournament from "./AddTournament/TournamentsNewItems";
+import TournamentsNewItems from "./AddTournament/TournamentsNewItems";
 
 const Tournament = () => {
-	return (
-		<div className=" bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-			<TournamentBanner></TournamentBanner>
-			<PopularTournaments></PopularTournaments>
-			<UpcomingTournaments />
-			<Matches />
-			<TournamentsVideo />
-		</div>
-	);
+  return (
+    <div className=" bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+      <TournamentBanner></TournamentBanner>
+<TournamentsNewItems />
+      <PopularTournaments></PopularTournaments>
+      <UpcomingTournaments />
+      <Matches />
+      <TournamentsVideo />
+    </div>
+  );
 };
 
 export default Tournament;
