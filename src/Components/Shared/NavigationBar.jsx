@@ -63,16 +63,16 @@ const NavigationBar = () => {
           ESPORTS
         </NavLink>
       </li> */}
+      <li className="nav-link">
+        <NavLink
+          to="/tournament"
+          className={({ isActive }) => (isActive ? "active" : "default")}
+        >
+          TOURNAMENTS
+        </NavLink>
+      </li>
       {user ? (
         <>
-          <li className="nav-link">
-            <NavLink
-              to="/tournament"
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              TOURNAMENTS
-            </NavLink>
-          </li>
           <li className="nav-link">
             <NavLink
               to="/dashboard/profile"

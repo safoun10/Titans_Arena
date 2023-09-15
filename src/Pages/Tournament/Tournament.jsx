@@ -6,23 +6,15 @@ import Matches from "./Matches/Matches";
 import TournamentsVideo from "./TournamentsVideo/TournamentsVideo";
 
 const Tournament = () => {
-  return (
-    <div className=" bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <TournamentBanner></TournamentBanner>
-      <>
-        <PopularTournaments></PopularTournaments>
-      </>
-      <div>
-        <UpcomingTournaments />
-      </div>
-      <div className="hidden md:block">
-        <Matches />
-      </div>
-      <div>
-        <TournamentsVideo />
-      </div>
-    </div>
-  );
+	return (
+		<div className=" bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+			<TournamentBanner></TournamentBanner>
+			<PopularTournaments></PopularTournaments>
+			<UpcomingTournaments />
+			<Matches />
+			<TournamentsVideo />
+		</div>
+	);
 };
 
 export default Tournament;

@@ -47,7 +47,7 @@ const AboutTeamEs = () => {
             </p>
             <button className="active  border  border-green-400 rounded-md  dark:hover:bg-green-400 dark:hover:text-gray-100  sm:w-auto w-full mt-8 text-base justify-between focus:ring-2 focus:ring-offset-2  font-medium leading-none text-white py-4 px-8  flex items-center">
               Explore
-              <div className="ml-2 mt-0.5 animate-bounce">
+              <div className="ml-2 mt-0.5">
                 <svg
                   className="fill-stroke"
                   width="16"

@@ -6,7 +6,7 @@ const Gallery = () => {
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
       <Helmet>
-        <title>TitanArena || Gallery</title>
+        <title>Titans Arena || Gallery</title>
       </Helmet>
       <GalleryParallax></GalleryParallax>
     </div>

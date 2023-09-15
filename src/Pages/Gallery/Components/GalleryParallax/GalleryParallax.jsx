@@ -10,19 +10,18 @@ import {
   FaArrowRight,
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { useGetGalleryQuery } from "../../../../Redux/slice/GalleryState";
 
 const GalleryParallax = () => {
   const [blog, setBlog] = useState([]);
 
-  useEffect(() => {
-    fetch(
-      "https://titans-arena-server.vercel.app/blogs/64f2c74b99376762899a529d"
-    )
-      .then((res) => res.json())
-      .then((data) => setBlog(data));
-  }, []);
+  const { data } = useGetGalleryQuery();
 
-  function getFirst10Words(text, blogId) {
+  useEffect(() => {
+    setBlog(data);
+  }, [data]);
+
+  const getFirst10Words = (text, blogId) => {
     if (text) {
       const words = text.split(" ");
       const first10Words = words.slice(0, 10).join(" ");
@@ -35,19 +34,25 @@ const GalleryParallax = () => {
           </div>
         );
       } else {
-        return first10Words; // Return the truncated text without the "Read More" button
+        return first10Words;
       }
     } else {
-      return ""; // Return an empty string if text is undefined or empty
+      return "";
     }
-  }
+  };
 
   return (
     <div className="text-white">
       <div>
-        <div style={{ position: "relative", width: "100%", height: "100%" }}>
+        <div
+          style={{
+            position: "relative",
+            width: "100%",
+            height: "100%",
+          }}
+        >
           <video
-            className="md:h-screen mb-3 z-0 xl:h-screen sm:h-screen"
+            className="md:h-screen mb-1 z-0 xl:h-screen sm:h-screen"
             src="https://generationzero.com/content/1-home/herobgvideo.mp4"
             playsInline
             loop
@@ -75,16 +80,16 @@ const GalleryParallax = () => {
               Titans Arena
             </span>
             <br />
-            <span>PLAY TO LIVE, LIVE TO WIN</span>
+            <span className="font-medium text-slate-200">PLAY TO LIVE, LIVE TO WIN</span>
           </div>
         </div>
 
-        <div className="parallax mb-3 md:h-screen h-96 z-10 flex bg-[url('https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg')]">
-          <div className="my-auto items-center  mx-4 px-4">
-            <div className="sub-title-gallery text-2xl font-bold ">
+        <div className="parallax mb-1 md:h-screen h-96 z-10 flex bg-[url('https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg')]">
+          <div className="my-auto items-center px-32">
+            <div className="sub-title-gallery bg-gradient-to-b from-transparent to-[#9e3c1f] text-2xl font-bold  ">
               Asphalt Adventures
             </div>
-            <div className="w-96 gallery-subtitle">
+            <div className="gallery-subtitle">
               Race Through Urban Streets, Drift Around Corners, and Dominate the
               Asphalt in Heart-Pounding Excitement Unleash your inner speed
               demon in the world of Asphalt Adventures. Take control of
@@ -93,9 +98,9 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-3 md:h-screen h-96 z-20 flex bg-[url('https://newsimg.giznext.com/mobile/production/news/wp-content/uploads/2022/08/20124311/Call-of-Duty.jpg')]">
-          <div className="my-auto items-center  mx-4 px-4">
-            <div className="sub-title-gallery text-2xl font-bold ">
+        <div className="parallax mb-1 md:h-screen h-96 z-20 flex bg-[url('https://i.postimg.cc/NMGYNc8G/wallpaperflare-com-wallpaper-7.jpg')]">
+          <div className="my-auto items-center px-32">
+            <div className="sub-title-gallery bg-gradient-to-b from-transparent to-[] text-2xl font-bold">
               Call of Duty: Warfare Unleashed
             </div>
             <div className="w-96 gallery-subtitle">
@@ -106,9 +111,9 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-3 md:h-screen h-96 z-20 flex bg-[url('https://assets.mspimages.in/gear/wp-content/uploads/2022/05/pubg-mobile-has-earned-krafton-8-billion.jpg')]">
-          <div className="my-auto items-center  mx-4 px-4">
-            <div className="sub-title-gallery text-2xl font-bold ">
+        <div className="parallax mb-1 md:h-screen h-96 z-20 flex  via-transparent bg-[url('https://ggtalks.com/wp-content/uploads/2022/01/PUBG-Battleground.jpg')]">
+          <div className="my-auto items-center pl-32">
+            <div className="sub-title-gallery text-2xl font-bold  ">
               PUBG: Battlegrounds Unleashed
             </div>
             <div className="w-96 gallery-subtitle">
@@ -120,33 +125,33 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax mb-3 md:h-screen h-96 z-20 bg-[url('https://generationzero.com/content/1-home/pests-1.jpg')]">
+        <div className="parallax mb-1 md:h-screen h-96 z-20 bg-[url('https://generationzero.com/content/1-home/pests-1.jpg')]">
           <div>
-            <div className="text-center font-bold text-3xl p-4">
+            <div className="text-center font-bold text-3xl pt-4">
               NEWS & UPDATES
             </div>
-            <div className="text-center text-[24px]">
+            <div className="text-center font-medium text-[24px] text-slate-200 pb-4">
               Read the latest news from the Tech Titans development team.
             </div>
             <div className="bg-[#182029] mb-10 w-1/2 mx-auto">
-              <div className="flex">
+              <div className="lg:flex">
                 <div>
                   <img
-                    className="w-96 rounded p-4"
-                    src={blog.featured_image}
+                    className="w-96 h-full rounded p-4"
+                    src={blog?.featured_image}
                     alt="blog-image"
                   />
                 </div>
-                <div className="text-white my-6 gap-3 lg:gap-6">
+                <div className="text-white lg:my-6  gap-3 text-center lg:gap-6">
                   <div className="font-semibold text-xs lg:text-lg px-2 m-2">
                     By{" "}
                     <span className="duration-200 hover:text-[#45f882]">
-                      {blog.author}
+                      {blog?.author}
                     </span>
                   </div>
                   <div className=" font-semibold text-xs lg:text-lg px-2 m-2">
                     <FaCalendarDays className="text-[#45f882] inline-flex" />{" "}
-                    <span>{blog.date}</span>
+                    <span>{blog?.date}</span>
                   </div>
                   <div className="font-semibold text-xs lg:text-lg px-2 m-2">
                     <FaComments className="text-[#45f882] text-lg inline-flex" />{" "}
@@ -157,18 +162,18 @@ const GalleryParallax = () => {
               <div className="py-3 px-4 lg:py-6 lg:px-11">
                 <div className="text-white">
                   <h1 className="text-xl lg:text-2xl py-5 font-bold duration-200 hover:text-[#45f882]">
-                    {blog.title}
+                    {blog?.title}
                   </h1>
                   <p className="text-slate-400 text-base lg:text-xl font-semibold pb-3">
-                    {getFirst10Words(blog.content)}
+                    {getFirst10Words(blog?.content)}
                   </p>
                 </div>
                 {/*  blogs card start*/}
 
-                <div className="text-slate-400 py-4 text-sm lg:text-lg flex justify-between font-semibold items-center">
+                <div className="text-slate-400 py-4 text-sm lg:text-lg lg:flex lg:justify-between  font-semibold items-center">
                   <div className="flex items-center">
                     <Link
-                      className="hover:text-[#45f882] group flex items-center"
+                      className="hover:text-[#45f882] group flex py-2 lg:py-0 items-center"
                       to="/blogs"
                     >
                       Read More
@@ -180,15 +185,15 @@ const GalleryParallax = () => {
 
                   <div className="flex items-center gap-3">
                     <p className="mr-2">SHARE :</p>
-                    <Link to={blog.twitter}>
+                    <Link to={blog?.twitter}>
                       {" "}
                       <FaTwitter className="text-white hover:text-[#45f882] transition-colors" />
                     </Link>
-                    <Link to={blog.facebook}>
+                    <Link to={blog?.facebook}>
                       {" "}
                       <FaFacebookF className="text-white hover:text-[#45f882] transition-colors" />
                     </Link>
-                    <Link to={blog.linked_in}>
+                    <Link to={blog?.linked_in}>
                       <FaLinkedinIn className="text-white hover:text-[#45f882] transition-colors" />
                     </Link>
                   </div>
@@ -198,13 +203,13 @@ const GalleryParallax = () => {
             </div>
           </div>
         </div>
-        <div className="parallax md:h-screen h-96 z-20 flex justify-around bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
+        <div className="parallax md:h-screen h-[50%] z-20 px-5 lg:px-0 flex justify-around items-center bg-[url('https://generationzero.com/content/1-home/herobg_blur.jpg')]">
           {/* screen shots section */}
           <div className="px-4">
             <div className="text-4xl p-8 font-bold text-center">
               Screen Shots
             </div>
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:mb-0  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
+            <div className="grid lg:grid-cols-3 grid-cols-2  max-w-[1260px] mx-0 lg:mx-auto gap-4 text-black">
               <div>
                 <button
                   className=""

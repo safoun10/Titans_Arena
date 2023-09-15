@@ -5,10 +5,8 @@ const baseApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "https://titans-arena-server.vercel.app",
   }),
-  tagTypes: ['invalidCash'],
+  tagTypes: ['invalidCache'],
   endpoints: () => ({}),
 });
-
-// export const { useGetPostQuery } = baseApi;
 
 export default baseApi;

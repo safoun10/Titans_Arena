@@ -5,14 +5,14 @@ const blogApi = baseApi.injectEndpoints({
     getBlogs: builder.query({
       query: () => "/blogs",
     }),
-    invalidatesTags: ["invalidCash"],
+    invalidatesTags: ["invalidCache"],
     getBlogSearch: builder.query({
       query: (search) => `/searchblogs?search=${search}`,
-      invalidatesTags: ["invalidCash"],
+      invalidatesTags: ["invalidCache"],
     }),
     getBlogById: builder.query({
       query: (id) => `/blogs/${id}`,
-      invalidatesTags: ["invalidCash"],
+      invalidatesTags: ["invalidCache"],
     }),
     addNewsLetter: builder.mutation({
       query: (newEmail) => ({
@@ -20,7 +20,7 @@ const blogApi = baseApi.injectEndpoints({
         method: "POST",
         body: newEmail,
       }),
-      invalidatesTags: ["invalidCash"],
+      invalidatesTags: ["invalidCache"],
     }),
   }),
 });
