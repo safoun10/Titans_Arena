@@ -5,45 +5,33 @@
 @tailwind utilities;
 
 body {
-  font-family: "Rajdhani", sans-serif;
+	font-family: "Rajdhani", sans-serif;
 }
 
-/* tailwind costome class */
-/* .active{
-    @apply  font-bold px-2 text-[18px] tracking-wide text-slate-900 transition-colors duration-200}
-.default{
-    @apply  font-bold px-2 text-[15px] tracking-wide text-white transition-colors duration-200 hover:text-slate-900} */
-/* .bt-primary{
-    @apply  font-medium  transition duration-200  shadow-md  md:mb-0  px-4 py-2 md:px-8 md:py-2 m-2 text-lg rounded-full border-transparent border-2 hover:bg-slate-950 bg-slate-800 text-white} */
-
 .custom-button {
-  background: #86ff00;
-  color: #000000;
-  --path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
-    14px 100%, 0px calc(100% - 14px);
-  font-family: "resobot-bold";
-  -webkit-clip-path: polygon(var(--path));
-  clip-path: polygon(var(--path));
-
-  border-radius: 8px;
-
-  text-transform: uppercase;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+	background: #86ff00;
+	color: #000000;
+	--path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
+		14px 100%, 0px calc(100% - 14px);
+	font-family: "resobot-bold";
+	-webkit-clip-path: polygon(var(--path));
+	clip-path: polygon(var(--path));
+	border-radius: 8px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .custom-tabs {
-  clip-path: polygon(
-    0 0,
-    calc(100% - 18px) 0,
-    100% 18px,
-    100% 100%,
-    18px 100%,
-    0 calc(100% - 18px)
-  );
+	clip-path: polygon(
+		0 0,
+		calc(100% - 18px) 0,
+		100% 18px,
+		100% 100%,
+		18px 100%,
+		0 calc(100% - 18px)
+	);
 }
-
-

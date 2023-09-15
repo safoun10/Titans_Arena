@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import CreatableSelect from "react-select/creatable";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { useAddBlogMutation } from "../../../../Redux/slice/AddBlogState";
 
 const AddBlog = () => {
   const [categoryOption, setCategoryOption] = useState(null);
   const [tagOption, setTagOption] = useState(null);
+
+
+  const [ addBlogApi ] = useAddBlogMutation();
 
   const {
     register,
@@ -14,26 +18,24 @@ const AddBlog = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
+  const onSubmit = async (data) => {
     data.Category = categoryOption;
     data.tags = tagOption;
 
-    fetch("https://titans-arena-server.vercel.app/blog", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).then((result) => {
-      console.log(result);
+    try {
+      await addBlogApi(data).unwrap();
       reset();
       Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Blog successfuly added",
+        position: 'center',
+        icon: 'success',
+        title: 'Blog successfully added',
         showConfirmButton: false,
         timer: 1500,
       });
-    });
-    console.log("add a blog", data);
+    } catch (error) {
+      console.error('Error creating blog:', error);
+    }
+
   };
 
   const categoryOptions = [
