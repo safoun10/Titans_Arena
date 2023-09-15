@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../../../../../Components/Shared/AnimatedTitle/Titile";
 
 const Teaminfo = ({ matchDetails }) => {
-  // Destructure properties from matchDetails
   const { tournamentName, matchStage, team1, team2 } = matchDetails ?? {};
 
   return (

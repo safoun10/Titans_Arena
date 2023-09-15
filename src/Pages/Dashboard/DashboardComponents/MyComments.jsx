@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useEffect } from "react";
-import useAuth from "../../../Hooks/useAuth";
 import MySingleComment from "./MySingleComment";
 
 const MyComments = ({ myComments }) => {
@@ -22,9 +20,6 @@ const MyComments = ({ myComments }) => {
               img={comment.user_img}
               content={comment.comment_text}
               date={comment.Date}
-
-              // likes={comment.likes}
-              // replies={comment.replies}
             />
           ))}
         </div>
