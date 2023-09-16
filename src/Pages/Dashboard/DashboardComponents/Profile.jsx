@@ -13,7 +13,7 @@ const Profile = () => {
   const [userInfo, SetUserInfo] = useState();
   const [myComments, setMyComments] = useState([]);
   useEffect(() => {
-    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
+    fetch(`http://localhost:5000/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);
@@ -31,7 +31,7 @@ const Profile = () => {
       });
   }, [user?.email]);
 
-  // console.log(userInfo?.bio);
+  // console.log(userInfo?.role);
 
   return (
     <div className="text-white">
