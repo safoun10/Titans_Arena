@@ -26,7 +26,7 @@ const BlogElement = ({blog}) => {
           </p>
           <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
             <FaComments className="text-[#45f882] text-lg" />{" "}
-            <span>{comments.length == 0 ? "No Comments" : `${comments.length,"Comments"}`}</span>{" "}
+            <span>{comments?.length == 0 ? "No Comments" : `${comments?.length,"Comments"}`}</span>{" "}
           </p>
         </div>
         <div className="text-white">

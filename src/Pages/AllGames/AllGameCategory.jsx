@@ -192,7 +192,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -211,7 +211,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -229,7 +229,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -247,7 +247,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -265,7 +265,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -283,7 +283,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -301,7 +301,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -319,7 +319,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -337,7 +337,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -355,7 +355,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>

@@ -13,7 +13,7 @@ const Profile = () => {
   const [userInfo, SetUserInfo] = useState();
   const [myComments, setMyComments] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);
@@ -68,7 +68,9 @@ const Profile = () => {
                 }
                 alt={`${user?.displayName}'s profile photo`}
               />
-              <h3 className="md:text-2xl text-lg font-bold">{user?.displayName}</h3>
+              <h3 className="md:text-2xl text-lg font-bold">
+                {user?.displayName}
+              </h3>
               <p className="border rounded-sm w-20 mx-auto uppercase">
                 {userInfo?.role || "member"}
               </p>
@@ -76,8 +78,6 @@ const Profile = () => {
           </div>
           <div className="md:flex gap-4 md:ml-0 ml-32 md:w-4/12 justify-center">
             <div className="flex flex-col justify-center items-center">
-       
-
               <h1 className="text-lg font-bold text-center">
                 Connected Profiles
               </h1>

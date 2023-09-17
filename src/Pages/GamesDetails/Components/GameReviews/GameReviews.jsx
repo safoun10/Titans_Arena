@@ -1,27 +1,31 @@
 import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
+import { useGetGameReviewsStateQuery } from "../../../../Redux/slice/GameReviewsState";
 
 const GameReviews = ({ id }) => {
   const [reviews, setReviews] = useState([]);
+  const { data, isLoading } = useGetGameReviewsStateQuery(id);
 
-  const url = `https://titans-arena-server.vercel.app/reviews/${id}`;
+  // const url = `https://titans-arena-server.vercel.app/reviews/${id}`;
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setReviews(data);
-      });
-  }, []);
+    setReviews(data);
+    // fetch(url)
+    //   .then((res) => res.json())
+    //   .then((data) => {
+    //     console.log(data);
+    //     setReviews(data);
+    //   });
+  }, [data, reviews]);
 
-  if (!reviews) {
-    return <div>Loading or error message...</div>;
+  if (isLoading) {
+    return <div>Loading...</div>;
   }
+
   return (
     <div className="">
       <h2 className="text-3xl text-center font-bold py-5">Reviews</h2>
       <div className="flex  mx-auto">
-        {reviews.map((review, index) => (
+        {reviews?.map((review, index) => (
           <Marquee>
             <div className="container flex flex-col h-64 w-full max-w-lg p-6 mx-auto divide-y rounded-md divide-gray-700 dark:bg-gray-900 dark:text-gray-100">
               <div className="flex justify-between p-4">

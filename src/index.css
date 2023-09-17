@@ -9,11 +9,11 @@ body {
 }
 
 .custom-button {
+  background: #86ff00;
   color: #000000;
   --path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
     14px 100%, 0px calc(100% - 14px);
-font-weight: 600;
-font-size: 16px;
+  font-family: "resobot-bold";
   -webkit-clip-path: polygon(var(--path));
   clip-path: polygon(var(--path));
 
@@ -26,3 +26,4 @@ font-size: 16px;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
