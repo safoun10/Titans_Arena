@@ -8,7 +8,6 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Contexts/Provider/AuthProvider";
 import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Register = () => {
 	const { createUser, user, updateUserData, updateUserProfile } =
@@ -24,8 +23,7 @@ const Register = () => {
 	const {
 		register,
 		handleSubmit,
-		formState: { errors },
-		watch,
+		formState: { errors }
 	} = useForm();
 
 	const onSubmit = (data) => {
@@ -205,14 +203,6 @@ const Register = () => {
 											className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
 										/>
 									</div>
-									<div>
-										<ReCAPTCHA
-											sitekey="6LcnffYnAAAAAEe1BdERt1psjf-PTK-R7IsS3etm"
-											onChange={onChange}
-										/>
-										,
-									</div>
-
 									<div className="flex items-center justify-between">
 										<button
 											type="submit"

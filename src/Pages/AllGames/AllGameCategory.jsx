@@ -10,6 +10,7 @@ import {
 	useGetGameCategoryQuery,
 	useGetGameSearchQuery,
 } from "../../Redux/slice/AllGameCategory";
+import { data } from "autoprefixer";
 
 const AllGameCategory = () => {
 	const [games, setGames] = useState([]);
@@ -29,7 +30,7 @@ const AllGameCategory = () => {
 	useEffect(() => {
 		setGames(gamesCategory);
 		setGames(gamesSearch);
-	}, [gamesCategory, gamesSearch]);
+	}, [gamesCategory, gamesSearch, data]);
 
 	const handleSearch = () => {
 		setSearch(searchRef.current.value);
@@ -38,6 +39,9 @@ const AllGameCategory = () => {
 	const toggleTabList = () => {
 		setIsTabListVisible(!isTabListVisible);
 	};
+
+	console.log(category);
+	console.log(games);
 
 	if (isLoading) {
 		return <div>Loading...</div>;
@@ -192,7 +196,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -211,7 +215,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -229,7 +233,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -247,7 +251,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -265,7 +269,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -283,7 +287,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -301,7 +305,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -319,7 +323,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -337,7 +341,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -355,7 +359,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>

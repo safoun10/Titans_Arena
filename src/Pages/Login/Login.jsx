@@ -120,15 +120,6 @@ const Login = () => {
 										</p>
 									)}
 								</div>
-								<div>
-									<ReCAPTCHA
-										className="bg-transparent"
-										sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-										onChange={onChange}
-									/>
-									,
-								</div>
-
 								<div className="flex items-center justify-between">
 									<button
 										type="submit"
