@@ -46,7 +46,8 @@ const SiteStates = () => {
             </div>
             <div>
               <Link to='/support'>
-                <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
+                <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500 transition-all transform duration-700">
+              {/* add tailwind class transition-all transform duration-700 saiful islam */}
                   READ MORE
                 </button>
               </Link>

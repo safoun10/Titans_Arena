@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useGetGalleryQuery } from "../../../../Redux/slice/GalleryState";
+import BlogElement from "../../../Blogs/BlogElement";
 
 const GalleryParallax = () => {
   const [blog, setBlog] = useState([]);

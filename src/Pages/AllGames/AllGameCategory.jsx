@@ -102,7 +102,7 @@ const AllGameCategory = () => {
 								All Games
 							</Tab>
 							<Tab
-								className={`border p-3 custom-tabs cursor-pointer  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
+								className={`border p-3 custom-tabs cursor-pointer  my-5 lg:my-0 transition-all transform duration-700 rounded text-white ${
 									category === "CallOfDuty"
 										? "hover:bg-green-500 border-green-500"
 										: "hover:bg-green-500 border-green-500"
