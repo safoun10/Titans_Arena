@@ -8,11 +8,10 @@ const Users = () => {
   const [users, setUsers] = useState([]);
   const [axiosSecure] = useAxiosSecure();
   useEffect(() => {
-    axiosSecure.get(`/users`)
-    .then(data=>{
-      setUsers(data.data)
-      console.log(data)
-    })
+    axiosSecure.get(`/users`).then((data) => {
+      setUsers(data.data);
+      console.log(data);
+    });
   }, []);
 
   const makeAdmin = (user) => {
@@ -50,34 +49,34 @@ const Users = () => {
   };
 
   return (
-    <div className="text-white h-[100vh] mb-20 w-full ">
+    <div className="text-white mb-20 md:w-full ">
       <h3 className="text-3xl font-semibold my-4">
         Total Users: {users.length}
       </h3>
-      <div className="overflow-x-scroll border lg:overflow-hidden">
+      <div className="overflow-x-scroll  lg:overflow-hidden ">
         <table className="table">
           {/* head */}
           <thead className="text-white bg-green-500 text-xl">
-            <tr>
-              <th>Serial</th>
+            <tr className="">
+              <th className="md:block hidden ">Serial</th>
               <th>Name</th>
               <th>Email</th>
               <th>Admin</th>
               <th>Remove</th>
             </tr>
           </thead>
-          <tbody className="text-lg font-bold">
+          <tbody className="md:text-lg  font-bold">
             {users.map((user, index) => (
               <tr key={user._id}>
-                <th>{index + 1}</th>
+                <th className="md:block hidden">{index + 1}</th>
                 <td>{user.name}</td>
-                <td>{user.email}</td>
+                <td className="">{user.email}</td>
                 <td>
                   {user?.role === "admin" ? (
                     "Admin"
                   ) : (
                     <button
-                    onClick={() => makeAdmin(user)}
+                      onClick={() => makeAdmin(user)}
                       className=" w-full h-full flex border w rounded border-none bg-green-500 hover:bg-green-700 transition-all duration-500 ease-in-out transform justify-center py-3  text-black"
                       style={{
                         "--path":
