@@ -61,41 +61,46 @@ const Dashboard = () => {
 						</Link>
 					</li>
 
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/dashboard/addblog">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaPlus className="text-yellow-500 text-lg" />{" "}
-								Add Blog
-							</p>
-						</Link>
-					</li>
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/dashboard/test2">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaPlus className="text-yellow-500 text-lg" />{" "}
-								Calendar
-							</p>
-						</Link>
-					</li>
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/dashboard/enrolledTournaments">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaDiceD6 className="text-yellow-500 text-lg" />{" "}
-								Enrolled Tournaments
-							</p>
-						</Link>
-					</li>
-				</>
-			) : (
-				<>
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaHome className="text-yellow-500 text-lg" />{" "}
-								HOME
-							</p>
-						</Link>
-					</li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/addblog">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Add Blog
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/test2">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Calendar
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/enrolledTournaments">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
+                Tournaments
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />  My
+                Comments And Reviews
+              </p>
+            </Link>
+          </li>
+        </>
+      ) : (
+        <>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaHome className="text-yellow-500 text-lg" /> HOME
+              </p>
+            </Link>
+          </li>
 
 					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
 						<Link to="/dashboard/profile">
@@ -114,30 +119,30 @@ const Dashboard = () => {
 						</Link>
 					</li>
 
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/dashboard/enrolledTournaments">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaDiceD6 className="text-yellow-500 text-lg" />{" "}
-								Enrolled Tournaments
-							</p>
-						</Link>
-					</li>
-					<li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
-						<Link to="/dashboard/CommentAndReviewManage">
-							<p className="flex items-center gap-2 text- font-semibold ">
-								<FaDiceD6 className="text-yellow-500 text-lg" />{" "}
-								Enrolled My Comments And Reviews
-							</p>
-						</Link>
-					</li>
-				</>
-			)}
-		</>
-	);
-	return (
-		<div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] bg-cover">
-			<style>
-				{`
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/enrolledTournaments">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
+                Tournaments
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500 ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My
+                Comments And Reviews
+              </p>
+            </Link>
+          </li>
+        </>
+      )}
+    </>
+  );
+  return (
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')] bg-cover">
+      <style>
+        {`
           /* Style for navigation menu */
           .text-white {
             color: white;
@@ -200,36 +205,50 @@ const Dashboard = () => {
                     </ul>
                   </div>
                 </div> */}
-								<div className="space-y-1">{navOptions}</div>
-							</ul>
-						</div>
-						{/* Content area */}
-						<div className="md:ml-[20%]">
-							<div className="max-w-[220rem] mx-auto  ">
-								{/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
-								<Outlet />
-							</div>
-						</div>
-					</div>
-					<label
-						htmlFor="my-drawer"
-						className="btn btn-primary drawer-button md:hidden"
-					>
-						Open drawer
-					</label>
-				</div>
-				<div className="drawer-side">
-					<label
-						htmlFor="my-drawer"
-						className="drawer-overlay"
-					></label>
-					<ul className="p-5 space-y-4 min-h-full bg-black">
-						{navOptions}
-					</ul>
-				</div>
-			</div>
-		</div>
-	);
+                <div className="space-y-1">{navOptions}</div>
+              </ul>
+            </div>
+            {/* Content area */}
+            {/* <label
+            htmlFor="my-drawer"
+            className="btn btn-primary drawer-button md:hidden"
+          >
+            Open drawer
+          </label> */}
+            <label
+              htmlFor="my-drawer"
+              className="fixed z-10  drawer-button md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10 text-green-500 mt-4 "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <div className="md:ml-[20%] md:mx-auto  ml-0">
+              <div className=" ">
+                {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
+                <Outlet />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="drawer-side">
+          <label htmlFor="my-drawer" className="drawer-overlay"></label>
+          <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Dashboard;

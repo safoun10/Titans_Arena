@@ -21,7 +21,7 @@ const UpcomingCountDown = () => {
 	}, []);
 
 	return (
-		<div className="mb-56">
+		<div className="mb-36">
 			{loading ? (
 				<p>Loading...</p>
 			) : match ? (

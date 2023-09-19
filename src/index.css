@@ -9,29 +9,39 @@ body {
 }
 
 .custom-button {
-	background: #86ff00;
-	color: #000000;
-	--path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
-		14px 100%, 0px calc(100% - 14px);
-	font-family: "resobot-bold";
-	-webkit-clip-path: polygon(var(--path));
-	clip-path: polygon(var(--path));
-	border-radius: 8px;
-	text-transform: uppercase;
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+  background: #86ff00;
+  color: #000000;
+  --path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
+    14px 100%, 0px calc(100% - 14px);
+  font-weight: 600;
+  -webkit-clip-path: polygon(var(--path));
+  clip-path: polygon(var(--path));
+
+  border-radius: 8px;
+
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.custom-button2 {
+  background: #86ff00;
+  color: #000000;
+  --path: 0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%,
+    14px 100%, 0px calc(100% - 14px);
+  font-weight: 600;
+  -webkit-clip-path: polygon(var(--path));
+  clip-path: polygon(var(--path));
+
+  border-radius: 8px;
+
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-.custom-tabs {
-	clip-path: polygon(
-		0 0,
-		calc(100% - 18px) 0,
-		100% 18px,
-		100% 100%,
-		18px 100%,
-		0 calc(100% - 18px)
-	);
-}
