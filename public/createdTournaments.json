@@ -3,40 +3,15 @@
     "tournamentName": "Esl Pro League",
     "tournamentPicture": "https://media.istockphoto.com/id/1393796813/photo/friends-playing-computer-game.jpg?s=612x612&w=0&k=20&c=2UmNQg61SF2npo6s0tHtKdIrWCilYmX38m6IWrgnr5A=",
     "matchStage": "Quarterfinals",
-    "team1": {
-      "name": "Team Alpha",
-      "players": ["John Doe", "Jane Smith", "Mike Johnson", "Emily Brown"],
-      "country": "USA",
-      "team1Logo": "https://i.ibb.co/zZx2DWC/pngwing-com-46.png",
-      "wins": 3,
-      "trophies": 2,
-      "ranking": 4
-    },
-    "team2": {
-      "name": "Team Beta",
-      "players": [
-        "David Lee",
-        "Sarah Wilson",
-        "Robert Clark",
-        "Linda Martinez"
-      ],
-      "country": "Canada",
-      "team2Logo": "https://i.ibb.co/jTT8bZn/pngwing-com-40.png",
-      "wins": 2,
-      "trophies": 1,
-      "ranking": 7
-    },
-    "matchDate": "2023-09-25",
+    "description": "loren15",
+    "matchDate": "2023-09-15",
     "matchTime": "15:00",
     "matchLocation": "Los Angeles, CA",
     "matchDescription": "An intense battle between Team Alpha and Team Beta in the ESL Pro League Quarterfinals.",
-    "result": {
-      "winner": "Team Alpha",
-      "score": "2-1"
-    },
-    "views": "50k",
-    "teamPlayer": "5V5",
-    "gamingMoode": "PC",
+    "enrolled": "50",
+    "totalTeam": "5V5",
+    "gamingMoode": "multiplayer",
+    "Plateform": "PC",
     "streamURL": "https://twitch.tv/esports_stream",
     "matches": "finished"
   },

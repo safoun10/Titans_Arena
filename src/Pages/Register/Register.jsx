@@ -206,7 +206,7 @@ const Register = () => {
                   <div className="flex items-center justify-between">
                     <button
                       type="submit"
-                      className="custom-button hover:bg-green-500 py-2 px-5 my-4 w-full"
+                      className="custom-button hover:bg-green-500 py-2 px-5 mt-4 w-full"
                     >
                       Register
                     </button>
@@ -214,7 +214,7 @@ const Register = () => {
                 </form>
 
                 <div>
-                  <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                  <div className="mb-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                     <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
                       Or
                     </p>
@@ -222,7 +222,7 @@ const Register = () => {
                   <div className="ml-5">
                     <SocialLogin></SocialLogin>
 
-                    <p className="mt-4 text-center text-green-500 flex items-center gap-3 mb-3">
+                    <p className="m-4 text-center text-green-500 flex items-center gap-3 mb-3">
                       Have an Account Go To
                       <Link className="text-indigo-600 " to="/login">
                         Login{" "}

@@ -49,7 +49,7 @@ const ESportVictories = () => {
 
 	return (
 		<div>
-			<div className="">
+			<div>
 				{/* <img
               className=" w-24 mx-auto mt- transform hover:translate-y-2 hover:shadow-xl transition duration-300"
               src="https://i.ibb.co/NsZD8GM/pngwing-com-13.png"
@@ -139,18 +139,13 @@ const ESportVictories = () => {
 					</div>
 
 					<div>
-						{/* ------------------------------ */}
-
-						<div
-							className="flex items-center  border-r-4 border-r-yellow-500 rounded-r-3xl shadow-md  max-w-5xl mx-auto p-5   bg-black bg-opacity-50 mb-10"
-							// style="font-family: 'Muli', sans-serif;"
-						>
+						<div className="flex items-center  border-r-4 border-r-yellow-500 rounded-r-3xl shadow-md  max-w-5xl mx-auto p-5   bg-black bg-opacity-50 mb-10">
 							<div className="  ml-auto mr-auto flex flex-wrap items-start">
 								<div className="w-full pl-5 lg:pl-2 mb-4 mt-4">
 									<h1 className="text-3xl lg:text-4xl  text-green-500 font-extrabold">
 										THE{" "}
 										<span className="hover:text-white">
-											ACHIVEMENT
+											ACHIEVEMENT
 										</span>{" "}
 										OF
 										<span className="text-yellow-400">

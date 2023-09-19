@@ -3,7 +3,7 @@ import UpcomminCountDown from "../../../Esports/UpcomminCountDown/UpcomminCountD
 
 const FeatureGames = () => {
   return (
-    <div className="mt-36">
+    <div className="mt-32">
       <Title primaryText="ESPORTS " secondaryText="NEXT MATCH" />
 
       <div>

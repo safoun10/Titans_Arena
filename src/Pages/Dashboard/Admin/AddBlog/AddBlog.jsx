@@ -14,49 +14,7 @@ const AddBlog = () => {
     reset,
     formState: { errors },
   } = useForm();
-  // const onSubmit = (data) => {
-  //   data.Category = categoryOption;
-  //   data.tags = tagOption;
-
-  //   fetch("https://titans-arena-server.vercel.app/blog", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(data),
-  //   }).then((result) => {
-  //     console.log(result);
-  //     reset();
-  //     Swal.fire({
-  //       position: "center",
-  //       icon: "success",
-  //       title: "Blog successfuly added",
-  //       showConfirmButton: false,
-  //       timer: 1500,
-  //     });
-  //   });
-  //   console.log("add a blog", data);
-  // };
-
-  // fetch("https://assignment-11-server-xi-sand.vercel.app/toy", {
-  //   method: "POST",
-  //   headers: {
-  //     "content-type": "application/json",
-  //   },
-  //   body: JSON.stringify(newToy),
-  // })
-  //   .then((res) => res.json())
-  //   .then((data) => {
-  //     console.log(data);
-  //     if (data.insertedId) {
-  //       Swal.fire({
-  //         title: "Success!",
-  //         text: "Toy added successfully",
-  //         icon: "success",
-  //         confirmButtonText: "Cool",
-  //       });
-  //       form.reset();
-  //     }
-  //   });
-
+ 
   const categoryOptions = [
     { value: "Gaming", label: "Gaming" },
     { value: "Reviews", label: "Reviews" },
