@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import TournamentBanner from "./TournamentBanner/TournamentBanner";
-import PopularTournaments from "./TournamentBanner/UpcommingTournaments/UpcommingTournaments";
-import UpcomingTournaments from "./TournamentBanner/PopularTournaments/PopularTournaments";
 import Matches from "./Matches/Matches";
 import TournamentsVideo from "./TournamentsVideo/TournamentsVideo";
-import AddTournament from "./AddTournament/TournamentsNewItems";
+
 import TournamentsNewItems from "./AddTournament/TournamentsNewItems";
 import axios from "axios";
+import useAuth from "../../Hooks/useAuth";
+import UpcommingTournaments from "./TournamentBanner/UpcommingTournaments/UpcommingTournaments";
+import PopularTournaments from "./TournamentBanner/PopularTournaments/PopularTournaments";
 
 const Tournament = () => {
   const [data, setData] = useState([]);
+  const { user } = useAuth();
 
   console.log(data);
 
@@ -25,11 +27,12 @@ const Tournament = () => {
   }, []);
   return (
     <div className=" bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+      
       <TournamentBanner></TournamentBanner>
       <TournamentsNewItems />
-      {data.length > 0 ? <PopularTournaments /> : <></>}
+      {data.length > 0 ? <UpcommingTournaments user={user} /> : <></>}
 
-      <UpcomingTournaments />
+      <PopularTournaments />
       <Matches />
       <TournamentsVideo />
     </div>

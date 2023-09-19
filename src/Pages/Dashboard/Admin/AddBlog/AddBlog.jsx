@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import CreatableSelect from "react-select/creatable";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 
 const AddBlog = () => {
   const [categoryOption, setCategoryOption] = useState(null);
@@ -14,7 +15,7 @@ const AddBlog = () => {
     reset,
     formState: { errors },
   } = useForm();
- 
+
   const categoryOptions = [
     { value: "Gaming", label: "Gaming" },
     { value: "Reviews", label: "Reviews" },
@@ -56,7 +57,7 @@ const AddBlog = () => {
       category,
       facebook,
       twitter,
-      linkedin
+      linkedin,
     };
     console.log(newBlog);
 
@@ -83,10 +84,8 @@ const AddBlog = () => {
   };
 
   return (
-    <div className="pt-6 w-full shadow-xl px-5 bg-[#23252d]">
-      <h2 className="bg-gradient-to-b from-transparent to-[#68fb9a] w-1/4 mx-auto text-white text-center underline font-bold text-2xl lg:text-4xl italic pb-4">
-        Public Blog
-      </h2>
+    <div className="pt-6 w-full shadow-xl px-5 ">
+      <Title primaryText="Add Your Own" secondaryText="Blogs" />
 
       <form onSubmit={handleAddBlog}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
@@ -138,7 +137,7 @@ const AddBlog = () => {
             </label>
             <CreatableSelect
               name="category"
-              className="w-75 font-semibold bg-[#303540]"
+              className="w-75 font-semibold !bg-[#303540]"
               defaultValue={categoryOption}
               onChange={setCategoryOption}
               options={categoryOptions}
@@ -148,7 +147,7 @@ const AddBlog = () => {
           <div className="mb-4">
             <label className="block text-white font-medium mb-1">Tags</label>
             <CreatableSelect
-              className="w-75 font-semibold bg-[#303540]"
+              className="w-75 font-semibold !bg-[#303540]"
               defaultValue={tagOption}
               onChange={setTagOption}
               options={tagOptions}

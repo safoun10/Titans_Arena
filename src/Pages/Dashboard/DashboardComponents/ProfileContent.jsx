@@ -118,7 +118,7 @@ const ProfileContent = ({ userInfo, myComments }) => {
           <Test2 />
         </div>
 
-        <MyComments myComments={myComments} />
+     
       </div>
     </div>
   );

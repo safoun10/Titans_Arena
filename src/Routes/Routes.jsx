@@ -27,6 +27,7 @@ import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 import CommentAndReviewManage from "../Pages/Dashboard/Members/Chat/CommentAndReviewManage/CommentAndReviewManage";
 import AddTournament from "../Pages/Tournament/AddTournament/AddTournament";
+import SingleTournamentDetails from "../Pages/Tournament/CustomTournaments/SingleTournamentDetails";
 
 const router = createBrowserRouter([
   {
@@ -91,8 +92,12 @@ const router = createBrowserRouter([
         path: "/tournament",
       },
       {
-        element: <AddTournament />,
         path: "/addTournament",
+        element: <AddTournament />,
+      },
+      {
+        path: "/singleTournamentDetail/:id",
+        element: <SingleTournamentDetails />,
       },
     ],
   },
