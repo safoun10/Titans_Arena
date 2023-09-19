@@ -21,26 +21,15 @@ const AllGameCategory = () => {
 	const searchRef = useRef("");
 	const [search, setSearch] = useState("");
 
-	// ---------------------------------------------------------------------------------------
-
 	const { data: gamesCategory, isLoading } =
 		useGetGameCategoryQuery(category);
 
-	// ---------------------------------------------------------------------------------------
-
 	const { data: gamesSearch } = useGetGameSearchQuery(search);
-
-	// ---------------------------------------------------------------------------------------
 
 	useEffect(() => {
 		setGames(gamesCategory);
 		setGames(gamesSearch);
 	}, [gamesCategory, gamesSearch]);
-
-	// console.log(games);
-	console.log(search);
-
-	// ---------------------------------------------------------------------------------------
 
 	const handleSearch = () => {
 		setSearch(searchRef.current.value);
@@ -91,7 +80,10 @@ const AllGameCategory = () => {
 					</div>
 					<div className={isTabListVisible ? "" : "hidden lg:block"}>
 						<TabList className="lg:flex mx-10 mb-10 flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "All Games"
 										? "hover:bg-green-500 border-green-500"
@@ -101,7 +93,10 @@ const AllGameCategory = () => {
 							>
 								All Games
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}} 
 								className={`border p-3 custom-tabs cursor-pointer  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "CallOfDuty"
 										? "hover:bg-green-500 border-green-500"
@@ -111,7 +106,10 @@ const AllGameCategory = () => {
 							>
 								Action
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "Assassin's Creed"
 										? "hover:bg-green-500 border-green-500"
@@ -121,7 +119,10 @@ const AllGameCategory = () => {
 							>
 								Battle Royale
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "RPG"
 										? "hover:bg-green-500 border-green-500"
@@ -131,7 +132,10 @@ const AllGameCategory = () => {
 							>
 								RPG
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Uncharted"
 										? "hover:bg-green-500 border-green-500"
@@ -142,7 +146,10 @@ const AllGameCategory = () => {
 								Adventure
 							</Tab>
 
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "RedDeadRedemption"
 										? "hover:bg-green-500 border-green-500"
@@ -153,7 +160,10 @@ const AllGameCategory = () => {
 								Racing
 							</Tab>
 
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Battlefield"
 										? "hover:bg-green-500 border-green-500"
@@ -163,7 +173,10 @@ const AllGameCategory = () => {
 							>
 								Simulation
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry"
 										? "hover:bg-green-500 border-green-500"
@@ -173,7 +186,10 @@ const AllGameCategory = () => {
 							>
 								Sports
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry1"
 										? "hover:bg-green-500 border-green-500"
@@ -183,7 +199,10 @@ const AllGameCategory = () => {
 							>
 								Strategy
 							</Tab>
-							<Tab
+							<Tab style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry2"
 										? "hover:bg-green-500 border-green-500"
@@ -203,7 +222,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -222,7 +241,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -240,7 +259,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -258,7 +277,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -276,7 +295,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -294,7 +313,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -312,7 +331,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -330,7 +349,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -348,7 +367,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>
@@ -366,7 +385,7 @@ const AllGameCategory = () => {
 									(currentPage - 1) * gamesPerPage,
 									currentPage * gamesPerPage
 								)
-								.map((game, i) => (
+								?.map((game, i) => (
 									<GameCard key={i} game={game}></GameCard>
 								))}
 						</div>

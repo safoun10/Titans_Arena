@@ -11,7 +11,6 @@ const UpcomingCountDown = () => {
 		axios
 			.get("Fixered.json")
 			.then((response) => {
-				// Assuming you want to display the first item (index 0)
 				setMatch(response.data[0]);
 				setLoading(false);
 			})
@@ -22,7 +21,7 @@ const UpcomingCountDown = () => {
 	}, []);
 
 	return (
-		<div className="mb-56">
+		<div className="mb-36">
 			{loading ? (
 				<p>Loading...</p>
 			) : match ? (
@@ -31,7 +30,7 @@ const UpcomingCountDown = () => {
 						<div className="px-3 py-12">
 							<div className="  border-2 border-yellow-500 bg-cover  lg:max-w-[1280px] rounded-full   mt-10 md:max-w-[696px] max-w-[343px] border-b-0 mx-auto bg-opacity-60  lg:px-10 lg:h-48  sm:h-full md:px-6 ">
 								<div className="lg:flex md:flex block">
-									{/* Team 1 Logo */}
+
 									<div className="flex">
 										<div>
 											<img
@@ -41,7 +40,7 @@ const UpcomingCountDown = () => {
 											/>
 										</div>
 									</div>
-									{/* Tournament Details */}
+
 									<div className="w-56  mx-auto rounded-full">
 										<img
 											src={match.team1.team1Logo}
@@ -65,7 +64,6 @@ const UpcomingCountDown = () => {
 											<br />
 										</p>
 										<div>
-											{/* Countdown */}
 											<Countdown
 												date={
 													new Date(
@@ -122,7 +120,7 @@ const UpcomingCountDown = () => {
 											</ul>
 										</div>
 									</div>
-									{/* Team 2 Logo */}
+
 									<div className="w-64 mx-auto">
 										<img
 											src={match.team2.team2Logo}

@@ -12,11 +12,16 @@
 .sub-title-gallery {
 	color: rgb(255, 253, 253);
 	font-size: 3.5rem;
-	line-height: 1.25;
+	line-height: 1;
+	width: 480px;
 }
 
 .gallery-subtitle {
-	color: whitesmoke;
+	color: rgba(245, 245, 245, 0.795);
+	width: 400px;
+	padding-top: 12px;
+	font-size: 16px;
+	font-weight: 600;
 }
 
 .w-cus {

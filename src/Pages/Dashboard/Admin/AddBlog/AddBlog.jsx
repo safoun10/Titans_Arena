@@ -14,28 +14,7 @@ const AddBlog = () => {
     reset,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => {
-    data.Category = categoryOption;
-    data.tags = tagOption;
-
-    fetch("https://titans-arena-server.vercel.app/blog", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
-    }).then((result) => {
-      console.log(result);
-      reset();
-      Swal.fire({
-        position: "center",
-        icon: "success",
-        title: "Blog successfuly added",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    });
-    console.log("add a blog", data);
-  };
-
+ 
   const categoryOptions = [
     { value: "Gaming", label: "Gaming" },
     { value: "Reviews", label: "Reviews" },
@@ -57,6 +36,51 @@ const AddBlog = () => {
     { value: "aim training", label: "aim training" },
     { value: "map knowledge", label: "map knowledge" },
   ];
+  const handleAddBlog = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const title = form.title.value;
+    const author = form.author.value;
+    const date = form.date.value;
+    const featured_image = form.featured_image.value;
+    const category = form.category.value;
+    const facebook = form.facebook.value;
+    const twitter = form.twitter.value;
+    const linkedin = form.linkedin.value;
+
+    const newBlog = {
+      title,
+      author,
+      date,
+      featured_image,
+      category,
+      facebook,
+      twitter,
+      linkedin
+    };
+    console.log(newBlog);
+
+    fetch("http://localhost:5000/blogs", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(newBlog),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        if (data.insertedId) {
+          Swal.fire({
+            title: "Success!",
+            text: "Toy added successfully",
+            icon: "success",
+            confirmButtonText: "Cool",
+          });
+          form.reset();
+        }
+      });
+  };
 
   return (
     <div className="pt-6 w-full shadow-xl px-5 bg-[#23252d]">
@@ -64,7 +88,7 @@ const AddBlog = () => {
         Public Blog
       </h2>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form onSubmit={handleAddBlog}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="mb-4">
             <label className="block text-white font-medium mb-1">Name</label>
@@ -84,7 +108,7 @@ const AddBlog = () => {
               type="text"
               className="border-b bg-transparent text-white w-full py-2 px-3"
               placeholder="Author Name"
-              name="Author"
+              name="author"
               {...register("author")}
             />
           </div>
@@ -113,6 +137,7 @@ const AddBlog = () => {
               Category
             </label>
             <CreatableSelect
+              name="category"
               className="w-75 font-semibold bg-[#303540]"
               defaultValue={categoryOption}
               onChange={setCategoryOption}
@@ -131,38 +156,41 @@ const AddBlog = () => {
             />
           </div>
         </div>
-        
         <div className="flex flex-col lg:flex-row justify-between gap-2">
-        <div className="mb-4">
-          <label className="block text-white font-medium mb-1">Facebook</label>
-          <input
-            type="text"
-            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
-            name="social_media"
-            placeholder="Facebook"
-            {...register("facebook")}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-white font-medium mb-1">Twitter</label>
-          <input
-            type="text"
-            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
-            name="social_media"
-            placeholder="Twitter"
-            {...register("twitter")}
-          />
-        </div>
-        <div className="mb-4">
-          <label className="block text-white font-medium mb-1">Linked In</label>
-          <input
-            type="text"
-            className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
-            name="social_media"
-            placeholder="Linked In"
-            {...register("linked_in")}
-          />
-        </div>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">
+              Facebook
+            </label>
+            <input
+              type="text"
+              className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+              name="facebook"
+              placeholder="Facebook"
+              {...register("facebook")}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">Twitter</label>
+            <input
+              type="text"
+              className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+              name="twitter"
+              placeholder="Twitter"
+              {...register("twitter")}
+            />
+          </div>
+          <div className="mb-4">
+            <label className="block text-white font-medium mb-1">
+              Linked In
+            </label>
+            <input
+              type="text"
+              className="border-b bg-transparent text-white w-full py-2 px-3 font-semibold"
+              name="linkedin"
+              placeholder="Linked In"
+              {...register("linkedin")}
+            />
+          </div>
         </div>
         <div className="form-control">
           <label className="label">

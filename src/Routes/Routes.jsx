@@ -26,12 +26,12 @@ import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
 import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/EnrolledTournaments";
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 import CommentAndReviewManage from "../Pages/Dashboard/Members/Chat/CommentAndReviewManage/CommentAndReviewManage";
+import AddTournament from "../Pages/Tournament/AddTournament/AddTournament";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -90,12 +90,15 @@ const router = createBrowserRouter([
         element: <Tournament />,
         path: "/tournament",
       },
+      {
+        element: <AddTournament />,
+        path: "/addTournament",
+      },
     ],
   },
   {
     path: "/dashboard",
     element: <Dashboard />,
-    // errorElement: <Error />,
     children: [
       {
         path: "users",

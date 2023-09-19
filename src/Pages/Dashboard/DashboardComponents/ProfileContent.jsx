@@ -1,15 +1,15 @@
 import React from "react";
 import {
-  AiFillAndroid,
-  AiOutlineMail,
-  AiOutlinePhone,
-  AiOutlineProfile,
+	AiFillAndroid,
+	AiOutlineMail,
+	AiOutlinePhone,
+	AiOutlineProfile,
 } from "react-icons/ai";
 import { FaGamepad } from "react-icons/fa";
 import {
-  FaCartFlatbedSuitcase,
-  FaPlaystation,
-  FaShieldHeart,
+	FaCartFlatbedSuitcase,
+	FaPlaystation,
+	FaShieldHeart,
 } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import useAuth from "../../../Hooks/useAuth";
@@ -17,11 +17,11 @@ import Test2 from "../Admin/Test2/Test2";
 import MyComments from "./MyComments";
 
 const ProfileContent = ({ userInfo, myComments }) => {
-  const { user } = useAuth();
+	const { user } = useAuth();
 
   return (
-    <div className="w-12/12 flex ">
-      <div className="w-4/12  ">
+    <div className="md:flex">
+      <div className="md:w-4/12  ">
         <div className="m-2 border bg-slate-800  p-2 py-5 rounded-md  ">
           <h1 className="text-2xl font-bold ">Introduction</h1>
           <p className="">{userInfo?.bio}</p>
@@ -91,30 +91,33 @@ const ProfileContent = ({ userInfo, myComments }) => {
           {/* Add more static transaction elements as needed */}
         </div>
       </div>
-      <div className="w-8/12 ">
-        <div className="grid grid-cols-4 gap-2 rounded-md p-2 text-center">
-          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center flex-col rounded-md">
+      <div className="md:w-8/12 ">
+        <div className="grid md:grid-cols-4 grid-cols-2  gap-2 rounded-md p-2 text-center">
+          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center py-8 flex-col rounded-md">
             <FaGamepad className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">12,361</div>
             <div className="text-white text-lg">Won Matches</div>
           </div>
-          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center p-10 flex-col rounded-md">
+          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center py-8 px-10 flex-col rounded-md">
             <FaCartFlatbedSuitcase className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">431,225</div>
             <div className="text-white text-lg">Order Completed</div>
           </div>
-          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center p-10 flex-col rounded-md">
+          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center py-8 px-10 flex-col rounded-md">
             <FaPlaystation className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">32,441</div>
             <div className="text-white text-lg">Played Tournarments</div>
           </div>
-          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center p-10 flex-col rounded-md">
+          <div className="bg-primary-400 flex bg-slate-800 border items-center justify-center py-8 px-10 flex-col rounded-md">
             <FaShieldHeart className="w-10 h-10" />
             <div className="text-white font-semibold text-lg">1,325,134</div>
             <div className="text-white text-lg">Tournaments Hosted</div>
           </div>
         </div>
-        <Test2 />
+        <div className="md:block hidden">
+          <Test2 />
+        </div>
+
         <MyComments myComments={myComments} />
       </div>
     </div>
