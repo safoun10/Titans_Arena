@@ -14,7 +14,7 @@ const BlogElement = ({blog}) => {
      
     return (
     <div className="bg-[#182029] mb-10">
-      <img className="w-full" src={featured_image} alt="blog-image" />
+      <img className="w-full" src={featured_image} alt="blog-image"  loading="lazy"/>
       <div className="py-3 px-4 lg:py-6 lg:px-11">
         <div className="text-white flex gap-2 lg:gap-6">
           <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
