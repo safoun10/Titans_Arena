@@ -33,12 +33,12 @@ const GameInfo = ({ gameDetails }) => {
     return <div>Loading or error message...</div>;
   }
   return (
-    <div className="just-gamers-bg h-[700px]">
+    <div className=" just-gamers-bg h-[700px]">
       <div className="mt-20">
         <Title secondaryText="SYSTEM REQUIREMENTS" />
       </div>
-      <div className="flex justify-between max-w-6xl mx-auto">
-        <div className="w-2/6">
+      <div className="lg:flex lg:justify-between max-w-6xl mx-auto">
+        <div className="lg:w-2/6 lg:ml-0 ml-5">
           <h2 className="text-4xl mb-2 font-bold">MINIMUM</h2>
           <div className="space-y-1 text-xl ">
             <p className="text-yellow-400 font-bold text-3xl">OS:</p>
@@ -53,14 +53,14 @@ const GameInfo = ({ gameDetails }) => {
             <p className="">{minimumRequirements.Storage}</p>
           </div>
         </div>
-        <div className="w-2/6 ml-16 flex justify-center">
+        <div className="lg:w-2/6 ml-16  lg:flex justify-center">
           <img
             className=""
             src="https://themepixer.com/demo/html/geco/Geco/img/images/just_gamers_img.png"
             alt=""
           />
         </div>
-        <div className="text-end w-2/6">
+        <div className="text-end lg:w-2/6">
           <h2 className="text-4xl mb-2 font-bold">RECOMMENDED</h2>
           <div className="space-y-1 text-xl">
             <p className="text-yellow-400 font-bold text-3xl">OS: </p>

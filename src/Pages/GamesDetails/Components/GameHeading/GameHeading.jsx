@@ -30,13 +30,13 @@ const GameHeading = ({ gameDetails }) => {
   return (
     // <div className="bg-[url('https://themepixer.com/demo/html/geco/Geco/img/bg/breadcrumb_bg.jpg')]">
     <div className="">
-      <div className="flex max-w-7xl items-center mx-auto gap-5 py-20">
-        <div className="w-3/6">
+      <div className="grid lg:grid-cols-3 grid-cols-1 max-w-7xl  mx-auto gap-5 py-20">
+        <div className=" lg:flex-none  flex justify-center">
           <img className=" h-[24rem] bg" src={image} alt="" />
         </div>
-        <div className="w-2/6">
-          <h1 className="text-5xl font-bold tracking-[0.1rem]">{title}</h1>
-          <div className="flex gap-32 ">
+        <div className="lg:mt-20">
+          <h1 className="lg:text-3xl text-green-400 text-2xl font-bold tracking-[0.1rem]">{title}</h1>
+          <div className="flex gap-32 lg:ml-0 ml-5 lg:pt-0 pt-5">
             <div>
               <div className="">
                 <p className="text-gray-400 font-semibold">Category</p>
@@ -69,7 +69,7 @@ const GameHeading = ({ gameDetails }) => {
               </div>
             </div>
           </div>
-          <div className="">
+          <div className="pt-3 lg:pl-0 pl-40">
             <p className="text-gray-400 font-semibold">PLATFORMS</p>
             <div className="text-xl font-bold">
               {platforms ? (
@@ -86,7 +86,7 @@ const GameHeading = ({ gameDetails }) => {
             </div>
           </div>
         </div>
-        <div className="w-2/6">
+        <div className="lg:mt-24 lg:mr-5">
           <div className=" bg-red-500 bg-opacity-30 font-bold ">
             <table className="w-full  ">
               <thead>

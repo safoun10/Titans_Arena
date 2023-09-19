@@ -1,15 +1,13 @@
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
-import FeatureGameCard from "./FeatureGameCard";
+import UpcomminCountDown from "../../../Esports/UpcomminCountDown/UpcomminCountDown";
 
 const FeatureGames = () => {
   return (
-    <div>
-      <Title primaryText="NEW AND TOP" secondaryText="GAME INFO" />
+    <div className="mt-36">
+      <Title primaryText="ESPORTS " secondaryText="NEXT MATCH" />
 
-      <div className="max-w-6xl mx-6 md:mx-auto grid gap-4">
-        <FeatureGameCard />
-        <FeatureGameCard />
-        <FeatureGameCard />
+      <div>
+        <UpcomminCountDown />
       </div>
     </div>
   );
