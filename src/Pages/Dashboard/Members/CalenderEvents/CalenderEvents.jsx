@@ -1,10 +1,10 @@
-import "./Test2.css";
 import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
+
 const Test2 = () => {
   const [currentEvents, setCurrentEvents] = useState([]);
 
@@ -62,9 +62,7 @@ const Test2 = () => {
               interactionPlugin,
               listPlugin,
             ]}
-            
             headerToolbar={{
-            
               left: "prev,next today",
               center: "title",
               right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
@@ -88,6 +86,17 @@ const Test2 = () => {
                 title: "Timed event",
                 date: "2022-09-28",
               },
+              {
+                id: "789",
+                title: "Reserved Date 1",
+                date: "2022-10-10",
+              },
+              {
+                id: "456",
+                title: "Reserved Date 2",
+                date: "2022-10-15",
+              },
+              // Add more static events here if needed
             ]}
           />
         </div>

@@ -3,7 +3,6 @@ import useAuth from "../../../../Hooks/useAuth";
 import Swal from "sweetalert2";
 
 const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
- 
   const {
     _id,
     tournamentPicture,
@@ -27,7 +26,7 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
       _id: _id, // Send the _id from the singleTournament
     };
 
-    fetch(`http://localhost:3000/enrollTournaments/${user.email}`, {
+    fetch(`http://localhost:5000/enrollTournaments/${user.email}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody), // Send the request body as JSON

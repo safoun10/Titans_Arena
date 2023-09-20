@@ -15,7 +15,7 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/tournaments/${tournamentId}`)
+      .get(`http://localhost:5000/tournaments/${tournamentId}`)
       .then((response) => {
         setEnrolledCard(response.data);
       })
@@ -45,7 +45,7 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
 
   const handleDeleteEnrolledTournament = () => {
     axios
-      .patch(`http://localhost:3000/removeEnrolledTournament/${user?.email}`, {
+      .patch(`http://localhost:5000/removeEnrolledTournament/${user?.email}`, {
         tournamentIdToRemove: _id,
       })
       .then((response) => {

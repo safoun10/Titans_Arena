@@ -1,23 +1,23 @@
 import React from "react";
 import {
-	AiFillAndroid,
-	AiOutlineMail,
-	AiOutlinePhone,
-	AiOutlineProfile,
+  AiFillAndroid,
+  AiOutlineMail,
+  AiOutlinePhone,
+  AiOutlineProfile,
 } from "react-icons/ai";
 import { FaGamepad } from "react-icons/fa";
 import {
-	FaCartFlatbedSuitcase,
-	FaPlaystation,
-	FaShieldHeart,
+  FaCartFlatbedSuitcase,
+  FaPlaystation,
+  FaShieldHeart,
 } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import useAuth from "../../../Hooks/useAuth";
-import Test2 from "../Admin/Test2/Test2";
+import Test2 from "../Members/CalenderEvents/CalenderEvents";
 import MyComments from "./MyComments";
 
 const ProfileContent = ({ userInfo, myComments }) => {
-	const { user } = useAuth();
+  const { user } = useAuth();
 
   return (
     <div className="md:flex">
@@ -117,8 +117,6 @@ const ProfileContent = ({ userInfo, myComments }) => {
         <div className="md:block hidden">
           <Test2 />
         </div>
-
-     
       </div>
     </div>
   );

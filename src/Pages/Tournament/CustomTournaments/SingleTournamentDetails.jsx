@@ -10,7 +10,7 @@ const SingleTournamentDetails = () => {
   useEffect(() => {
     // Make sure to use the `id` from useParams inside the axios request
     axios
-      .get(`http://localhost:3000/tournaments/${id}`)
+      .get(`http://localhost:5000/tournaments/${id}`)
       .then((response) => {
         setSingleTournament(response.data);
       })
@@ -21,7 +21,9 @@ const SingleTournamentDetails = () => {
 
   return (
     <div className="pt-20">
-      <h3 className="text-5xl text-center font-bold text-white">{tournament_name}</h3>
+      <h3 className="text-5xl text-center font-bold text-white">
+        {tournament_name}
+      </h3>
     </div>
   );
 };

@@ -13,7 +13,7 @@ function EnrolledTournaments() {
     const fetchEnrolledTournaments = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/enrolledTournaments/${user?.email}`
+          `http://localhost:5000/enrolledTournaments/${user?.email}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);
