@@ -27,6 +27,7 @@ import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 import CommentAndReviewManage from "../Pages/Dashboard/Members/Chat/CommentAndReviewManage/CommentAndReviewManage";
 import AddTournament from "../Pages/Tournament/AddTournament/AddTournament";
+import MatchFixereManage from "../Pages/Dashboard/DashboardComponents/MatchFixereManage/MatchFixereManage";
 
 const router = createBrowserRouter([
   {
@@ -143,6 +144,10 @@ const router = createBrowserRouter([
       {
         path: "CommentAndReviewManage",
         element: <CommentAndReviewManage />,
+      },
+      {
+        path: "matchFixered",
+        element: <MatchFixereManage></MatchFixereManage>,
       },
     ],
   },
