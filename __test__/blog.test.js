@@ -1,17 +1,13 @@
-import { configure } from "enzyme";
-import Adapter from 'enzyme-adapter-react-16';
-import React from "react";
-configure({ adapter: new Adapter() });
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import Blogs from '../src/Pages/Blogs/Blogs';
 
-import Blogs from "../src/Pages/Blogs/Blogs";
-import { shallow } from 'enzyme';
-import Enzyme from 'enzyme';
+test('should render a message', () => {
+    const message = 'Hello world!';
 
-Enzyme.configure({ adapter: new Adapter() });
+    render(<Blogs message={message} />);
 
-describe('Blog Testing', () => {
-    it('Blog Success ', () => {
-        const wrapper = shallow(<Blogs />)
-        expect(wrapper).toBe(true)
-    });
+    const element = screen.getByText(message);
+
+    expect(element).toBeInTheDocument();
 });
