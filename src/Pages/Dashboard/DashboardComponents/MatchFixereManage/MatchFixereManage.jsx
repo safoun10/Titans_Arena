@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 
 const initialFormData = {
   tournamentName: "",
@@ -73,8 +74,9 @@ const MatchFixereManage = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <h2 className="text-2xl font-semibold mb-4">Create Tournament</h2>
+    <div className="max-w-7xl mx-auto px-4">
+      <Title primaryText="Create Result OF" secondaryText="Tournament" />
+
       <form onSubmit={handleSubmit}>
         {/* Tournament Name */}
         <div className="mb-4">
@@ -90,7 +92,7 @@ const MatchFixereManage = () => {
             name="tournamentName"
             value={formData.tournamentName}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -109,7 +111,7 @@ const MatchFixereManage = () => {
             name="tournamentPicture"
             value={formData.tournamentPicture}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -128,7 +130,7 @@ const MatchFixereManage = () => {
             name="matchStage"
             value={formData.matchStage}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -149,13 +151,13 @@ const MatchFixereManage = () => {
               name="team1.name"
               // value={formData.team1.name}
               onChange={handleChange}
-              className="w-full px-3 py-2 border rounded-lg mb-2"
+              className="w-full px-3 py-2 bg-slate-800 mb-2"
             />
 
             <div className="mb-4">
               <label
                 htmlFor="team1Logo"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white font-bold mb-2"
               >
                 Team 1 Logo URL
               </label>
@@ -165,7 +167,7 @@ const MatchFixereManage = () => {
                 name="team1.team1Logo"
                 // value={formData.team1.team1Logo}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -183,7 +185,7 @@ const MatchFixereManage = () => {
                     handlePlayerNameChange("team1", index, e.target.value)
                   }
                   placeholder={`Player ${index + 1}`}
-                  className="w-full px-3 py-2 border rounded-lg mb-2"
+                  className="w-full px-3 py-2 bg-slate-800 mb-2"
                 />
               ))}
             </div>
@@ -204,13 +206,13 @@ const MatchFixereManage = () => {
               name="team2.name"
               // value={formData.team2.name}
               onChange={handleChange}
-              className="w-full text-white px-3 py-2 border rounded-lg mb-2"
+              className="w-full text-white px-3 py-2 bg-slate-800 mb-2"
               required
             />
             <div className="mb-4">
               <label
                 htmlFor="team2Logo"
-                className="block text-gray-700 font-bold mb-2"
+                className="block text-white font-bold mb-2"
               >
                 Team 2 Logo URL
               </label>
@@ -220,7 +222,7 @@ const MatchFixereManage = () => {
                 name="team2.team2Logo"
                 // value={formData.team2.team2Logo}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -238,7 +240,7 @@ const MatchFixereManage = () => {
                     handlePlayerNameChange("team2", index, e.target.value)
                   }
                   placeholder={`Player ${index + 1}`}
-                  className="w-full px-3 py-2 border rounded-lg mb-2"
+                  className="w-full px-3 py-2 bg-slate-800 mb-2"
                 />
               ))}
             </div>
@@ -261,7 +263,7 @@ const MatchFixereManage = () => {
             name="matchDate"
             value={formData.matchDate}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -280,7 +282,7 @@ const MatchFixereManage = () => {
             name="matchTime"
             value={formData.matchTime}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -299,7 +301,7 @@ const MatchFixereManage = () => {
             name="matchLocation"
             value={formData.matchLocation}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -318,7 +320,7 @@ const MatchFixereManage = () => {
             value={formData.matchDescription}
             onChange={handleChange}
             rows="4"
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           />
         </div>
@@ -339,7 +341,7 @@ const MatchFixereManage = () => {
                 name="result.winner"
                 // value={formData.result.winner}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -358,7 +360,7 @@ const MatchFixereManage = () => {
                 name="result.score"
                 // value={formData.result.score}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -376,7 +378,7 @@ const MatchFixereManage = () => {
                 name="views"
                 value={formData.views}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -396,7 +398,7 @@ const MatchFixereManage = () => {
                 name="teamPlayer"
                 value={formData.teamPlayer}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -415,7 +417,7 @@ const MatchFixereManage = () => {
                 name="gamingMode"
                 value={formData.gamingMode}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -434,7 +436,7 @@ const MatchFixereManage = () => {
                 name="streamURL"
                 value={formData.streamURL}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border rounded-lg"
+                className="w-full px-3 py-2  bg-slate-800 "
                 required
               />
             </div>
@@ -451,7 +453,7 @@ const MatchFixereManage = () => {
             name="matches"
             value={formData.matches}
             onChange={handleChange}
-            className="w-full px-3 py-2 border rounded-lg"
+            className="w-full px-3 py-2  bg-slate-800 "
             required
           >
             <option value="upcoming">Upcoming</option>
@@ -459,10 +461,10 @@ const MatchFixereManage = () => {
           </select>
         </div>
 
-        <div className="flex justify-end mt-4">
+        <div className="flex  mt-4 justify-center">
           <button
             type="submit"
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
+            className="bg-green-500  px-4 py-3 custom-button text-black w-1/2 hover:bg-blue-600"
           >
             Create Tournament
           </button>

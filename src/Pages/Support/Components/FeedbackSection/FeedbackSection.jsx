@@ -87,7 +87,8 @@ const FeedbackSection = () => {
               <input
                 type="submit"
                 value="Submit"
-                className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500"
+                className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500 transition-all transform duration-700"
+                // add tailwind class transition-all transform duration-700 saiful islam
               ></input>
             </form>
           </div>
