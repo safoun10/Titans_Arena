@@ -8,6 +8,8 @@ import Banner1 from "../../../../public/Images/Banner1.png";
 import Banner2 from "../../../../public/Images/Banner2.png";
 import Banner3 from "../../../../public/Images/Banner3.png";
 import { Parallax } from "react-parallax";
+import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -27,24 +29,72 @@ const Banner = () => {
       >
         <SwiperSlide>
           <Parallax
-            bgImage={Banner1}
-              blur={{ min: -15, max: 12 }}
-            
+            bgImage="https://wallpaper.dog/large/20581916.jpg"
+            blur={{ min: -15, max: 12 }}
             className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Conquer the TitanArena: Gaming Glory Awaits!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Prepare to conquer the ultimate gaming challenge at
-                    TitanArena! Engage in epic matches, immerse yourself in live
-                    streams, and embrace the thrill of victory. The arena awaits
-                    your ascent!
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                  Gaming Galaxies Collide: Your Odyssey Begins!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </Parallax>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Parallax
+            bgImage={Banner1}
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
+          >
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
+                </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Conquer the TitanArena: Gaming Glory Awaits!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -52,21 +102,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage={Banner3}
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen  h-96 flex items-center ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Unleashed: Power Up Your Play
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Unleash your gaming prowess at TitanArena! Dive into a world
-                    of intense tournaments, electrifying live streams, and game
-                    specifications that will fuel your passion for play.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Unleashed: Power Up Your Play
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -74,22 +138,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/5529877.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  TitanArena Chronicles: Where Heroes Rise!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Embark on your gaming journey in the TitanArena Chronicles!
-                    Immerse yourself in thrilling tournaments, electrifying live
-                    streams, and detailed game insights that will shape your
-                    destiny.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                TitanArena Chronicles: Where Heroes Rise!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -97,21 +174,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/5529969.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Unleash Your Inner Titan: Join the Gaming Revolution!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Embrace the chaos of epic tournaments, electrifying live
-                    streams, and fierce rivalries. Become the legend you're
-                    destined to be in the world of gaming.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Unleash Your Inner Titan: Join the Gaming Revolution!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -119,21 +210,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/10218.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Beyond Reality: Where Gamers Become Immortals
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Step into a realm where pixels transform into legends.
-                    Engage in heart-racing tournaments, immerse in live streams
-                    that defy norms, and sculpt your gaming destiny.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Beyond Reality: Where Gamers Become Immortals
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -141,67 +246,107 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/5529980.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Forge Your Legend: Where Titans Converge!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Forge your legend in the arena where titans converge. Engage
-                    in tournaments that define eras, dive into live streams that
-                    resonate, and witness the birth of new gaming myths."
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Forge Your Legend: Where Titans Converge!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
         </SwiperSlide>
-        {/* perfect1 */}
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/5529998.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Code, Compete, Conquer: The Titan's Way
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Embrace the titan's way: code your destiny, compete in
-                    fierce tournaments, and conquer the hearts of gamers through
-                    live streams that amplify the gaming pulse.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Code, Compete, Conquer: The Titan's Way
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
         </SwiperSlide>
-        {/* perfect2 */}
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/991044.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Gamevolution: From Player to Legend!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Experience the gamevolution firsthand. Evolve from player to
-                    legend in epic tournaments, dive into live streams that
-                    evolve reality, and be part of the revolution.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Gamevolution: From Player to Legend!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -209,43 +354,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/5530218.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Unleash the Roar: TitanArena Awaits!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Unleash the roar of the titan within at TitanArena! Roar
-                    through tournaments that echo in eternity, witness live
-                    streams that amplify the adrenaline, and make your mark.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
-              </div>
-            </div>
-          </Parallax>
-        </SwiperSlide>
-        <SwiperSlide>
-          <Parallax
-            bgImage="https://wallpaper.dog/large/20581916.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
-          >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Gaming Galaxies Collide: Your Odyssey Begins!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    As gaming galaxies collide, your odyssey unfolds. Engage in
-                    tournaments that create galaxies of rivalries, embark on
-                    live streams that warp reality, and become the cosmic gamer.
-                  </p>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
                 </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Unleash the Roar: TitanArena Awaits!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -253,21 +390,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/20581938.png"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Phenomenon Unleashed: Dare to Dominate!
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Unleash the gaming phenomenon within you. Dare to dominate
-                    in intense tournaments, witness live streams that echo
-                    victory, and let your prowess illuminate the gaming cosmos.
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Phenomenon Unleashed: Dare to Dominate!
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
@@ -275,22 +426,35 @@ const Banner = () => {
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaperaccess.com/full/1657059.jpg"
-              blur={{ min: -15, max: 12 }}
-            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96 "
+            blur={{ min: -15, max: 12 }}
+            className="md:bg-no-repeat md:h-screen md:w-full bg-cover h-96"
           >
-            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
-              <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
-                <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Chronicles of Titans: Script Your Victory Tale
-                </h2>
-                <div>
-                  <p className="text-gray-200 font-thin">
-                    Step into the Chronicles of Titans, where victory tales are
-                    scripted. Engage in tournaments that echo through time, dive
-                    into live streams that chronicle greatness, and script your
-                    own legacy
-                  </p>
+            <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950">
+              <div className="text-white md:mt-0 mt-20 w-full md:w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center px-6">
+                <div className="bg-gradient-to-l from-transparent to-[#54966a] lg:text-2xl sm:text-xl lg:w-1/2 w-1/2 md:w-1/2 font-bold px-6 rounded-lg text-white py-4">
+                  Dream Gaming Website
                 </div>
+                <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
+                  Titans A
+                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                    rena
+                  </span>
+                </div>
+
+                <div className="lg:text-3xl text-xl text-white-500 my-3">
+                Chronicles of Titans: Script Your Victory Tale
+                </div>
+                <Link to="/allgame">
+                  <div
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
+                    }}
+                  >
+                    View All Games
+                  </div>
+                </Link>
               </div>
             </div>
           </Parallax>
