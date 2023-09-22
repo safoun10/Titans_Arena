@@ -35,7 +35,7 @@ const Banner = () => {
             <div className="md:h-screen h-96 flex items-center bg-gradient-to-r from-slate-950 via-transparent to-slate-950 ">
               <div className="text-white md:mt-0 mt-20 w-1/2 bg-gradient-to-r from-slate-950 flex flex-col h-full justify-center to-transparent px-10 ">
                 <h2 className="font-bold md:text-6xl text-yellow-500 my-3">
-                  Conquer the TitanArena: Gaming Glory Awaits!
+                  Conquer the Titans Arena: Gaming Glory Awaits!
                 </h2>
                 <div>
                   <p className="text-gray-200 font-thin">
