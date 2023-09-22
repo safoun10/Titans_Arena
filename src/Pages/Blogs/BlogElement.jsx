@@ -98,11 +98,13 @@ const BlogElement = ({ blog }) => {
         </div>
 
         <div className="text-white">
+          <Link to={`/blog/${_id}`}>
           <h1 className="text-2xl lg:text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
             {title}
           </h1>
+          </Link>
           <p className="text-slate-400 text-base lg:text-xl font-semibold pb-3">
-            {content.slice(0, 250)}...
+            {content?.slice(0, 250)}...
           </p>
         </div>
 

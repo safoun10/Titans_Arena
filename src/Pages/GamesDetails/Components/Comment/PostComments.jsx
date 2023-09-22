@@ -69,13 +69,13 @@ const PostComments = ({ id }) => {
 			<h2 className="text-4xl font-bold mb-4">Comments</h2>
 			<button className="px-8 text-white w-[75%] flex items-center gap-3 py-7 w- mt-4 rounded-lg">
 				<div className="avatar online">
-					<div className="w-10 rounded-full">
+					<div className="w-24 border-2 rounded-full">
 						<img src={user?.photoURL} alt="User Avatar" />
 					</div>
 				</div>
 				<div
 					onClick={openModal}
-					className=" py-5 cursor-pointer px-4 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-full text-left"
+					className=" py-8 border cursor-pointer px-4 outline-none  bg-slate-900  hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-full text-left"
 				>
 					Type your comment
 				</div>
@@ -102,7 +102,7 @@ const PostComments = ({ id }) => {
 									type="button"
 									onClick={closeModal}
 									//   className="text-gray-500 hover:text-gray-700 mr-2"
-									className=" px-5 py-2 hover:text-white mr-5 bg-gray-700 hover:bg-gray-500"
+									className=" px-5 py-2 hover:text-white mr-5  bg-gray-700 hover:bg-gray-500"
 									style={{
 										"--path":
 											"0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",

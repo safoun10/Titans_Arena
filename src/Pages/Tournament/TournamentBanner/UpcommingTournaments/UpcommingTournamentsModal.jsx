@@ -38,11 +38,11 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
       .then((data) => {
         if (data.modifiedCount) {
           Swal.fire({
-            title: "Profile Updated Successfully!",
+            title: "Enrollment Successfull!",
             icon: "success",
             color: "#FFFFFF",
             background:
-            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
 
             confirmButtonColor: "cool",
             confirmButtonText: "OK",
@@ -53,7 +53,7 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
             icon: "error",
             color: "#FFFFFF",
             background:
-            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
 
             confirmButtonColor: "cool",
             confirmButtonText: "OK",
@@ -64,8 +64,18 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
 
   return (
     <div className="z-50 flex justify-center items-center ">
-      <div className="border py-4 bg-red-950 bg-opacity-70 w-[55rem]   text-white">
-        <img className="w-2/4 mx-auto  h-2/4" src={tournamentPicture} alt="" />
+      <div
+        style={{
+          background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+        }}
+        className="border py-4 h-screen overflow-y-scroll bg-opacity-70 w-[55rem]   text-white"
+      >
+        <img
+          className="md:w-2/4 mx-auto  md:h-2/4"
+          src={tournamentPicture}
+          alt=""
+        />
         <div>
           <h3 className="text-3xl text-orange-500 font-bold">
             tournament Name : {tournament_name}
@@ -77,42 +87,52 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
           <h3 className="text-xl font-bold text-green-400">
             location : {location}
           </h3>
-          <div className="flex">
-            <div className="w-1/2 text-lg  ">
-              <h3 className="text-start ml-20  text-lg font-bold">
+          <div className="md:flex">
+            <div className="md:w-1/2 text-lg  ">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Game Name : {game_title}
               </h3>
-              <h3 className="text-start ml-20  text-lg font-bold">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Developer : {game_developer}
               </h3>
-              <h3 className="text-start ml-20  text-lg font-bold">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Plateform : {game_platform}
               </h3>
-              <h3 className="text-start ml-20  text-lg font-bold">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Genre : {game_genre}
               </h3>
-              <h3 className="text-start ml-20  text-lg font-bold">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Total Team : {totalTeam}
               </h3>
-              <h3 className="text-start ml-20  text-lg font-bold">
+              <h3 className="md:text-start md:ml-20   text-lg font-bold">
                 Gaming Mode : {gamingMoode}
               </h3>
             </div>
-            <div className="w-1/2 text-lg ">
-              <h3 className="text-end mr-20  text-lg font-bold">
-                {prize_pool} : prize
+            <div className="md:w-1/2 text-lg ">
+              <h3 className="md:text-end md:mr-20  text-lg font-bold ">
+                <div className="md:block hidden">{prize_pool} : Prize</div>
+                <div className="md:hidden"> Prize : {prize_pool} </div>
+
               </h3>
-              <h3 className="text-end mr-20  text-lg font-bold">
-                {organizer_name} : organizer
+              <h3 className="md:text-end md:mr-20  text-lg font-bold ">
+                <div className="md:block hidden">{organizer_name} : Organizer</div>
+                <div className="md:hidden"> Organizer : {organizer_name} </div>
+
               </h3>
-              <h3 className="text-end mr-20  text-lg font-bold">
-                {location} : location
+              <h3 className="md:text-end md:mr-20  text-lg font-bold ">
+                <div className="md:block hidden">{location} : Location</div>
+                <div className="md:hidden"> Location : {location}</div>
+
               </h3>
-              <h3 className="text-end mr-20  text-lg font-bold">
-                {matchTime} : match
+              <h3 className="md:text-end md:mr-20  text-lg font-bold ">
+                <div className="md:block hidden">{matchTime} : Match</div>
+                <div className="md:hidden"> Match : {matchTime}  </div>
+
               </h3>
-              <h3 className="text-end mr-20  text-lg font-bold">
-                {matchStage} : match
+              <h3 className="md:text-end md:mr-20  text-lg font-bold ">
+                <div className="md:block hidden">{matchStage} : Stage</div>
+                <div className="md:hidden"> Stage  {matchStage}  </div>
+
               </h3>
             </div>
           </div>

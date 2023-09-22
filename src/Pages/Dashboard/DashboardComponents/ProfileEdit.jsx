@@ -240,7 +240,7 @@ const ProfileEdit = () => {
           <input
             className="btn btn-primary btn-block"
             type="submit"
-            value="Publish Blog"
+            value="UPDATE PROFILE"
           />
         </div>
       </form>

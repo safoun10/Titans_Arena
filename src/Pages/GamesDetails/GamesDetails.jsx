@@ -95,7 +95,7 @@ const GamesDetails = () => {
                 "radial-gradient(310.48% 100.00% at 50.00% 0.00%, rgba(128, 0, 128, 0.53) 5.96%, rgba(29, 35, 52, 0.47) 89.85%, #08090A 99.66%)",
               /* add other styles here if needed */
             }}
-            className=" h-[350px] flex items-center"
+            className=" md:h-[350px] flex items-center"
           >
             <div>
               <div>
@@ -119,7 +119,7 @@ const GamesDetails = () => {
         <PostReview title={title} id={id}></PostReview>
         <PostComments id={id}></PostComments>
         <Comments id={id} />
-        <RealLinks />
+        <RealLinks gameDetails={gameDetails} />
       </div>
     </>
   );
