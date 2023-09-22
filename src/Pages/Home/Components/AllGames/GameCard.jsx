@@ -41,11 +41,14 @@ const GameCard = ({ game }) => {
       _id: _id, // Send the _id from the singleTournament
     };
 
-    fetch(`http://localhost:5000/gameBookMarks/${user.email}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(requestBody), // Send the request body as JSON
-    })
+    fetch(
+      `https://titans-arena-server.vercel.app/gameBookMarks/${user.email}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(requestBody), // Send the request body as JSON
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {

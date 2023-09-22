@@ -55,9 +55,12 @@ const GameBookMarks = ({ gameId }) => {
 
   const handleRemoveGameBookmark = () => {
     axios
-      .patch(`http://localhost:5000/removeGameBookmark/${user?.email}`, {
-        _id: gameId, // Replace gameId with the actual game ID
-      })
+      .patch(
+        `https://titans-arena-server.vercel.app/removeGameBookmark/${user?.email}`,
+        {
+          _id: gameId, // Replace gameId with the actual game ID
+        }
+      )
       .then((response) => {
         console.log("Game bookmark removed:", response.data.message);
         setRemoved(true); // Set a state flag to indicate success if needed

@@ -61,7 +61,7 @@ const AddBlog = () => {
     };
     console.log(newBlog);
 
-    fetch("http://localhost:5000/blogs", {
+    fetch("https://titans-arena-server.vercel.app/blogs", {
       method: "POST",
       headers: {
         "content-type": "application/json",

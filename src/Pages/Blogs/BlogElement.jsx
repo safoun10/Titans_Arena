@@ -31,11 +31,14 @@ const BlogElement = ({ blog }) => {
       _id: _id, // Send the _id from the singleTournament
     };
 
-    fetch(`http://localhost:5000/blogBookMarks/${user.email}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(requestBody), // Send the request body as JSON
-    })
+    fetch(
+      `https://titans-arena-server.vercel.app/blogBookMarks/${user.email}`,
+      {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(requestBody), // Send the request body as JSON
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {

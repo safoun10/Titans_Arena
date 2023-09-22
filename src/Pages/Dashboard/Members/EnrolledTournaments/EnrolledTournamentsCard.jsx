@@ -15,7 +15,7 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/tournaments/${tournamentId}`)
+      .get(`https://titans-arena-server.vercel.app/tournaments/${tournamentId}`)
       .then((response) => {
         setEnrolledCard(response.data);
       })
@@ -45,9 +45,12 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
 
   const handleDeleteEnrolledTournament = () => {
     axios
-      .patch(`http://localhost:5000/removeEnrolledTournament/${user?.email}`, {
-        tournamentIdToRemove: _id,
-      })
+      .patch(
+        `https://titans-arena-server.vercel.app/removeEnrolledTournament/${user?.email}`,
+        {
+          tournamentIdToRemove: _id,
+        }
+      )
       .then((response) => {
         console.log(response.data.message);
         // Handle success or display a success message

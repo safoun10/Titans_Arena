@@ -10,7 +10,7 @@ const SingleTournamentDetails = () => {
   useEffect(() => {
     // Make sure to use the `id` from useParams inside the axios request
     axios
-      .get(`http://localhost:5000/tournaments/${id}`)
+      .get(`https://titans-arena-server.vercel.app/tournaments/${id}`)
       .then((response) => {
         setSingleTournament(response.data);
       })

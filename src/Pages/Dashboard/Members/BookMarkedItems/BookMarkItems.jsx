@@ -16,7 +16,7 @@ const BookMarkItems = () => {
     const fetchBookMarkedGames = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/gameBookMark/${user?.email}`
+          `https://titans-arena-server.vercel.app/gameBookMark/${user?.email}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);
@@ -36,7 +36,7 @@ const BookMarkItems = () => {
     const fetchBookMarkedBlogs = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/blogBookMarks/${user?.email}`
+          `https://titans-arena-server.vercel.app/blogBookMarks/${user?.email}`
         );
         if (!response.ok) {
           throw new Error(`Failed to fetch data: ${response.status}`);

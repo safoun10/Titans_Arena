@@ -32,9 +32,12 @@ const BlogBookMark = ({ blogId }) => {
 
   const handleDeleteBlogBookMark = () => {
     axios
-      .patch(`http://localhost:5000/removeBlogBookmark/${user?.email}`, {
-        blogIdToRemove: blogId, // Change the property name to match the server
-      })
+      .patch(
+        `https://titans-arena-server.vercel.app/removeBlogBookmark/${user?.email}`,
+        {
+          blogIdToRemove: blogId, // Change the property name to match the server
+        }
+      )
       .then((response) => {
         console.log("Blog bookmark removed:", response.data.message);
         // Handle success, if needed
