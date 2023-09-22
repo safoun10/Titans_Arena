@@ -20,12 +20,11 @@ const Register = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    watch,
-  } = useForm();
+	const {
+		register,
+		handleSubmit,
+		formState: { errors }
+	} = useForm();
 
   const onSubmit = (data) => {
     const { password, confirmPassword, ...rest } = data;
