@@ -26,15 +26,17 @@ const BlogElement = ({blog}) => {
           </p>
           <p className="flex gap-3 items-center font-semibold text-xs lg:text-lg">
             <FaComments className="text-[#45f882] text-lg" />{" "}
-            <span>{comments.length == 0 ? "No Comments" : `${comments.length,"Comments"}`}</span>{" "}
+            <span>{comments?.length == 0 ? "No Comments" : `${comments?.length,"Comments"}`}</span>{" "}
           </p>
         </div>
         <div className="text-white">
+          <Link to={`/blog/${_id}`}>
           <h1 className="text-2xl lg:text-4xl py-5 font-bold duration-200 hover:text-[#45f882]">
             {title}
           </h1>
+          </Link>
           <p className="text-slate-400 text-base lg:text-xl font-semibold pb-3">
-            {content.slice(0, 250)}...
+            {content?.slice(0, 250)}...
           </p>
         </div>
 

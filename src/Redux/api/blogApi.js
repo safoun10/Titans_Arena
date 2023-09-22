@@ -8,7 +8,7 @@ const blogApi = baseApi.injectEndpoints({
     invalidatesTags: ["invalidCache"],
     getBlogSearch: builder.query({
       query: (search) => `/searchblogs?search=${search}`,
-      invalidatesTags: ["invalidCache"],
+      invalidatesTags: ["invalidCache"],  
     }),
     getBlogById: builder.query({
       query: (id) => `/blogs/${id}`,
