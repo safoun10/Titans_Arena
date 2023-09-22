@@ -110,7 +110,7 @@ const NavigationBar = () => {
 				<NavLink to="/support">SUPPORT</NavLink>
 			</li>
 			<li className="nav-link">
-        <NavLink to="/eSports">ESPORTS</NavLink>
+        <NavLink to="/tournament">Tournaments</NavLink>
       </li>
 			<li className="nav-link">
 				<NavLink to="/dashboard/profile">Dashboard</NavLink>
@@ -141,7 +141,7 @@ const NavigationBar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 z-10 text-black font-semibold"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-slate-800 rounded-box w-52 z-10 text-white font-semibold"
             >
               {navOptionsForMobile}
             </ul>

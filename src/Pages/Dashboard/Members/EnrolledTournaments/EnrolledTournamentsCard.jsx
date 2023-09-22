@@ -84,9 +84,9 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
   };
 
   return (
-    <div>
+    <div className="">
       <div className=" rounded-md shadow-lg bg-slate-800">
-        <div className="md:flex px-4 w-[65rem] leading-none max-w-5xl">
+        <div className="md:flex px-4  leading-none max-w-7xl">
           <div className="flex-none">
             <img
               src={tournamentPicture}

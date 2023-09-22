@@ -13,9 +13,9 @@ const SingleComment = ({ name, content, img, date }) => {
 	};
 
 	return (
-		<div className="p-6 ml-10 lg:w-4/6 lg:justify-between">
-			<div className="flex">
-				<div className="flex items-center gap-4">
+		<div className="p-2 ml-10 lg:w-4/6 lg:justify-between">
+			<div className="flex border border-slate-600 py-5 bg-slate-900 rounded-md">
+				<div className="flex items-center gap-4 px-3">
 					<img
 						className="w-[6.5rem] z-10 border-2 rounded-full "
 						src={img}
@@ -28,6 +28,7 @@ const SingleComment = ({ name, content, img, date }) => {
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	);
 };

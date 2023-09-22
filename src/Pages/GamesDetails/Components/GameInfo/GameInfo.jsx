@@ -33,37 +33,37 @@ const GameInfo = ({ gameDetails }) => {
 		return <div>Loading or error message...</div>;
 	}
 	return (
-		<div className=" just-gamers-bg h-[700px]">
+		<div className=" just-gamers-bg h-[1050px] md:h-[700px]">
 			<div className="mt-20">
 				<Title secondaryText="SYSTEM REQUIREMENTS" />
 			</div>
-			<div className="lg:flex lg:justify-between max-w-6xl mx-auto">
-				<div className="lg:w-2/6 lg:ml-0 ml-5">
+			<div className="lg:flex md:px-0 px-4 lg:justify-between md:max-w-6xl  mx-auto">
+				<div className="lg:w-2/6 lg:ml-0 md:ml-5">
 					<h2 className="text-4xl mb-2 font-bold">MINIMUM</h2>
 					<div className="space-y-1 text-xl ">
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl ">
 							OS:
 						</p>
-						<p>{minimumRequirements.OS}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="md:text-xl text-base">{minimumRequirements.OS}</p>
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Processor:
 						</p>
-						<p>{minimumRequirements.Processor}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="md:text-xl text-base">{minimumRequirements.Processor}</p>
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Memory:
 						</p>
-						<p>{minimumRequirements.Memory}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="md:text-xl text-base">{minimumRequirements.Memory}</p>
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Graphics:
 						</p>
-						<p>{minimumRequirements.Graphics}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="md:text-xl text-base">{minimumRequirements.Graphics}</p>
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Storage:
 						</p>
-						<p>{minimumRequirements.Storage}</p>
+						<p className="md:text-xl text-base">{minimumRequirements.Storage}</p>
 					</div>
 				</div>
-				<div className="lg:w-2/6 ml-16  lg:flex justify-center">
+				<div className="lg:w-2/6 md:block hidden ml-16   lg:flex justify-center">
 					<img
 						src="https://themepixer.com/demo/html/geco/Geco/img/images/just_gamers_img.png"
 						alt=""
@@ -72,23 +72,23 @@ const GameInfo = ({ gameDetails }) => {
 				<div className="text-end lg:w-2/6">
 					<h2 className="text-4xl mb-2 font-bold">RECOMMENDED</h2>
 					<div className="space-y-1 text-xl">
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							OS:{" "}
 						</p>
 						<p>{recommendedRequirements.OS}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Processor:{" "}
 						</p>
 						<p>{recommendedRequirements.Processor}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Memory:{" "}
 						</p>
 						<p>{recommendedRequirements.Memory}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Graphics:{" "}
 						</p>
 						<p>{recommendedRequirements.Graphics}</p>
-						<p className="text-yellow-400 font-bold text-3xl">
+						<p className="text-yellow-400 font-bold md:text-3xl">
 							Storage:{" "}
 						</p>
 						<p>{recommendedRequirements.Storage}</p>
