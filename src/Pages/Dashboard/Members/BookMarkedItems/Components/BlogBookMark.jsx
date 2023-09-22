@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import useAuth from "../../../../../Hooks/useAuth";
 
 const BlogBookMark = ({ blogId }) => {
@@ -41,6 +42,26 @@ const BlogBookMark = ({ blogId }) => {
       .then((response) => {
         console.log("Blog bookmark removed:", response.data.message);
         // Handle success, if needed
+        if (response.data.result.modifiedCount) {
+          Swal.fire({
+            title: "Bookmark Removed",
+            icon: "success",
+            color: "#FFFFFF",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        } else {
+          Swal.fire({
+            title: "Not Removed",
+            icon: "error",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        }
       })
       .catch((error) => {
         console.error("Error removing blog bookmark:", error);
@@ -66,13 +87,10 @@ const BlogBookMark = ({ blogId }) => {
         />
       </div>
       <Link to={`/blog/${blogId}`}>
-        <div className="font-bold text-white text-line-clamp-1 mb-1 block">
-          <h3 className="text-center hover:text-green-500">{title}</h3>
+        <div className="font-bold text-white text-line-clamp-1  block">
+          <h3 className="hover:text-green-500 text-lg text-center">{title}</h3>
         </div>
-        <div
-          style={{ position: "relative", paddingBottom: "1.25rem" }}
-          className="relative pb-5"
-        >
+        <div className="relative pb-3">
           <span
             style={{
               color: "rgba(255, 255, 255, 0.6)",
@@ -85,7 +103,7 @@ const BlogBookMark = ({ blogId }) => {
       </Link>
       <button
         onClick={handleDeleteBlogBookMark}
-        className="custom-button py-4 px-4  !bg-red-500"
+        className="custom-button py-2  px-4 w-full  !text-sm !bg-red-500"
       >
         Remove Enrollment
       </button>

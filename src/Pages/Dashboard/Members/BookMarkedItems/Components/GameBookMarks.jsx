@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 import useAuth from "../../../../../Hooks/useAuth";
 
 const GameBookMarks = ({ gameId }) => {
@@ -63,8 +64,31 @@ const GameBookMarks = ({ gameId }) => {
       )
       .then((response) => {
         console.log("Game bookmark removed:", response.data.message);
-        setRemoved(true); // Set a state flag to indicate success if needed
+        console.log(response);
+        if (response.data.result.modifiedCount) {
+          Swal.fire({
+            title: "Bookmark Removed",
+            icon: "success",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        } else {
+          Swal.fire({
+            title: "Not Removed",
+            icon: "error",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        }
+        // Set a state flag to indicate success if needed
       })
+
       .catch((error) => {
         console.error("Error removing game bookmark:", error);
         // Handle the error, if needed
@@ -86,13 +110,10 @@ const GameBookMarks = ({ gameId }) => {
       </div>
 
       <Link to={`/games/${gameId}`}>
-        <div className="font-bold text-white text-line-clamp-1 mb-1 block">
-          <h3 className="hover:text-green-500 text-center">{title}</h3>
+        <div className="font-bold text-white text-line-clamp-1  block">
+          <h3 className="hover:text-green-500 text-lg text-center">{title}</h3>
         </div>
-        <div
-          style={{ position: "relative", paddingBottom: "1.25rem" }}
-          className="relative pb-5"
-        >
+        <div className="relative pb-3">
           <span
             style={{
               color: "rgba(255, 255, 255, 0.6)",
@@ -103,9 +124,10 @@ const GameBookMarks = ({ gameId }) => {
           </span>
         </div>
       </Link>
+
       <button
         onClick={handleRemoveGameBookmark}
-        className="custom-button py-4 px-4  !bg-red-500"
+        className="custom-button py-2  px-4 w-full  !text-sm !bg-red-500"
       >
         Remove Enrollment
       </button>

@@ -19,8 +19,6 @@ const Blogs = () => {
   const { user } = useAuth();
   const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
 
-  console.log("blog user", user.email);
-
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3;
 
@@ -42,7 +40,7 @@ const Blogs = () => {
     event.preventDefault();
     const email = event.target.email.value;
     const newEmail = {
-      userEmail: user.email,
+      userEmail: user?.email,
       email: email,
     };
     addNewsLetter(newEmail);
@@ -56,6 +54,11 @@ const Blogs = () => {
       title: "Your email is added to the newsletter.",
       showConfirmButton: false,
       timer: 1500,
+      color: "#FFFFFF",
+      background:
+        " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+      confirmButtonColor: "cool",
     });
   }
 

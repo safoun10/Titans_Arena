@@ -38,11 +38,14 @@
 }
 
 .back-page {
-  background-color: #baa898;
+  background-color: transparent !important;
+  border: 2px solid wheat;
+  padding: 20px 10px;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
+  color: white;
   left: 0;
   opacity: 1;
 }

@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import "./enrolledTournamentsCard.css";
 import { Link } from "react-router-dom";
 import useAuth from "../../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const EnrolledTournamentsCard = ({ tournamentId }) => {
   const { user } = useAuth();
@@ -45,15 +46,33 @@ const EnrolledTournamentsCard = ({ tournamentId }) => {
 
   const handleDeleteEnrolledTournament = () => {
     axios
-      .patch(
-        `https://titans-arena-server.vercel.app/removeEnrolledTournament/${user?.email}`,
-        {
-          tournamentIdToRemove: _id,
-        }
-      )
+      .patch(`http://localhost:5000/removeEnrolledTournament/${user?.email}`, {
+        tournamentIdToRemove: _id,
+      })
       .then((response) => {
         console.log(response.data.message);
         // Handle success or display a success message
+        if (response.data.result.modifiedCount) {
+          Swal.fire({
+            title: "Enrollment Removed Successfull",
+            icon: "success",
+            color: "#FFFFFF",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        } else {
+          Swal.fire({
+            title: "Not Removed",
+            icon: "error",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+            confirmButtonColor: "cool",
+            confirmButtonText: "OK",
+          });
+        }
       })
       .catch((error) => {
         console.error("Error removing enrolled tournament:", error);

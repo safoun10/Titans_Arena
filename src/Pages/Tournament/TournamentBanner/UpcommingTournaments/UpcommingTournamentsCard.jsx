@@ -43,6 +43,10 @@ const UpcommingTournamentsCard = ({ singleTournament, user }) => {
     if (!user) {
       Swal.fire({
         icon: "error",
+        color: "#FFFFFF",
+        background:
+          " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
         title: "Oops...",
         text: "Something went wrong!",
       });

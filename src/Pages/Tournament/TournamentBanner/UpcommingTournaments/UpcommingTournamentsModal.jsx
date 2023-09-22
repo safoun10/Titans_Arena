@@ -40,14 +40,22 @@ const UpcommingTournamentsModal = ({ singleTournament, closeModal, user }) => {
           Swal.fire({
             title: "Profile Updated Successfully!",
             icon: "success",
-            confirmButtonColor: "#B2A4FF",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "OK",
           });
         } else {
           Swal.fire({
             title: "Allrady enrolled in the tournament",
             icon: "error",
-            confirmButtonColor: "#86ff00",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "OK",
           });
         }

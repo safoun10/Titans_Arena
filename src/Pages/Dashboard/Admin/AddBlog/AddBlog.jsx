@@ -76,6 +76,11 @@ const AddBlog = () => {
             title: "Success!",
             text: "Toy added successfully",
             icon: "success",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "Cool",
           });
           form.reset();

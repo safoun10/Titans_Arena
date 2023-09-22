@@ -55,14 +55,22 @@ const GameCard = ({ game }) => {
           Swal.fire({
             title: "Game Bookmarked In Dashboard",
             icon: "success",
-            confirmButtonColor: "#B2A4FF",
+            color: "#FFFFFF",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "OK",
           });
         } else {
           Swal.fire({
             title: "Already Added Bookmark",
             icon: "error",
-            confirmButtonColor: "#86ff00",
+            color: "#FFFFFF",
+            background:
+              " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "OK",
           });
         }

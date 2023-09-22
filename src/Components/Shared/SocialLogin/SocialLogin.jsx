@@ -34,7 +34,12 @@ const SocialLogin = () => {
             title: "User Registered Successfully",
             icon: "success",
             timer: 2000,
-          })
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
+          });
         }
       })
       .catch((error) => {
@@ -60,7 +65,12 @@ const SocialLogin = () => {
               title: "User Registered Successfully",
               icon: "success",
               timer: 2000,
-            })
+              color: "#FFFFFF",
+              background:
+                " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+              confirmButtonColor: "cool",
+            });
           }
         });
       })

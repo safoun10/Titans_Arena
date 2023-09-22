@@ -100,7 +100,7 @@ const Dashboard = () => {
             <Link to="/dashboard/matchFixered">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" />
-                Match And Fixered Manage
+                Create Match Result
               </p>
             </Link>
           </li>
@@ -123,13 +123,27 @@ const Dashboard = () => {
             </Link>
           </li>
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/addblog">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Add Blog
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/test2">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Calendar
+              </p>
+            </Link>
+          </li>
+          {/* <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/selectedGames">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaCartArrowDown className="text-yellow-500 text-lg" /> Add To
                 Cart Games
               </p>
             </Link>
-          </li>
+          </li> */}
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/enrolledTournaments">
@@ -159,7 +173,7 @@ const Dashboard = () => {
             <Link to="/dashboard/matchFixered">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" />
-                Match And Fixered Manage
+                Create Match Result
               </p>
             </Link>
           </li>
