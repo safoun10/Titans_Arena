@@ -3,7 +3,7 @@ import baseApi from "../api/baseApi";
 const gameCategory = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getGameCategory: builder.query({
-            query: (category) => `/Games?category=${category}`,
+            query: (category) => `/games?category=${category}`,
             invalidatesTags: ["invalidCache"],
         }),
         getGameSearch: builder.query({

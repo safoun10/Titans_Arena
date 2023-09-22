@@ -39,7 +39,6 @@ const SingleBlog = () => {
   //   }
   // };
 
-
   const handleNersletter = (event) => {
     event.preventDefault();
     const email = event.target.email.value;
@@ -58,9 +57,13 @@ const SingleBlog = () => {
       title: "Your email is added to the newsletter.",
       showConfirmButton: false,
       timer: 1500,
+      color: "#FFFFFF",
+      background:
+        " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+      confirmButtonColor: "cool",
     });
   }
-
 
   return (
     <div>

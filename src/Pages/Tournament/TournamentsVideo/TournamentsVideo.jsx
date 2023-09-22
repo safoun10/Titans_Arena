@@ -59,7 +59,7 @@ const TournamentsVideo = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto  mb-32 mt-28 ">
+    <div className="max-w-7xl mx-auto  pb-32 mt-28 ">
       <div className="border-l-2 w-72 mx-9 font-extrabold sm:text-1xl text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
         <h3> Match Videos</h3>
       </div>

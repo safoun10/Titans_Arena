@@ -23,6 +23,11 @@ const Users = () => {
           icon: "success",
           title: `${user.name} is an Admin Now!`,
           showConfirmButton: false,
+          color: "#FFFFFF",
+          background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+          confirmButtonColor: "cool",
           timer: 1500,
         });
       }
@@ -35,8 +40,13 @@ const Users = () => {
       text: "You won't be able to revert this!",
       icon: "warning",
       showCancelButton: true,
-      confirmButtonColor: "#3085d6",
+
       cancelButtonColor: "#d33",
+      color: "#FFFFFF",
+      background:
+        " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+      confirmButtonColor: "cool",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {

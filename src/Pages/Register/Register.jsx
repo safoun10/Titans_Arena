@@ -10,8 +10,8 @@ import SocialLogin from "../../Components/Shared/SocialLogin/SocialLogin";
 import { Helmet } from "react-helmet-async";
 
 const Register = () => {
-  const { createUser, user, updateUserData,
-     updateUserProfile } = useContext(AuthContext);
+  const { createUser, user, updateUserData, updateUserProfile } =
+    useContext(AuthContext);
 
   const [error, setErr] = useState("");
   const [verify, SetVerify] = useState(true);
@@ -24,7 +24,6 @@ const Register = () => {
     register,
     handleSubmit,
     formState: { errors },
-    watch,
   } = useForm();
 
   const onSubmit = (data) => {
@@ -58,6 +57,11 @@ const Register = () => {
                     Swal.fire({
                       title: "User Registered Successfully",
                       icon: "success",
+                      color: "#FFFFFF",
+                      background:
+                        " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+                      confirmButtonColor: "cool",
                       timer: 2000,
                     }).then(() => {
                       navigate("/");
@@ -74,6 +78,11 @@ const Register = () => {
             title: "Error",
             text: error.message,
             icon: "error",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+         
           });
         });
     }

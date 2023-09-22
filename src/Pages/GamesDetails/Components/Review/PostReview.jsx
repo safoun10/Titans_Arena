@@ -43,6 +43,11 @@ const PostReview = ({ title, id }) => {
             title: "Success!",
             text: "Thank You for Your Feedback",
             icon: "success",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "Welcome",
           });
           form.reset();
@@ -77,6 +82,11 @@ const PostReview = ({ title, id }) => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
+        color: "#FFFFFF",
+        background:
+          " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+        confirmButtonColor: "cool",
         text: "Something went wrong!",
       });
       navigate("/login");
@@ -89,7 +99,7 @@ const PostReview = ({ title, id }) => {
         onClick={openModal}
         className="px-8 text-white  flex items-center gap-3 py-4 mx-auto custom-button mt-4 rounded-lg"
       >
-       Add Your Review
+        Add Your Review
       </button>
 
       {isModalOpen && (

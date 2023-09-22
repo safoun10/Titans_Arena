@@ -47,7 +47,11 @@ const ProfileEdit = () => {
             title: "",
             text: "Profile Updated Successfully!",
             icon: "success",
-            confirmButtonColor: "#B2A4FF",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "ok",
           });
         }

@@ -181,7 +181,7 @@ const Description = ({ gameDetails }) => {
 					</h2>
 					<p className=" mb-4">{description.description3}</p>
 					<button className="bg-yellow-400 text-black py-2 px-4 rounded-md transition duration-300 hover:bg-yellow-500 transform hover:scale-105">
-						Play Now
+						Pre Register
 					</button>
 				</div>
 			</div>

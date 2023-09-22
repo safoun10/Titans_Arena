@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios"; // Import Axios for making HTTP requests
 import useAuth from "../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 const TournamentForm = () => {
   const { user } = useAuth(); // Replace with your authentication hook
@@ -65,13 +66,30 @@ const TournamentForm = () => {
       if (response.data && response.data.data && response.data.data.url) {
         // Set the uploaded image URL in the form data
         setFormData({ ...formData, tournamentPicture: response.data.data.url });
-        alert("Image uploaded successfully.");
-      } else {
-        alert("Failed to upload image. Please try again.");
+        Swal.fire({
+          title: "Image Upload Succesfully",
+          icon: "success",
+          color: "#FFFFFF",
+          background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+          confirmButtonColor: "cool",
+          confirmButtonText: "OK",
+        });
       }
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while uploading the image.");
+
+      Swal.fire({
+        title: "Image Upload Failed",
+        icon: "error",
+        color: "#FFFFFF",
+        background:
+          " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+        confirmButtonColor: "cool",
+        confirmButtonText: "OK",
+      });
     }
   };
 
@@ -95,10 +113,28 @@ const TournamentForm = () => {
       );
 
       if (response.ok) {
-        alert("Tournament details submitted successfully!");
+        Swal.fire({
+          title: "Tournament Add Succesfully",
+          icon: "success",
+          color: "#FFFFFF",
+          background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+          confirmButtonColor: "cool",
+          confirmButtonText: "OK",
+        });
       } else {
         const errorData = await response.json();
-        alert(`An error occurred: ${errorData.message}`);
+        Swal.fire({
+          title: "Tournament Add Failed",
+          icon: "error",
+          color: "#FFFFFF",
+          background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+          confirmButtonColor: "cool",
+          confirmButtonText: "OK",
+        });
       }
     } catch (error) {
       console.error("Error:", error);
@@ -107,7 +143,7 @@ const TournamentForm = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#1d232a]">
       <form onSubmit={handleSubmit}>
         <section className="dark: dark:text-gray-100">
           <div className="container max-w-5xl px-4 py-12 mx-auto">
