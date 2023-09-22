@@ -48,21 +48,20 @@ const Login = () => {
     SetVerify(true);
   };
 
-  const passwordResetHandle = () =>{
-    const userEmail = user.email
+  const passwordResetHandle = () => {
+    const userEmail = user.email;
     passwordReset(userEmail)
-    .then(() => {
-      // Password reset email sent!
-      // ..
-      console.log("password reset done")
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-    });
-  
-  }
+      .then(() => {
+        // Password reset email sent!
+        // ..
+        console.log("password reset done");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        // ..
+      });
+  };
 
   return (
     <div>
@@ -81,7 +80,7 @@ const Login = () => {
                 onSubmit={handleSubmit(onSubmit)}
                 className="   shadow-md rounded px-8 pt-6 pb-8 w-full"
               >
-                <div className="mb-4">
+                <div className="mb-2">
                   <label
                     className="block  text-green-400 text-xl font-bold mb-2"
                     htmlFor="email"
@@ -92,7 +91,7 @@ const Login = () => {
                     type="email"
                     id="email"
                     {...register("email", { required: true })}
-                    className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    className="p-3  outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                   />
                   {errors.email && (
                     <p className="text-red-500 text-xs italic">
@@ -101,7 +100,7 @@ const Login = () => {
                   )}
                 </div>
 
-                <div className="mb-4">
+                <div className="">
                   <label
                     className="block text-green-400 text-xl  font-bold mb-2"
                     htmlFor="password"
@@ -112,7 +111,7 @@ const Login = () => {
                     type="password"
                     id="password"
                     {...register("password", { required: true })}
-                    className="p-3 my-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
+                    className="p-3 mb-5 outline-none bg-[#222222] hover:shadow-[#0b9817]  shadow-inner text-white  w-full rounded-md"
                   />
                   {errors.password && (
                     <p className="text-red-500 text-xs italic">
@@ -120,39 +119,23 @@ const Login = () => {
                     </p>
                   )}
                 </div>
-                <div>
-                  <ReCAPTCHA
-                  className="bg-transparent"
-                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    onChange={onChange}
-                  />
-                  ,
-                </div>
-
                 <div className="flex items-center justify-between">
                   <button
                     type="submit"
-                    disabled={!verify}
-                    className={`${
-                      !verify
-                        ? "bg-gray-500"
-                        : "custom-button hover:bg-green-500 py-2 px-5"
-                    } border w-full rounded py-2 px-5 border-none my-2`}
-                    style={{
-                      "--path":
-                        "0px 0px, calc(100% - 14px) 0, 130% 100%, calc(100% - 20px) 100%, 14px 100%, 0px calc(100% - 14px)",
-                      fontFamily: "resobot-bold",
-                      WebkitClipPath: "polygon(var(--path))",
-                      clipPath: "polygon(var(--path))",
-                    }}
+                    className="custom-button hover:bg-green-500 py-2 px-5 w-full"
                   >
                     Login
                   </button>
                 </div>
               </form>
-              <button onClick={passwordResetHandle} className="pt-3 text-purple-500">Forget Password?</button>
+              <button
+                onClick={passwordResetHandle}
+                className=" text-purple-500"
+              >
+                Forget Password?
+              </button>
               <div className="">
-                <div className="my-4 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+                <div className=" flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
                   <p className="mx-4 mb-0 text-center text-green-500 font-semibold ">
                     Or
                   </p>

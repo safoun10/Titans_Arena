@@ -10,37 +10,6 @@ const LatestGalleryCarousel = () => {
   const isMobileDevice = window.innerWidth <= 768;
   return (
     <>
-      {/* <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"4"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 5,
-          depth: 100,
-          modifier: 1,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      > */}
-         {/* <Swiper
-        effect={'coverflow'}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'3'}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
-      > */}
         <Swiper
     slidesPerView={isMobileDevice ? 1.9 : 4}
 

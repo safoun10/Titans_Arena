@@ -1,0 +1,274 @@
+[
+  {
+    "tournamentName": "Esl Pro League",
+    "tournamentPicture": "https://media.istockphoto.com/id/1393796813/photo/friends-playing-computer-game.jpg?s=612x612&w=0&k=20&c=2UmNQg61SF2npo6s0tHtKdIrWCilYmX38m6IWrgnr5A=",
+    "matchStage": "Quarterfinals",
+    "description": "loren15",
+    "matchDate": "2023-09-15",
+    "matchTime": "15:00",
+    "matchLocation": "Los Angeles, CA",
+    "matchDescription": "An intense battle between Team Alpha and Team Beta in the ESL Pro League Quarterfinals.",
+    "enrolled": "50",
+    "totalTeam": "5V5",
+    "gamingMoode": "multiplayer",
+    "Plateform": "PC",
+    "streamURL": "https://twitch.tv/esports_stream",
+    "matches": "finished"
+  },
+  {
+    "tournamentName": "League of Legends ",
+    "tournamentPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReOdGhoL6bQhXAIcxQUrQzYcJthlovCpYz8TOh5p6Hl5Gi0Hdq8VPYDuWCeooOz1of5FE&usqp=CAU",
+    "matchStage": "Semifinals",
+    "team1": {
+      "name": "Team Delta",
+      "players": ["Chris Johnson", "Lisa Taylor", "Alex Clark", "Sara Wilson"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/dD07V1f/pngwing-com-42.png",
+      "wins": 4,
+      "trophies": 3,
+      "ranking": 2
+    },
+    "team2": {
+      "name": "Team Gamma",
+      "players": ["Daniel Lee", "Emma Brown", "James Smith", "Olivia Martinez"],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/sHgx8LP/pngwing-com-41.png",
+      "wins": 3,
+      "trophies": 2,
+      "ranking": 5
+    },
+    "matchDate": "2023-09-20",
+    "matchTime": "17:30",
+    "matchLocation": "New York City, NY",
+    "matchDescription": "A thrilling League of Legends Championship Series Semifinal ",
+    "result": {
+      "winner": "Team Delta",
+      "score": "3-2"
+    },
+    "views": "60k",
+    "teamPlayer": "6V6",
+    "gamingMoode": "PC",
+    "streamURL": "https://youtube.com/lol_esports_live",
+    "matches": "finished"
+  },
+  {
+    "tournamentName": "Espn Championship ",
+    "tournamentPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVUeHl7WHdFBaqr65h8_hjeFDn_1k_C8gN96ntNGr6zHD3cHcYaZFjm1XsxixXG6o-wKE&usqp=CAU",
+    "matchStage": "Semifinals",
+    "team1": {
+      "name": "Team Zeta",
+      "players": ["Sophia Davis", "Michael Brown", "Ella Clark", "Noah Lee"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/jTT8bZn/pngwing-com-40.png",
+      "wins": 2,
+      "trophies": 1,
+      "ranking": 6
+    },
+    "team2": {
+      "name": "Team Epsilon",
+      "players": [
+        "Ava Wilson",
+        "William Johnson",
+        "Mia Martinez",
+        "Lucas Smith"
+      ],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/jTT8bZn/pngwing-com-40.png",
+      "wins": 3,
+      "trophies": 2,
+      "ranking": 3
+    },
+    "matchDate": "2023-09-25",
+    "matchTime": "16:45",
+    "matchLocation": "San Francisco, CA",
+    "matchDescription": "Get ready for an exciting upcoming match between Team Zeta and Team Epsilon in the Semifinals!",
+    "result": {
+      "winner": "upcoming",
+      "score": "0-0"
+    },
+    "views": "50k",
+    "teamPlayer": "4V4",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/upcoming_esports_stream",
+    "matches": "upcoming"
+  },
+  {
+    "tournamentName": "Rocket League ",
+    "tournamentPicture": "https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/blog/2022/aug/ov/esport.jpg",
+    "team1": {
+      "name": "Team Rocket",
+      "players": ["Rocketeer1", "Rocketeer2", "Rocketeer3", "Rocketeer4"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/DYj2H7V/pngwing-com-39.png",
+      "wins": 5,
+      "trophies": 2,
+      "ranking": 3
+    },
+    "team2": {
+      "name": "Team Boosters",
+      "players": ["Booster1", "Booster2", "Booster3", "Booster4"],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/hx06R4y/pngwing-com-38.png",
+      "wins": 4,
+      "trophies": 1,
+      "ranking": 5
+    },
+    "matchDate": "2023-10-10",
+    "matchTime": "18:15",
+    "matchLocation": "LOS ANGELES, CA",
+    "matchDescription": "The finals of the Rocket League Championship are here! .",
+    "result": {
+      "winner": "upcoming",
+      "score": "0-0"
+    },
+    "views": "90k",
+    "teamPlayer": "5V5",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/rocket_league_stream",
+    "matches": "upcoming"
+  },
+  {
+    "tournamentName": "Counter-Strike: Global ",
+    "tournamentPicture": "https://whatifgaming.com/wp-content/uploads/2022/07/esports.jpg",
+    "matchStage": "Grand Finals",
+    "team1": {
+      "name": "Team Strike",
+      "players": ["CSPlayer1", "CSPlayer2", "CSPlayer3", "CSPlayer4"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/3S6yjVL/pngwing-com-37.png",
+      "wins": 3,
+      "trophies": 2,
+      "ranking": 6
+    },
+    "team2": {
+      "name": "Team Defend",
+      "players": ["Defender1", "Defender2", "Defender3", "Defender4"],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/88wM1RP/pngwing-com-36.png",
+      "wins": 4,
+      "trophies": 2,
+      "ranking": 4
+    },
+    "matchDate": "2023-11-05",
+    "matchTime": "20:30",
+    "matchLocation": "London, UK",
+    "matchDescription": "The Grand Finals of the CS:GO Major are set! Team Strike clashes ",
+    "result": {
+      "winner": "upcoming",
+      "score": "0-0"
+    },
+    "views": "80k",
+    "teamPlayer": "5V5",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/csgo_major_stream",
+    "matches": "upcoming"
+  },
+  {
+    "tournamentName": "FIFA World Cup  ",
+    "tournamentPicture": "https://media.istockphoto.com/id/1411414490/photo/diverse-blue-pro-gamer-team-with-female-players-competing-at-video-game-esport-championship.jpg?s=612x612&w=0&k=20&c=2WyE9Np3FAAd76dL9DuqF1TrzS39gKPtgGXs9_PI4YA=",
+    "matchStage": "Group Stage",
+    "team1": {
+      "name": "Team Soccer Stars",
+      "players": ["Soccer1", "Soccer2", "Soccer3", "Soccer4"],
+      "country": "Brazil",
+      "team1Logo": "https://i.ibb.co/kMvmBGF/pngwing-31-com.png",
+      "wins": 1,
+      "trophies": 0,
+      "ranking": 8
+    },
+    "team2": {
+      "name": "Team Footie Kings",
+      "players": ["Footie1", "Footie2", "Footie3", "Footie4"],
+      "country": "England",
+      "team2Logo": "https://i.ibb.co/Xsxr6tK/pngwing-com-35.png",
+      "wins": 2,
+      "trophies": 0,
+      "ranking": 6
+    },
+    "matchDate": "2023-09-30",
+    "matchTime": "14:00",
+    "matchLocation": "Rio de Janeiro, Brazil",
+    "matchDescription": "The FIFA World Cup Esports Edition begins with a thrilling Group Stage match ",
+    "result": {
+      "winner": "upcoming",
+      "score": "0-0"
+    },
+    "views": "50k",
+    "teamPlayer": "5V5",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/fifa_world_cup_stream",
+    "matches": "upcoming"
+  },
+  {
+    "tournamentName": "Apex Legends Championship",
+    "tournamentPicture": "https://ichef.bbci.co.uk/news/976/cpsprodpb/0533/production/_97113310_mediaitem97113307.jpg",
+    "matchStage": "Finals",
+    "team1": {
+      "name": "Team Apex",
+      "players": ["PlayerA1", "PlayerA2", "PlayerA3", "PlayerA4"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/cxy3JNW/pngwing-com-32.png",
+      "wins": 5,
+      "trophies": 3,
+      "ranking": 1
+    },
+    "team2": {
+      "name": "Team Legends",
+      "players": ["PlayerL1", "PlayerL2", "PlayerL3", "PlayerL4"],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/cJ0mcY7/pngwing-com-33.png",
+      "wins": 4,
+      "trophies": 2,
+      "ranking": 2
+    },
+    "matchDate": "2023-12-15",
+    "matchTime": "20:00",
+    "matchLocation": "Las Vegas, NV",
+    "matchDescription": "The epic showdown in the Apex Legends Championship Finals!",
+    "result": {
+      "winner": "Team Apex",
+      "score": "3-1"
+    },
+    "views": "85k",
+    "teamPlayer": "3V3",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/apex_legends_championship_stream",
+    "matches": "finished"
+  },
+  {
+    "tournamentName": "Rainbow Six Siege Masters",
+    "tournamentPicture": "https://media.istockphoto.com/id/1262613729/video/diverse-esport-team-of-pro-gamers-play-in-mock-up-rpg-strategy-video-game-on-a-championship.jpg?s=640x640&k=20&c=P6BfwhjrnSeKfNgKO51i9XG2ZASnX8o-pGbdch0v31A=",
+    "matchStage": "Grand Finals",
+    "team1": {
+      "name": "Team Rainbow",
+      "players": ["Rainbow1", "Rainbow2", "Rainbow3", "Rainbow4"],
+      "country": "USA",
+      "team1Logo": "https://i.ibb.co/Gns7z3w/pngwing-com-31.png",
+      "wins": 4,
+      "trophies": 2,
+      "ranking": 1
+    },
+    "team2": {
+      "name": "Team Siege",
+      "players": ["Siege1", "Siege2", "Siege3", "Siege4"],
+      "country": "Canada",
+      "team2Logo": "https://i.ibb.co/V2hv7gT/pngwing-com-30.png",
+      "wins": 3,
+      "trophies": 1,
+      "ranking": 2
+    },
+    "matchDate": "2023-11-30",
+    "matchTime": "19:30",
+    "matchLocation": "Dallas, TX",
+    "matchDescription": "The battle for supremacy in the Rainbow Six Siege Masters Grand Finals!",
+    "result": {
+      "winner": "Team Rainbow",
+      "score": "2-0"
+    },
+    "views": "70k",
+    "teamPlayer": "5V5",
+    "gamingMoode": "PC",
+    "streamURL": "https://twitch.tv/r6_siege_masters_stream",
+    "matches": "finished"
+  }
+]

@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../../Hooks/useAuth";
 
-
 const Test1 = () => {
   const { user, loading } = useAuth();
   const [userInfo, SetUserInfo] = useState();
 
   useEffect(() => {
     if (user?.email) {
-      fetch(`http://localhost:5000/userInfo/${user?.email}`)
+      fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
         .then((res) => res.json())
         .then((data) => {
           SetUserInfo(data);
@@ -18,13 +17,7 @@ const Test1 = () => {
         });
     }
   }, [user?.email]);
-  console.log(userInfo);
-  return (
-    <div>
-      
-      
-    </div>
-  );
+  return <div></div>;
 };
 
 export default Test1;

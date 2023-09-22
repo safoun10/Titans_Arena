@@ -12,7 +12,6 @@ const Esports = () => {
   </Helmet>;
   return (
     <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      {/* <EsportBanner /> */}
       <EspBanner />
 
       <div className="mt-20 max-w-7xl mx-auto">

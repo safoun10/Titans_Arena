@@ -1,25 +1,19 @@
 import React, { useEffect, useState } from "react";
-import {
-	AiFillAndroid,
-	AiOutlineMail,
-	AiOutlinePhone,
-	AiOutlineProfile,
-} from "react-icons/ai";
 import { FaCommentAlt, FaEdit } from "react-icons/fa";
 import { FaUsersViewfinder } from "react-icons/fa6";
-import { MdLocationPin } from "react-icons/md";
 import { Parallax } from "react-parallax";
 import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
-import MyComments from "./MyComments";
 import ProfileContent from "./ProfileContent";
 import "./Profile.css";
+import Chat from "../Members/Chat/Chat";
 
 const Profile = () => {
   const { user } = useAuth();
   const [userInfo, SetUserInfo] = useState();
+  const [myComments, setMyComments] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/userInfo/${user?.email}`)
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         SetUserInfo(data.userInfo);
@@ -28,21 +22,29 @@ const Profile = () => {
         console.error("Error fetching user role:", error);
       });
   }, [user?.email]);
+  const url = `https://titans-arena-server.vercel.app/myComments/${user?.email}`;
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        setMyComments(data);
+      });
+  }, [user?.email]);
 
-  console.log(userInfo?.bio);
+  // console.log(userInfo?.role);
 
   return (
     <div className="text-white">
       <div className="">
         <Parallax>
-          <div className="bg-[url('https://w.forfun.com/fetch/a9/a9ce3832408d37e4a0ac6f97230b3297.jpeg')] bg-no-repeat bg-cover h-[300px] "></div>
+          <div className="bg-[url('https://w.forfun.com/fetch/a9/a9ce3832408d37e4a0ac6f97230b3297.jpeg')] bg-no-repeat bg-cover  md:h-[300px] h-[200px] "></div>
         </Parallax>
 
-        <div className="h-36 bg-slate-800  border flex w-12/12 relative ">
-          <div className="flex gap-4 w-4/12 justify-center">
+        <div className="h-36 bg-slate-800  md:flex grid md:w-12/12 relative ">
+          <div className="md:flex  hidden gap-4 w-4/12 justify-center">
             <div className="flex flex-col justify-center items-center">
               <FaCommentAlt className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
+              <p className="font-bold text-lg">{myComments.length}</p>
               <p className="font-bold text-lg">Comments</p>
             </div>
             <div className="flex flex-col justify-center items-center">
@@ -56,57 +58,57 @@ const Profile = () => {
               <p className="font-bold text-lg">Favorite</p>
             </div>
           </div>
-          <div className="text-center  w-4/12  justify-center flex">
+          <div className="text-center w-4/12 md:ml-0 ml-4 justify-center flex">
             <div className=" flex flex-col items-center absolute bottom-5 ">
               <img
-                className="rounded-full  border-8 p-1 w-32 h-32 "
+                className="rounded-full  border-8 p-1 md:w-32 w-24 md:h-32 "
                 src={
                   user?.photoURL ||
                   "https://themedox.com/demo/mykd/assets/img/team/team02.png"
                 }
                 alt={`${user?.displayName}'s profile photo`}
               />
-              <h3 className="text-2xl font-bold">{user?.displayName}</h3>
+              <h3 className="md:text-2xl text-lg font-bold">
+                {user?.displayName}
+              </h3>
               <p className="border rounded-sm w-20 mx-auto uppercase">
                 {userInfo?.role || "member"}
               </p>
             </div>
           </div>
-          <div className="flex gap-4  w-4/12 justify-center">
+          <div className="md:flex gap-4 md:ml-0 ml-32 md:w-4/12 justify-center">
             <div className="flex flex-col justify-center items-center">
-              {/*  */}
-
               <h1 className="text-lg font-bold text-center">
                 Connected Profiles
               </h1>
-              <div className="flex gap-4 text-2xl justify-center  ">
+              <div className="flex md:gap-4 text-2xl justify-center  ">
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/facebook.e96143e5.png"
                   alt=""
                 />
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/twitter.44ea9c7c.png"
                   alt=""
                 />
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/instagram.a89b5e48.png"
                   alt=""
                 />
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/youtube.a8224612.png"
                   alt=""
                 />
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/discord.87b031fc.png"
                   alt=""
                 />
                 <img
-                  className="w-10 hover:-translate-y-2 hover:animate-pulse  h-10"
+                  className="md:w-10 w-8 hover:-translate-y-2 hover:animate-pulse  md:h-10 h-8"
                   src="https://asphalt9.assets.gameloft.com/static/_next/static/media/tiktok.cb61d741.png"
                   alt=""
                 />
@@ -122,8 +124,10 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <ProfileContent userInfo={userInfo} />
-      <div className="flex flex-col mt-6">
+      <div className="border">
+        <ProfileContent myComments={myComments} userInfo={userInfo} />
+      </div>
+      {/* <div className="flex flex-col mt-6">
         <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
             <div className="overflow-hidden border border-gray-200 dark:border-gray-700 md:rounded-lg">
@@ -194,22 +198,22 @@ const Profile = () => {
                       Email address
                     </th>
 
-                    <th
-                      scope="col"
-                      className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
-                    >
-                      View Profile
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="bg-white divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
-                  <tr>
-                    <td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
-                      <div className="inline-flex items-center gap-x-3">
-                        <input
-                          type="checkbox"
-                          className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
-                        />
+										<th
+											scope="col"
+											className="px-4 py-3.5 text-sm font-normal text-left rtl:text-right text-gray-500 dark:text-gray-400"
+										>
+											View Profile
+										</th>
+									</tr>
+								</thead>
+								<tbody className=" divide-y divide-gray-200 dark:divide-gray-700 dark:bg-gray-900">
+									<tr>
+										<td className="px-4 py-4 text-sm font-medium text-gray-700 whitespace-nowrap">
+											<div className="inline-flex items-center gap-x-3">
+												<input
+													type="checkbox"
+													className="text-blue-500 border-gray-300 rounded dark:bg-gray-900 dark:ring-offset-gray-900 dark:border-gray-700"
+												/>
 
                         <div className="flex items-center gap-x-2">
                           <img
@@ -258,7 +262,8 @@ const Profile = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Chat />
     </div>
   );
 };

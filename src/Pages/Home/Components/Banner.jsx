@@ -1,15 +1,9 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-
 import Banner1 from "../../../../public/Images/Banner1.png";
 import Banner2 from "../../../../public/Images/Banner2.png";
 import Banner3 from "../../../../public/Images/Banner3.png";
@@ -54,9 +48,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner1} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -79,9 +70,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner2} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -105,9 +93,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -130,9 +115,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -155,9 +137,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -180,9 +159,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         {/* perfect1 */}
         <SwiperSlide>
@@ -206,9 +182,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         {/* perfect2 */}
         <SwiperSlide>
@@ -232,9 +205,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -257,9 +227,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -282,9 +249,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -307,9 +271,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <Parallax
@@ -333,9 +294,6 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-          {/* <div className="max-w-full ">
-              <img className="h-cover w-full" src={Banner3} alt="" />
-            </div> */}
         </SwiperSlide>
       </Swiper>
     </>

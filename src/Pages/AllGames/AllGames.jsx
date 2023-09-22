@@ -11,7 +11,6 @@ const AllGames = () => {
       </Helmet>
       <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
         <AllGamesBanner></AllGamesBanner>
-
         <AllGameCategory></AllGameCategory>
       </div>
     </>

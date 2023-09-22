@@ -1,36 +1,36 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import MatchHeader from "./MatchHeader/MatchHeader";
 import AboutMatch from "./AboutMatch/AboutMatch";
 import Teaminfo from "./TeamInfo/Teaminfo";
+import { useGetMatchDetailsQuery } from "../../../../Redux/slice/MatchDetailsState";
 
 const MatchDetails = () => {
-  const [matchDetails, setMatchDetail] = useState({});
-  const { id } = useParams();
+	const { id } = useParams();
 
-  useEffect(() => {
-    fetch(`http://localhost:5000/espMatchFixered/${id}`)
-      .then((res) => res.json())
-      .then((data) => setMatchDetail(data))
-      .catch((error) => {
-        console.error("Error fetching match details:", error);
-      });
-  }, [id]);
+	const {
+		data: matchDetails,
+		isError,
+		isLoading,
+	} = useGetMatchDetailsQuery(id);
 
-  // Check if matchDetails is empty before rendering
-  if (Object.keys(matchDetails).length === 0) {
-    return <div>Loading...</div>; // You can display a loading indicator here
-  }
+	if (isError) {
+		return <div>Error .........</div>;
+	}
 
-  return (
-    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-      <MatchHeader matchDetails={matchDetails}></MatchHeader>
-      <div>
-        <AboutMatch matchDetails={matchDetails} />
-        <Teaminfo matchDetails={matchDetails}></Teaminfo>
-      </div>
-    </div>
-  );
+	if (isLoading) {
+		return <div>Loading .........</div>;
+	}
+
+	return (
+		<div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+			<MatchHeader matchDetails={matchDetails}></MatchHeader>
+			<div>
+				<AboutMatch matchDetails={matchDetails} />
+				<Teaminfo matchDetails={matchDetails}></Teaminfo>
+			</div>
+		</div>
+	);
 };
 
 export default MatchDetails;

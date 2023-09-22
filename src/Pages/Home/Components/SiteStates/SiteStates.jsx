@@ -3,16 +3,18 @@ import "./SiteStates.css";
 import CountUp from "react-countup";
 import { Link } from "react-router-dom";
 
+
 const SiteStates = () => {
+
   return (
     <div>
-      <Title primaryText="KNOW ABOUT FROM" secondaryText="WEBSITE" />
+      <Title primaryText="KNOW ABOUT" secondaryText="TITANS ARENA" />
 
-      <div className="max-w-6xl md:mx-auto mx-6">
+      <div className="max-w-6xl md:mx-auto mx-6 py-7">
         <div className="md:flex  text-white items-center gap-7 my-10">
           <div className="md:w-1/2">
             <h2 className="text-4xl  font-bold">
-              The Journey of the <br /> Titan Arena Site
+              The Journey of the <br /> Titans Arena Site
             </h2>
             <p className="text-gray-400 md:text-sm md:py-2 py-6">
               In the heart of the bustling city, the Titan Arena stands tall as
@@ -27,25 +29,25 @@ const SiteStates = () => {
               <div>
                 <h2 className="text-3xl font-bold">
                   {" "}
-                  <CountUp end={40000} duration={20} />+
+                  <CountUp start={39000} end={40000} duration={5} />+
                 </h2>
                 <p className="font-">Member</p>
               </div>
               <div>
                 <h2 className="text-3xl font-bold">
-                  <CountUp end={1200} duration={10} />+
+                  <CountUp start={1000} end={1200} duration={5} />+
                 </h2>
                 <p className="font-">Games</p>
               </div>
               <div>
                 <h2 className="text-3xl font-bold">
-                  <CountUp end={3600} duration={10} />
+                  <CountUp start={0} end={3600} duration={5} />
                 </h2>
                 <p className="font-">Reviews</p>
               </div>
             </div>
             <div>
-              <Link to='/support'>
+              <Link to="/support">
                 <button className="border-2 rounded-tl-box rounded-br-box p-3 w-full font-bold hover:bg-green-500 my-4 border-green-500">
                   READ MORE
                 </button>

@@ -51,7 +51,7 @@ const TournamentBanner = () => {
           <div className="lg:max-w-[1280px] mt-5 md:max-w-[696px] max-w-[343px] mx-auto bg-black bg-opacity-60  lg:px-20 md:px-6 px-4 py-12">
             <div className="lg:flex md:flex block">
               <div className="flex">
-                <div className="bg-black  max-w-[50px] w-full border hidden md:block border-yellow-400 ">
+                <div className="bg-black  max-w-[50px] w-full border hidden md:block border-none">
                   <p className="xl:text-1xl mx-auto  font-bold lg:text-base  leading-normal text-white -rotate-90 whitespace-nowrap  2xl:mt-32 xl:mt-[130px]  lg:mt-[140%] md:mt-[85px] mt-28">
                     JOIN NOW
                   </p>
@@ -78,7 +78,7 @@ const TournamentBanner = () => {
               </div>
               <div className="bg- lg:py-2 md:py-2 py-4 lg:px-5 md:px-4 px-3 flex flex-col items-center justify-center">
                 <p className="lg:text-4xl md:text-2xl text-2xl font-semibold text-center text-white">
-                  WelcomeTo<span className="text-green-500">Esports </span>{" "}
+                  Welcome To <span className="text-green-500"> Esports </span>{" "}
                   <br />
                   <span className="text-yellow-400"> Tournaments </span>
                 </p>
@@ -90,7 +90,7 @@ const TournamentBanner = () => {
                 <p className="text-lg text-center  pt-2 flex gap-5 mt-2 text-green-400 ">
                   <FaTwitch /> <FaYoutube /> <FaInstagram /> <FaFacebook />
                 </p>
-                <p className="mt-3 animate-bounce font-bold text-white">
+                <p className="mt-3 font-bold text-white">
                   {" "}
                   PLAY <span className="text-red-500">TO </span>WIN
                 </p>
@@ -108,28 +108,6 @@ const TournamentBanner = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className="text-center items-center flex justify-center mt-5 text-1xl gap-7">
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-yellow-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            PUBG{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2 ">
-            WOW{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-green-400 hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            DOTA2{" "}
-          </h1>
-        </div>
-        <div className="">
-          <h1 className=" shadow-sm hover:border-green-400 hover:text-white w-10 font-bold text-white hover: border-b-2 hover:border-b-0 hover:border-t-2">
-            PUBG{" "}
-          </h1>
         </div>
       </div>
     </div>

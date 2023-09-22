@@ -10,14 +10,60 @@ import {
 } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
 import { Helmet } from "react-helmet-async";
-import { useGetBlogByIdQuery, useGetBlogsQuery } from "../../../Redux/api/blogApi";
+import {
+  useAddNewsLetterMutation,
+  useGetBlogByIdQuery,
+  useGetBlogsQuery,
+} from "../../../Redux/api/blogApi";
+import { useRef, useState } from "react";
+import useAuth from "../../../Hooks/useAuth";
 
 const SingleBlog = () => {
   const { id } = useParams();
-
-  const {data: blogs} = useGetBlogsQuery();
+  const searchRef = useRef(null);
+  const [search, setSearch] = useState("");
+  const { user } = useAuth();
+  const { data: blogs } = useGetBlogsQuery();
   const { data: blog, isLoading } = useGetBlogByIdQuery(id);
+  const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
 
+  // const handleSearch = () => {
+  //   setSearch(searchRef.current.value);
+  //   searchRef.current.value = "";
+  // };
+
+  // const handleKeyPress = (event) => {
+  //   if (event.key === "Enter") {
+  //     event.preventDefault();
+  //     handleSearch();
+  //   }
+  // };
+
+  const handleNersletter = (event) => {
+    event.preventDefault();
+    const email = event.target.email.value;
+    const newEmail = {
+      userEmail: user.email,
+      email: email,
+    };
+    addNewsLetter(newEmail);
+    console.log(newEmail);
+  };
+
+  if (isSuccess === true) {
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Your email is added to the newsletter.",
+      showConfirmButton: false,
+      timer: 1500,
+      color: "#FFFFFF",
+      background:
+        " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.36078) 100%)",
+
+      confirmButtonColor: "cool",
+    });
+  }
 
   return (
     <div>
@@ -95,22 +141,39 @@ const SingleBlog = () => {
         {/* Blogs page left side end*/}
         {/* Blogs page right side start */}
         <div className="col-span-2">
-          <form action="" className="relative flex items-center">
-            <input
-              type="text"
-              placeholder="SEARCH HERE..."
-              className="input bg-transparent text-white placeholder:text-lg placeholder:font-semibold input-bordered input-success w-full max-w-lg "
-            />
-            <button
-              type="submit"
-              className="absolute right-4 text-gray-500 hover:text-[#45f882] duration-200"
-            >
-              <FaSearch />
-            </button>
-          </form>
+          {/* <div className="form-control w-full max-w-lg">
+            <div className="input-group">
+              <input
+                type="text"
+                ref={searchRef}
+                placeholder="Search…"
+                onKeyPress={handleKeyPress}
+                className="input text-white font-bold input-bordered border-[#45f882] bg-transparent w-full max-w-lg"
+              />
+              <button
+                onClick={handleSearch}
+                className="border px-2 border-[#45f882] bg-transparent text-gray-500 hover:text-[#45f882] duration-200"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div> */}
           {/* RECENT POSTS part Start*/}
 
-          <div className="text-white py-6">
+          <div className="text-white pb-6">
             <h1 className="font-bold text-2xl pb-6">RECENT POSTS</h1>
             {blogs?.slice(2, 6).map((blog, i) => (
               <Link to={`/blog/${blog?._id}`} key={i}>
@@ -142,9 +205,13 @@ const SingleBlog = () => {
               {" "}
               Scripting the Epic Tale of Gaming News!
             </p>
-            <form className="flex items-center relative">
+            <form
+              onSubmit={handleNersletter}
+              className="flex items-center relative"
+            >
               <input
-                type="text"
+                type="email"
+                name="email"
                 placeholder="ENTER YOUR EMAIL"
                 className="w-full max-w-lg  
              font-semibold placeholder-[#45f882] pb-3 bg-transparent focus:outline-none border-b-2 border-gray-800
@@ -160,7 +227,7 @@ const SingleBlog = () => {
           {/* TAG CLOUD */}
           <div className="py-6">
             <h1 className="text-2xl font-bold uppercase pb-6 text-white">
-              TAG CLOUD
+              CLOUD TAG
             </h1>
             <div className="flex flex-wrap gap-4">
               {blog?.length == 0 ? (
@@ -174,7 +241,10 @@ const SingleBlog = () => {
                 </>
               ) : (
                 blog?.tags.map((tag, i) => (
-                  <Link className="styled-link"><span>#</span>{tag}</Link>
+                  <Link key={i} className="styled-link">
+                    <span>#</span>
+                    {tag}
+                  </Link>
                 ))
               )}
             </div>

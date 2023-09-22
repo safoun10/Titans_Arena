@@ -1,7 +1,6 @@
 import React from "react";
 import { FaGamepad, FaTv } from "react-icons/fa";
 import { FaPeopleGroup } from "react-icons/fa6";
-// import { FaPeopleGroup, FaTv, FaGamepad } from "react-icons/fa";
 
 const TournamentsVideo = () => {
   const esportsCards = [
@@ -60,7 +59,7 @@ const TournamentsVideo = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto  mb-32 mt-28 ">
+    <div className="max-w-7xl mx-auto  pb-32 mt-28 ">
       <div className="border-l-2 w-72 mx-9 font-extrabold sm:text-1xl text-3xl mb-10 text-yellow-500 border-t-2 rounded-md border-green-400 p-2 uppercase">
         <h3> Match Videos</h3>
       </div>
@@ -75,15 +74,10 @@ const TournamentsVideo = () => {
               }}
               className="bg-black border-2  border-black p-1 shadow-md mb-14 h-[440px] w-72 rounded-md"
             >
-              {/* YouTube video iframe */}
               <iframe
                 className="h-60  border-2 border-black border-b-yellow-400 w-64 rounded-md shadow-2xl mt-6 transform -translate-y-10 mx-auto hover:-translate-y-4 transition duration-700"
-                // src={match.youtubeVideoUrl}
                 src={`${match.youtubeVideoUrl}&autoplay=1&loop=1`}
                 title={`Video ${index + 1}`}
-                // width="300"
-                // height="200"
-                // frameBorder="0"
                 allowFullScreen
               ></iframe>
 

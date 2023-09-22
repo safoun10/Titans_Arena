@@ -5,12 +5,12 @@ import "react-tabs/style/react-tabs.css";
 import MatchCard from "./MatchCard";
 
 const Matches = () => {
-  const [data, setData] = useState([]);
-  const [showAll, setShowAll] = useState(true);
+	const [data, setData] = useState([]);
+	const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/espMatchFixered")
+      .get("https://titans-arena-server.vercel.app/espMatchFixered")
       .then((response) => {
         setData(response.data);
       })
@@ -19,62 +19,68 @@ const Matches = () => {
       });
   }, []);
 
-  const upcomingMatches = data.filter((match) => match.matches === "upcoming");
-  const finishedMatches = data.filter((match) => match.matches === "finished");
+	const upcomingMatches = data.filter(
+		(match) => match.matches === "upcoming"
+	);
+	const finishedMatches = data.filter(
+		(match) => match.matches === "finished"
+	);
 
-  return (
-    <div className="container mx-auto text-center ">
-      <Tabs>
-        <TabList className="  text-1xl font-bold text-white uppercase underline">
-          <Tab
-            classID=""
-            style={{
-              clipPath:
-                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-            }}
-            onClick={() => setShowAll(true)}
-          >
-            All Matches
-          </Tab>
-          <Tab
-            style={{
-              clipPath:
-                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-            }}
-            onClick={() => setShowAll(false)}
-          >
-            Upcoming Matches
-          </Tab>
-          <Tab
-            style={{
-              clipPath:
-                "polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-            }}
-            onClick={() => setShowAll(false)}
-          >
-            Finished Matches
-          </Tab>
-        </TabList>
+	return (
+		<div className="container mx-auto text-center ">
+			<Tabs>
+				<TabList className="  text-1xl font-bold text-white uppercase underline">
+					<Tab
+						classID=""
+						style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
+						onClick={() => setShowAll(true)}
+					>
+						All Matches
+					</Tab>
+					<Tab
+						style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
+						onClick={() => setShowAll(false)}
+					>
+						Upcoming Matches
+					</Tab>
+					<Tab
+						style={{
+							clipPath:
+								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+						}}
+						onClick={() => setShowAll(false)}
+					>
+						Finished Matches
+					</Tab>
+				</TabList>
 
-        <TabPanel>
-          {showAll &&
-            data.map((match, index) => <MatchCard key={index} match={match} />)}
-        </TabPanel>
-        <TabPanel>
-          {!showAll &&
-            upcomingMatches.map((match, index) => (
-              <MatchCard key={index} match={match} />
-            ))}
-        </TabPanel>
-        <TabPanel>
-          {!showAll &&
-            finishedMatches.map((match, index) => (
-              <MatchCard key={index} match={match} />
-            ))}
-        </TabPanel>
-      </Tabs>
-    </div>
-  );
+				<TabPanel>
+					{showAll &&
+						data.map((match, index) => (
+							<MatchCard key={index} match={match} />
+						))}
+				</TabPanel>
+				<TabPanel>
+					{!showAll &&
+						upcomingMatches.map((match, index) => (
+							<MatchCard key={index} match={match} />
+						))}
+				</TabPanel>
+				<TabPanel>
+					{!showAll &&
+						finishedMatches.map((match, index) => (
+							<MatchCard key={index} match={match} />
+						))}
+				</TabPanel>
+			</Tabs>
+		</div>
+	);
 };
 
 export default Matches;

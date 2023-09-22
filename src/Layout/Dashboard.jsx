@@ -16,13 +16,10 @@ import useAuth from "../Hooks/useAuth";
 import DashboardNavigationBar from "../Pages/Dashboard/DashboardComponents/DashboardNavigationBar";
 import useAdmin from "../Hooks/useAdmin";
 
-
 const Dashboard = () => {
   const { user } = useAuth();
   // console.log(user?.email);
-  const [isAdmin] = useAdmin()
-
- 
+  const [isAdmin] = useAdmin();
 
   const navOptions = (
     <>
@@ -83,6 +80,30 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My Comments And
+                Reviews
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/bookMarkedItems">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My Bookmarked
+                Items
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/matchFixered">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />
+                Create Match Result
+              </p>
+            </Link>
+          </li>
         </>
       ) : (
         <>
@@ -102,20 +123,57 @@ const Dashboard = () => {
             </Link>
           </li>
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/addblog">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Add Blog
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
+            <Link to="/dashboard/test2">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaPlus className="text-yellow-500 text-lg" /> Calendar
+              </p>
+            </Link>
+          </li>
+          {/* <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/selectedGames">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaCartArrowDown className="text-yellow-500 text-lg" /> Add To
                 Cart Games
               </p>
             </Link>
-          </li>
-  
+          </li> */}
 
           <li className="text-white bg-slate-900 p-2 hover:bg-green-500  text-center ">
             <Link to="/dashboard/enrolledTournaments">
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" /> Enrolled
                 Tournaments
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500 ">
+            <Link to="/dashboard/CommentAndReviewManage">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My Comments And
+                Reviews
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/bookMarkedItems">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My Bookmarked
+                Items
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/matchFixered">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />
+                Create Match Result
               </p>
             </Link>
           </li>
@@ -143,7 +201,7 @@ const Dashboard = () => {
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content ">
-          <div className="">
+          <div>
             {/* <div className="fixed top-0  w-full z-10">
               <DashboardNavigationBar />
             </div> */}
@@ -166,7 +224,7 @@ const Dashboard = () => {
               </div>
              
               <div className="w-full mt-[3.7rem]">
-                <div className="">
+                <div >
                   <Outlet />
                 </div>
               </div>
@@ -174,9 +232,9 @@ const Dashboard = () => {
 
             <div className="fixed left-0 top-2  bottom-0 md:w-1/5 md:block hidden overflow-y-auto">
               {/* Sidebar content */}
-            <ul className="">
-              {/* <ul className="mt-[3.7rem]"> */}
-                {/* <div className="">
+              <ul>
+                {/* <ul className="mt-[3.7rem]"> */}
+                {/* <div >
                   <div className="space-y-1">{navOptions}</div>
                   <div className="absolute bottom-2 left-[35%]">
                     <ul className="flex gap-4 items-center">
@@ -189,26 +247,44 @@ const Dashboard = () => {
               </ul>
             </div>
             {/* Content area */}
-            <div className="md:ml-[20%]">
-              <div className="max-w-[220rem] mx-auto  ">
-              {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
-                <Outlet />
-              </div>
-            </div>
-          </div>
-          <label
+            {/* <label
             htmlFor="my-drawer"
             className="btn btn-primary drawer-button md:hidden"
           >
             Open drawer
-          </label>
+          </label> */}
+            <label
+              htmlFor="my-drawer"
+              className="fixed z-10  drawer-button md:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-10 w-10 text-green-500 mt-4 "
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <div className="md:ml-[20%] md:mx-auto  ml-0">
+              <div className=" ">
+                {/* <div className="max-w-[220rem] mx-auto mt-10 "> */}
+                <Outlet />
+              </div>
+            </div>
+          </div>
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
           <ul className="p-5 space-y-4 min-h-full bg-black">{navOptions}</ul>
         </div>
       </div>
-     
     </div>
   );
 };
