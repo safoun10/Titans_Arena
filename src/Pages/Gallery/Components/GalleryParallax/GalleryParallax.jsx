@@ -81,30 +81,29 @@ const GalleryParallax = () => {
               Titans Arena
             </span>
             <br />
-            <span className="md:text-base lg:text-2xl font-medium text-slate-200">PLAY TO LIVE, LIVE TO WIN</span>
+            <span className="md:text-base lg:text-2xl font-medium text-slate-200">
+              PLAY TO LIVE, LIVE TO WIN
+            </span>
           </div>
         </div>
 
         <div className="parallax mb-1 md:h-screen h-96 z-10 flex bg-[url('https://asphalt9.assets.gameloft.com/assets/bg_banner_desktop_v2_79125a46ce.jpg')]">
-          <div className="my-auto items-center px-32">
-            <div className="sub-title-gallery bg-gradient-to-b from-transparent to-[#9e3c1f] text-2xl font-bold  ">
-              Asphalt Adventures
-            </div>
-            <div className="gallery-subtitle">
-              Race Through Urban Streets, Drift Around Corners, and Dominate the
-              Asphalt in Heart-Pounding Excitement Unleash your inner speed
-              demon in the world of Asphalt Adventures. Take control of
-              high-performance cars, tackle challenging tracks, and compete
-              against fierce opponents. Are you ready to rule the asphalt?
-            </div>
-          </div>
+        <div className="my-auto items-center text-center lg:text-left px-4 md:px-8 lg:px-12">
+  <div className="text-white text-3xl md:text-4xl lg:text-5xl leading-none w-[360px] lg:w-[480px] bg-gradient-to-b from-transparent to-[#9e3c1f] font-bold">
+    Asphalt Adventures
+  </div>
+  <div className="w-full md:w-96 text-opacity-80 text-white md:pt-12 text-lg font-semibold pt-2">
+    Race Through Urban Streets, Drift Around Corners, and Dominate the Asphalt in Heart-Pounding Excitement. Unleash your inner speed demon in the world of Asphalt Adventures. Take control of high-performance cars, tackle challenging tracks, and compete against fierce opponents. Are you ready to rule the asphalt?
+  </div>
+</div>
+
         </div>
         <div className="parallax mb-1 md:h-screen h-96 z-20 flex justify-end bg-[url('https://i.postimg.cc/NMGYNc8G/wallpaperflare-com-wallpaper-7.jpg')]">
-          <div className="my-auto items-center px-32">
-            <div className="sub-title-gallery bg-gradient-to-b from-transparent to-[] text-2xl font-bold">
+          <div className="my-auto items-center text-center lg:text-left px-5 lg:px-32">
+            <div className="text-white text-4xl leading-none w-full md:w-96 bg-gradient-to-b from-transparent to-[#yourColor] font-bold">
               Call of Duty: Warfare Unleashed
             </div>
-            <div className="w-96 gallery-subtitle">
+            <div className="w-full md:w-96 text-opacity-80 text-white md:pt-12 text-lg font-semibold p-2">
               Immerse Yourself in the Intense World of Modern Warfare. Engage in
               Heart-Pounding Combat, Tactical Strategy, and Unforgettable
               Campaigns. Join the Global Battle for Supremacy and Prove Your
@@ -113,11 +112,11 @@ const GalleryParallax = () => {
           </div>
         </div>
         <div className="parallax mb-1 md:h-screen h-96 z-20 flex justify-end via-transparent bg-[url('https://ggtalks.com/wp-content/uploads/2022/01/PUBG-Battleground.jpg')]">
-          <div className="my-auto items-center pr-32">
-            <div className="sub-title-gallery text-2xl font-bold  ">
+          <div className="my-auto items-center text-center lg:text-left px-5 lg:px-32">
+            <div className="text-white text-4xl leading-none w-full md:w-96 bg-gradient-to-b from-transparent to-[#yourColor] font-bold">
               PUBG: Battlegrounds Unleashed
             </div>
-            <div className="w-96 gallery-subtitle">
+            <div className="w-full md:w-96 text-opacity-80 text-white md:pt-12 text-lg font-semibold p-2">
               Step into the adrenaline-pumping world of PlayerUnknown's
               Battlegrounds (PUBG), where survival and strategy collide.
               Scavenge, strategize, and outlast opponents in the most intense

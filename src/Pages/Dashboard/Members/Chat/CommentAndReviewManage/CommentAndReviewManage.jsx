@@ -31,10 +31,10 @@ const CommentAndReviewManage = () => {
   return (
     <div>
       <Title primaryText="Manage Your" secondaryText="Comments ANd Reviews" />
-      <div className="flex">
-        <div className="w-1/3">
+      <div className="md:flex">
+        <div className="md:w-1/3">
           <div className="">
-            <div className="text-white  bg-slate-800">
+            <div className="text-white  bg-slate-800 ">
               <div className="stat">
                 <div className="">Total Comments In Game</div>
                 <div className="stat-value text-3xl">{myComments.length}</div>
@@ -55,7 +55,7 @@ const CommentAndReviewManage = () => {
             </div>
           </div>
         </div>
-        <div className="w-2/3">
+        <div className="md:w-2/3">
           <div className="overflow-y-scroll h-screen">
             <MyComments myComments={myComments} userInfo={userInfo} />
           </div>

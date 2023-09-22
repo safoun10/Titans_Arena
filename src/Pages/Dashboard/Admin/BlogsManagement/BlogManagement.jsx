@@ -21,19 +21,19 @@ const BlogManagement = () => {
 			<div className="border">
 				<table className="table  w-full">
 					{/* head */}
-					<thead className="text-white bg-green-500 text-xl">
+					<thead className="text-white bg-green-500 md:text-xl">
 						<tr>
-							<th>Serial</th>
+							<th className="md:block hidden">Serial</th>
 							<th>Author Name</th>
 							<th>Title</th>
 							<th>Date</th>
 							<th>Action</th>
 						</tr>
 					</thead>
-					<tbody className="text-lg font-bold">
+					<tbody className="md:text-lg font-bold">
 						{blogs?.map((blog, index) => (
 							<tr key={blog?._id}>
-								<th>{index + 1}</th>
+								<th className="md:block hidden ">{index + 1}</th>
 								<td>{blog?.author}</td>
 								<td>{blog?.title}</td>
 								<td>{blog?.date}</td>

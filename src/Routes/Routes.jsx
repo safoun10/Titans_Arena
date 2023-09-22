@@ -20,18 +20,22 @@ import AddBlog from "../Pages/Dashboard/Admin/addBlog/AddBlog";
 import Error from "../Components/Error/Error";
 import Tournament from "../Pages/Tournament/Tournament";
 import Gallery from "../Pages/Gallery/Gallery";
-import Test2 from "../Pages/Dashboard/Admin/Test2/Test2";
+import Test2 from "../Pages/Dashboard/Members/CalenderEvents/CalenderEvents";
 import Test1 from "../Pages/Dashboard/Admin/Test1/Test1";
 import ProfileEdit from "../Pages/Dashboard/DashboardComponents/ProfileEdit";
 import EnrolledTournaments from "../Pages/Dashboard/Members/EnrolledTournaments/EnrolledTournaments";
 import MatchDetails from "../Pages/Tournament/Matches/MatchDetails/MatchDetails";
 import CommentAndReviewManage from "../Pages/Dashboard/Members/Chat/CommentAndReviewManage/CommentAndReviewManage";
+import AddTournament from "../Pages/Tournament/AddTournament/AddTournament";
+import SingleTournamentDetails from "../Pages/Tournament/CustomTournaments/SingleTournamentDetails";
+import BookMarkItems from "../Pages/Dashboard/Members/BookMarkedItems/BookMarkItems";
+
+import MatchFixereManage from "../Pages/Dashboard/DashboardComponents/MatchFixereManage/MatchFixereManage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    // errorElement: <Error />,
     children: [
       {
         path: "/",
@@ -90,12 +94,19 @@ const router = createBrowserRouter([
         element: <Tournament />,
         path: "/tournament",
       },
+      {
+        path: "/addTournament",
+        element: <AddTournament />,
+      },
+      {
+        path: "/singleTournamentDetail/:id",
+        element: <SingleTournamentDetails />,
+      },
     ],
   },
   {
     path: "/dashboard",
     element: <Dashboard />,
-    // errorElement: <Error />,
     children: [
       {
         path: "users",
@@ -140,6 +151,14 @@ const router = createBrowserRouter([
       {
         path: "CommentAndReviewManage",
         element: <CommentAndReviewManage />,
+      },
+      {
+        path: "bookMarkedItems",
+        element: <BookMarkItems />,
+      },
+      {
+        path: "matchFixered",
+        element: <MatchFixereManage></MatchFixereManage>,
       },
     ],
   },

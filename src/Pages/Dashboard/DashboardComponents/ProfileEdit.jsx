@@ -4,7 +4,7 @@ import Title from "../../../Components/Shared/AnimatedTitle/Titile";
 import useAuth from "../../../Hooks/useAuth";
 
 const ProfileEdit = () => {
-	const { user } = useAuth();
+  const { user } = useAuth();
 
   const handleProfileUpdate = (event) => {
     event.preventDefault();
@@ -35,7 +35,7 @@ const ProfileEdit = () => {
       tiktok,
       bio,
     };
-    fetch(`http://localhost:5000/usersInfo/${user.email}`, {
+    fetch(`https://titans-arena-server.vercel.app/usersInfo/${user.email}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(information),
@@ -47,24 +47,28 @@ const ProfileEdit = () => {
             title: "",
             text: "Profile Updated Successfully!",
             icon: "success",
-            confirmButtonColor: "#B2A4FF",
+            color: "#FFFFFF",
+            background:
+            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+
+            confirmButtonColor: "cool",
             confirmButtonText: "ok",
           });
         }
       });
   };
 
-	const [userInfo, SetUserInfo] = useState();
-	useEffect(() => {
-		fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
-			.then((res) => res.json())
-			.then((data) => {
-				SetUserInfo(data.userInfo);
-			})
-			.catch((error) => {
-				console.error("Error fetching user role:", error);
-			});
-	}, [user?.email]);
+  const [userInfo, SetUserInfo] = useState();
+  useEffect(() => {
+    fetch(`https://titans-arena-server.vercel.app/userInfo/${user?.email}`)
+      .then((res) => res.json())
+      .then((data) => {
+        SetUserInfo(data.userInfo);
+      })
+      .catch((error) => {
+        console.error("Error fetching user role:", error);
+      });
+  }, [user?.email]);
 
   console.log(userInfo?.bio);
   return (

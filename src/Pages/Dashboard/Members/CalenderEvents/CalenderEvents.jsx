@@ -1,10 +1,10 @@
-import "./Test2.css";
 import React, { useState } from "react";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
+
 const Test2 = () => {
   const [currentEvents, setCurrentEvents] = useState([]);
 
@@ -36,9 +36,9 @@ const Test2 = () => {
 
   return (
     <div className="m-2 p-2 border rounded-md text-white bg-slate-800 ">
-      <div className="flex flex-row-reverse justify-between">
+      <div className="md:flex flex-row-reverse justify-between">
         {/* Calendar Sidebar */}
-        <div className="w-1/3 bg-primary-400 p-4 rounded">
+        <div className="md:w-1/3  bg-primary-400 p-4 rounded">
           <h2 className="text-xl font-semibold">Events</h2>
           <ul>
             {currentEvents.map((event) => (
@@ -54,9 +54,8 @@ const Test2 = () => {
         </div>
 
         {/* Calendar */}
-        <div className="w-2/3 ml-4">
+        <div className="md:w-2/3 ">
           <FullCalendar
-            height="75vh"
             plugins={[
               dayGridPlugin,
               timeGridPlugin,
@@ -87,6 +86,17 @@ const Test2 = () => {
                 title: "Timed event",
                 date: "2022-09-28",
               },
+              {
+                id: "789",
+                title: "Reserved Date 1",
+                date: "2022-10-10",
+              },
+              {
+                id: "456",
+                title: "Reserved Date 2",
+                date: "2022-10-15",
+              },
+              // Add more static events here if needed
             ]}
           />
         </div>
