@@ -60,7 +60,7 @@ const MatchFixereManage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/espMatchFixered",
+        "https://titans-arena-server.vercel.app/espMatchFixered",
         formData
       );
       console.log("Tournament created:", response.data);
