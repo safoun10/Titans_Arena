@@ -29,8 +29,15 @@ const AllGameCategory = () => {
 
 	useEffect(() => {
 		setGames(gamesCategory);
+	}, [gamesCategory, data]);
+
+	useEffect(() => {
 		setGames(gamesSearch);
-	}, [gamesCategory, gamesSearch, data]);
+		if(searchRef.current){
+			searchRef.current.value = ""; 
+		}
+		console.log(searchRef.current);
+	}, [gamesSearch, data]);
 
 	const handleSearch = () => {
 		setSearch(searchRef.current.value);
@@ -40,8 +47,12 @@ const AllGameCategory = () => {
 		setIsTabListVisible(!isTabListVisible);
 	};
 
-	console.log(category);
-	console.log(games);
+	const handleKeyPress = (event) => {
+		if (event.key === "Enter") {
+			event.preventDefault();
+			setSearch();
+		}
+	};
 
 	if (isLoading) {
 		return <div>Loading...</div>;
@@ -54,9 +65,9 @@ const AllGameCategory = () => {
 					type="text"
 					className="py-2 rounded px-10 lg:w-[50%] w-full font-bold border-green-500 relative"
 					name="search"
-					defaultValue={""}
 					id="search"
 					ref={searchRef}
+					onKeyDown={handleKeyPress}
 					placeholder="Search Games"
 				/>
 				<div className="absolute lg:left-[300px] left-12">
@@ -66,9 +77,8 @@ const AllGameCategory = () => {
 					type="submit"
 					onClick={() => handleSearch()}
 					className="border cursor-pointer lg:px-10 px-3 py-[7px] bg-image font-bold  border-green-500  rounded absolute lg:right-[335px] bg-green-500 text-white right-10 lg:w-[200px] w-[35%]"
-					name=""
 					value="Search Games"
-					id=""
+
 				/>
 			</div>
 
@@ -84,10 +94,11 @@ const AllGameCategory = () => {
 					</div>
 					<div className={isTabListVisible ? "" : "hidden lg:block"}>
 						<TabList className="lg:flex mx-10 mb-10 flex-wrap justify-center mt-16 gap-5 md:gap-8 text-center">
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "All Games"
 										? "hover:bg-green-500 border-green-500"
@@ -97,10 +108,11 @@ const AllGameCategory = () => {
 							>
 								All Games
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}} 
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer  my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "CallOfDuty"
 										? "hover:bg-green-500 border-green-500"
@@ -110,10 +122,11 @@ const AllGameCategory = () => {
 							>
 								Action
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer transition-all transform duration-700   rounded text-white ${
 									category === "Assassin's Creed"
 										? "hover:bg-green-500 border-green-500"
@@ -123,10 +136,11 @@ const AllGameCategory = () => {
 							>
 								Battle Royale
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer my-5 lg:my-0 transition-all transform duration-700   rounded text-white ${
 									category === "RPG"
 										? "hover:bg-green-500 border-green-500"
@@ -136,10 +150,11 @@ const AllGameCategory = () => {
 							>
 								RPG
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Uncharted"
 										? "hover:bg-green-500 border-green-500"
@@ -150,10 +165,11 @@ const AllGameCategory = () => {
 								Adventure
 							</Tab>
 
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "RedDeadRedemption"
 										? "hover:bg-green-500 border-green-500"
@@ -164,10 +180,11 @@ const AllGameCategory = () => {
 								Racing
 							</Tab>
 
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "Battlefield"
 										? "hover:bg-green-500 border-green-500"
@@ -177,10 +194,11 @@ const AllGameCategory = () => {
 							>
 								Simulation
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry"
 										? "hover:bg-green-500 border-green-500"
@@ -190,10 +208,11 @@ const AllGameCategory = () => {
 							>
 								Sports
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry1"
 										? "hover:bg-green-500 border-green-500"
@@ -203,10 +222,11 @@ const AllGameCategory = () => {
 							>
 								Strategy
 							</Tab>
-							<Tab style={{
-							clipPath:
-								"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
-						}}
+							<Tab
+								style={{
+									clipPath:
+										"polygon(0 0,calc(100% - 20px) 0,100% 20px,100% 100%,20px 100%,0 calc(100% - 20px))",
+								}}
 								className={`border p-3 custom-tabs cursor-pointer text-white transition-all transform duration-700   rounded  ${
 									category === "FarCry2"
 										? "hover:bg-green-500 border-green-500"
