@@ -3,7 +3,6 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "./Category.css";
 import "react-tabs/style/react-tabs.css";
 import GameCard from "../AllGames/GameCard";
-import { data } from "autoprefixer";
 import { useGetCategoryStateQuery } from "../../../../Redux/slice/CategoryState";
 const Category = () => {
 	const [games, setGames] = useState([]);
