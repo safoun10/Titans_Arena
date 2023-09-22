@@ -30,6 +30,7 @@ import AddTournament from "../Pages/Tournament/AddTournament/AddTournament";
 import SingleTournamentDetails from "../Pages/Tournament/CustomTournaments/SingleTournamentDetails";
 import BookMarkItems from "../Pages/Dashboard/Members/BookMarkedItems/BookMarkItems";
 
+import MatchFixereManage from "../Pages/Dashboard/DashboardComponents/MatchFixereManage/MatchFixereManage";
 
 const router = createBrowserRouter([
   {
@@ -154,6 +155,10 @@ const router = createBrowserRouter([
       {
         path: "bookMarkedItems",
         element: <BookMarkItems />,
+      },
+      {
+        path: "matchFixered",
+        element: <MatchFixereManage></MatchFixereManage>,
       },
     ],
   },

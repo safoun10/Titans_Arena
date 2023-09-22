@@ -96,6 +96,14 @@ const Dashboard = () => {
               </p>
             </Link>
           </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/matchFixered">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />
+                Match And Fixered Manage
+              </p>
+            </Link>
+          </li>
         </>
       ) : (
         <>
@@ -136,6 +144,22 @@ const Dashboard = () => {
               <p className="flex items-center gap-2 text- font-semibold ">
                 <FaDiceD6 className="text-yellow-500 text-lg" /> My Comments And
                 Reviews
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/bookMarkedItems">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" /> My Bookmarked
+                Items
+              </p>
+            </Link>
+          </li>
+          <li className="text-white bg-slate-900 p-2 hover:bg-green-500   ">
+            <Link to="/dashboard/matchFixered">
+              <p className="flex items-center gap-2 text- font-semibold ">
+                <FaDiceD6 className="text-yellow-500 text-lg" />
+                Match And Fixered Manage
               </p>
             </Link>
           </li>
