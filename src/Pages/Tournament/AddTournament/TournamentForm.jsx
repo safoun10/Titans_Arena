@@ -107,7 +107,7 @@ const TournamentForm = () => {
   };
 
   return (
-    <div>
+    <div className="bg-[#1d232a]">
       <form onSubmit={handleSubmit}>
         <section className="dark: dark:text-gray-100">
           <div className="container max-w-5xl px-4 py-12 mx-auto">

@@ -19,7 +19,6 @@ const Blogs = () => {
   const { user } = useAuth();
   const [addNewsLetter, { data, isSuccess }] = useAddNewsLetterMutation();
 
-  console.log("blog user", user.email);
 
   const [currentPage, setCurrentPage] = useState(1);
   const gamesPerPage = 3;
@@ -42,7 +41,7 @@ const Blogs = () => {
     event.preventDefault();
     const email = event.target.email.value;
     const newEmail = {
-      userEmail: user.email,
+      userEmail: user?.email,
       email: email,
     };
     addNewsLetter(newEmail);

@@ -4,13 +4,16 @@ import TournamentForm from "./TournamentForm";
 
 const AddTournament = () => {
   return (
-    <div className="pt-16">
-      <Title primaryText="Submit Your" secondaryText=" Tournament Details" />
+		<div className="pt-16 bg-[#1d232a]">
+			<Title
+				primaryText="Submit Your"
+				secondaryText=" Tournament Details"
+			/>
 
-      <section className="pb-20  ">
-        <TournamentForm />
-      </section>
-    </div>
+			<section className="pb-20  ">
+				<TournamentForm />
+			</section>
+		</div>
   );
 };
 
