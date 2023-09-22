@@ -40,7 +40,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -50,7 +50,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -76,7 +76,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -86,7 +86,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -112,7 +112,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -122,7 +122,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -148,7 +148,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -158,7 +158,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -184,7 +184,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -194,7 +194,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -220,7 +220,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -230,7 +230,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -256,7 +256,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -266,7 +266,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -292,7 +292,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -302,7 +302,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -328,7 +328,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -338,7 +338,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -364,7 +364,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -374,7 +374,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -400,7 +400,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -410,7 +410,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
@@ -436,7 +436,7 @@ const Banner = () => {
                 </div>
                 <div className="lg:text-8xl sm:text-5xl md:text-6xl text-3xl text-shadow font-bold py-6">
                   Titans A
-                  <span className="bg-[#45f8819d] text-black text-shadow-2">
+                  <span className="bg-[#45f8819d] text-black text-shadow-2 bg-opacity-60">
                     rena
                   </span>
                 </div>
@@ -446,7 +446,7 @@ const Banner = () => {
                 </div>
                 <Link to="/allgame">
                   <div
-                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
+                    className="border-2 md:text-[13px] w-1/2 sm:w-1/3 p-3 rounded font-bold py-5 !text-lg  text-center my-6 hover:bg-green-700 border-green-500 transition duration-500 ease-in-out"
                     style={{
                       clipPath:
                         "polygon(0 0, calc(100% - 20px) 0, 100% 20px, 100% 100%, 20px 100%, 0 calc(100% - 20px))",
