@@ -15,7 +15,7 @@ const GameReviews = ({ id }) => {
     //     console.log(data);
     //     setReviews(data);
     //   });
-  }, [data, reviews]);
+  }, [data]);
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -57,7 +57,9 @@ const GameReviews = ({ id }) => {
                   </div>
                 </div>
                 <div className="p-4 space-y-2 text-sm dark:text-gray-400">
-                  <p className="text-lg font-bold text-white">{review.review_text}</p>
+                  <p className="text-lg font-bold text-white">
+                    {review.review_text}
+                  </p>
                 </div>
               </div>
             ))}

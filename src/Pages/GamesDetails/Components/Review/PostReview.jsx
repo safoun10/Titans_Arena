@@ -3,14 +3,15 @@ import Rating from "react-rating";
 import useAuth from "../../../../Hooks/useAuth";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
+import { usePostGameReviewsMutation } from "../../../../Redux/slice/GameReviewsState";
 
 const PostReview = ({ title, id }) => {
   const { user } = useAuth();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [userRating, setUserRating] = useState(0);
   const navigate = useNavigate();
-
-  const handleSubmitComment = (e) => {
+  const [postGameReviews] = usePostGameReviewsMutation();
+  const handleSubmitComment = async (e) => {
     e.preventDefault();
     const form = e.target;
     // const rating = form.userRating.value;
@@ -27,34 +28,25 @@ const PostReview = ({ title, id }) => {
     };
     console.log(reviews);
 
-    const url = "https://titans-arena-server.vercel.app/reviews";
-    fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(reviews),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        if (data.insertedId) {
-          Swal.fire({
-            title: "Success!",
-            text: "Thank You for Your Feedback",
-            icon: "success",
-            color: "#FFFFFF",
-            background:
-            " linear-gradient(90deg, #0c0e12 0%, rgba(31, 41, 53, 0.66078) 100%)",
+    const response = await postGameReviews(reviews);
 
-            confirmButtonColor: "cool",
-            confirmButtonText: "Welcome",
-          });
-          form.reset();
-        }
+    if (response.error) {
+      // Handle the error here
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong!",
       });
-
-    setIsModalOpen(false);
+    } else {
+      Swal.fire({
+        title: "Success!",
+        text: "Comment posted Successfully",
+        icon: "success",
+        confirmButtonText: "Cool",
+      });
+      form.reset();
+      setIsModalOpen(false);
+    }
   };
 
   const feedbackMessages = {
