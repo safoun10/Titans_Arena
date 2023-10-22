@@ -30,7 +30,8 @@ function EnrolledTournaments() {
   }, [user?.email]);
 
   return (
-    // start
+    // start fin
+    
     <div>
       <Title primaryText="My Enrolled" secondaryText="Tournaments" />
       <div className="grid place-items-center grid-cols-1 gap-10 ">
