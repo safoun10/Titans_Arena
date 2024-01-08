@@ -49,12 +49,12 @@ const Profile = () => {
             </div>
             <div className="flex flex-col justify-center items-center">
               <FaUsersViewfinder className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
+              <p className="font-bold text-lg">8</p>
               <p className="font-bold text-lg">Reviews</p>
             </div>
             <div className="flex flex-col justify-center items-center">
               <FaCommentAlt className="text-yellow-500" />
-              <p className="font-bold text-lg">865</p>
+              <p className="font-bold text-lg">6</p>
               <p className="font-bold text-lg">Favorite</p>
             </div>
           </div>

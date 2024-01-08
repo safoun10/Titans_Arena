@@ -387,7 +387,7 @@ const Banner = () => {
             </div>
           </Parallax>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <Parallax
             bgImage="https://wallpaper.dog/large/20581938.png"
             blur={{ min: -15, max: 12 }}
@@ -422,7 +422,7 @@ const Banner = () => {
               </div>
             </div>
           </Parallax>
-        </SwiperSlide>
+        </SwiperSlide> */}
         <SwiperSlide>
           <Parallax
             bgImage="https://wallpaperaccess.com/full/1657059.jpg"

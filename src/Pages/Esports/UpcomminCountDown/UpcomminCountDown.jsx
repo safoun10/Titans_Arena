@@ -47,6 +47,7 @@ const UpcomingCountDown = () => {
 											alt="Team 1 Logo"
 											className="lg:block md:hidden hidden"
 										/>
+										
 										<img
 											src={match.team1.team1Logo}
 											alt="Tournament Image"

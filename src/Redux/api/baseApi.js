@@ -6,7 +6,7 @@ const baseApi = createApi({
     baseUrl: "https://titans-arena-server.vercel.app",
     // baseUrl: "http://localhost:5000",
   }),
-  tagTypes: ['invalidCache'],
+  tagTypes: ["invalidCache", "comments", "reviews", "enrolledTournaments"],
   endpoints: () => ({}),
 });
 
