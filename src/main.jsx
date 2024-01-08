@@ -17,7 +17,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <AuthProvider>
             <RouterProvider router={router} />
             <AnimatedCursor
-              innerSize={8}
+              innerSize={10}
               outerSize={35}
               innerScale={1}
               outerScale={2}

@@ -26,7 +26,11 @@
       "trophies": 1,
       "ranking": 7
     },
+<<<<<<< HEAD
     "matchDate": "2023-09-27",
+=======
+    "matchDate": "2025-09-27",
+>>>>>>> 57f1b1e53241211391c0a70942cd43e3b52419bd
     "matchTime": "15:00",
     "matchLocation": "Los Angeles, CA",
     "matchDescription": "An intense battle between Team Alpha and Team Beta in the ESL Pro League Quarterfinals.",

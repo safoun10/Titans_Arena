@@ -27,7 +27,7 @@ function EnrolledTournaments() {
     };
 
     fetchEnrolledTournaments();
-  }, [user?.email]);
+}, [user?.email])
 
   return (
     // start fin
