@@ -164,8 +164,8 @@ const MatchFixereManage = () => {
               <input
                 type="text"
                 id="team1Logo"
-                name="team1.team1Logo"
-                // value={formData.team1.team1Logo}
+                name="team1?.team1Logo"
+                // value={formData.team1?.team1Logo}
                 onChange={handleChange}
                 className="w-full px-3 py-2  bg-slate-800 "
                 required
