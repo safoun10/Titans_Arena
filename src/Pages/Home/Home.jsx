@@ -12,31 +12,31 @@ import OurTeamMembers from "./Components/OurTeamMembers/OurTeamMembers";
 import Category from "./Components/Category/Category";
 import PrizePoolJoin from "./Components/PrizePoolJoin/PrizePoolJoin";
 const Home = () => {
-	return (
-		<div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
-			<Helmet>
-				<title>Titans Arena || Home</title>
-			</Helmet>
-			<div id="#top">
-				<Banner />
-			</div>
+  return (
+    <div className="bg-[url('https://themedox.com/demo/mykd/assets/img/bg/area_bg02.jpg')]">
+      <Helmet>
+        <title>Titans Arena || Home</title>
+      </Helmet>
+      <div id="#top">
+        <Banner />
+      </div>
 
-			<div className="max-w-[1280px] mx-auto">
-				<FlipCard />
-				<Category />
-				<PrizePoolJoin />
-				<div className="w-full">
-					<FeatureGames />
-				</div>
-				<SiteStates />
-				<LatestGallery />
-				<BlogAndNews />
-				<ReviewSection />
-				<OurTeamMembers />
-				<StayConnect />
-			</div>
-		</div>
-	);
+      <div className="max-w-[1280px] mx-auto">
+        <FlipCard />
+        <Category />
+        <PrizePoolJoin />
+        <div className="w-full">
+          <FeatureGames />
+        </div>
+        <SiteStates />
+        <LatestGallery />
+        <BlogAndNews />
+        <ReviewSection />
+        <OurTeamMembers />
+        <StayConnect />
+      </div>
+    </div>
+  );
 };
 
 export default Home;

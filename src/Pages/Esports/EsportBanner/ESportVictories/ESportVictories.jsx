@@ -1,6 +1,6 @@
-import { Player } from "@lottiefiles/react-lottie-player";
+
 import React from "react";
-import victoryLogo from "../../../../../public/EsportsPic/animation_llpca4jv.json";
+
 import Title from "../../../../Components/Shared/AnimatedTitle/Titile";
 
 const ESportVictories = () => {

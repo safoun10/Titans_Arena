@@ -1,6 +1,5 @@
 import React from "react";
-import aboutPic from "../../../../public/EsportsPic/animation_llylw6vz (1).json";
-import { Player } from "@lottiefiles/react-lottie-player";
+
 
 const AboutTeamEs = () => {
   return (
@@ -9,27 +8,32 @@ const AboutTeamEs = () => {
         <div className="z-30 relative lg:w-1/2">
           <div className="hidden bg-slate-900 w-full lg:w-10/12 lg:h-full lg:flex justify-end items-center">
             <div className="w-full lg:w-auto lg:-mr-32">
-              {/* <img
-                src="https://www.insiderintelligence.com/static/fffd9458239a0ebafb8206b07f8f2f73/esports-2021-scaled.jpeg"
+              <img
+                src="https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1701911655"
                 alt="image with decent chairs"
                 className="w-full relative z-30 lg:pl-20 px-6 py-14"
-              /> */}
-              <Player
+              />
+              {/* <Player
                 className=" w-full relative z-30 lg:pl-10 px-3 py-7"
                 autoplay
                 loop
                 src={aboutPic}
-              ></Player>
+              ></Player> */}
             </div>
           </div>
           <div className="absolute top-0 dark:bg-gray-800 bg-gray-100 md:h-96 w-full hidden md:block lg:hidden"></div>
           <div className="w-full h-full lg:hidden">
-            <Player
+          <img
+                src="https://cdn.akamai.steamstatic.com/steam/apps/578080/capsule_616x353.jpg?t=1701911655"
+                alt="image with decent chairs"
+                className="w-full relative z-30 lg:pl-20 px-6 py-14"
+              />
+            {/* <Player
               className=" w-full relative z-30 lg:pl-20 px-6 py-14"
               autoplay
               loop
               src={aboutPic}
-            ></Player>
+            ></Player> */}
           </div>
         </div>
         <div className="bg- lg:w-1/2 lg:ml-12 lg:p-14 p-8 flex items-center">

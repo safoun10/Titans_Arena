@@ -240,7 +240,7 @@ const SingleBlog = () => {
                   <Link className="styled-link"># STREAMERS</Link>
                 </>
               ) : (
-                blog?.tags.map((tag, i) => (
+                blog?.tags?.map((tag, i) => (
                   <Link key={i} className="styled-link">
                     <span>#</span>
                     {tag}
